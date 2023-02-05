@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Hero Analytics</h1>
+        <div class="form-group">
+            <label for="heroSelect">Hero:</label>
+            <select class="form-control" id="heroSelect">
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="numberOfPlaysSelect">Minimum Number of Plays:</label>
+            <select class="form-control" id="numberOfPlaysSelect">
+                <option value="0">0</option>
+                <option value="10" selected>10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+            </select>
+        </div>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Hero</th>
+                    <th>Plays</th>
+                    <th>Selected Hero Win Percentage</th>
+                </tr>
+            </thead>
+            <tbody id="results">
+            </tbody>
+        </table>
+    </div>
+    <script>
+        const heroSelect = document.getElementById("heroSelect");
+        const numberOfPlaysSelect = document.getElementById("numberOfPlaysSelect");
+        const resultsTable = document.getElementById("results");
+
+        heroSelect.addEventListener("change", fetchMatches);
+        numberOfPlaysSelect.addEventListener("change", fetchMatches);
+
+        function fetchHeroes() {
+            fetch('/heroes')
+                .then(response => response.json())
+                .then(heroes => {
+                    const select = document.getElementById('heroSelect');
+                    heroes.forEach(hero => {
+                        const option = document.createElement('option');
+                        option.value = encodeURIComponent(hero);
+                        option.text = hero;
+                        select.add(option);
+                    });
+                    fetchMatches();
+                });
+        }
+
+        function fetchMatches() {
+            const hero = heroSelect.value;
+            const numberOfPlays = numberOfPlaysSelect.value;
+
+            fetch(`/matches?hero=${hero}&numberOfPlays=${numberOfPlays}`)
+                .then(response => response.json())
+                .then(data => {
+                    resultsTable.innerHTML = "";
+
+                    data.sortedFilteredRepeatOpponent.forEach(item => {
+                        const row = document.createElement("tr");
+
+                        const heroCell = document.createElement("td");
+                        heroCell.innerHTML = item.hero;
+                        row.appendChild(heroCell);
+
+                        const playsCell = document.createElement("td");
+                        playsCell.innerHTML = item.plays;
+                        row.appendChild(playsCell);
+
+                        const winPercentCell = document.createElement("td");
+                        winPercentCell.innerHTML = item.winPercent + "%";
+                        row.appendChild(winPercentCell);
+
+                        resultsTable.appendChild(row);
+                    });
+                })
+        }
+
+        window.onload = function () {
+            fetchHeroes();
+        };
+    </script>
