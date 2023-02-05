@@ -16,7 +16,6 @@ app.get('/matches', (req, res) => {
     const hero = req.query.hero;
     const encodedHero = encodeURIComponent(hero);
     const numberOfPlays = req.query.numberOfPlays;
-    console.log(encodedHero);
 
     axios.get(`https://www.umleague.net/api/analytics/getHeroResultsByMap?hero=${encodedHero}&campaignid=10000&organizerid=0`)
         .then(apiRes => {
