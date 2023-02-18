@@ -26,6 +26,14 @@
                 <option value="50">50</option>
             </select>
         </div>
+        <div class="form-group">
+            <label for="modeSelect">Select:</label>
+            <select class="form-control" id="modeSelect">
+                <option value="normal">Normal search</option>
+                <option value="fair" selected>Search fair matchups</option>
+                <option value="unfair">Search unfair matchups</option>
+            </select>
+        </div>
         <table class="table table-bordered table-hover">
             <thead>
                 <tr>
@@ -41,10 +49,12 @@
     <script>
         const heroSelect = document.getElementById("heroSelect");
         const numberOfPlaysSelect = document.getElementById("numberOfPlaysSelect");
+        const modeSelect = document.getElementById("modeSelect");
         const resultsTable = document.getElementById("results");
 
         heroSelect.addEventListener("change", fetchMatches);
         numberOfPlaysSelect.addEventListener("change", fetchMatches);
+        modeSelect.addEventListener("change", fetchMatches);
 
         function fetchHeroes() {
             fetch('/heroes')
@@ -64,13 +74,14 @@
         function fetchMatches() {
             const hero = heroSelect.value;
             const numberOfPlays = numberOfPlaysSelect.value;
+            const mode = modeSelect.value;
 
-            fetch(`/matches?hero=${hero}&numberOfPlays=${numberOfPlays}`)
+            fetch(`/matches?hero=${hero}&numberOfPlays=${numberOfPlays}&mode=${mode}`)
                 .then(response => response.json())
                 .then(data => {
                     resultsTable.innerHTML = "";
 
-                    data.sortedFilteredRepeatOpponent.forEach(item => {
+                    data.result.forEach(item => {
                         const row = document.createElement("tr");
 
                         const heroCell = document.createElement("td");
@@ -82,7 +93,7 @@
                         row.appendChild(playsCell);
 
                         const winPercentCell = document.createElement("td");
-                        winPercentCell.innerHTML = item.winPercent + "%";
+                        winPercentCell.innerHTML = item.winPercent === "hidden" ? item.winPercent : item.winPercent + "%";
                         row.appendChild(winPercentCell);
 
                         resultsTable.appendChild(row);

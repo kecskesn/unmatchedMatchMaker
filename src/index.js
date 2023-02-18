@@ -1,6 +1,7 @@
 const express = require('express');
 const axios = require('axios');
-const heroes = require('./constants/heroes')
+const heroes = require('./constants/heroes');
+const searchStrategies = require('./searchStrategies/searchStrategies');
 
 const app = express();
 
@@ -16,6 +17,7 @@ app.get('/matches', (req, res) => {
     const hero = req.query.hero;
     const encodedHero = encodeURIComponent(hero);
     const numberOfPlays = req.query.numberOfPlays;
+    const mode = req.query.mode;
 
     axios.get(`https://www.umleague.net/api/analytics/getHeroResultsByMap?hero=${encodedHero}&campaignid=10000&organizerid=0`)
         .then(apiRes => {
@@ -28,8 +30,8 @@ app.get('/matches', (req, res) => {
             });
 
             const filteredRepeatOpponent = repeatOpponent.filter(item => item.plays >= numberOfPlays);
-            const sortedFilteredRepeatOpponent = filteredRepeatOpponent.sort((a, b) => b.winPercent - a.winPercent);
-            res.send({ sortedFilteredRepeatOpponent });
+            const result = searchStrategies[mode].handle(filteredRepeatOpponent);
+            res.send({ result });
         })
         .catch(error => {
             console.error(error);
