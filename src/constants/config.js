@@ -1,3 +1,3 @@
 module.exports = {
-    "fairnessTreshold": 65
+    "fairnessTreshold": 60
 }

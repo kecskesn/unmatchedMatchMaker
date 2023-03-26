@@ -20,5 +20,14 @@ module.exports = [
     'Dr. Sattler',
     'T. Rex',
     'Houdini',
-    'The Genie'
+    'The Genie',
+    'Elektra',
+    'Daredevil',
+    'Bullseye',
+    'Ghost Rider',
+    'Luke Cage',
+    'Moon Knight',
+    'Cloak & Dagger',
+    'Ms. Marvel',
+    'Squirrel Girl'
 ]
