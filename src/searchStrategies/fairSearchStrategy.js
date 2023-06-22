@@ -9,11 +9,12 @@ class FairSearchStrategy {
             return normalizedWinPercent >= normalizedTreshold;
         });
 
-        filtered.forEach((item) => {
-            item.winPercent = 'hidden';
-        });
-
-        return filtered.sort(() => Math.random() - 0.5);
+        // filtered.forEach((item) => {
+        //     item.winPercent = 'hidden';
+        // });
+        
+        // return filtered.sort(() => Math.random() - 0.5);
+        return items.sort((a, b) => b.winPercent - a.winPercent);
     }
 }
 
