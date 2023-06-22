@@ -29,5 +29,8 @@ module.exports = [
     'Moon Knight',
     'Cloak & Dagger',
     'Ms. Marvel',
-    'Squirrel Girl'
+    'Squirrel Girl',
+    'Black Panther',
+    'Winter Soldier',
+    'Black Widow',
 ]
