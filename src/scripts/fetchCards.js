@@ -32,7 +32,7 @@ https.get(url, (response) => {
         const deckFilePath = path.join(
             __dirname,
             "..",
-            "constants",
+            "config",
             "decks",
             `${hero}.json`
         );

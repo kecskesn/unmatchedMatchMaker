@@ -1,7 +1,7 @@
 const express = require("express");
 const axios = require("axios");
 const path = require("path");
-const heroes = require("./constants/heroes");
+const heroes = require("./config/heroes");
 const fs = require("fs");
 const searchStrategies = require("./searchStrategies/searchStrategies");
 
@@ -29,7 +29,7 @@ app.get("/deck", (req, res) => {
 
   const deckFilePath = path.join(
     __dirname,
-    "constants",
+    "config",
     "decks",
     `${finalName}.json`
   );
