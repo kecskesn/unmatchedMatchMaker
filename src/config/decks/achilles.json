@@ -1,62 +1,109 @@
 [
-    {
-        "title-hu": "Harci Őrjöngés",
-        "type": "attack",
-        "quantity": 2
-    },
-    {
-        "title-hu": "A Gyengeség Próbatétele",
-        "type": "attack",
-        "quantity": 3
-    },
-    {
-        "title-hu": "A Végzeted Napja",
-        "type": "attack",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Bajtársak",
-        "type": "attack",
-        "quantity": 3
-    },
-    {
-        "title-hu": "Akhilleusz Irányításával",
-        "type": "defense",
-        "quantity": 3
-    },
-    {
-        "title-hu": "Akhilleusz Sarka",
-        "type": "defense",
-        "quantity": 3
-    },
-    {
-        "title-hu": "Színlelt Támadás",
-        "type": "versatile",
-        "quantity": 3
-    },
-    {
-        "title-hu": "Harcedzett",
-        "type": "versatile",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Ravasz Csel",
-        "type": "versatile",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Hermész Áldása",
-        "type": "versatile",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Harc",
-        "type": "versatile",
-        "quantity": 3
-    },
-    {
-        "title-hu": "Dárdavetés",
-        "type": "scheme",
-        "quantity": 2
-    }
+  {
+    "title-hu": "Harci Őrjöngés",
+    "type": "attack",
+    "quantity": 2,
+    "boost": 2,
+    "characterName": "PATROCLUS",
+    "value": 3,
+    "title": "Battle Frenzy"
+  },
+  {
+    "title-hu": "A Gyengeség Próbatétele",
+    "type": "attack",
+    "quantity": 3,
+    "boost": 3,
+    "characterName": "ANY",
+    "value": 1,
+    "title": "Test For Weakness"
+  },
+  {
+    "title-hu": "A Végzeted Napja",
+    "type": "attack",
+    "quantity": 2,
+    "boost": 2,
+    "characterName": "PATROCLUS",
+    "value": 3,
+    "title": "The Day of Your Doom"
+  },
+  {
+    "title-hu": "Bajtársak",
+    "type": "attack",
+    "quantity": 3,
+    "boost": 2,
+    "characterName": "ANY",
+    "value": 4,
+    "title": "Brothers In Arms"
+  },
+  {
+    "title-hu": "Akhilleusz Irányításával",
+    "type": "defense",
+    "quantity": 3,
+    "boost": 4,
+    "characterName": "ACHILLES",
+    "value": 2,
+    "title": "Under Achilles' Helm"
+  },
+  {
+    "title-hu": "Akhilleusz Sarka",
+    "type": "defense",
+    "quantity": 3,
+    "boost": 2,
+    "characterName": "ACHILLES",
+    "value": 4,
+    "title": "Achilles' Heel"
+  },
+  {
+    "title-hu": "Színlelt Támadás",
+    "type": "versatile",
+    "quantity": 3,
+    "boost": 1,
+    "characterName": "ANY",
+    "value": 2,
+    "title": "Feint"
+  },
+  {
+    "title-hu": "Harcedzett",
+    "type": "versatile",
+    "quantity": 2,
+    "boost": 2,
+    "characterName": "ANY",
+    "value": 2,
+    "title": "Battle Hardened"
+  },
+  {
+    "title-hu": "Ravasz Csel",
+    "type": "versatile",
+    "quantity": 2,
+    "boost": 1,
+    "characterName": "ANY",
+    "value": 3,
+    "title": "Wily Fighting"
+  },
+  {
+    "title-hu": "Hermész Áldása",
+    "type": "versatile",
+    "quantity": 2,
+    "boost": 1,
+    "characterName": "ANY",
+    "value": 3,
+    "title": "Blessed By Hermes"
+  },
+  {
+    "title-hu": "Harc",
+    "type": "versatile",
+    "quantity": 3,
+    "boost": 1,
+    "characterName": "ANY",
+    "value": 4,
+    "title": "Skirmish"
+  },
+  {
+    "title-hu": "Dárdavetés",
+    "type": "scheme",
+    "quantity": 2,
+    "boost": 1,
+    "characterName": "ACHILLES",
+    "title": "Spear Throw"
+  }
 ]

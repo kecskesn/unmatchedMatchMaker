@@ -1,67 +1,115 @@
 [
-    {
-        "title-hu": "Rajtaütés",
-        "type": "attack",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Vérfüdő",
-        "type": "attack",
-        "quantity": 2
-    },
-    {
-        "title-hu": "A Rém Átalakul",
-        "type": "attack",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Létszomj",
-        "type": "attack",
-        "quantity": 3
-    },
-    {
-        "title-hu": "Tedd Meg a Tétemet!",
-        "type": "defense",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Nézz a Szemembe!",
-        "type": "defense",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Színlelt Támadás",
-        "type": "versatile",
-        "quantity": 3
-    },
-    {
-        "title-hu": "Kitörés",
-        "type": "versatile",
-        "quantity": 3
-    },
-    {
-        "title-hu": "Kizsákmányolva",
-        "type": "versatile",
-        "quantity": 2
-    },
-    {
-        "title-hu": "A Rém Köddé Válik",
-        "type": "scheme",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Prédára Lesve",
-        "type": "scheme",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Vérkeresztség",
-        "type": "scheme",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Mohó Csábítás",
-        "type": "scheme",
-        "quantity": 3
-    }
+  {
+    "title-hu": "Rajtaütés",
+    "type": "attack",
+    "quantity": 2,
+    "boost": 3,
+    "characterName": "ANY",
+    "value": 2,
+    "title": "Ambush"
+  },
+  {
+    "title-hu": "Vérfüdő",
+    "type": "attack",
+    "quantity": 2,
+    "boost": 3,
+    "characterName": "DRACULA",
+    "value": 2,
+    "title": "Feeding Frenzy"
+  },
+  {
+    "title-hu": "A Rém Átalakul",
+    "type": "attack",
+    "quantity": 2,
+    "boost": 4,
+    "characterName": "DRACULA",
+    "value": 6,
+    "title": "Beastform"
+  },
+  {
+    "title-hu": "Létszomj",
+    "type": "attack",
+    "quantity": 3,
+    "boost": 3,
+    "characterName": "SISTER",
+    "value": 3,
+    "title": "Thirst for Sustenance"
+  },
+  {
+    "title-hu": "Tedd Meg a Tétemet!",
+    "type": "defense",
+    "quantity": 2,
+    "boost": 3,
+    "characterName": "DRACULA",
+    "value": 3,
+    "title": "Do My Bidding"
+  },
+  {
+    "title-hu": "Nézz a Szemembe!",
+    "type": "defense",
+    "quantity": 2,
+    "boost": 2,
+    "characterName": "DRACULA",
+    "value": 1,
+    "title": "Look Into My Eyes"
+  },
+  {
+    "title-hu": "Színlelt Támadás",
+    "type": "versatile",
+    "quantity": 3,
+    "boost": 2,
+    "characterName": "ANY",
+    "value": 2,
+    "title": "Feint"
+  },
+  {
+    "title-hu": "Kitörés",
+    "type": "versatile",
+    "quantity": 3,
+    "boost": 1,
+    "characterName": "ANY",
+    "value": 3,
+    "title": "Dash"
+  },
+  {
+    "title-hu": "Kizsákmányolva",
+    "type": "versatile",
+    "quantity": 2,
+    "boost": 1,
+    "characterName": "ANY",
+    "value": 4,
+    "title": "Exploit"
+  },
+  {
+    "title-hu": "A Rém Köddé Válik",
+    "type": "scheme",
+    "quantity": 2,
+    "boost": 2,
+    "characterName": "DRACULA",
+    "title": "Mistform"
+  },
+  {
+    "title-hu": "Prédára Lesve",
+    "type": "scheme",
+    "quantity": 2,
+    "boost": 4,
+    "characterName": "DRACULA",
+    "title": "Prey Upon"
+  },
+  {
+    "title-hu": "Vérkeresztség",
+    "type": "scheme",
+    "quantity": 2,
+    "boost": 2,
+    "characterName": "DRACULA",
+    "title": "Baptism of Blood"
+  },
+  {
+    "title-hu": "Mohó Csábítás",
+    "type": "scheme",
+    "quantity": 3,
+    "boost": 2,
+    "characterName": "SISTER",
+    "title": "Ravening Seduction"
+  }
 ]

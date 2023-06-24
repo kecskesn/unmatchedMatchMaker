@@ -1,67 +1,115 @@
 [
-    {
-        "title-hu": "Induljon a Játszma!",
-        "type": "attack",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Szolgálati Fegyver",
-        "type": "attack",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Alapvető",
-        "type": "defense",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Színlelt Támadás",
-        "type": "versatile",
-        "quantity": 3
-    },
-    {
-        "title-hu": "A Detektív Holtig Tanul",
-        "type": "versatile",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Tanulmányozás",
-        "type": "versatile",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Kikövetkeztetés",
-        "type": "versatile",
-        "quantity": 3
-    },
-    {
-        "title-hu": "Visszaütés",
-        "type": "versatile",
-        "quantity": 3
-    },
-    {
-        "title-hu": "Biztos Pont Egy Változásokkal Teli Korban",
-        "type": "versatile",
-        "quantity": 2
-    },
-    {
-        "title-hu": "A Gyanú Beigazolódott",
-        "type": "scheme",
-        "quantity": 3
-    },
-    {
-        "title-hu": "Zárd Ki, Ami Valószínűtlen",
-        "type": "scheme",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Az Álcázás Mestere",
-        "type": "scheme",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Katonaorvosi Támogatás",
-        "type": "scheme",
-        "quantity": 2
-    }
+  {
+    "title-hu": "Induljon a Játszma!",
+    "type": "attack",
+    "quantity": 2,
+    "boost": 2,
+    "characterName": "HOLMES",
+    "value": 5,
+    "title": "The Game is Afoot"
+  },
+  {
+    "title-hu": "Szolgálati Fegyver",
+    "type": "attack",
+    "quantity": 2,
+    "boost": 3,
+    "characterName": "DR. WATSON",
+    "value": 5,
+    "title": "Service Revolver"
+  },
+  {
+    "title-hu": "Alapvető",
+    "type": "defense",
+    "quantity": 2,
+    "boost": 3,
+    "characterName": "HOLMES",
+    "value": 3,
+    "title": "Elementary"
+  },
+  {
+    "title-hu": "Színlelt Támadás",
+    "type": "versatile",
+    "quantity": 3,
+    "boost": 1,
+    "characterName": "ANY",
+    "value": 2,
+    "title": "Feint"
+  },
+  {
+    "title-hu": "A Detektív Holtig Tanul",
+    "type": "versatile",
+    "quantity": 2,
+    "boost": 1,
+    "characterName": "ANY",
+    "value": 3,
+    "title": "Education Never Ends"
+  },
+  {
+    "title-hu": "Tanulmányozás",
+    "type": "versatile",
+    "quantity": 2,
+    "boost": 2,
+    "characterName": "ANY",
+    "value": 3,
+    "title": "Study Methods"
+  },
+  {
+    "title-hu": "Kikövetkeztetés",
+    "type": "versatile",
+    "quantity": 3,
+    "boost": 1,
+    "characterName": "HOLMES",
+    "value": 3,
+    "title": "Deduce Strategy"
+  },
+  {
+    "title-hu": "Visszaütés",
+    "type": "versatile",
+    "quantity": 3,
+    "boost": 1,
+    "characterName": "HOLMES",
+    "value": 3,
+    "title": "Counterpunch"
+  },
+  {
+    "title-hu": "Biztos Pont Egy Változásokkal Teli Korban",
+    "type": "versatile",
+    "quantity": 2,
+    "boost": 1,
+    "characterName": "DR. WATSON",
+    "value": 3,
+    "title": "Fixed Point in a Changing Age"
+  },
+  {
+    "title-hu": "A Gyanú Beigazolódott",
+    "type": "scheme",
+    "quantity": 3,
+    "boost": 1,
+    "characterName": "HOLMES",
+    "title": "Confirm Suspicion"
+  },
+  {
+    "title-hu": "Zárd Ki, Ami Valószínűtlen",
+    "type": "scheme",
+    "quantity": 2,
+    "boost": 2,
+    "characterName": "HOLMES",
+    "title": "Eliminate the Impossible"
+  },
+  {
+    "title-hu": "Az Álcázás Mestere",
+    "type": "scheme",
+    "quantity": 2,
+    "boost": 2,
+    "characterName": "HOLMES",
+    "title": "Master of Disguise"
+  },
+  {
+    "title-hu": "Katonaorvosi Támogatás",
+    "type": "scheme",
+    "quantity": 2,
+    "boost": 2,
+    "characterName": "DR. WATSON",
+    "title": "Administer Aid"
+  }
 ]

@@ -1,62 +1,107 @@
 [
-    {
-        "title-hu": "Hőseposz",
-        "type": "attack",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Az Ősi Hagyaték",
-        "type": "attack",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Váratlan Próbatétel",
-        "type": "attack",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Harcra Készen",
-        "type": "attack",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Végzetes Ütközet",
-        "type": "attack",
-        "quantity": 3
-    },
-    {
-        "title-hu": "Grendellel Egyenrangú",
-        "type": "defense",
-        "quantity": 3
-    },
-    {
-        "title-hu": "Színlelt Támadás",
-        "type": "versatile",
-        "quantity": 3
-    },
-    {
-        "title-hu": "A Viszálykirály",
-        "type": "versatile",
-        "quantity": 3
-    },
-    {
-        "title-hu": "Harc",
-        "type": "versatile",
-        "quantity": 3
-    },
-    {
-        "title-hu": "Az Utolsó Csepp Bátorság",
-        "type": "scheme",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Erély és Bátorság",
-        "type": "scheme",
-        "quantity": 3
-    },
-    {
-        "title-hu": "Arany Ivókürt",
-        "type": "scheme",
-        "quantity": 2
-    }
+  {
+    "title-hu": "Hőseposz",
+    "type": "attack",
+    "quantity": 2,
+    "boost": 2,
+    "characterName": "BEOWULF",
+    "value": 2,
+    "title": "Epic Poem"
+  },
+  {
+    "title-hu": "Az Ősi Hagyaték",
+    "type": "attack",
+    "quantity": 2,
+    "boost": 1,
+    "characterName": "BEOWULF",
+    "value": 3,
+    "title": "The Ancient Heirloom"
+  },
+  {
+    "title-hu": "Váratlan Próbatétel",
+    "type": "attack",
+    "quantity": 2,
+    "boost": 3,
+    "characterName": "BEOWULF",
+    "value": 3,
+    "title": "No Contest Expecteth"
+  },
+  {
+    "title-hu": "Harcra Készen",
+    "type": "attack",
+    "quantity": 2,
+    "boost": 3,
+    "characterName": "WIGLAF",
+    "value": 3,
+    "title": "Hot for the Battle"
+  },
+  {
+    "title-hu": "Végzetes Ütközet",
+    "type": "attack",
+    "quantity": 3,
+    "boost": 2,
+    "characterName": "ANY",
+    "value": 4,
+    "title": "Fatal Struggle"
+  },
+  {
+    "title-hu": "Grendellel Egyenrangú",
+    "type": "defense",
+    "quantity": 3,
+    "boost": 1,
+    "characterName": "BEOWULF",
+    "value": 3,
+    "title": "The Equal of Grendel"
+  },
+  {
+    "title-hu": "Színlelt Támadás",
+    "type": "versatile",
+    "quantity": 3,
+    "boost": 1,
+    "characterName": "ANY",
+    "value": 2,
+    "title": "Feint"
+  },
+  {
+    "title-hu": "A Viszálykirály",
+    "type": "versatile",
+    "quantity": 3,
+    "boost": 3,
+    "characterName": "BEOWULF",
+    "value": 1,
+    "title": "The War-King"
+  },
+  {
+    "title-hu": "Harc",
+    "type": "versatile",
+    "quantity": 3,
+    "boost": 1,
+    "characterName": "ANY",
+    "value": 4,
+    "title": "Skirmish"
+  },
+  {
+    "title-hu": "Az Utolsó Csepp Bátorság",
+    "type": "scheme",
+    "quantity": 2,
+    "boost": 2,
+    "characterName": "WIGLAF",
+    "title": "Remnant of Valor"
+  },
+  {
+    "title-hu": "Erély és Bátorság",
+    "type": "scheme",
+    "quantity": 3,
+    "boost": 2,
+    "characterName": "BEOWULF",
+    "title": "Vigor and Courage"
+  },
+  {
+    "title-hu": "Arany Ivókürt",
+    "type": "scheme",
+    "quantity": 2,
+    "boost": 3,
+    "characterName": "BEOWULF",
+    "title": "Golden Drinking Horn"
+  }
 ]

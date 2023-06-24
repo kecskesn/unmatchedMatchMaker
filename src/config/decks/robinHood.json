@@ -1,57 +1,100 @@
 [
-    {
-        "title-hu": "Rajtaütés",
-        "type": "attack",
-        "quantity": 2
-    },
-    {
-        "title-hu": "A Vadász szeme",
-        "type": "attack",
-        "quantity": 3
-    },
-    {
-        "title-hu": "Lefegyverző Lövés",
-        "type": "attack",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Átütő Lövés",
-        "type": "attack",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Országúti Rablás",
-        "type": "attack",
-        "quantity": 4
-    },
-    {
-        "title-hu": "Sherwood Védelmezői",
-        "type": "defense",
-        "quantity": 2
-    },
-    {
-        "title-hu": "Nyílhegypontos",
-        "type": "versatile",
-        "quantity": 3
-    },
-    {
-        "title-hu": "Ravasz Csel",
-        "type": "versatile",
-        "quantity": 3
-    },
-    {
-        "title-hu": "Színlelt Támadás",
-        "type": "versatile",
-        "quantity": 3
-    },
-    {
-        "title-hu": "Újrarendeződés",
-        "type": "versatile",
-        "quantity": 3
-    },
-    {
-        "title-hu": "Gazdagok Kifosztója, Szegények Segítője",
-        "type": "scheme",
-        "quantity": 3
-    }
+  {
+    "title-hu": "Rajtaütés",
+    "type": "attack",
+    "quantity": 2,
+    "boost": 3,
+    "characterName": "ANY",
+    "value": 2,
+    "title": "Ambush"
+  },
+  {
+    "title-hu": "A Vadász szeme",
+    "type": "attack",
+    "quantity": 3,
+    "boost": 4,
+    "characterName": "ROBIN",
+    "value": 5,
+    "title": "A Hunter's Eye"
+  },
+  {
+    "title-hu": "Lefegyverző Lövés",
+    "type": "attack",
+    "quantity": 2,
+    "boost": 3,
+    "characterName": "ROBIN",
+    "value": 4,
+    "title": "Disarming Shot"
+  },
+  {
+    "title-hu": "Átütő Lövés",
+    "type": "attack",
+    "quantity": 2,
+    "boost": 3,
+    "characterName": "ROBIN",
+    "value": 2,
+    "title": "Piercing Shot"
+  },
+  {
+    "title-hu": "Országúti Rablás",
+    "type": "attack",
+    "quantity": 4,
+    "boost": 2,
+    "characterName": "OUTLAW",
+    "value": 2,
+    "title": "Highway Robbery"
+  },
+  {
+    "title-hu": "Sherwood Védelmezői",
+    "type": "defense",
+    "quantity": 2,
+    "boost": 2,
+    "characterName": "ANY",
+    "value": 3,
+    "title": "Defenders of Sherwood"
+  },
+  {
+    "title-hu": "Nyílhegypontos",
+    "type": "versatile",
+    "quantity": 3,
+    "boost": 1,
+    "characterName": "ANY",
+    "value": 3,
+    "title": "Snark"
+  },
+  {
+    "title-hu": "Ravasz Csel",
+    "type": "versatile",
+    "quantity": 3,
+    "boost": 1,
+    "characterName": "ANY",
+    "value": 3,
+    "title": "Wily Fighting"
+  },
+  {
+    "title-hu": "Színlelt Támadás",
+    "type": "versatile",
+    "quantity": 3,
+    "boost": 2,
+    "characterName": "ANY",
+    "value": 2,
+    "title": "Feint"
+  },
+  {
+    "title-hu": "Újrarendeződés",
+    "type": "versatile",
+    "quantity": 3,
+    "boost": 2,
+    "characterName": "ANY",
+    "value": 1,
+    "title": "Regroup"
+  },
+  {
+    "title-hu": "Gazdagok Kifosztója, Szegények Segítője",
+    "type": "scheme",
+    "quantity": 3,
+    "boost": 3,
+    "characterName": "ROBIN",
+    "title": "Steal From the Rich"
+  }
 ]
