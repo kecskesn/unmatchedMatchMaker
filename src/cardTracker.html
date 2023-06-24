@@ -119,8 +119,7 @@
                   button.classList.add("btn-secondary");
               }
 
-              const cardName = card.title.replace(/ v\d+ b\d+$/, ""); // Remove version and boost information from the card name
-              button.innerText = cardName;
+              button.innerText = card['title-hu'] ? card['title-hu'] : card.title;
 
               cardRow.appendChild(button);
               deckButtons.appendChild(cardRow);
