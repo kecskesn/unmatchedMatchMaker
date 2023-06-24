@@ -3,6 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 const hero = 'alice';
+const filename = 'alice';
 const url = 'https://unmatched.cards/api/db/decks/' + hero;
 
 https.get(url, (response) => {
@@ -16,17 +17,18 @@ https.get(url, (response) => {
         const jsonData = JSON.parse(data);
         const cards = jsonData.cards;
 
-        // Filter and sort cards by type
         const sortedCards = cards.sort((a, b) => {
             const typeOrder = ['attack', 'defense', 'versatile', 'scheme'];
             return typeOrder.indexOf(a.type) - typeOrder.indexOf(b.type);
         });
 
-        // Extract title, type, and quantity fields
         const extractedCards = sortedCards.map(card => ({
             title: card.title,
             type: card.type,
-            quantity: card.quantity
+            quantity: card.quantity,
+            boost: card.boost,
+            value: card.value,
+            characterName: card.characterName
         }));
 
         const deckFilePath = path.join(
@@ -34,7 +36,7 @@ https.get(url, (response) => {
             "..",
             "config",
             "decks",
-            `${hero}.json`
+            `${filename}.json`
         );
 
         fs.writeFile(deckFilePath, JSON.stringify(extractedCards), err => {
