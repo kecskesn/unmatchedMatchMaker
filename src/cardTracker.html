@@ -143,7 +143,7 @@
 
               let buttonText = card['title-hu'] ? card['title-hu'] : card.title;
 
-              if (card.value) {
+              if (card.value || card.value == 0) {
                 buttonText += ` <span class="extra-info">${card.value}</span>`;
               }
               if (card.characterName) {
