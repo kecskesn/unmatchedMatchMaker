@@ -33,4 +33,7 @@ module.exports = [
     'Black Panther',
     'Winter Soldier',
     'Black Widow',
+    'Spider-Man',
+    'She-Hulk',
+    'Doctor Strange'
 ]
