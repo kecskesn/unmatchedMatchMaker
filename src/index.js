@@ -16,6 +16,14 @@ app.get("/cardTracker", function (req, res) {
 });
 
 app.get("/heroes", (req, res) => {
+  heroes.sort((a, b) => {
+    const nameA = a.toLowerCase();
+    const nameB = b.toLowerCase();
+    if (nameA < nameB) return -1;
+    if (nameA > nameB) return 1;
+    return 0;
+  });
+
   res.json(heroes);
 });
 
