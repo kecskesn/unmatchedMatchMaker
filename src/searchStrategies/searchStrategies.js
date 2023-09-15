@@ -1,9 +1,9 @@
 const fairSearchStrategy = require("./fairSearchStrategy");
 const normalSearchStrategy = require("./normalSearchStrategy");
-const unfairSearchStrategy = require("./unfairSearchStrategy");
+const excludeUnfairSearchStrategy = require("./excludeUnfairSearchStrategy");
 
 module.exports = {
     "normal": normalSearchStrategy,
     "fair": fairSearchStrategy,
-    "unfair": unfairSearchStrategy
+    "excludeUnfair": excludeUnfairSearchStrategy
 };

@@ -72,7 +72,8 @@ app.get("/matches", (req, res) => {
       const filteredRepeatOpponent = repeatOpponent.filter(
         (item) => item.plays >= numberOfPlays
       );
-      const result = searchStrategies[mode].handle(filteredRepeatOpponent);
+      let result = searchStrategies[mode].handle(filteredRepeatOpponent);
+      result = result.filter((item) => item.hero !== hero);
       res.send({ result });
     })
     .catch((error) => {

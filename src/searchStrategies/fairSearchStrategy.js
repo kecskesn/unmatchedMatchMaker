@@ -14,7 +14,7 @@ class FairSearchStrategy {
         // });
         
         // return filtered.sort(() => Math.random() - 0.5);
-        return items.sort((a, b) => b.winPercent - a.winPercent);
+        return filtered.sort((a, b) => b.winPercent - a.winPercent);
     }
 }
 
