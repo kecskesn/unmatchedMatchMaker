@@ -11,6 +11,10 @@ module.exports = [
     'Bloody Mary',
     'Sun Wukong',
     'Yennenga',
+    'Golden Bat',
+    'Dr. Jill Trent',
+    'Nikola Tesla',
+    'Annie Christmas',
     'Bigfoot',
     'Robin Hood',
     'Beowulf',
@@ -35,5 +39,7 @@ module.exports = [
     'Black Widow',
     'Spider-Man',
     'She-Hulk',
-    'Doctor Strange'
+    'Doctor Strange',
+    'Deadpool',
+    'Bruce Lee'
 ]

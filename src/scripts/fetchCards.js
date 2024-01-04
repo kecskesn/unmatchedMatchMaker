@@ -2,8 +2,8 @@ const https = require('https');
 const fs = require("fs");
 const path = require("path");
 
-const hero = 'dr-jill-trent';
-const filename = 'drJillTrent';
+const hero = 'bruce-lee';
+const filename = 'bruceLee';
 const url = 'https://unmatched.cards/api/db/decks/' + hero;
 
 https.get(url, (response) => {
