@@ -7,6 +7,10 @@ const searchStrategies = require("./searchStrategies/searchStrategies");
 
 const app = express();
 
+app.use(express.static(path.join(__dirname, '')));
+
+app.use('/assets', express.static(path.join(__dirname, 'assets')));
+
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/index.html");
 });

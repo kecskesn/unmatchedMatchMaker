@@ -41,5 +41,9 @@ module.exports = [
     'She-Hulk',
     'Doctor Strange',
     'Deadpool',
-    'Bruce Lee'
+    'Bruce Lee',
+    'Tomoe Gozen',
+    'Oda Nobunaga',
+    'Mothman',
+    'Martian Invader'
 ]
