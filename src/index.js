@@ -9,14 +9,20 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, '')));
 
-app.use('/assets', express.static(path.join(__dirname, 'assets')));
-
 app.get("/", function (req, res) {
-  res.sendFile(__dirname + "/index.html");
+  res.redirect("/heroStat");
+});
+
+app.get("/heroStat", function (req, res) {
+  res.sendFile(__dirname + "/heroStat.html");
 });
 
 app.get("/cardTracker", function (req, res) {
   res.sendFile(__dirname + "/cardTracker.html");
+});
+
+app.get("/matchLogger", function (req, res) {
+  res.sendFile(__dirname + "/matchLogger.html");
 });
 
 app.get("/heroes", (req, res) => {
