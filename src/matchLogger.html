@@ -11,12 +11,265 @@
 <body>
   <div class="container">
     <div class="d-flex justify-content-between align-items-center">
-      <a class="btn btn-secondary" href="/heroStat">Hero Stats</a>
-      <a class="btn btn-secondary" href="/cardTracker">Card Tracker</a>
-      <a class="btn btn-secondary active" href="/matchLogger">Match Logger</a>
-    </div>    
+      <a class="btn btn-secondary" id="heroStatBtn">Hero Stats</a>
+      <a class="btn btn-secondary" id="cardTrackerBtn">Card Tracker</a>
+      <a class="btn btn-secondary active" id="matchLoggerBtn">Match Logger</a>
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="form-group">
+        <label for="heroSelect1">Hero 1</label>
+        <select class="form-control" id="heroSelect1">
+          <option value="" disabled selected>Please select one...</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="heroSelect2">Hero 2</label>
+        <select class="form-control" id="heroSelect2">
+          <option value="" disabled selected>Please select one...</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column align-items-center">
+      <h2>Select Winner</h2>
+      <div class="d-flex justify-content-between align-items-center">
+        <button class="btn btn-secondary" id="hero1Btn" disabled>Select One...</button>
+        <span class="mx-2">vs</span>
+        <button class="btn btn-secondary" id="hero2Btn" disabled>Select One...</button>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column align-items-center mt-4">
+      <h2>Recent Matches</h2>
+      <div id="matchLogsContainer"></div>
+    </div>
   </div>
+
   <script>
+    heroStatBtn.addEventListener("click", function () {
+      const hero = heroSelect1.value;
+      baseUrl = 'heroStat';
+      if (hero) {
+        baseUrl += `?hero=${hero}`;
+      }
+      window.location.href = baseUrl;
+    });
+
+    cardTrackerBtn.addEventListener("click", function () {
+      const hero = heroSelect1.value;
+      baseUrl = 'cardTracker';
+      if (hero) {
+        baseUrl += `?hero=${hero}`;
+      }
+      window.location.href = baseUrl;
+    });
+
+    matchLoggerBtn.addEventListener("click", function () {
+      const hero = heroSelect1.value;
+      baseUrl = 'matchLogger';
+      if (hero) {
+        baseUrl += `?hero=${hero}`;
+      }
+      window.location.href = baseUrl;
+    });
+
+    const heroSelect1 = document.getElementById("heroSelect1");
+    const heroSelect2 = document.getElementById("heroSelect2");
+
+    function enableButtons() {
+      hero1Btn.disabled = !(heroSelect1.value && heroSelect2.value);
+      hero2Btn.disabled = !(heroSelect1.value && heroSelect2.value);
+    }
+
+    function updateButtonFromSelect(select, button) {
+      const selectedOption = select.options[select.selectedIndex];
+      button.textContent = selectedOption.text;
+      button.value = selectedOption.value;
+    }
+
+    heroSelect1.addEventListener("change", function () {
+      const hero = heroSelect1.options[heroSelect1.selectedIndex].value;
+      const newUrl = `/matchLogger?hero=${hero}`;
+      window.history.pushState({}, '', newUrl);
+
+      updateButtonFromSelect(heroSelect1, hero1Btn);
+      enableButtons();
+    });
+
+    heroSelect2.addEventListener("change", function () {
+      updateButtonFromSelect(heroSelect2, hero2Btn);
+      enableButtons();
+    });
+
+    function resetForm() {
+      window.location.href = "matchLogger";
+    }
+
+    hero1Btn.addEventListener("click", function () {
+      handleButtonClick(heroSelect1, heroSelect2, hero1Btn);
+    });
+
+    hero2Btn.addEventListener("click", function () {
+      handleButtonClick(heroSelect1, heroSelect2, hero2Btn);
+    });
+
+    function handleButtonClick(select1, select2, button) {
+      const hero1 = select1.options[select1.selectedIndex].text;
+      const hero2 = select2.options[select2.selectedIndex].text;
+      const winner = button.textContent;
+      fetch("/matchLogs", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ hero1, hero2, winner }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.success) {
+            resetForm();
+            fetchMatchLogs();
+          } else {
+            alert(data.error);
+          }
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    }
+
+    function fetchHeroes() {
+      fetch("/heroes")
+        .then((response) => response.json())
+        .then((heroes) => {
+          const select1 = document.getElementById("heroSelect1");
+          const select2 = document.getElementById("heroSelect2");
+          heroes.forEach((hero) => {
+            const encodedHero = encodeURIComponent(hero);
+            const option1 = document.createElement("option");
+            option1.value = encodedHero;
+            option1.text = hero;
+            select1.add(option1);
+
+            const option2 = document.createElement("option");
+            option2.value = encodedHero;
+            option2.text = hero;
+            select2.add(option2);
+          });
+
+          const urlParams = new URLSearchParams(window.location.search);
+          const selectedHero = urlParams.get('hero');
+          if (selectedHero) {
+            const encodedHero = encodeURIComponent(selectedHero);
+            heroSelect1.value = encodedHero;
+            updateButtonFromSelect(heroSelect1, hero1Btn);
+          }
+        });
+    }
+
+    function fetchMatchLogs() {
+      fetch("/matchLogs")
+        .then((response) => response.json())
+        .then((matchLogs) => {
+          if (matchLogs.success) {
+            const matches = matchLogs.matches;
+            const matchLogsContainer = document.getElementById("matchLogsContainer");
+            matchLogsContainer.innerHTML = "";
+
+            if (matches && matches.length > 0) {
+              const table = document.createElement("table");
+              table.classList.add("table", "table-borderless");
+
+              const thead = document.createElement("thead");
+              const tr = document.createElement("tr");
+
+              const headers = ["Hero 1", "Hero 2", "Winner", "Date", "Actions"];
+              headers.forEach((header) => {
+                const th = document.createElement("th");
+                th.textContent = header;
+                tr.appendChild(th);
+              });
+
+              thead.appendChild(tr);
+              table.appendChild(thead);
+
+              const tbody = document.createElement("tbody");
+              matches.forEach((log) => {
+                const tr = document.createElement("tr");
+
+                const tdHero1 = document.createElement("td");
+                tdHero1.textContent = log.hero1;
+                tdHero1.classList.add("align-middle");
+
+                const tdHero2 = document.createElement("td");
+                tdHero2.textContent = log.hero2;
+                tdHero2.classList.add("align-middle");
+
+                const tdWinner = document.createElement("td");
+                tdWinner.textContent = log.winner;
+                tdWinner.classList.add("align-middle");
+
+                const tdDate = document.createElement("td");
+                tdDate.textContent = log.timestamp;
+                tdDate.classList.add("align-middle");
+
+
+                const tdActions = document.createElement("td");
+                tdActions.classList.add("d-flex", "align-items-center");
+
+                const deleteButton = document.createElement("button");
+                deleteButton.textContent = "Delete";
+                deleteButton.classList.add("btn", "btn-danger");
+                deleteButton.addEventListener("click", () => handleDeleteLog(log.id));
+
+                tdActions.appendChild(deleteButton);
+                tr.appendChild(tdHero1);
+                tr.appendChild(tdHero2);
+                tr.appendChild(tdWinner);
+                tr.appendChild(tdDate);
+                tr.appendChild(tdActions);
+
+                tbody.appendChild(tr);
+              });
+
+              table.appendChild(tbody);
+              matchLogsContainer.appendChild(table);
+            } else {
+              matchLogsContainer.textContent = "No match logs available.";
+            }
+          } else {
+            console.error("Error fetching match logs:", matchLogs.error);
+          }
+        })
+        .catch((error) => {
+          console.error("Error fetching match logs:", error);
+        });
+    }
+
+    function handleDeleteLog(logId) {
+      const confirmation = confirm("Are you sure you want to delete this match log?");
+      if (!confirmation) {
+        return;
+      }
+
+      fetch(`/deleteMatchLog/${logId}`, {
+        method: "DELETE",
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          fetchMatchLogs();
+        })
+        .catch((error) => {
+          console.error("Error deleting match log:", error);
+        });
+    }
+
+    window.onload = function () {
+      fetchHeroes();
+      fetchMatchLogs();
+    };
   </script>
 </body>
 

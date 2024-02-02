@@ -77,3 +77,13 @@ a.btn.btn-secondary.active {
     border-radius: 4px;
     font-weight: 700;
 }
+
+.d-flex .form-group {
+    flex: 1;
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+/* Additional CSS to ensure that the last form-group has no margin */
+.d-flex .form-group:last-child {
+    margin-right: 0;
+}

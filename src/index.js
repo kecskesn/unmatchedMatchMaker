@@ -4,10 +4,13 @@ const path = require("path");
 const heroes = require("./config/heroes");
 const fs = require("fs");
 const searchStrategies = require("./searchStrategies/searchStrategies");
+const bodyParser = require('body-parser');
+const { db, logMatch, getRecentMatches, deleteMatchLogById } = require('./db/db')
 
 const app = express();
 
 app.use(express.static(path.join(__dirname, '')));
+app.use(bodyParser.json());
 
 app.get("/", function (req, res) {
   res.redirect("/heroStat");
@@ -99,6 +102,32 @@ app.get("/matches", (req, res) => {
       res.status(500).send({ error: "Failed to retrieve data from the API." });
     });
 });
+
+app.post('/matchLogs', (req, res) => {
+  const { hero1, hero2, winner } = req.body;
+
+  if (hero1 ===  hero2) {
+    res.send({ success: false, error: 'Heroes must be different.' });
+    return;
+  }
+
+  logMatch(hero1, hero2, winner, (response) => {
+    res.send(response);
+  });
+});
+
+app.get('/matchLogs', (req, res) => {
+  getRecentMatches((response) => {
+    res.send(response);
+  });
+});
+
+app.delete('/deleteMatchLog/:logId', (req, res) => {
+  const { logId } = req.params;
+  deleteMatchLogById(logId, (response) => {
+    res.send(response);
+  })
+})
 
 const port = process.env.PORT || 3000;
 

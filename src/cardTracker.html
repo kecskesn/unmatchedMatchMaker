@@ -16,7 +16,7 @@
       <a class="btn btn-secondary" id="matchLoggerBtn">Match Logger</a>
     </div>
     <div class="form-group">
-      <label for="heroSelect">Hero:</label>
+      <label for="heroSelect">Hero</label>
       <select class="form-control" id="heroSelect">
         <option value="" disabled selected>Please select one...</option>
       </select>
@@ -42,9 +42,18 @@
       window.location.href = baseUrl;
     });
 
+    matchLoggerBtn.addEventListener("click", function () {
+      const hero = heroSelect.value;
+      baseUrl = 'matchLogger';
+      if (hero) {
+        baseUrl += `?hero=${hero}`;
+      }
+      window.location.href = baseUrl;
+    });
+
     const heroSelect = document.getElementById("heroSelect");
     const deckButtonsContainer = document.querySelector(".deck-buttons");
-    const deckButtons = document.createElement("div"); // Create the deck buttons container element
+    const deckButtons = document.createElement("div");
 
     function fetchHeroes() {
       fetch("/heroes")
@@ -63,9 +72,8 @@
           if (selectedHero) {
             const encodedHero = encodeURIComponent(selectedHero);
             heroSelect.value = encodedHero;
+            fetchDeckConfig(heroSelect.value);
           }
-
-          fetchDeckConfig(heroSelect.value);
         });
     }
 
@@ -76,7 +84,7 @@
       fetch(`/deck?hero=${hero}`)
         .then((response) => response.json())
         .then((data) => {
-          deckButtons.innerHTML = ""; // Clear the deck buttons container
+          deckButtons.innerHTML = "";
 
           data.forEach((card) => {
             for (let i = 0; i < card.quantity; i++) {
@@ -122,7 +130,7 @@
             }
           });
 
-          deckButtons.addEventListener("click", handleDeckButtonClick); // Reattach the event listener
+          deckButtons.addEventListener("click", handleDeckButtonClick);
         });
     }
 
@@ -143,13 +151,13 @@
     heroSelect.addEventListener("change", function () {
       const selectedHero = heroSelect.value;
       if (selectedHero) {
-        deckButtons.removeEventListener("click", handleDeckButtonClick); // Remove the event listener
+        deckButtons.removeEventListener("click", handleDeckButtonClick);
         fetchDeckConfig(selectedHero);
       }
     });
 
     window.onload = function () {
-      deckButtonsContainer.appendChild(deckButtons); // Append the deck buttons container to the document
+      deckButtonsContainer.appendChild(deckButtons);
       fetchHeroes();
     };
   </script>
