@@ -71,19 +71,16 @@ a.btn.btn-secondary.active {
     display: inline-block;
     padding: 2px 5px;
     background-color: #999999;
-    /* Update with your desired background color (e.g., grey) */
     color: #ffffff;
-    /* Update with your desired text color */
     border-radius: 4px;
     font-weight: 700;
 }
 
 .d-flex .form-group {
     flex: 1;
-    margin-right: 10px; /* Adjust the margin as needed */
+    margin-right: 10px;
 }
 
-/* Additional CSS to ensure that the last form-group has no margin */
 .d-flex .form-group:last-child {
     margin-right: 0;
 }

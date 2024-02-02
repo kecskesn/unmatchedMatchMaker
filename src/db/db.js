@@ -24,7 +24,7 @@ function logMatch(hero1, hero2, winner, callback) {
 }
 
 function getRecentMatches(callback) {
-  const query = 'SELECT * FROM matches WHERE timestamp >= date(\'now\', \'-15 days\') ORDER BY timestamp DESC';
+  const query = 'SELECT id, hero1, hero2, winner, DATE(timestamp) as date FROM matches WHERE timestamp >= date(\'now\', \'-15 days\') ORDER BY timestamp DESC';
   db.all(query, [], (err, matches) => {
     if (err) {
       return callback({ success: false, error: 'Failed to fetch match logs.' });

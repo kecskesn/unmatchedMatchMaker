@@ -42,8 +42,8 @@
     </div>
 
     <div class="d-flex flex-column align-items-center mt-4">
-      <h2>Recent Matches</h2>
-      <div id="matchLogsContainer"></div>
+      <h2 class="mb-3">Recent Matches</h2>
+      <div id="matchLogsContainer" class="container-margin mx-3"></div>
     </div>
   </div>
 
@@ -185,7 +185,7 @@
               const thead = document.createElement("thead");
               const tr = document.createElement("tr");
 
-              const headers = ["Hero 1", "Hero 2", "Winner", "Date", "Actions"];
+              const headers = ["Hero1", "Hero2", "Winner", "Date", "Actions"];
               headers.forEach((header) => {
                 const th = document.createElement("th");
                 th.textContent = header;
@@ -198,6 +198,7 @@
               table.appendChild(thead);
 
               const tbody = document.createElement("tbody");
+
               matches.forEach((log) => {
                 const tr = document.createElement("tr");
 
@@ -214,19 +215,17 @@
                 tdWinner.classList.add("align-middle");
 
                 const tdDate = document.createElement("td");
-                tdDate.textContent = log.timestamp;
+                tdDate.textContent = log.date;
                 tdDate.classList.add("align-middle");
 
-
                 const tdActions = document.createElement("td");
-                tdActions.classList.add("d-flex", "align-items-center");
-
                 const deleteButton = document.createElement("button");
                 deleteButton.textContent = "Delete";
                 deleteButton.classList.add("btn", "btn-danger");
                 deleteButton.addEventListener("click", () => handleDeleteLog(log.id));
-
                 tdActions.appendChild(deleteButton);
+                tdActions.classList.add("align-middle");
+
                 tr.appendChild(tdHero1);
                 tr.appendChild(tdHero2);
                 tr.appendChild(tdWinner);
