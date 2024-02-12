@@ -185,7 +185,7 @@
               const thead = document.createElement("thead");
               const tr = document.createElement("tr");
 
-              const headers = ["Hero1", "Hero2", "Winner", "Date", "Actions"];
+              const headers = ["Hero1", "Hero2", "Winner", "Date", ""];
               headers.forEach((header) => {
                 const th = document.createElement("th");
                 th.textContent = header;
@@ -220,7 +220,7 @@
 
                 const tdActions = document.createElement("td");
                 const deleteButton = document.createElement("button");
-                deleteButton.textContent = "Delete";
+                deleteButton.textContent = "X";
                 deleteButton.classList.add("btn", "btn-danger");
                 deleteButton.addEventListener("click", () => handleDeleteLog(log.id));
                 tdActions.appendChild(deleteButton);
