@@ -1,4 +1,4 @@
-const { fairnessTreshold } = require("../config/config");
+const { fairnessTreshold } = require("../../../config/config");
 
 class FairSearchStrategy {
     handle(items) {
