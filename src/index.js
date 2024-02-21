@@ -132,10 +132,6 @@ function getHeroMatchesAsync(hero) {
 function mergeData(umleagueData, localData) {
   const mergedData = umleagueData.map((umleagueItem) => {
     const localItem = localData.find((localItem) => localItem.hero === umleagueItem.hero);
-    if (umleagueItem.hero === "Daredevil") {
-      console.log("localItem", localItem);
-      console.log("umleagueItem", umleagueItem);
-    }
     if (localItem) {
       return {
         hero: umleagueItem.hero,
