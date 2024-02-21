@@ -5,7 +5,7 @@ const heroes = require("./config/heroes");
 const fs = require("fs");
 const searchStrategies = require("./searchStrategies/searchStrategies");
 const bodyParser = require('body-parser');
-const { db, logMatch, getRecentMatches, deleteMatchLogById } = require('./db/db')
+const { db, logMatch, getRecentMatches, deleteMatchLogById, getHeroMatches } = require('./db/db')
 
 const app = express();
 
@@ -71,42 +71,96 @@ app.get("/deck", (req, res) => {
   });
 });
 
-app.get("/matches", (req, res) => {
+app.get("/matches", async (req, res) => {
   const hero = req.query.hero;
   const encodedHero = encodeURIComponent(hero);
   const numberOfPlays = req.query.numberOfPlays;
   const mode = req.query.mode;
+  const source = req.query.source;
 
-  axios
-    .get(
-      `https://www.umleague.net/api/analytics/getHeroResultsByMap?hero=${encodedHero}&campaignid=10000&organizerid=0`
-    )
-    .then((apiRes) => {
-      const repeatOpponent = apiRes.data.repeatOpponent.map((item) => {
-        return {
-          hero: item.hero,
-          plays: item.queryOpponentOverall[0].plays,
-          winPercent: parseFloat(item.queryOpponentOverall[0].winpercent),
-        };
-      });
+  let umleagueData = [];
+  let localData = [];
 
-      const filteredRepeatOpponent = repeatOpponent.filter(
-        (item) => item.plays >= numberOfPlays
-      );
-      let result = searchStrategies[mode].handle(filteredRepeatOpponent);
-      result = result.filter((item) => item.hero !== hero);
-      res.send({ result });
-    })
-    .catch((error) => {
-      console.error(error);
-      res.status(500).send({ error: "Failed to retrieve data from the API." });
-    });
+  try {
+    if (source === 'umleague' || source === 'both') {
+      const apiRes = await axios.get(`https://www.umleague.net/api/analytics/getHeroResultsByMap?hero=${encodedHero}&campaignid=10000&organizerid=0`);
+      
+      umleagueData = apiRes.data.repeatOpponent.map((item) => ({
+        hero: item.hero,
+        plays: Number(item.queryOpponentOverall[0].plays),
+        wins: Number(item.queryOpponentOverall[0].wins),
+        losses: Number(item.queryOpponentOverall[0].losses),
+      }));
+    }
+
+    if (source === 'local' || source === 'both') {
+      const localResult = await getHeroMatchesAsync(hero);
+      localData = localResult.success ? localResult.matches : [];
+    }
+  } catch (error) {
+    console.error(error);
+    throw new Error("Failed to retrieve data.");
+  }
+
+  let mergedData = [];
+
+  if (source === 'both') {
+    mergedData = mergeData(umleagueData, localData);
+  } else {
+    mergedData = source === 'umleague' ? umleagueData : localData;
+  }
+
+  mergedData.forEach((item) => {
+    item.winPercent = item.plays > 0 ? Math.round(item.wins / item.plays * 100) : 0;
+  })
+
+  const filteredData = mergedData.filter((item) => item.plays >= numberOfPlays);
+  let result = searchStrategies[mode].handle(filteredData);
+  result = result.filter((item) => item.hero !== hero);
+
+  res.send({ result });
 });
+
+function getHeroMatchesAsync(hero) {
+  return new Promise((resolve) => {
+    getHeroMatches(hero, (result) => {
+      resolve(result);
+    });
+  });
+}
+
+function mergeData(umleagueData, localData) {
+  const mergedData = umleagueData.map((umleagueItem) => {
+    const localItem = localData.find((localItem) => localItem.hero === umleagueItem.hero);
+    if (umleagueItem.hero === "Daredevil") {
+      console.log("localItem", localItem);
+      console.log("umleagueItem", umleagueItem);
+    }
+    if (localItem) {
+      return {
+        hero: umleagueItem.hero,
+        plays: umleagueItem.plays + localItem.plays,
+        wins: umleagueItem.wins + localItem.wins,
+        losses: umleagueItem.losses + localItem.losses,
+      };
+    } else {
+      return umleagueItem;
+    }
+  });
+
+  localData.forEach((localItem) => {
+    if (!umleagueData.find((umleagueItem) => umleagueItem.hero === localItem.hero)) {
+      mergedData.push(localItem);
+    }
+  });
+
+  return mergedData;
+}
 
 app.post('/matchLogs', (req, res) => {
   const { hero1, hero2, winner } = req.body;
 
-  if (hero1 ===  hero2) {
+  if (hero1 === hero2) {
     res.send({ success: false, error: 'Heroes must be different.' });
     return;
   }

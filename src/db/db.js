@@ -1,3 +1,5 @@
+const { forEach } = require('../config/heroes');
+
 const sqlite3 = require('sqlite3').verbose();
 
 const db = new sqlite3.Database('matches.db');
@@ -44,6 +46,31 @@ function deleteMatchLogById(id, callback) {
   });
 }
 
+function getHeroMatches(hero, callback) {
+  const query = 'SELECT hero1, hero2, winner FROM matches WHERE hero1 = ? OR hero2 = ?';
+  db.all(query, [hero, hero], (err, matches) => {
+    if (err) {
+      return callback({ success: false, error: 'Failed to fetch match logs.' });
+    } else {
+      const heroStats = {};
+
+      matches.forEach(match => {
+        const enemyHero = match.hero1 === hero ? match.hero2 : match.hero1;
+        const isWinner = match.winner === hero;
+
+        if (!heroStats[enemyHero]) {
+          heroStats[enemyHero] = { hero: enemyHero, plays: 0, wins: 0, losses: 0 };
+        }
+        heroStats[enemyHero].plays++;
+        isWinner ? heroStats[enemyHero].wins++ : heroStats[enemyHero].losses++;
+      });
+
+      const finalResults = Object.values(heroStats);
+      callback({ success: true, matches: finalResults });
+    }
+  })
+}
+
 // Close the database connection when your application is shutting down
 process.on('SIGINT', () => {
   db.close((err) => {
@@ -59,5 +86,6 @@ module.exports = {
   db,
   logMatch,
   getRecentMatches,
-  deleteMatchLogById
+  deleteMatchLogById,
+  getHeroMatches
 };

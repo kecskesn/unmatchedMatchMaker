@@ -33,11 +33,19 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="modeSelect">Select</label>
+            <label for="modeSelect">Mode</label>
             <select class="form-control" id="modeSelect">
                 <option value="normal">Normal search</option>
                 <option value="fair">Fair matchups</option>
                 <option value="excludeUnfair" selected>Exclude unfair matchups</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="sourceSelect">Source</label>
+            <select class="form-control" id="sourceSelect">
+                <option value="umleague" selected>UMLeague</option>
+                <option value="local">Local</option>
+                <option value="both">UMLeague + local</option>
             </select>
         </div>
         <table class="table table-bordered table-hover">
@@ -83,10 +91,13 @@
         const heroSelect = document.getElementById("heroSelect");
         const numberOfPlaysSelect = document.getElementById("numberOfPlaysSelect");
         const modeSelect = document.getElementById("modeSelect");
+        const sourceSelect = document.getElementById("sourceSelect");
         const resultsTable = document.getElementById("results");
 
         heroSelect.addEventListener("change", fetchMatches);
         numberOfPlaysSelect.addEventListener("change", fetchMatches);
+        modeSelect.addEventListener("change", fetchMatches);
+        sourceSelect.addEventListener("change", fetchMatches);
 
         modeSelect.addEventListener("change", function () {
             const selectedMode = modeSelect.value;
@@ -128,6 +139,7 @@
             const hero = heroSelect.value;
             const numberOfPlays = numberOfPlaysSelect.value;
             const mode = modeSelect.value;
+            const source = sourceSelect.value;
 
             if (!hero) {
                 return;
@@ -136,7 +148,7 @@
             const newUrl = `/heroStat?hero=${hero}`;
             window.history.pushState({}, '', newUrl);
 
-            fetch(`/matches?hero=${hero}&numberOfPlays=${numberOfPlays}&mode=${mode}`)
+            fetch(`/matches?hero=${hero}&numberOfPlays=${numberOfPlays}&mode=${mode}&source=${source}`)
                 .then(response => response.json())
                 .then(data => {
                     resultsTable.innerHTML = "";
