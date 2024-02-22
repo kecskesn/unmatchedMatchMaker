@@ -168,7 +168,7 @@
         } else {
           targetButton.style.opacity = 1;
           const handButton = targetButton.nextSibling;
-          deckContainer.appendChild(targetButton.parentElement);
+          deckContainer.prepend(targetButton.parentElement);
           targetButton.addEventListener("click", handleDeckButtonClick);
           handButton.addEventListener("click", handleHandButtonClick);
         }
@@ -188,7 +188,7 @@
       const deckCardButton = targetButton.previousSibling;
       deckCardButton.style.opacity = 1;
 
-      handContainer.appendChild(deckCardButton.parentElement);
+      handContainer.prepend(deckCardButton.parentElement);
 
       deckCardButton.addEventListener("click", handleDeckButtonClick);
       targetButton.addEventListener("click", handleHandButtonClick);
@@ -205,7 +205,6 @@
 
     window.onload = function () {
       deckContainer.appendChild(deckButtons);
-      discardContainer.appendChild(deckButtons);
       fetchHeroes();
     };
   </script>
