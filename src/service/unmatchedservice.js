@@ -78,9 +78,13 @@ async function getHeroStats(hero, numberOfPlays, mode, source) {
     } else {
       mergedData = source === 'umleague' ? umleagueData : localData;
     }
-  
+
     mergedData.forEach((item) => {
       item.winPercent = item.plays > 0 ? Math.round(item.wins / item.plays * 100) : 0;
+
+      if (item.combinedPlays && item.combinedWins && item.combinedLosses) {
+        item.combinedWinPercent = item.combinedPlays > 0 ? Math.round(item.combinedWins / item.combinedPlays * 100) : 0;
+      }
     })
   
     const filteredData = mergedData.filter((item) => item.plays >= numberOfPlays);

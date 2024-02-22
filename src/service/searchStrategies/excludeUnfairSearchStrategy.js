@@ -29,6 +29,7 @@ class ExcludeUnfairSearchStrategy {
         fairMatchups = fairMatchups.map((item) => ({
             ...item,
             winPercent: 'hidden',
+            ...(item.combinedWinPercent ? { combinedWinPercent: 'hidden' } : null),
         }));
 
         const finalResult = [...fairMatchups, ...heroesNotInBoth];

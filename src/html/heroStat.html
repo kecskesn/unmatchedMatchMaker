@@ -43,9 +43,9 @@
         <div class="form-group">
             <label for="sourceSelect">Source</label>
             <select class="form-control" id="sourceSelect">
-                <option value="umleague" selected>UMLeague</option>
+                <option value="umleague">UMLeague</option>
                 <option value="local">Local</option>
-                <option value="both">UMLeague + local</option>
+                <option value="both" selected>UMLeague + local (combined stats in brackets)</option>
             </select>
         </div>
         <table class="table table-bordered table-hover">
@@ -167,11 +167,17 @@
                         row.appendChild(heroCell);
 
                         const playsCell = document.createElement("td");
-                        playsCell.innerHTML = item.plays;
+                        playsCell.innerHTML = item.plays + (item.combinedPlays ? " (" + item.combinedPlays + ")" : "");
                         row.appendChild(playsCell);
 
                         const winPercentCell = document.createElement("td");
-                        winPercentCell.innerHTML = item.winPercent === "hidden" ? item.winPercent : item.winPercent + "%";
+                        winPercentInnerHtml = "";
+                        if (item.winPercent === "hidden") {
+                            winPercentInnerHtml = item.winPercent;
+                        } else {
+                            winPercentInnerHtml = item.winPercent + "%" + (item.combinedWinPercent ? " (" + item.combinedWinPercent + "%)" : "");
+                        }
+                        winPercentCell.innerHTML = winPercentInnerHtml;
                         row.appendChild(winPercentCell);
 
                         resultsTable.appendChild(row);

@@ -4,9 +4,12 @@ function mergeStats(umleagueData, localData) {
         if (localItem) {
             return {
                 hero: umleagueItem.hero,
-                plays: umleagueItem.plays + localItem.plays,
-                wins: umleagueItem.wins + localItem.wins,
-                losses: umleagueItem.losses + localItem.losses,
+                plays: umleagueItem.plays,
+                wins: umleagueItem.wins,
+                losses: umleagueItem.losses,
+                combinedPlays: umleagueItem.plays + localItem.plays,
+                combinedWins: umleagueItem.wins + localItem.wins,
+                combinedLosses: umleagueItem.losses + localItem.losses,
             };
         } else {
             return umleagueItem;
