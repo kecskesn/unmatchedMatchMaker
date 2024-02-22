@@ -36,14 +36,23 @@ a.btn.btn-secondary.active {
 .deck-card-row {
     margin-bottom: 10px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
-.deck-card-button {
-    width: 45%;
+.deck-card-button,
+.hand-card-button {
+    flex: 1;
     margin: 3px;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.hand-card-button {
+    flex: 0 0 auto;
+    width: 50px;
 }
 
 .deck-card-button.disabled {

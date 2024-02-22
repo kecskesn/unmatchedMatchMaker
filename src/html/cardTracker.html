@@ -21,7 +21,11 @@
         <option value="" disabled selected>Please select one...</option>
       </select>
     </div>
-    <div class="deck-buttons"></div>
+    <div class="card-container">
+      <div class="hand"></div>
+      <div class="deck"></div>
+      <div class="discard"></div>
+    </div>
   </div>
   <script>
     heroStatBtn.addEventListener("click", function () {
@@ -52,7 +56,9 @@
     });
 
     const heroSelect = document.getElementById("heroSelect");
-    const deckButtonsContainer = document.querySelector(".deck-buttons");
+    const handContainer = document.querySelector(".hand");
+    const deckContainer = document.querySelector(".deck");
+    const discardContainer = document.querySelector(".discard");
     const deckButtons = document.createElement("div");
 
     function fetchHeroes() {
@@ -80,7 +86,7 @@
     function fetchDeckConfig(hero) {
       const newUrl = `/cardTracker?hero=${hero}`;
       window.history.pushState({}, '', newUrl);
-  
+
       fetch(`/deck?hero=${hero}`)
         .then((response) => response.json())
         .then((data) => {
@@ -93,22 +99,32 @@
 
               const button = document.createElement("button");
               button.classList.add("deck-card-button");
+              const handButton = document.createElement("button");
+              handButton.classList.add("hand-card-button");
+              handButton.style.opacity = "0.3";
+              handButton.innerHTML = "✋";
+              handButton.addEventListener("click", handleHandButtonClick);
 
               switch (card.type) {
                 case "attack":
                   button.classList.add("btn-red");
+                  handButton.classList.add("btn-red");
                   break;
                 case "defense":
                   button.classList.add("btn-blue");
+                  handButton.classList.add("btn-blue");
                   break;
                 case "scheme":
                   button.classList.add("btn-yellow");
+                  handButton.classList.add("btn-yellow");
                   break;
                 case "versatile":
                   button.classList.add("btn-purple");
+                  handButton.classList.add("btn-purple");
                   break;
                 default:
                   button.classList.add("btn-secondary");
+                  handButton.classList.add("btn-secondary");
               }
 
               let buttonText = card['title-hu'] ? card['title-hu'] : card.title;
@@ -126,6 +142,8 @@
               button.innerHTML = buttonText;
 
               cardRow.appendChild(button);
+              cardRow.appendChild(handButton);
+
               deckButtons.appendChild(cardRow);
             }
           });
@@ -136,28 +154,58 @@
 
     function handleDeckButtonClick(event) {
       const targetButton = event.target;
+
       if (targetButton.classList.contains("deck-card-button")) {
         const isGrayedOut = targetButton.style.opacity === "0.3";
+
         if (!isGrayedOut) {
           targetButton.style.opacity = 0.3;
-          deckButtons.appendChild(targetButton.parentElement);
+          const handButton = targetButton.nextSibling;
+          handButton.style.opacity = 0.3;
+          discardContainer.appendChild(targetButton.parentElement);
+          targetButton.addEventListener("click", handleDeckButtonClick);
+          handButton.addEventListener("click", handleHandButtonClick);
         } else {
           targetButton.style.opacity = 1;
-          deckButtons.prepend(targetButton.parentElement);
+          const handButton = targetButton.nextSibling;
+          deckContainer.appendChild(targetButton.parentElement);
+          targetButton.addEventListener("click", handleDeckButtonClick);
+          handButton.addEventListener("click", handleHandButtonClick);
         }
       }
+    }
+
+    function handleHandButtonClick(event) {
+      const targetButton = event.target;
+
+      const isGrayedOut = targetButton.style.opacity === "0.3";
+
+      if (!isGrayedOut) {
+        return;
+      }
+
+      targetButton.style.opacity = 1;
+      const deckCardButton = targetButton.previousSibling;
+      deckCardButton.style.opacity = 1;
+
+      handContainer.appendChild(deckCardButton.parentElement);
+
+      deckCardButton.addEventListener("click", handleDeckButtonClick);
+      targetButton.addEventListener("click", handleHandButtonClick);
     }
 
     heroSelect.addEventListener("change", function () {
       const selectedHero = heroSelect.value;
       if (selectedHero) {
-        deckButtons.removeEventListener("click", handleDeckButtonClick);
+        deckContainer.removeEventListener("click", handleDeckButtonClick);
+        discardContainer.removeEventListener("click", handleDeckButtonClick);
         fetchDeckConfig(selectedHero);
       }
     });
 
     window.onload = function () {
-      deckButtonsContainer.appendChild(deckButtons);
+      deckContainer.appendChild(deckButtons);
+      discardContainer.appendChild(deckButtons);
       fetchHeroes();
     };
   </script>
