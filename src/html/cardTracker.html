@@ -176,22 +176,29 @@
     }
 
     function handleHandButtonClick(event) {
-      const targetButton = event.target;
+      const target = event.target;
 
-      const isGrayedOut = targetButton.style.opacity === "0.3";
+      const cardRow = target.closest('.deck-card-row');
+      const deckCardButton = cardRow.querySelector(".deck-card-button");
+      const handCardButton = cardRow.querySelector(".hand-card-button");
+
+      if (!deckCardButton || !handCardButton) {
+        return;
+      }
+
+      const isGrayedOut = handCardButton.style.opacity === "0.3";
 
       if (!isGrayedOut) {
         return;
       }
 
-      targetButton.style.opacity = 1;
-      const deckCardButton = targetButton.previousSibling;
+      handCardButton.style.opacity = 1;
       deckCardButton.style.opacity = 1;
 
-      handContainer.prepend(deckCardButton.parentElement);
+      handContainer.prepend(cardRow);
 
       deckCardButton.addEventListener("click", handleDeckButtonClick);
-      targetButton.addEventListener("click", handleHandButtonClick);
+      handCardButton.addEventListener("click", handleHandButtonClick);
     }
 
     heroSelect.addEventListener("change", function () {
