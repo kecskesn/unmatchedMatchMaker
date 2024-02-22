@@ -102,7 +102,7 @@
               const handButton = document.createElement("button");
               handButton.classList.add("hand-card-button");
               handButton.style.opacity = "0.3";
-              handButton.innerHTML = "✋";
+              handButton.innerHTML = `<img src='/config/assets/card_in_hand.png' style='width: 100%; height: auto;'>`;
               handButton.addEventListener("click", handleHandButtonClick);
 
               switch (card.type) {
