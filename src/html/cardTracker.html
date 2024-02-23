@@ -21,6 +21,16 @@
         <option value="" disabled selected>Please select one...</option>
       </select>
     </div>
+    <div class="d-flex justify-content-center align-items-center mt-4 mb-4">
+      <div class="mx-3">
+        <span class="font-weight-bold">Remaining</span>
+        <span id="remainingCardCount" class="ml-2 badge badge-primary badge-lg">0</span>
+      </div>
+      <div class="mx-3">
+        <span class="font-weight-bold">Discarded</span>
+        <span id="discardedCardCount" class="ml-2 badge badge-danger badge-lg">0</span>
+      </div>
+    </div>
     <div class="card-container">
       <div class="hand"></div>
       <div class="deck"></div>
@@ -61,6 +71,9 @@
     const discardContainer = document.querySelector(".discard");
     const deckButtons = document.createElement("div");
 
+    let totalCardCount = 0;
+    let discardedCardCount = 0;
+
     function fetchHeroes() {
       fetch("/heroes")
         .then((response) => response.json())
@@ -94,6 +107,8 @@
 
           data.forEach((card) => {
             for (let i = 0; i < card.quantity; i++) {
+              totalCardCount++;
+
               const cardRow = document.createElement("div");
               cardRow.classList.add("deck-card-row");
 
@@ -149,6 +164,7 @@
           });
 
           deckButtons.addEventListener("click", handleDeckButtonClick);
+          updateCardCounters();
         });
     }
 
@@ -165,12 +181,14 @@
           discardContainer.appendChild(targetButton.parentElement);
           targetButton.addEventListener("click", handleDeckButtonClick);
           handButton.addEventListener("click", handleHandButtonClick);
+          updateCardCounters();
         } else {
           targetButton.style.opacity = 1;
           const handButton = targetButton.nextSibling;
           deckContainer.prepend(targetButton.parentElement);
           targetButton.addEventListener("click", handleDeckButtonClick);
           handButton.addEventListener("click", handleHandButtonClick);
+          updateCardCounters();
         }
       }
     }
@@ -199,6 +217,15 @@
 
       deckCardButton.addEventListener("click", handleDeckButtonClick);
       handCardButton.addEventListener("click", handleHandButtonClick);
+      updateCardCounters();
+    }
+
+    function updateCardCounters() {
+      const discardedCardRows = document.querySelectorAll(".discard .deck-card-row");
+      discardedCardCount = discardedCardRows.length;
+
+      document.getElementById("remainingCardCount").innerText = totalCardCount - discardedCardCount;
+      document.getElementById("discardedCardCount").innerText = discardedCardCount;
     }
 
     heroSelect.addEventListener("change", function () {
