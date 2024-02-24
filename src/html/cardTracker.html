@@ -100,11 +100,20 @@
       const newUrl = `/cardTracker?hero=${hero}`;
       window.history.pushState({}, '', newUrl);
 
+      totalCardCount = 0;
+      discardedCardCount = 0;
+      const handContainer = document.querySelector(".hand");
+      const deckContainer = document.querySelector(".deck");
+      const discardContainer = document.querySelector(".discard");
+
+      handContainer.innerHTML = "";
+      deckContainer.innerHTML = "";
+      discardContainer.innerHTML = "";
+      deckButtons.innerHTML = "";
+
       fetch(`/deck?hero=${hero}`)
         .then((response) => response.json())
         .then((data) => {
-          deckButtons.innerHTML = "";
-
           data.forEach((card) => {
             for (let i = 0; i < card.quantity; i++) {
               totalCardCount++;
@@ -163,8 +172,13 @@
             }
           });
 
+          deckContainer.appendChild(deckButtons);
+
           deckButtons.addEventListener("click", handleDeckButtonClick);
           updateCardCounters();
+        })
+        .catch((error) => {
+          console.error("Error fetching deck data:", error);
         });
     }
 

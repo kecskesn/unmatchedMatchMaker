@@ -60,6 +60,11 @@
             </tbody>
         </table>
     </div>
+    <div id="loadingOverlay" class="loading-overlay hidden">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
     <script>
         heroStatBtn.addEventListener("click", function () {
             const hero = heroSelect.value;
@@ -148,6 +153,8 @@
             const newUrl = `/heroStat?hero=${hero}`;
             window.history.pushState({}, '', newUrl);
 
+            document.getElementById("loadingOverlay").classList.remove("hidden");
+
             fetch(`/matches?hero=${hero}&numberOfPlays=${numberOfPlays}&mode=${mode}&source=${source}`)
                 .then(response => response.json())
                 .then(data => {
@@ -182,7 +189,13 @@
 
                         resultsTable.appendChild(row);
                     });
+
+                    document.getElementById("loadingOverlay").classList.add("hidden");
                 })
+                .catch(error => {
+                    console.error("Error fetching matches:", error);
+                    document.getElementById("loadingOverlay").classList.add("hidden");
+                });
         }
 
         window.onload = function () {
