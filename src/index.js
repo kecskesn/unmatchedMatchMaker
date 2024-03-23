@@ -46,7 +46,6 @@ app.get("/matches", async (req, res) => {
 });
 
 app.get('/matchLogs', async (req, res) => {
-  console.log(req.query);
   const { date = '2w', hero = '' } = req.query;
   const matchLogsResult = await getMatchLogs(date, hero);
   res.send(matchLogsResult);
