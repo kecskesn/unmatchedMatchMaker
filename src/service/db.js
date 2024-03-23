@@ -27,10 +27,31 @@ async function saveMatchToDB(hero1, hero2, winner) {
   }
 }
 
-async function getRecentMatchesFromDB() {
-  const query = 'SELECT id, hero1, hero2, winner, DATE(timestamp) as date FROM matches WHERE timestamp >= date(\'now\', \'-15 days\') ORDER BY timestamp DESC';
+async function getMatchLogsFromDB(dateFilter, heroFilter) {
+  let query = 'SELECT id, hero1, hero2, winner, DATE(timestamp) as date FROM matches';
+  let params = [];
+
+  if (dateFilter === '2w') {
+    query += ' WHERE timestamp >= date(\'now\', \'-15 days\')';
+  } else if (dateFilter === '1m') {
+    query += ' WHERE timestamp >= date(\'now\', \'-1 month\')';
+  } else if (dateFilter === '3m') {
+    query += ' WHERE timestamp >= date(\'now\', \'-3 months\')';
+  }
+
+  if (heroFilter) {
+    if (dateFilter === '2w' || dateFilter === '1m' || dateFilter === '3m') {
+      query += ' AND (hero1 = ? OR hero2 = ?)';
+    } else {
+      query += ' WHERE (hero1 = ? OR hero2 = ?)';
+    }
+    params.push(heroFilter, heroFilter);
+  }
+
+  query += ' ORDER BY timestamp DESC';
+
   try {
-    const matches = await allAsync(query, []);
+    const matches = await allAsync(query, params);
     return { success: true, matches };
   } catch (err) {
     console.error(err);
@@ -87,7 +108,7 @@ process.on('SIGINT', () => {
 
 module.exports = {
   saveMatchToDB,
-  getRecentMatchesFromDB,
+  getMatchLogsFromDB,
   deleteMatchLogByIdFromDB,
   getMatchesByHero
 };

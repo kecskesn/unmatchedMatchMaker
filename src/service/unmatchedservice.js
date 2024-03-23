@@ -3,7 +3,7 @@ const path = require("path");
 const fs = require("fs");
 const axios = require("axios");
 const searchStrategies = require("./searchStrategies/searchStrategies");
-const { saveMatchToDB, getRecentMatchesFromDB, deleteMatchLogByIdFromDB, getMatchesByHero } = require('./db')
+const { saveMatchToDB, getMatchLogsFromDB, deleteMatchLogByIdFromDB, getMatchesByHero } = require('./db')
 
 const util = require('util');
 const { mergeStats } = require("../util/helper");
@@ -93,8 +93,8 @@ async function getHeroStats(hero, numberOfPlays, mode, source) {
     return result;
 }
 
-function getRecentMatches() {
-    return getRecentMatchesFromDB();
+function getMatchLogs(heroFilter, dateFilter) {
+    return getMatchLogsFromDB(heroFilter, dateFilter);
 }
 
 function logMatch(hero1, hero2, winner) {
@@ -109,7 +109,7 @@ module.exports = {
     getHeroes,
     getHeroDeck,
     getHeroStats,
-    getRecentMatches,
+    getMatchLogs,
     logMatch,
     deleteMatchLogById
 }

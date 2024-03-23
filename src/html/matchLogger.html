@@ -42,7 +42,22 @@
     </div>
 
     <div class="d-flex flex-column align-items-center mt-4">
-      <h2 class="mb-3">Recent Matches</h2>
+      <h2 class="mb-3">Match Logs</h2>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="form-group">
+          <select class="form-control" id="dateFilter">
+            <option value="2w" selected>Last 2 Weeks</option>
+            <option value="1m">Last Month</option>
+            <option value="3m">Last 3 Months</option>
+            <option value="all">All Time</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select class="form-control" id="heroFilter">
+            <option value="" selected>All Heroes</option>
+          </select>
+        </div>
+      </div>
       <div id="matchLogsContainer" class="container-margin mx-3"></div>
     </div>
   </div>
@@ -146,6 +161,7 @@
         .then((heroes) => {
           const select1 = document.getElementById("heroSelect1");
           const select2 = document.getElementById("heroSelect2");
+          const select3 = document.getElementById("heroFilter");
           heroes.forEach((hero) => {
             const encodedHero = encodeURIComponent(hero);
             const option1 = document.createElement("option");
@@ -157,6 +173,11 @@
             option2.value = encodedHero;
             option2.text = hero;
             select2.add(option2);
+
+            const option3 = document.createElement("option");
+            option3.value = encodedHero;
+            option3.text = hero;
+            select3.add(option3);
           });
 
           const urlParams = new URLSearchParams(window.location.search);
@@ -169,8 +190,17 @@
         });
     }
 
+    const dateFilterSelect = document.getElementById("dateFilter");
+    const heroFilterSelect = document.getElementById("heroFilter");
+
+    dateFilterSelect.addEventListener("change", fetchMatchLogs);
+    heroFilterSelect.addEventListener("change", fetchMatchLogs);
+
     function fetchMatchLogs() {
-      fetch("/matchLogs")
+      const dateFilter = dateFilterSelect.value;
+      const heroFilter = heroFilterSelect.value;
+
+      fetch(`/matchLogs?date=${dateFilter}&hero=${heroFilter}`)
         .then((response) => response.json())
         .then((matchLogs) => {
           if (matchLogs.success) {

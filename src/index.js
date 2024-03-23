@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const bodyParser = require('body-parser');
-const { getHeroes, getHeroDeck, getHeroStats, getRecentMatches, logMatch, deleteMatchLogById } = require('./service/unmatchedservice')
+const { getHeroes, getHeroDeck, getHeroStats, getMatchLogs, logMatch, deleteMatchLogById } = require('./service/unmatchedservice')
 
 const app = express();
 
@@ -46,8 +46,10 @@ app.get("/matches", async (req, res) => {
 });
 
 app.get('/matchLogs', async (req, res) => {
-  const recentMatchesResult = await getRecentMatches();
-  res.send(recentMatchesResult);
+  console.log(req.query);
+  const { date = '2w', hero = '' } = req.query;
+  const matchLogsResult = await getMatchLogs(date, hero);
+  res.send(matchLogsResult);
 });
 
 app.post('/matchLogs', async (req, res) => {
