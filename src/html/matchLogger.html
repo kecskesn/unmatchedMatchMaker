@@ -49,20 +49,25 @@
     </div>
 
     <div class="d-flex flex-column align-items-center mt-4">
-      <h2 class="mb-3">Match History</h2>
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="form-group">
-          <select class="form-control" id="dateFilter">
-            <option value="2w" selected>Last 2 Weeks</option>
-            <option value="1m">Last Month</option>
-            <option value="3m">Last 3 Months</option>
-            <option value="all">All Time</option>
-          </select>
+      <h2 class="mb-3">Match History and stats</h2>
+      <div id="winRateTracker" class="mb-4"></div>
+      <div class="row mb-3 justify-content-center">
+        <div class="col-md-5">
+          <div class="form-group">
+            <select class="form-control" id="dateFilter">
+              <option value="2w" selected>Last 2 Weeks</option>
+              <option value="1m">Last Month</option>
+              <option value="3m">Last 3 Months</option>
+              <option value="all">All Time</option>
+            </select>
+          </div>
         </div>
-        <div class="form-group">
-          <select class="form-control" id="heroFilter">
-            <option value="" selected>All Heroes</option>
-          </select>
+        <div class="col-md-5">
+          <div class="form-group">
+            <select class="form-control" id="heroFilter">
+              <option value="" selected>All Heroes</option>
+            </select>
+          </div>
         </div>
       </div>
       <div id="matchLogsContainer" class="container-margin mx-3"></div>
@@ -171,6 +176,7 @@
           if (data.success) {
             resetForm();
             fetchMatchLogs();
+            updateWinRateTracker();
           } else {
             alert(data.error);
           }
@@ -313,15 +319,45 @@
         .then((response) => response.json())
         .then((data) => {
           fetchMatchLogs();
+          updateWinRateTracker();
         })
         .catch((error) => {
           console.error("Error deleting match log:", error);
         });
     }
 
+    async function updateWinRateTracker() {
+      try {
+        const response = await fetch('/winnerPersonStats');
+        const winnerPersonStatsResult = await response.json();
+
+        if (winnerPersonStatsResult.success) {
+          const stats = winnerPersonStatsResult.stats;
+          const totalMatches = stats.reduce((total, stat) => total + stat.count, 0);
+          const balazsWins = stats.find(stat => stat.person === "Balázs")?.count || 0;
+          const kecaWins = stats.find(stat => stat.person === "Keca")?.count || 0;
+
+          const balazsWinPercent = totalMatches > 0 ? ((balazsWins / totalMatches) * 100).toFixed(2) : 0;
+          const kecaWinPercent = totalMatches > 0 ? ((kecaWins / totalMatches) * 100).toFixed(2) : 0;
+
+          const winRateTrackerHTML = `
+          <div>Total Matches: ${totalMatches}</div>
+          <div>Balázs Wins: ${balazsWins} (${balazsWinPercent}%)</div>
+          <div>Keca Wins: ${kecaWins} (${kecaWinPercent}%)</div>
+        `;
+          document.getElementById("winRateTracker").innerHTML = winRateTrackerHTML;
+        } else {
+          console.error('Failed to fetch winner person stats.');
+        }
+      } catch (error) {
+        console.error('Error updating win rate tracker:', error);
+      }
+    }
+
     window.onload = function () {
       fetchHeroes();
       fetchMatchLogs();
+      updateWinRateTracker();
     };
   </script>
 </body>

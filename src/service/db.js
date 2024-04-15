@@ -60,6 +60,17 @@ async function getMatchLogsFromDB(dateFilter, heroFilter) {
   }
 }
 
+async function getWinnerPersonStatsFromDB() {
+  const query = 'SELECT person, COUNT(*) as count FROM matches GROUP BY person';
+  try {
+    const stats = await allAsync(query);
+    return { success: true, stats };
+  } catch (err) {
+    console.error(err);
+    throw { success: false, error: 'Failed to fetch winner person stats.' };
+  }
+}
+
 async function deleteMatchLogByIdFromDB(id) {
   const sql = 'DELETE FROM matches WHERE id = ?';
   try {
@@ -110,6 +121,7 @@ process.on('SIGINT', () => {
 module.exports = {
   saveMatchToDB,
   getMatchLogsFromDB,
+  getWinnerPersonStatsFromDB,
   deleteMatchLogByIdFromDB,
   getMatchesByHero
 };

@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const bodyParser = require('body-parser');
-const { getHeroes, getHeroDeck, getHeroStats, getMatchLogs, logMatch, deleteMatchLogById } = require('./service/unmatchedservice')
+const { getHeroes, getHeroDeck, getHeroStats, getMatchLogs, logMatch, getWinnerPersonStats, deleteMatchLogById } = require('./service/unmatchedservice')
 
 const app = express();
 
@@ -62,6 +62,11 @@ app.post('/matchLogs', async (req, res) => {
   const logMatchResult = await logMatch(hero1, hero2, winner, person);
   res.send(logMatchResult);
 });
+
+app.get('/winnerPersonStats', async (req, res) => {
+  const winnerPersonStatsResult = await getWinnerPersonStats();
+  res.send(winnerPersonStatsResult);
+})
 
 app.delete('/deleteMatchLog/:logId', async (req, res) => {
   const { logId } = req.params;
