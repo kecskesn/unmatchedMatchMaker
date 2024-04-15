@@ -29,7 +29,7 @@ async function saveMatchToDB(hero1, hero2, winner, person) {
 }
 
 async function getMatchLogsFromDB(dateFilter, heroFilter) {
-  let query = 'SELECT id, hero1, hero2, winner, DATE(timestamp) as date FROM matches';
+  let query = 'SELECT id, hero1, hero2, winner, person, DATE(timestamp) as date FROM matches';
   let params = [];
 
   if (dateFilter === '2w') {
