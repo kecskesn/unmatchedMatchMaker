@@ -52,14 +52,14 @@ app.get('/matchLogs', async (req, res) => {
 });
 
 app.post('/matchLogs', async (req, res) => {
-  const { hero1, hero2, winner } = req.body;
+  const { hero1, hero2, winner, person } = req.body;
 
   if (hero1 === hero2) {
     res.send({ success: false, error: 'Heroes must be different.' });
     return;
   }
 
-  const logMatchResult = await logMatch(hero1, hero2, winner);
+  const logMatchResult = await logMatch(hero1, hero2, winner, person);
   res.send(logMatchResult);
 });
 

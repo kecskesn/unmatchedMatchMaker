@@ -97,8 +97,8 @@ function getMatchLogs(heroFilter, dateFilter) {
     return getMatchLogsFromDB(heroFilter, dateFilter);
 }
 
-function logMatch(hero1, hero2, winner) {
-    return saveMatchToDB(hero1, hero2, winner);
+function logMatch(hero1, hero2, winner, person) {
+    return saveMatchToDB(hero1, hero2, winner, person);
 }
 
 function deleteMatchLogById(logId) {

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link rel="stylesheet" href="src/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 
 <body>
@@ -17,17 +18,23 @@
     </div>
 
     <div class="d-flex justify-content-between align-items-center">
-      <div class="form-group">
-        <label for="heroSelect1">Hero 1</label>
+      <div class="form-group text-center">
+        <label for="heroSelect1" class="font-weight-bold">Balázs</label>
         <select class="form-control" id="heroSelect1">
-          <option value="" disabled selected>Please select one...</option>
+          <option value="" disabled selected>Select one...</option>
         </select>
       </div>
 
-      <div class="form-group">
-        <label for="heroSelect2">Hero 2</label>
+      <div class="d-flex align-items-center">
+        <button class="btn btn-secondary mr-3" id="switchHeroBtn">
+          <i class="fas fa-exchange-alt"></i>
+        </button>
+      </div>
+
+      <div class="form-group text-center">
+        <label for="heroSelect2" class="font-weight-bold">Keca</label>
         <select class="form-control" id="heroSelect2">
-          <option value="" disabled selected>Please select one...</option>
+          <option value="" disabled selected>Select one...</option>
         </select>
       </div>
     </div>
@@ -104,10 +111,26 @@
       button.value = selectedOption.value;
     }
 
+    switchHeroBtn.addEventListener("click", function () {
+      const tempHero1 = heroSelect1.value;
+      heroSelect1.value = heroSelect2.value;
+      heroSelect2.value = tempHero1;
+
+      heroSelect1.dispatchEvent(new Event('change'));
+      heroSelect2.dispatchEvent(new Event('change'));
+    });
+
     heroSelect1.addEventListener("change", function () {
       const hero = heroSelect1.options[heroSelect1.selectedIndex].value;
-      const newUrl = `/matchLogger?hero=${hero}`;
-      window.history.pushState({}, '', newUrl);
+      const urlParams = new URLSearchParams(window.location.search);
+
+      if (!hero) {
+        urlParams.delete('hero');
+        window.history.pushState({}, '', window.location.pathname + (urlParams.toString() ? '?' + urlParams.toString() : ''));
+      } else {
+        urlParams.set('hero', hero);
+        window.history.pushState({}, '', window.location.pathname + '?' + urlParams.toString());
+      }
 
       updateButtonFromSelect(heroSelect1, hero1Btn);
       enableButtons();
@@ -134,12 +157,14 @@
       const hero1 = select1.options[select1.selectedIndex].text;
       const hero2 = select2.options[select2.selectedIndex].text;
       const winner = button.textContent;
+      let person = button === hero1Btn ? "Balázs" : "Keca";
+
       fetch("/matchLogs", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ hero1, hero2, winner }),
+        body: JSON.stringify({ hero1, hero2, winner, person }),
       })
         .then((response) => response.json())
         .then((data) => {
@@ -215,7 +240,7 @@
               const thead = document.createElement("thead");
               const tr = document.createElement("tr");
 
-              const headers = ["Hero1", "Hero2", "Winner", "Date", ""];
+              const headers = ["Matchup", "Winner", "Date", ""];
               headers.forEach((header) => {
                 const th = document.createElement("th");
                 th.textContent = header;
@@ -232,13 +257,9 @@
               matches.forEach((log) => {
                 const tr = document.createElement("tr");
 
-                const tdHero1 = document.createElement("td");
-                tdHero1.textContent = log.hero1;
-                tdHero1.classList.add("align-middle");
-
-                const tdHero2 = document.createElement("td");
-                tdHero2.textContent = log.hero2;
-                tdHero2.classList.add("align-middle");
+                const tdMatchup = document.createElement("td");
+                tdMatchup.textContent = log.hero1 + " vs " + log.hero2;
+                tdMatchup.classList.add("align-middle");
 
                 const tdWinner = document.createElement("td");
                 tdWinner.textContent = log.winner;
@@ -256,8 +277,7 @@
                 tdActions.appendChild(deleteButton);
                 tdActions.classList.add("align-middle");
 
-                tr.appendChild(tdHero1);
-                tr.appendChild(tdHero2);
+                tr.appendChild(tdMatchup);
                 tr.appendChild(tdWinner);
                 tr.appendChild(tdDate);
                 tr.appendChild(tdActions);

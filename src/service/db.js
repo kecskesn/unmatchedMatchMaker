@@ -12,14 +12,15 @@ db.run(`
     hero1 TEXT NOT NULL,
     hero2 TEXT NOT NULL,
     winner TEXT NOT NULL,
+    person TEXT NOT NULL,
     timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
   )
 `);
 
-async function saveMatchToDB(hero1, hero2, winner) {
-  const sql = 'INSERT INTO matches (hero1, hero2, winner) VALUES (?, ?, ?)';
+async function saveMatchToDB(hero1, hero2, winner, person) {
+  const sql = 'INSERT INTO matches (hero1, hero2, winner, person) VALUES (?, ?, ?, ?)';
   try {
-    await runAsync(sql, [hero1, hero2, winner]);
+    await runAsync(sql, [hero1, hero2, winner, person]);
     return { success: true };
   } catch (err) {
     console.error(err);
