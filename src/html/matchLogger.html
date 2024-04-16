@@ -12,9 +12,9 @@
 <body>
   <div class="container">
     <div class="d-flex justify-content-between align-items-center">
-      <a class="btn btn-secondary" id="heroStatBtn">Hero Stats</a>
-      <a class="btn btn-secondary" id="cardTrackerBtn">Card Tracker</a>
-      <a class="btn btn-secondary active" id="matchLoggerBtn">Match Logger</a>
+      <a class="btn btn-secondary" id="heroStatBtn" data-url="heroStat">Hero Stats</a>
+      <a class="btn btn-secondary" id="cardTrackerBtn" data-url="cardTracker">Card Tracker</a>
+      <a class="btn btn-secondary active" id="matchLoggerBtn" data-url="matchLogger">Match Logger</a>
     </div>
 
     <div class="d-flex justify-content-between align-items-center">
@@ -48,6 +48,8 @@
       </div>
     </div>
 
+    <hr class="my-4">
+
     <div class="d-flex flex-column align-items-center mt-4">
       <h2 class="mb-3">Match History and stats</h2>
       <div id="winRateTracker" class="mb-4"></div>
@@ -75,45 +77,31 @@
   </div>
 
   <script>
-    heroStatBtn.addEventListener("click", function () {
-      const hero = heroSelect1.value;
-      baseUrl = 'heroStat';
-      if (hero) {
-        baseUrl += `?hero=${hero}`;
-      }
-      window.location.href = baseUrl;
-    });
-
-    cardTrackerBtn.addEventListener("click", function () {
-      const hero = heroSelect1.value;
-      baseUrl = 'cardTracker';
-      if (hero) {
-        baseUrl += `?hero=${hero}`;
-      }
-      window.location.href = baseUrl;
-    });
-
-    matchLoggerBtn.addEventListener("click", function () {
-      const hero = heroSelect1.value;
-      baseUrl = 'matchLogger';
-      if (hero) {
-        baseUrl += `?hero=${hero}`;
-      }
-      window.location.href = baseUrl;
-    });
-
+    const heroStatBtn = document.getElementById("heroStatBtn");
+    const cardTrackerBtn = document.getElementById("cardTrackerBtn");
+    const matchLoggerBtn = document.getElementById("matchLoggerBtn");
     const heroSelect1 = document.getElementById("heroSelect1");
     const heroSelect2 = document.getElementById("heroSelect2");
+    const dateFilterSelect = document.getElementById("dateFilter");
+    const heroFilterSelect = document.getElementById("heroFilter");
 
-    function enableButtons() {
-      hero1Btn.disabled = !(heroSelect1.value && heroSelect2.value);
-      hero2Btn.disabled = !(heroSelect1.value && heroSelect2.value);
-    }
+    heroStatBtn.addEventListener("click", handleButtonClick);
+    cardTrackerBtn.addEventListener("click", handleButtonClick);
+    matchLoggerBtn.addEventListener("click", handleButtonClick);
+    dateFilterSelect.addEventListener("change", fetchMatchLogs);
+    heroFilterSelect.addEventListener("change", fetchMatchLogs);
 
-    function updateButtonFromSelect(select, button) {
-      const selectedOption = select.options[select.selectedIndex];
-      button.textContent = selectedOption.text;
-      button.value = selectedOption.value;
+    window.onload = function () {
+      fetchHeroes();
+      fetchMatchLogs();
+      updateWinRateTracker();
+    };
+
+    function handleButtonClick() {
+      const baseUrl = this.getAttribute("data-url");
+      const hero = encodeURIComponent(heroSelect1.value);
+      const newUrl = hero ? `${baseUrl}?hero=${hero}` : baseUrl;
+      window.location.href = newUrl;
     }
 
     switchHeroBtn.addEventListener("click", function () {
@@ -146,19 +134,26 @@
       enableButtons();
     });
 
-    function resetForm() {
-      window.location.href = "matchLogger";
+    function enableButtons() {
+      hero1Btn.disabled = !(heroSelect1.value && heroSelect2.value);
+      hero2Btn.disabled = !(heroSelect1.value && heroSelect2.value);
+    }
+
+    function updateButtonFromSelect(select, button) {
+      const selectedOption = select.options[select.selectedIndex];
+      button.textContent = selectedOption.text;
+      button.value = selectedOption.value;
     }
 
     hero1Btn.addEventListener("click", function () {
-      handleButtonClick(heroSelect1, heroSelect2, hero1Btn);
+      handleHeroButtonClick(heroSelect1, heroSelect2, hero1Btn);
     });
 
     hero2Btn.addEventListener("click", function () {
-      handleButtonClick(heroSelect1, heroSelect2, hero2Btn);
+      handleHeroButtonClick(heroSelect1, heroSelect2, hero2Btn);
     });
 
-    function handleButtonClick(select1, select2, button) {
+    function handleHeroButtonClick(select1, select2, button) {
       const hero1 = select1.options[select1.selectedIndex].text;
       const hero2 = select2.options[select2.selectedIndex].text;
       const winner = button.textContent;
@@ -184,6 +179,10 @@
         .catch((error) => {
           console.error("Error:", error);
         });
+    }
+
+    function resetForm() {
+      window.location.href = "matchLogger";
     }
 
     function fetchHeroes() {
@@ -214,18 +213,11 @@
           const urlParams = new URLSearchParams(window.location.search);
           const selectedHero = urlParams.get('hero');
           if (selectedHero) {
-            const encodedHero = encodeURIComponent(selectedHero);
-            heroSelect1.value = encodedHero;
+            heroSelect1.value = selectedHero;
             updateButtonFromSelect(heroSelect1, hero1Btn);
           }
         });
     }
-
-    const dateFilterSelect = document.getElementById("dateFilter");
-    const heroFilterSelect = document.getElementById("heroFilter");
-
-    dateFilterSelect.addEventListener("change", fetchMatchLogs);
-    heroFilterSelect.addEventListener("change", fetchMatchLogs);
 
     function fetchMatchLogs() {
       const dateFilter = dateFilterSelect.value;
@@ -341,9 +333,9 @@
           const kecaWinPercent = totalMatches > 0 ? ((kecaWins / totalMatches) * 100).toFixed(2) : 0;
 
           const winRateTrackerHTML = `
-          <div>Total Matches: ${totalMatches}</div>
-          <div>Balázs Wins: ${balazsWins} (${balazsWinPercent}%)</div>
-          <div>Keca Wins: ${kecaWins} (${kecaWinPercent}%)</div>
+          <div><strong>Total Matches:</strong> ${totalMatches}</div>
+          <div><strong>Balázs Wins:</strong> ${balazsWins} (${balazsWinPercent}%)</div>
+          <div><strong>Keca Wins:</strong> ${kecaWins} (${kecaWinPercent}%)</div>
         `;
           document.getElementById("winRateTracker").innerHTML = winRateTrackerHTML;
         } else {
@@ -353,12 +345,6 @@
         console.error('Error updating win rate tracker:', error);
       }
     }
-
-    window.onload = function () {
-      fetchHeroes();
-      fetchMatchLogs();
-      updateWinRateTracker();
-    };
   </script>
 </body>
 

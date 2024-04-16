@@ -39,8 +39,7 @@ async function getHeroDeck(hero) {
         const deck = JSON.parse(data);
         return deck;
     } catch (error) {
-        console.error(error);
-        throw new Error("Error reading or parsing deck configuration");
+        return null;
     }
 }
 
@@ -87,7 +86,7 @@ async function getHeroStats(hero, numberOfPlays, mode, source) {
       }
     })
   
-    const filteredData = mergedData.filter((item) => item.plays >= numberOfPlays);
+    const filteredData = mergedData.filter((item) => item.combinedPlays ? item.combinedPlays >= numberOfPlays : item.plays >= numberOfPlays);
     let result = searchStrategies[mode].handle(filteredData);
     result = result.filter((item) => item.hero !== hero);
     return result;

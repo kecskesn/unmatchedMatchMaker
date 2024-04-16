@@ -11,9 +11,9 @@
 <body>
   <div class="container">
     <div class="d-flex justify-content-between align-items-center">
-      <a class="btn btn-secondary" id="heroStatBtn">Hero Stats</a>
-      <a class="btn btn-secondary active" id="cardTrackerBtn">Card Tracker</a>
-      <a class="btn btn-secondary" id="matchLoggerBtn">Match Logger</a>
+      <a class="btn btn-secondary" id="heroStatBtn" data-url="heroStat">Hero Stats</a>
+      <a class="btn btn-secondary active" id="cardTrackerBtn" data-url="cardTracker">Card Tracker</a>
+      <a class="btn btn-secondary" id="matchLoggerBtn" data-url="matchLogger">Match Logger</a>
     </div>
     <div class="form-group">
       <label for="heroSelect">Hero</label>
@@ -38,33 +38,9 @@
     </div>
   </div>
   <script>
-    heroStatBtn.addEventListener("click", function () {
-      const hero = heroSelect.value;
-      baseUrl = 'heroStat';
-      if (hero) {
-        baseUrl += `?hero=${hero}`;
-      }
-      window.location.href = baseUrl;
-    });
-
-    cardTrackerBtn.addEventListener("click", function () {
-      const hero = heroSelect.value;
-      baseUrl = 'cardTracker';
-      if (hero) {
-        baseUrl += `?hero=${hero}`;
-      }
-      window.location.href = baseUrl;
-    });
-
-    matchLoggerBtn.addEventListener("click", function () {
-      const hero = heroSelect.value;
-      baseUrl = 'matchLogger';
-      if (hero) {
-        baseUrl += `?hero=${hero}`;
-      }
-      window.location.href = baseUrl;
-    });
-
+    const heroStatBtn = document.getElementById("heroStatBtn");
+    const cardTrackerBtn = document.getElementById("cardTrackerBtn");
+    const matchLoggerBtn = document.getElementById("matchLoggerBtn");
     const heroSelect = document.getElementById("heroSelect");
     const handContainer = document.querySelector(".hand");
     const deckContainer = document.querySelector(".deck");
@@ -74,26 +50,51 @@
     let totalCardCount = 0;
     let discardedCardCount = 0;
 
+    heroStatBtn.addEventListener("click", handleButtonClick);
+    cardTrackerBtn.addEventListener("click", handleButtonClick);
+    matchLoggerBtn.addEventListener("click", handleButtonClick);
+    heroSelect.addEventListener("change", handleHeroSelectChange);
+
+    window.onload = function () {
+      deckContainer.appendChild(deckButtons);
+      fetchHeroes();
+    };
+
+    function handleButtonClick() {
+      const baseUrl = this.getAttribute("data-url");
+      const hero = encodeURIComponent(heroSelect.value);
+      const newUrl = hero ? `${baseUrl}?hero=${hero}` : baseUrl;
+      window.location.href = newUrl;
+    }
+
+    function handleHeroSelectChange() {
+      const selectedHero = heroSelect.value;
+      if (selectedHero) {
+        deckContainer.removeEventListener("click", handleDeckButtonClick);
+        discardContainer.removeEventListener("click", handleDeckButtonClick);
+        fetchDeckConfig(selectedHero);
+      }
+    }
+
     function fetchHeroes() {
       fetch("/heroes")
-        .then((response) => response.json())
-        .then((heroes) => {
-          const select = document.getElementById("heroSelect");
-          heroes.forEach((hero) => {
+        .then(response => response.json())
+        .then(heroes => {
+          heroes.forEach(hero => {
             const option = document.createElement("option");
             option.value = encodeURIComponent(hero);
             option.text = hero;
-            select.add(option);
+            heroSelect.add(option);
           });
 
           const urlParams = new URLSearchParams(window.location.search);
           const selectedHero = urlParams.get('hero');
           if (selectedHero) {
-            const encodedHero = encodeURIComponent(selectedHero);
-            heroSelect.value = encodedHero;
-            fetchDeckConfig(heroSelect.value);
+            heroSelect.value = selectedHero;
+            fetchDeckConfig(selectedHero);
           }
-        });
+        })
+        .catch(error => console.error("Error fetching heroes:", error));
     }
 
     function fetchDeckConfig(hero) {
@@ -102,84 +103,111 @@
 
       totalCardCount = 0;
       discardedCardCount = 0;
-      const handContainer = document.querySelector(".hand");
-      const deckContainer = document.querySelector(".deck");
-      const discardContainer = document.querySelector(".discard");
-
       handContainer.innerHTML = "";
       deckContainer.innerHTML = "";
       discardContainer.innerHTML = "";
       deckButtons.innerHTML = "";
 
       fetch(`/deck?hero=${hero}`)
-        .then((response) => response.json())
-        .then((data) => {
-          data.forEach((card) => {
+        .then(response => response.json())
+        .then(data => {
+          if (data === null) {
+            console.error("Deck configuration not found for hero:", hero);
+            heroSelect.value = "";
+            const urlParams = new URLSearchParams(window.location.search);
+            urlParams.delete('hero');
+            window.history.pushState({}, '', urlParams.toString());
+            return;
+          }
+
+          data.forEach(card => {
             for (let i = 0; i < card.quantity; i++) {
               totalCardCount++;
-
-              const cardRow = document.createElement("div");
-              cardRow.classList.add("deck-card-row");
-
-              const button = document.createElement("button");
-              button.classList.add("deck-card-button");
-              const handButton = document.createElement("button");
-              handButton.classList.add("hand-card-button");
-              handButton.style.opacity = "0.3";
-              handButton.innerHTML = `<img src='/config/assets/card_in_hand.png' style='width: 100%; height: auto;'>`;
-              handButton.addEventListener("click", handleHandButtonClick);
-
-              switch (card.type) {
-                case "attack":
-                  button.classList.add("btn-red");
-                  handButton.classList.add("btn-red");
-                  break;
-                case "defense":
-                  button.classList.add("btn-blue");
-                  handButton.classList.add("btn-blue");
-                  break;
-                case "scheme":
-                  button.classList.add("btn-yellow");
-                  handButton.classList.add("btn-yellow");
-                  break;
-                case "versatile":
-                  button.classList.add("btn-purple");
-                  handButton.classList.add("btn-purple");
-                  break;
-                default:
-                  button.classList.add("btn-secondary");
-                  handButton.classList.add("btn-secondary");
-              }
-
-              let buttonText = card['title-hu'] ? card['title-hu'] : card.title;
-
-              if (card.value || card.value == 0) {
-                buttonText += ` <span class="extra-info">${card.value}</span>`;
-              }
-              if (card.characterName) {
-                buttonText += ` <span class="extra-info">${card.characterName}</span>`;
-              }
-              if (card.boost) {
-                buttonText += ` <span class="extra-info boost">${card.boost}</span>`;
-              }
-
-              button.innerHTML = buttonText;
-
-              cardRow.appendChild(button);
-              cardRow.appendChild(handButton);
-
+              const cardRow = createCardRow(card);
               deckButtons.appendChild(cardRow);
             }
           });
 
           deckContainer.appendChild(deckButtons);
-
           deckButtons.addEventListener("click", handleDeckButtonClick);
           updateCardCounters();
         })
-        .catch((error) => {
-          console.error("Error fetching deck data:", error);
-        });
+        .catch(error => console.error("Error fetching deck configuration:", error));
+    }
+
+    function createCardRow(card) {
+      const cardRow = document.createElement("div");
+      cardRow.classList.add("deck-card-row");
+
+      const deckButton = createCardButton(card);
+      const handButton = createHandButton(card);
+
+      cardRow.appendChild(deckButton);
+      cardRow.appendChild(handButton);
+
+      return cardRow;
+    }
+
+    function createHandButton(card) {
+      const handButton = document.createElement("button");
+      handButton.classList.add("hand-card-button");
+      handButton.style.opacity = "0.3";
+      handButton.innerHTML = `<img src='/config/assets/card_in_hand.png' style='width: 100%; height: auto;'>`;
+      handButton.addEventListener("click", handleHandButtonClick);
+
+      switch (card.type) {
+        case "attack":
+          handButton.classList.add("btn-red");
+          break;
+        case "defense":
+          handButton.classList.add("btn-blue");
+          break;
+        case "scheme":
+          handButton.classList.add("btn-yellow");
+          break;
+        case "versatile":
+          handButton.classList.add("btn-purple");
+          break;
+        default:
+          handButton.classList.add("btn-secondary");
+      }
+
+      return handButton;
+    }
+
+    function createCardButton(card) {
+      const button = document.createElement("button");
+      button.classList.add("deck-card-button");
+      let buttonText = card['title-hu'] ? card['title-hu'] : card.title;
+      if (card.value || card.value === 0) {
+        buttonText += ` <span class="extra-info">${card.value}</span>`;
+      }
+      if (card.characterName) {
+        buttonText += ` <span class="extra-info">${card.characterName}</span>`;
+      }
+      if (card.boost) {
+        buttonText += ` <span class="extra-info boost">${card.boost}</span>`;
+      }
+      button.innerHTML = buttonText;
+
+      switch (card.type) {
+        case "attack":
+          button.classList.add("btn-red");
+          break;
+        case "defense":
+          button.classList.add("btn-blue");
+          break;
+        case "scheme":
+          button.classList.add("btn-yellow");
+          break;
+        case "versatile":
+          button.classList.add("btn-purple");
+          break;
+        default:
+          button.classList.add("btn-secondary");
+      }
+
+      return button;
     }
 
     function handleDeckButtonClick(event) {
@@ -209,7 +237,6 @@
 
     function handleHandButtonClick(event) {
       const target = event.target;
-
       const cardRow = target.closest('.deck-card-row');
       const deckCardButton = cardRow.querySelector(".deck-card-button");
       const handCardButton = cardRow.querySelector(".hand-card-button");
@@ -241,20 +268,6 @@
       document.getElementById("remainingCardCount").innerText = totalCardCount - discardedCardCount;
       document.getElementById("discardedCardCount").innerText = discardedCardCount;
     }
-
-    heroSelect.addEventListener("change", function () {
-      const selectedHero = heroSelect.value;
-      if (selectedHero) {
-        deckContainer.removeEventListener("click", handleDeckButtonClick);
-        discardContainer.removeEventListener("click", handleDeckButtonClick);
-        fetchDeckConfig(selectedHero);
-      }
-    });
-
-    window.onload = function () {
-      deckContainer.appendChild(deckButtons);
-      fetchHeroes();
-    };
   </script>
 </body>
 
