@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <style>
+        .card-title {
+            margin-bottom: 0.75rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .card-subtitle {
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .card-text {
+            margin-bottom: 0.5rem;
+        }
+
+        .list-group-item {
+            padding: 0.75rem 1.25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <a class="btn btn-secondary" id="heroStatBtn" data-url="heroStat">Stats</a>
+            <a class="btn btn-secondary" id="cardTrackerBtn" data-url="cardTracker">Cards</a>
+            <a class="btn btn-secondary" id="matchLoggerBtn" data-url="matchLogger">Logs</a>
+            <a class="btn btn-secondary active" id="playerStatsBtn" data-url="playerStats">Players</a>
+        </div>
+
+        <div class="mt-4">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Balázs</h5>
+                            <p class="card-text mb-3" id="balazsWins">Wins: -</p>
+                            <div class="card-subtitle mb-3">Top 3 Most Played Heroes</div>
+                            <ul class="list-group list-group-flush" id="balazsTopHeroes">
+                            </ul>
+                            <div class="card-subtitle mb-3">Top 3 Highest Win Rate Heroes</div>
+                            <ul class="list-group list-group-flush" id="balazsTopWinRate">
+                            </ul>
+                            <div class="card-subtitle mb-3">Worst Win Rate Hero</div>
+                            <ul class="list-group list-group-flush" id="balazsWorstWinRate">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Keca</h5>
+                            <p class="card-text mb-3" id="kecaWins">Wins: -</p>
+                            <div class="card-subtitle mb-3">Top 3 Most Played Heroes</div>
+                            <ul class="list-group list-group-flush" id="kecaTopHeroes">
+                            </ul>
+                            <div class="card-subtitle mb-3">Top 3 Highest Win Rate Heroes</div>
+                            <ul class="list-group list-group-flush" id="kecaTopWinRate">
+                            </ul>
+                            <div class="card-subtitle mb-3">Worst Win Rate Hero</div>
+                            <ul class="list-group list-group-flush" id="kecaWorstWinRate">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const heroStatBtn = document.getElementById("heroStatBtn");
+        const cardTrackerBtn = document.getElementById("cardTrackerBtn");
+        const matchLoggerBtn = document.getElementById("matchLoggerBtn");
+        const playerStatsBtn = document.getElementById("playerStatsBtn");
+
+        heroStatBtn.addEventListener("click", handleButtonClick);
+        cardTrackerBtn.addEventListener("click", handleButtonClick);
+        matchLoggerBtn.addEventListener("click", handleButtonClick);
+        playerStatsBtn.addEventListener("click", handleButtonClick);
+
+        function handleButtonClick() {
+            const baseUrl = this.getAttribute("data-url");
+            const urlParams = new URLSearchParams(window.location.search);
+            const newUrl = `${baseUrl}?${urlParams.toString()}`;
+            window.location.href = newUrl;
+        }
+
+        async function updateWinRateTracker() {
+            try {
+                const response = await fetch('/winnerPersonStats');
+                const winnerPersonStatsResult = await response.json();
+
+                if (winnerPersonStatsResult.success) {
+                    const stats = winnerPersonStatsResult.stats;
+                    const totalMatches = stats.reduce((total, stat) => total + stat.count, 0);
+                    const balazsWins = stats.find(stat => stat.person === "Balázs")?.count || 0;
+                    const kecaWins = stats.find(stat => stat.person === "Keca")?.count || 0;
+
+                    const balazsWinPercent = totalMatches > 0 ? ((balazsWins / totalMatches) * 100).toFixed(2) : 0;
+                    const kecaWinPercent = totalMatches > 0 ? ((kecaWins / totalMatches) * 100).toFixed(2) : 0;
+
+                    const formatWinStats = (wins, winRate) => `Wins: ${wins} (${winRate}%)`;
+
+                    document.getElementById("balazsWins").textContent = formatWinStats(balazsWins, balazsWinPercent);
+                    document.getElementById("kecaWins").textContent = formatWinStats(kecaWins, kecaWinPercent);
+
+                    const totalMatchesElement = document.createElement("p");
+                    totalMatchesElement.classList.add("text-center", "font-weight-bold");
+                    totalMatchesElement.textContent = `Total Matches: ${totalMatches}`;
+                    document.querySelector(".mt-4").insertBefore(totalMatchesElement, document.querySelector(".row"));
+                } else {
+                    console.error('Failed to fetch winner person stats.');
+                }
+            } catch (error) {
+                console.error('Error updating win rate tracker:', error);
+            }
+        }
+
+        async function playerTopHeroStats() {
+            try {
+                const response = await fetch('/playerTopHeroStats');
+                const playerStatsResult = await response.json();
+                console.log(playerStatsResult);
+
+                const formatHeroStats = (hero) => `${hero.name} - Plays: ${hero.plays}, Win Rate: ${hero.winRate}%`;
+
+                const balazsTopHeroes = document.getElementById("balazsTopHeroes");
+                playerStatsResult.Balázs.slice(0, 3).forEach(hero => {
+                    const listItem = document.createElement("li");
+                    listItem.classList.add("list-group-item");
+                    listItem.textContent = formatHeroStats(hero);
+                    balazsTopHeroes.appendChild(listItem);
+                });
+
+                const kecaTopHeroes = document.getElementById("kecaTopHeroes");
+                playerStatsResult.Keca.slice(0, 3).forEach(hero => {
+                    const listItem = document.createElement("li");
+                    listItem.classList.add("list-group-item");
+                    listItem.textContent = formatHeroStats(hero);
+                    kecaTopHeroes.appendChild(listItem);
+                });
+
+                // Find top 3 highest win rate heroes
+                const balazsTopWinRate = document.getElementById("balazsTopWinRate");
+                playerStatsResult.Balázs
+                    .filter(hero => hero.plays >= 2)
+                    .sort((a, b) => b.winRate - a.winRate)
+                    .slice(0, 3)
+                    .forEach(hero => {
+                        const listItem = document.createElement("li");
+                        listItem.classList.add("list-group-item");
+                        listItem.textContent = formatHeroStats(hero);
+                        balazsTopWinRate.appendChild(listItem);
+                    });
+
+                const kecaTopWinRate = document.getElementById("kecaTopWinRate");
+                playerStatsResult.Keca
+                    .filter(hero => hero.plays >= 2)
+                    .sort((a, b) => b.winRate - a.winRate)
+                    .slice(0, 3)
+                    .forEach(hero => {
+                        const listItem = document.createElement("li");
+                        listItem.classList.add("list-group-item");
+                        listItem.textContent = formatHeroStats(hero);
+                        kecaTopWinRate.appendChild(listItem);
+                    });
+
+                // Find worst win rate hero
+                const findWorstWinRateHero = (heroes) => {
+                    const eligibleHeroes = heroes.filter(hero => hero.plays >= 2);
+                    if (eligibleHeroes.length === 0) return "-";
+                    return eligibleHeroes.reduce((prev, curr) => prev.winRate < curr.winRate ? prev : curr);
+                };
+
+                const balazsWorstWinRate = document.getElementById("balazsWorstWinRate");
+                const balazsWorstHero = findWorstWinRateHero(playerStatsResult.Balázs);
+                const balazsWorstWinRateItem = document.createElement("li");
+                balazsWorstWinRateItem.classList.add("list-group-item");
+                balazsWorstWinRateItem.textContent = formatHeroStats(balazsWorstHero);
+                balazsWorstWinRate.appendChild(balazsWorstWinRateItem);
+
+                const kecaWorstWinRate = document.getElementById("kecaWorstWinRate");
+                const kecaWorstHero = findWorstWinRateHero(playerStatsResult.Keca);
+                const kecaWorstWinRateItem = document.createElement("li");
+                kecaWorstWinRateItem.classList.add("list-group-item");
+                kecaWorstWinRateItem.textContent = formatHeroStats(kecaWorstHero);
+                kecaWorstWinRate.appendChild(kecaWorstWinRateItem);
+
+            } catch (error) {
+                console.error('Error fetching player stats:', error);
+            }
+        }
+
+        window.onload = function () {
+            updateWinRateTracker();
+            playerTopHeroStats();
+        };
+    </script>
+</body>
+
+</html>

@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const bodyParser = require('body-parser');
-const { getHeroes, getHeroDeck, getHeroStats, getMatchLogs, logMatch, getWinnerPersonStats, deleteMatchLogById } = require('./service/unmatchedservice')
+const { getHeroes, getHeroDeck, getHeroStats, getMatchLogs, logMatch, getWinnerPersonStats, getPlayerTopHeroStats, deleteMatchLogById } = require('./service/unmatchedservice')
 
 const app = express();
 
@@ -22,6 +22,10 @@ app.get("/cardTracker", function (req, res) {
 
 app.get("/matchLogger", function (req, res) {
   res.sendFile(__dirname + "/html/matchLogger.html");
+});
+
+app.get("/playerStats", function (req, res) {
+  res.sendFile(__dirname + "/html/playerStats.html");
 });
 
 app.get("/heroes", (req, res) => {
@@ -67,6 +71,11 @@ app.get('/winnerPersonStats', async (req, res) => {
   const winnerPersonStatsResult = await getWinnerPersonStats();
   res.send(winnerPersonStatsResult);
 })
+
+app.get('/playerTopHeroStats', async (req, res) => {
+  const playerTopHeroStats = await getPlayerTopHeroStats();
+  res.send(playerTopHeroStats);
+});
 
 app.delete('/deleteMatchLog/:logId', async (req, res) => {
   const { logId } = req.params;

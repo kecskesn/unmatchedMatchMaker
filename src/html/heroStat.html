@@ -11,9 +11,10 @@
 <body>
     <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-            <a class="btn btn-secondary active" id="heroStatBtn" data-url="heroStat">Hero Stats</a>
-            <a class="btn btn-secondary" id="cardTrackerBtn" data-url="cardTracker">Card Tracker</a>
-            <a class="btn btn-secondary" id="matchLoggerBtn" data-url="matchLogger">Match Logger</a>
+            <a class="btn btn-secondary active" id="heroStatBtn" data-url="heroStat">Stats</a>
+            <a class="btn btn-secondary" id="cardTrackerBtn" data-url="cardTracker">Cards</a>
+            <a class="btn btn-secondary" id="matchLoggerBtn" data-url="matchLogger">Logs</a>
+            <a class="btn btn-secondary" id="playerStatsBtn" data-url="playerStats">Players</a>
         </div>
         <div class="form-group">
             <label for="heroSelect">Hero</label>
@@ -69,6 +70,7 @@
         const heroStatBtn = document.getElementById("heroStatBtn");
         const cardTrackerBtn = document.getElementById("cardTrackerBtn");
         const matchLoggerBtn = document.getElementById("matchLoggerBtn");
+        const playerStatsBtn = document.getElementById("playerStatsBtn");
         const heroSelect = document.getElementById("heroSelect");
         const numberOfPlaysSelect = document.getElementById("numberOfPlaysSelect");
         const modeSelect = document.getElementById("modeSelect");
@@ -80,6 +82,7 @@
         heroStatBtn.addEventListener("click", handleButtonClick);
         cardTrackerBtn.addEventListener("click", handleButtonClick);
         matchLoggerBtn.addEventListener("click", handleButtonClick);
+        playerStatsBtn.addEventListener("click", handleButtonClick);
         heroSelect.addEventListener("change", fetchMatches);
         numberOfPlaysSelect.addEventListener("change", fetchMatches);
         modeSelect.addEventListener("change", handleModeChange);
