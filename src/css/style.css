@@ -116,3 +116,53 @@ a.btn.btn-secondary.active {
 .hidden {
     display: none;
 }
+
+.card-title {
+    margin-bottom: 0.75rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-subtitle {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.card-text {
+    margin-bottom: 0.5rem;
+}
+
+.list-group-item {
+    padding: 0.75rem 1.25rem;
+}
+
+@media (min-width: 768px) {
+    #heroStatBtn::after {
+        content: " Hero Stats";
+    }
+    #cardTrackerBtn::after {
+        content: " Card Tracker";
+    }
+    #matchLoggerBtn::after {
+        content: " Match Logger";
+    }
+    #playerStatsBtn::after {
+        content: " Player Stats";
+    }
+}
+
+@media (max-width: 768px) {
+    #heroStatBtn::after {
+        content: " Stats";
+    }
+    #cardTrackerBtn::after {
+        content: " Cards";
+    }
+    #matchLoggerBtn::after {
+        content: " Logs";
+    }
+    #playerStatsBtn::after {
+        content: " Players";
+    }
+}
