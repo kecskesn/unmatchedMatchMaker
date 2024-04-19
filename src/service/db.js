@@ -11,16 +11,17 @@ db.run(`
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     hero1 TEXT NOT NULL,
     hero2 TEXT NOT NULL,
+    player1 TEXT NOT NULL,
+    player2 TEXT NOT NULL,
     winner TEXT NOT NULL,
-    person TEXT NOT NULL,
     timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
   )
 `);
 
-async function saveMatchToDB(hero1, hero2, winner, person) {
-  const sql = 'INSERT INTO matches (hero1, hero2, winner, person) VALUES (?, ?, ?, ?)';
+async function saveMatchToDB(hero1, hero2, player1, player2, winner) {
+  const sql = 'INSERT INTO matches (hero1, hero2, player1, player2, winner) VALUES (?, ?, ?, ?, ?)';
   try {
-    await runAsync(sql, [hero1, hero2, winner, person]);
+    await runAsync(sql, [hero1, hero2, player1, player2, winner]);
     return { success: true };
   } catch (err) {
     console.error(err);
@@ -29,7 +30,7 @@ async function saveMatchToDB(hero1, hero2, winner, person) {
 }
 
 async function getMatchLogsFromDB(dateFilter, heroFilter) {
-  let query = 'SELECT id, hero1, hero2, winner, person, DATE(timestamp) as date FROM matches';
+  let query = 'SELECT id, hero1, hero2, player1, player2, winner, DATE(timestamp) as date FROM matches';
   let params = [];
 
   if (dateFilter === '2w') {
@@ -57,17 +58,6 @@ async function getMatchLogsFromDB(dateFilter, heroFilter) {
   } catch (err) {
     console.error(err);
     throw { success: false, error: 'Failed to fetch match logs.' };
-  }
-}
-
-async function getWinnerPersonStatsFromDB() {
-  const query = 'SELECT person, COUNT(*) as count FROM matches GROUP BY person';
-  try {
-    const stats = await allAsync(query);
-    return { success: true, stats };
-  } catch (err) {
-    console.error(err);
-    throw { success: false, error: 'Failed to fetch winner person stats.' };
   }
 }
 
@@ -121,7 +111,6 @@ process.on('SIGINT', () => {
 module.exports = {
   saveMatchToDB,
   getMatchLogsFromDB,
-  getWinnerPersonStatsFromDB,
   deleteMatchLogByIdFromDB,
   getMatchesByHero
 };

@@ -1,9 +1,10 @@
 const heroes = require("../../config/heroes");
+const players = require("../../config/players");
 const path = require("path");
 const fs = require("fs");
 const axios = require("axios");
 const searchStrategies = require("./searchStrategies/searchStrategies");
-const { saveMatchToDB, getMatchLogsFromDB, getWinnerPersonStatsFromDB, deleteMatchLogByIdFromDB, getMatchesByHero } = require('./db')
+const { saveMatchToDB, getMatchLogsFromDB, deleteMatchLogByIdFromDB, getMatchesByHero } = require('./db')
 
 const util = require('util');
 const { mergeStats } = require("../util/helper");
@@ -17,6 +18,10 @@ function getHeroes() {
     if (nameA > nameB) return 1;
     return 0;
   });
+}
+
+function getPlayers() {
+  return players;
 }
 
 async function getHeroDeck(hero) {
@@ -96,12 +101,8 @@ function getMatchLogs(heroFilter, dateFilter) {
   return getMatchLogsFromDB(heroFilter, dateFilter);
 }
 
-function logMatch(hero1, hero2, winner, person) {
-  return saveMatchToDB(hero1, hero2, winner, person);
-}
-
-function getWinnerPersonStats() {
-  return getWinnerPersonStatsFromDB();
+function logMatch(hero1, hero2, player1, player2, winner) {
+  return saveMatchToDB(hero1, hero2, player1, player2, winner);
 }
 
 async function getPlayerTopHeroStats() {
@@ -166,11 +167,11 @@ function deleteMatchLogById(logId) {
 
 module.exports = {
   getHeroes,
+  getPlayers,
   getHeroDeck,
   getHeroStats,
   getMatchLogs,
   logMatch,
-  getWinnerPersonStats,
   getPlayerTopHeroStats,
   deleteMatchLogById
 }

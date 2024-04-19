@@ -78,37 +78,6 @@
             window.location.href = newUrl;
         }
 
-        async function updateWinRateTracker() {
-            try {
-                const response = await fetch('/winnerPersonStats');
-                const winnerPersonStatsResult = await response.json();
-
-                if (winnerPersonStatsResult.success) {
-                    const stats = winnerPersonStatsResult.stats;
-                    const totalMatches = stats.reduce((total, stat) => total + stat.count, 0);
-                    const balazsWins = stats.find(stat => stat.person === "Balázs")?.count || 0;
-                    const kecaWins = stats.find(stat => stat.person === "Keca")?.count || 0;
-
-                    const balazsWinPercent = totalMatches > 0 ? ((balazsWins / totalMatches) * 100).toFixed(2) : 0;
-                    const kecaWinPercent = totalMatches > 0 ? ((kecaWins / totalMatches) * 100).toFixed(2) : 0;
-
-                    const formatWinStats = (wins, winRate) => `Wins: ${wins} (${winRate}%)`;
-
-                    document.getElementById("balazsWins").textContent = formatWinStats(balazsWins, balazsWinPercent);
-                    document.getElementById("kecaWins").textContent = formatWinStats(kecaWins, kecaWinPercent);
-
-                    const totalMatchesElement = document.createElement("p");
-                    totalMatchesElement.classList.add("text-center", "font-weight-bold");
-                    totalMatchesElement.textContent = `Total Matches: ${totalMatches}`;
-                    document.querySelector(".mt-4").insertBefore(totalMatchesElement, document.querySelector(".row"));
-                } else {
-                    console.error('Failed to fetch winner person stats.');
-                }
-            } catch (error) {
-                console.error('Error updating win rate tracker:', error);
-            }
-        }
-
         async function playerTopHeroStats() {
             try {
                 const response = await fetch('/playerTopHeroStats');

@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const bodyParser = require('body-parser');
-const { getHeroes, getHeroDeck, getHeroStats, getMatchLogs, logMatch, getWinnerPersonStats, getPlayerTopHeroStats, deleteMatchLogById } = require('./service/unmatchedservice')
+const { getHeroes, getPlayers, getHeroDeck, getHeroStats, getMatchLogs, logMatch, getPlayerTopHeroStats, deleteMatchLogById } = require('./service/unmatchedservice')
 
 const app = express();
 
@@ -33,6 +33,11 @@ app.get("/heroes", (req, res) => {
   res.json(heroes);
 });
 
+app.get("/players", (req, res) => {
+  const players = getPlayers();
+  res.json(players);
+});
+
 app.get("/deck", async (req, res) => {
   const hero = req.query.hero;
   const deck = await getHeroDeck(hero);
@@ -57,21 +62,21 @@ app.get('/matchLogs', async (req, res) => {
 });
 
 app.post('/matchLogs', async (req, res) => {
-  const { hero1, hero2, winner, person } = req.body;
+  const { hero1, hero2, player1, player2, winner } = req.body;
+
+  if (player1 === player2) {
+    res.send({ success: false, error: 'Players must be different.' });
+    return;
+  }
 
   if (hero1 === hero2) {
     res.send({ success: false, error: 'Heroes must be different.' });
     return;
   }
 
-  const logMatchResult = await logMatch(hero1, hero2, winner, person);
+  const logMatchResult = await logMatch(hero1, hero2, player1, player2, winner);
   res.send(logMatchResult);
 });
-
-app.get('/winnerPersonStats', async (req, res) => {
-  const winnerPersonStatsResult = await getWinnerPersonStats();
-  res.send(winnerPersonStatsResult);
-})
 
 app.get('/playerTopHeroStats', async (req, res) => {
   const playerTopHeroStats = await getPlayerTopHeroStats();
