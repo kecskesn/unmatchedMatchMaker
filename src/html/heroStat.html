@@ -1,196 +1,284 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="src/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-            <a class="btn btn-secondary active" id="heroStatBtn" data-url="heroStat"><i
-                    class="fas fa-chart-bar"></i></a>
-            <a class="btn btn-secondary" id="cardTrackerBtn" data-url="cardTracker"><i
-                    class="fas fa-layer-group"></i></a>
-            <a class="btn btn-secondary" id="matchLoggerBtn" data-url="matchLogger"><i class="fas fa-file-alt"></i></a>
-            <a class="btn btn-secondary" id="playerStatsBtn" data-url="playerStats"><i class="fas fa-users"></i></a>
-        </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <a class="btn btn-primary active" id="heroStatBtn" data-url="heroStat"
+          ><i class="fas fa-chart-bar"></i
+        ></a>
+        <a class="btn btn-primary" id="cardTrackerBtn" data-url="cardTracker"
+          ><i class="fas fa-layer-group"></i
+        ></a>
+        <a class="btn btn-primary" id="matchLoggerBtn" data-url="matchLogger"
+          ><i class="fas fa-file-alt"></i
+        ></a>
+        <a class="btn btn-primary" id="playerStatsBtn" data-url="playerStats"
+          ><i class="fas fa-users"></i
+        ></a>
+      </div>
 
-        <div class="form-group">
-            <label for="heroSelect">Hero</label>
-            <select class="form-control" id="heroSelect">
-                <option value="" disabled selected>Please select one...</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="numberOfPlaysSelect">Minimum Number of Plays</label>
-            <select class="form-control" id="numberOfPlaysSelect" disabled>
-                <option value="0" selected>0</option>
-                <option value="10">10</option>
-                <option value="20">20</option>
-                <option value="30">30</option>
-                <option value="40">40</option>
-                <option value="50">50</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="modeSelect">Mode</label>
-            <select class="form-control" id="modeSelect">
-                <option value="normal">Normal search</option>
-                <option value="fair">Fair matchups</option>
-                <option value="excludeUnfair" selected>Exclude unfair matchups</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="sourceSelect">Source</label>
-            <select class="form-control" id="sourceSelect">
-                <option value="umleague">UMLeague</option>
-                <option value="local">Local</option>
-                <option value="both" selected>UMLeague + local</option>
-            </select>
-        </div>
-        <table class="table table-bordered table-hover">
-            <thead>
-                <tr>
-                    <th class="text-center align-middle">Hero</th>
-                    <th class="text-center align-middle">Plays</th>
-                    <th class="text-center align-middle" id="winPercentageHeader">Win Percentage</th>
-                </tr>
-            </thead>
-            <tbody id="results">
-            </tbody>
-        </table>
+      <div class="form-group">
+        <label for="heroSelect">Hero</label>
+        <select class="form-control" id="heroSelect">
+          <option value="" disabled selected>Please select one...</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="modeSelect">Mode</label>
+        <select class="form-control" id="modeSelect">
+          <option value="normal">Normal search</option>
+          <option value="fair">Fair matchups</option>
+          <option value="excludeUnfair" selected>
+            Exclude unfair matchups
+          </option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="fairnessThreshold">Fairness Threshold</label>
+        <input
+          type="range"
+          class="form-control-range"
+          id="fairnessThreshold"
+          min="0"
+          max="100"
+          value="60"
+        />
+        <span id="fairnessThresholdValue">60</span>
+      </div>
+      <div class="form-group">
+        <label for="numberOfPlaysSelect">Minimum Number of Plays</label>
+        <select class="form-control" id="numberOfPlaysSelect" disabled>
+          <option value="0" selected>0</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="40">40</option>
+          <option value="50">50</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="sourceSelect">Source</label>
+        <select class="form-control" id="sourceSelect">
+          <option value="umleague">UMLeague</option>
+          <option value="local">Local</option>
+          <option value="both" selected>UMLeague + local</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <button type="button" id="toggleWinPercentages" class="btn btn-primary">
+          Show Win Percentages
+        </button>
+      </div>
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th class="text-center align-middle">Hero</th>
+            <th class="text-center align-middle">Plays</th>
+            <th class="text-center align-middle" id="winPercentageHeader">
+              Win Percentage
+            </th>
+          </tr>
+        </thead>
+        <tbody id="results"></tbody>
+      </table>
     </div>
     <div id="loadingOverlay" class="loading-overlay hidden">
-        <div class="spinner-border" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
     </div>
     <script>
-        const heroStatBtn = document.getElementById("heroStatBtn");
-        const cardTrackerBtn = document.getElementById("cardTrackerBtn");
-        const matchLoggerBtn = document.getElementById("matchLoggerBtn");
-        const playerStatsBtn = document.getElementById("playerStatsBtn");
-        const heroSelect = document.getElementById("heroSelect");
-        const numberOfPlaysSelect = document.getElementById("numberOfPlaysSelect");
-        const modeSelect = document.getElementById("modeSelect");
-        const sourceSelect = document.getElementById("sourceSelect");
-        const resultsTable = document.getElementById("results");
-        const winPercentageHeader = document.getElementById("winPercentageHeader");
-        const loadingOverlay = document.getElementById("loadingOverlay");
+      const heroStatBtn = document.getElementById("heroStatBtn");
+      const cardTrackerBtn = document.getElementById("cardTrackerBtn");
+      const matchLoggerBtn = document.getElementById("matchLoggerBtn");
+      const playerStatsBtn = document.getElementById("playerStatsBtn");
+      const heroSelect = document.getElementById("heroSelect");
+      const modeSelect = document.getElementById("modeSelect");
+      const fairnessThresholdInput =
+        document.getElementById("fairnessThreshold");
+      const numberOfPlaysSelect = document.getElementById(
+        "numberOfPlaysSelect"
+      );
+      const sourceSelect = document.getElementById("sourceSelect");
+      const toggleWinPercentagesButton = document.getElementById(
+        "toggleWinPercentages"
+      );
+      const resultsTable = document.getElementById("results");
+      const winPercentageHeader = document.getElementById(
+        "winPercentageHeader"
+      );
+      const loadingOverlay = document.getElementById("loadingOverlay");
 
-        heroStatBtn.addEventListener("click", handleButtonClick);
-        cardTrackerBtn.addEventListener("click", handleButtonClick);
-        matchLoggerBtn.addEventListener("click", handleButtonClick);
-        playerStatsBtn.addEventListener("click", handleButtonClick);
-        heroSelect.addEventListener("change", fetchMatches);
-        numberOfPlaysSelect.addEventListener("change", fetchMatches);
-        modeSelect.addEventListener("change", handleModeChange);
-        sourceSelect.addEventListener("change", fetchMatches);
+      heroStatBtn.addEventListener("click", handleButtonClick);
+      cardTrackerBtn.addEventListener("click", handleButtonClick);
+      matchLoggerBtn.addEventListener("click", handleButtonClick);
+      playerStatsBtn.addEventListener("click", handleButtonClick);
+      heroSelect.addEventListener("change", fetchMatches);
+      modeSelect.addEventListener("change", handleModeChange);
+      fairnessThresholdInput.addEventListener("change", handleModeChange);
+      numberOfPlaysSelect.addEventListener("change", fetchMatches);
+      sourceSelect.addEventListener("change", fetchMatches);
 
-        window.onload = function () {
-            fetchHeroes();
-        };
+      fairnessThresholdInput.addEventListener("input", function () {
+        fairnessThresholdValue.textContent = this.value;
+      });
 
-        function handleButtonClick() {
-            const baseUrl = this.getAttribute("data-url");
-            const hero = encodeURIComponent(heroSelect.value);
-            const newUrl = hero ? `${baseUrl}?hero=${hero}` : baseUrl;
-            window.location.href = newUrl;
-        }
+      window.onload = function () {
+        fetchHeroes();
+      };
 
-        function handleModeChange() {
-            const selectedMode = modeSelect.value;
-            numberOfPlaysSelect.disabled = (selectedMode === "excludeUnfair");
-            fetchMatches();
-        }
+      function handleButtonClick() {
+        const baseUrl = this.getAttribute("data-url");
+        const hero = encodeURIComponent(heroSelect.value);
+        const newUrl = hero ? `${baseUrl}?hero=${hero}` : baseUrl;
+        window.location.href = newUrl;
+      }
 
-        function fetchHeroes() {
-            fetch('/heroes')
-                .then(response => response.json())
-                .then(heroes => {
-                    heroes.forEach(hero => {
-                        const option = document.createElement('option');
-                        option.value = encodeURIComponent(hero);
-                        option.text = hero;
-                        heroSelect.add(option);
-                    });
+      function handleModeChange() {
+        const selectedMode = modeSelect.value;
+        numberOfPlaysSelect.disabled = selectedMode === "excludeUnfair";
+        fetchMatches();
+      }
 
-                    const urlParams = new URLSearchParams(window.location.search);
-                    const selectedHero = urlParams.get('hero');
-                    if (selectedHero) {
-                        heroSelect.value = selectedHero;
-                    }
+      toggleWinPercentagesButton.addEventListener("click", function () {
+        const winPercentCells = document.querySelectorAll(".win-percent-cell");
+        winPercentCells.forEach((cell) => {
+          const hiddenMessageDiv = cell.querySelector(".hidden-message");
+          const actualWinPercentDiv = cell.querySelector(".actual-win-percent");
 
-                    fetchMatches();
-                })
-                .catch(error => console.error("Error fetching heroes:", error));
-        }
+          hiddenMessageDiv.classList.toggle("hidden");
+          actualWinPercentDiv.classList.toggle("hidden");
 
-        function fetchMatches() {
-            const hero = heroSelect.value;
-            const heroName = heroSelect.options[heroSelect.selectedIndex].text;
-            const numberOfPlays = numberOfPlaysSelect.value;
-            const mode = modeSelect.value;
-            const source = sourceSelect.value;
+          if (hiddenMessageDiv.classList.contains("hidden")) {
+            toggleWinPercentagesButton.textContent = "Show Win Percentages";
+          } else {
+            toggleWinPercentagesButton.textContent = "Hide Win Percentages";
+          }
+        });
+      });
 
-            if (!hero) return;
+      function fetchHeroes() {
+        fetch("/heroes")
+          .then((response) => response.json())
+          .then((heroes) => {
+            heroes.forEach((hero) => {
+              const option = document.createElement("option");
+              option.value = encodeURIComponent(hero);
+              option.text = hero;
+              heroSelect.add(option);
+            });
 
-            const newUrl = `/heroStat?hero=${hero}`;
-            window.history.pushState({}, '', newUrl);
-
-            loadingOverlay.classList.remove("hidden");
-
-            fetch(`/matches?hero=${hero}&numberOfPlays=${numberOfPlays}&mode=${mode}&source=${source}`)
-                .then(response => response.json())
-                .then(data => {
-                    winPercentageHeader.textContent = `${heroName} Win Percentage`;
-                    resultsTable.innerHTML = "";
-
-                    data.result.forEach(item => {
-                        const row = document.createElement("tr");
-
-                        row.addEventListener("click", () => {
-                            const encodedHero = encodeURIComponent(item.hero);
-                            const newUrl = `/cardTracker?hero=${encodedHero}`;
-                            window.location.href = newUrl;
-                        });
-
-                        const heroCell = createTableCell(item.hero);
-                        const playsCell = createTableCell(item.plays + (item.combinedPlays ? " (" + item.combinedPlays + ")" : ""));
-                        const winPercentCell = createTableCell(getWinPercentContent(item));
-
-                        row.appendChild(heroCell);
-                        row.appendChild(playsCell);
-                        row.appendChild(winPercentCell);
-
-                        resultsTable.appendChild(row);
-                    });
-
-                    loadingOverlay.classList.add("hidden");
-                })
-                .catch(error => {
-                    console.error("Error fetching matches:", error);
-                    loadingOverlay.classList.add("hidden");
-                });
-        }
-
-        function createTableCell(content) {
-            const cell = document.createElement("td");
-            cell.textContent = content;
-            return cell;
-        }
-
-        function getWinPercentContent(item) {
-            if (item.winPercent === "hidden") {
-                return item.winPercent;
-            } else {
-                const winPercent = item.winPercent + "%" + (item.combinedWinPercent ? " (" + item.combinedWinPercent + "%)" : "");
-                return winPercent;
+            const urlParams = new URLSearchParams(window.location.search);
+            const selectedHero = urlParams.get("hero");
+            if (selectedHero) {
+              heroSelect.value = selectedHero;
             }
-        }
+
+            fetchMatches();
+          })
+          .catch((error) => console.error("Error fetching heroes:", error));
+      }
+
+      function fetchMatches() {
+        const hero = heroSelect.value;
+        const heroName = heroSelect.options[heroSelect.selectedIndex].text;
+        const mode = modeSelect.value;
+        const fairnessThreshold = fairnessThresholdInput.value;
+        const numberOfPlays = numberOfPlaysSelect.value;
+        const source = sourceSelect.value;
+
+        if (!hero) return;
+
+        const newUrl = `/heroStat?hero=${hero}`;
+        window.history.pushState({}, "", newUrl);
+
+        loadingOverlay.classList.remove("hidden");
+
+        fetch(
+          `/matches?hero=${hero}&numberOfPlays=${numberOfPlays}&mode=${mode}&fairnessThreshold=${fairnessThreshold}&source=${source}`
+        )
+          .then((response) => response.json())
+          .then((data) => {
+            winPercentageHeader.textContent = `${heroName} Win Percentage`;
+            resultsTable.innerHTML = "";
+
+            data.result.forEach((item) => {
+              const row = document.createElement("tr");
+
+              row.addEventListener("click", () => {
+                const encodedHero = encodeURIComponent(item.hero);
+                const newUrl = `/cardTracker?hero=${encodedHero}`;
+                window.location.href = newUrl;
+              });
+
+              const heroCell = createTableCell(item.hero);
+              const playsCell = createTableCell(
+                item.plays +
+                  (item.combinedPlays ? " (" + item.combinedPlays + ")" : "")
+              );
+              const winPercentCell = document.createElement("td");
+              winPercentCell.appendChild(getWinPercentContent(item));
+
+              row.appendChild(heroCell);
+              row.appendChild(playsCell);
+              row.appendChild(winPercentCell);
+
+              resultsTable.appendChild(row);
+            });
+
+            loadingOverlay.classList.add("hidden");
+          })
+          .catch((error) => {
+            console.error("Error fetching matches:", error);
+            loadingOverlay.classList.add("hidden");
+          });
+      }
+
+      function createTableCell(content) {
+        const cell = document.createElement("td");
+        cell.textContent = content;
+        return cell;
+      }
+
+      function getWinPercentContent(item) {
+        const winPercentContainer = document.createElement("div");
+        winPercentContainer.classList.add("win-percent-cell");
+
+        const hiddenMessageDiv = document.createElement("div");
+        hiddenMessageDiv.classList.add("hidden-message");
+        hiddenMessageDiv.textContent = "Hidden";
+
+        const actualWinPercentDiv = document.createElement("div");
+        actualWinPercentDiv.classList.add("actual-win-percent");
+        actualWinPercentDiv.textContent =
+          item.winPercent === "-"
+            ? item.winPercent
+            : item.winPercent +
+              "%" +
+              (item.combinedWinPercent
+                ? " (" + item.combinedWinPercent + "%)"
+                : "");
+        actualWinPercentDiv.classList.add("hidden");
+
+        winPercentContainer.appendChild(hiddenMessageDiv);
+        winPercentContainer.appendChild(actualWinPercentDiv);
+
+        return winPercentContainer;
+      }
     </script>
+  </body>
+</html>

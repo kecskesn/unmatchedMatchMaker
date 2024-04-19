@@ -1,5 +1,5 @@
 class NormalSearchStrategy {
-    handle(items) {
+    handle(items, fairnessThreshold) {
         return items.sort((a, b) => b.winPercent - a.winPercent);
     }
 }

@@ -1,16 +1,15 @@
-const { fairnessTreshold } = require("../../../config/config");
 const heroes = require("../../../config/heroes");
 
 class ExcludeUnfairSearchStrategy {
-    handle(items) {
+    handle(items, fairnessThreshold) {
         const unfairMatchups = items.filter((item) => {
-            const normalizedThreshold = fairnessTreshold > 50 ? 100 - fairnessTreshold : fairnessTreshold;
+            const normalizedThreshold = fairnessThreshold > 50 ? 100 - fairnessThreshold : fairnessThreshold;
             const normalizedWinPercent = item.winPercent > 50 ? 100 - item.winPercent : item.winPercent;
             return normalizedWinPercent <= normalizedThreshold;
         });
 
         let fairMatchups = items.filter((item) => {
-            const normalizedThreshold = fairnessTreshold > 50 ? 100 - fairnessTreshold : fairnessTreshold;
+            const normalizedThreshold = fairnessThreshold > 50 ? 100 - fairnessThreshold : fairnessThreshold;
             const normalizedWinPercent = item.winPercent > 50 ? 100 - item.winPercent : item.winPercent;
             return normalizedWinPercent >= normalizedThreshold;
         });
@@ -23,14 +22,8 @@ class ExcludeUnfairSearchStrategy {
             .map((hero) => ({
                 hero: hero,
                 plays: 0,
-                winPercent: 'hidden',
+                winPercent: '-',
             }));
-            
-        fairMatchups = fairMatchups.map((item) => ({
-            ...item,
-            winPercent: 'hidden',
-            ...(item.combinedWinPercent ? { combinedWinPercent: 'hidden' } : null),
-        }));
 
         const finalResult = [...fairMatchups, ...heroesNotInBoth];
 

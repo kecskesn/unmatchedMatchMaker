@@ -41,11 +41,12 @@ app.get("/deck", async (req, res) => {
 
 app.get("/matches", async (req, res) => {
   const hero = req.query.hero;
-  const numberOfPlays = req.query.numberOfPlays;
   const mode = req.query.mode;
+  const fairnessThreshold = req.query.fairnessThreshold;
+  const numberOfPlays = req.query.numberOfPlays;
   const source = req.query.source;
 
-  const result = await getHeroStats(hero, numberOfPlays, mode, source);
+  const result = await getHeroStats(hero, numberOfPlays, mode, source, fairnessThreshold);
   res.send({ result });
 });
 

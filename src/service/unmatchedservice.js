@@ -43,7 +43,7 @@ async function getHeroDeck(hero) {
   }
 }
 
-async function getHeroStats(hero, numberOfPlays, mode, source) {
+async function getHeroStats(hero, numberOfPlays, mode, source, fairnessThreshold) {
   const encodedHero = encodeURIComponent(hero);
 
   let umleagueData = [];
@@ -87,7 +87,7 @@ async function getHeroStats(hero, numberOfPlays, mode, source) {
   })
 
   const filteredData = mergedData.filter((item) => item.combinedPlays ? item.combinedPlays >= numberOfPlays : item.plays >= numberOfPlays);
-  let result = searchStrategies[mode].handle(filteredData);
+  let result = searchStrategies[mode].handle(filteredData, fairnessThreshold);
   result = result.filter((item) => item.hero !== hero);
   return result;
 }
