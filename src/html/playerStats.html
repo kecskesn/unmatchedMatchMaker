@@ -13,8 +13,7 @@
     <div class="container">
         <div class="d-flex justify-content-between align-items-center">
             <a class="btn btn-primary" id="heroStatBtn" data-url="heroStat"><i class="fas fa-chart-bar"></i></a>
-            <a class="btn btn-primary" id="cardTrackerBtn" data-url="cardTracker"><i
-                    class="fas fa-layer-group"></i></a>
+            <a class="btn btn-primary" id="cardTrackerBtn" data-url="cardTracker"><i class="fas fa-layer-group"></i></a>
             <a class="btn btn-primary" id="matchLoggerBtn" data-url="matchLogger"><i class="fas fa-file-alt"></i></a>
             <a class="btn btn-primary active" id="playerStatsBtn" data-url="playerStats"><i
                     class="fas fa-users"></i></a>
@@ -22,40 +21,7 @@
 
         <div class="mt-4">
             <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Balázs</h5>
-                            <p class="card-text mb-3" id="balazsWins">Wins: -</p>
-                            <div class="card-subtitle mb-3">Top 3 Most Played Heroes</div>
-                            <ul class="list-group list-group-flush" id="balazsTopHeroes">
-                            </ul>
-                            <div class="card-subtitle mb-3">Top 3 Highest Win Rate Heroes</div>
-                            <ul class="list-group list-group-flush" id="balazsTopWinRate">
-                            </ul>
-                            <div class="card-subtitle mb-3">Worst Win Rate Hero</div>
-                            <ul class="list-group list-group-flush" id="balazsWorstWinRate">
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Keca</h5>
-                            <p class="card-text mb-3" id="kecaWins">Wins: -</p>
-                            <div class="card-subtitle mb-3">Top 3 Most Played Heroes</div>
-                            <ul class="list-group list-group-flush" id="kecaTopHeroes">
-                            </ul>
-                            <div class="card-subtitle mb-3">Top 3 Highest Win Rate Heroes</div>
-                            <ul class="list-group list-group-flush" id="kecaTopWinRate">
-                            </ul>
-                            <div class="card-subtitle mb-3">Worst Win Rate Hero</div>
-                            <ul class="list-group list-group-flush" id="kecaWorstWinRate">
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <!-- Player cards will be dynamically generated here -->
             </div>
         </div>
     </div>
@@ -78,84 +44,101 @@
             window.location.href = newUrl;
         }
 
-        async function playerTopHeroStats() {
+        async function playerStatistics() {
             try {
-                const response = await fetch('/playerTopHeroStats');
+                const response = await fetch('/playerStatistics');
                 const playerStatsResult = await response.json();
                 console.log(playerStatsResult);
 
-                const formatHeroStats = (hero) => `${hero.name} - Plays: ${hero.plays}, Win Rate: ${hero.winRate}%`;
+                const container = document.querySelector(".row.justify-content-center");
 
-                const balazsTopHeroes = document.getElementById("balazsTopHeroes");
-                playerStatsResult.Balázs.slice(0, 3).forEach(hero => {
-                    const listItem = document.createElement("li");
-                    listItem.classList.add("list-group-item");
-                    listItem.textContent = formatHeroStats(hero);
-                    balazsTopHeroes.appendChild(listItem);
+                Object.entries(playerStatsResult).forEach(([playerName, playerStats]) => {
+                    const playerCard = createPlayerCard(playerName, playerStats);
+                    container.appendChild(playerCard);
                 });
-
-                const kecaTopHeroes = document.getElementById("kecaTopHeroes");
-                playerStatsResult.Keca.slice(0, 3).forEach(hero => {
-                    const listItem = document.createElement("li");
-                    listItem.classList.add("list-group-item");
-                    listItem.textContent = formatHeroStats(hero);
-                    kecaTopHeroes.appendChild(listItem);
-                });
-
-                // Find top 3 highest win rate heroes
-                const balazsTopWinRate = document.getElementById("balazsTopWinRate");
-                playerStatsResult.Balázs
-                    .filter(hero => hero.plays >= 2)
-                    .sort((a, b) => b.winRate - a.winRate)
-                    .slice(0, 3)
-                    .forEach(hero => {
-                        const listItem = document.createElement("li");
-                        listItem.classList.add("list-group-item");
-                        listItem.textContent = formatHeroStats(hero);
-                        balazsTopWinRate.appendChild(listItem);
-                    });
-
-                const kecaTopWinRate = document.getElementById("kecaTopWinRate");
-                playerStatsResult.Keca
-                    .filter(hero => hero.plays >= 2)
-                    .sort((a, b) => b.winRate - a.winRate)
-                    .slice(0, 3)
-                    .forEach(hero => {
-                        const listItem = document.createElement("li");
-                        listItem.classList.add("list-group-item");
-                        listItem.textContent = formatHeroStats(hero);
-                        kecaTopWinRate.appendChild(listItem);
-                    });
-
-                // Find worst win rate hero
-                const findWorstWinRateHero = (heroes) => {
-                    const eligibleHeroes = heroes.filter(hero => hero.plays >= 2);
-                    if (eligibleHeroes.length === 0) return "-";
-                    return eligibleHeroes.reduce((prev, curr) => prev.winRate < curr.winRate ? prev : curr);
-                };
-
-                const balazsWorstWinRate = document.getElementById("balazsWorstWinRate");
-                const balazsWorstHero = findWorstWinRateHero(playerStatsResult.Balázs);
-                const balazsWorstWinRateItem = document.createElement("li");
-                balazsWorstWinRateItem.classList.add("list-group-item");
-                balazsWorstWinRateItem.textContent = formatHeroStats(balazsWorstHero);
-                balazsWorstWinRate.appendChild(balazsWorstWinRateItem);
-
-                const kecaWorstWinRate = document.getElementById("kecaWorstWinRate");
-                const kecaWorstHero = findWorstWinRateHero(playerStatsResult.Keca);
-                const kecaWorstWinRateItem = document.createElement("li");
-                kecaWorstWinRateItem.classList.add("list-group-item");
-                kecaWorstWinRateItem.textContent = formatHeroStats(kecaWorstHero);
-                kecaWorstWinRate.appendChild(kecaWorstWinRateItem);
 
             } catch (error) {
                 console.error('Error fetching player stats:', error);
             }
         }
 
+        function createPlayerCard(playerName, playerStats) {
+            const cardColumn = document.createElement("div");
+            cardColumn.classList.add("col-md-4");
+
+            const card = document.createElement("div");
+            card.classList.add("card", "mb-4");
+
+            const cardBody = document.createElement("div");
+            cardBody.classList.add("card-body");
+
+            const cardTitle = document.createElement("h5");
+            cardTitle.classList.add("card-title");
+            cardTitle.textContent = playerName;
+
+            const winsParagraph = document.createElement("p");
+            winsParagraph.classList.add("card-text", "mb-3");
+            winsParagraph.textContent = `Plays: ${playerStats.plays} (${playerStats.wins}W/${playerStats.losses}L ${playerStats.winRate}%)`;
+
+            const topHeroesTitle = document.createElement("div");
+            topHeroesTitle.classList.add("card-subtitle", "mb-3");
+            topHeroesTitle.textContent = "Top 3 Most Played Heroes";
+
+            const topHeroesList = document.createElement("ul");
+            topHeroesList.classList.add("list-group", "list-group-flush");
+            playerStats.heroStats.sort((a, b) => b.plays - a.plays).slice(0, 3).forEach(hero => {
+                const listItem = document.createElement("li");
+                listItem.classList.add("list-group-item");
+                listItem.textContent = `${hero.name} - Plays: ${hero.plays} (${hero.wins}W/${hero.losses}L ${hero.winRate}%)`;
+                topHeroesList.appendChild(listItem);
+            });
+
+            const topWinRateTitle = document.createElement("div");
+            topWinRateTitle.classList.add("card-subtitle", "mb-3");
+            topWinRateTitle.textContent = "Top 3 Highest Win Rate Heroes";
+
+            const topWinRateList = document.createElement("ul");
+            topWinRateList.classList.add("list-group", "list-group-flush");
+            playerStats.heroStats
+                .filter(hero => hero.plays >= 2)
+                .sort((a, b) => b.winRate - a.winRate)
+                .slice(0, 3)
+                .forEach(hero => {
+                    const listItem = document.createElement("li");
+                    listItem.classList.add("list-group-item");
+                    listItem.textContent = `${hero.name} - Plays: ${hero.plays} (${hero.wins}W/${hero.losses}L ${hero.winRate}%)`;
+                    topWinRateList.appendChild(listItem);
+                });
+
+            const worstWinRateTitle = document.createElement("div");
+            worstWinRateTitle.classList.add("card-subtitle", "mb-3");
+            worstWinRateTitle.textContent = "Worst Win Rate Hero";
+
+            const worstWinRateList = document.createElement("ul");
+            worstWinRateList.classList.add("list-group", "list-group-flush");
+            const worstHero = playerStats.heroStats.filter(hero => hero.plays >= 2).reduce((prev, curr) => prev.winRate < curr.winRate ? prev : curr, { winRate: Infinity });
+            const worstWinRateItem = document.createElement("li");
+            worstWinRateItem.classList.add("list-group-item");
+            worstWinRateItem.textContent = `${worstHero.name} - Plays: ${worstHero.plays} (${worstHero.wins}W/${worstHero.losses}L ${worstHero.winRate}%)`;
+            worstWinRateList.appendChild(worstWinRateItem);
+
+            cardBody.appendChild(cardTitle);
+            cardBody.appendChild(winsParagraph);
+            cardBody.appendChild(topHeroesTitle);
+            cardBody.appendChild(topHeroesList);
+            cardBody.appendChild(topWinRateTitle);
+            cardBody.appendChild(topWinRateList);
+            cardBody.appendChild(worstWinRateTitle);
+            cardBody.appendChild(worstWinRateList);
+
+            card.appendChild(cardBody);
+            cardColumn.appendChild(card);
+
+            return cardColumn;
+        }
+
         window.onload = function () {
-            updateWinRateTracker();
-            playerTopHeroStats();
+            playerStatistics();
         };
     </script>
 </body>

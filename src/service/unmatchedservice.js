@@ -105,60 +105,56 @@ function logMatch(hero1, hero2, player1, player2, winner) {
   return saveMatchToDB(hero1, hero2, player1, player2, winner);
 }
 
-async function getPlayerTopHeroStats() {
+async function getPlayerStatistics() {
   const { matches } = await getMatchLogsFromDB();
 
-  const playerStats = {
-    "Balázs": [],
-    "Keca": [],
-  };
+  const distinctPlayers = [...new Set(matches.flatMap(match => [match.player1, match.player2]))];
 
-  matches.forEach((match) => {
-    const { hero1, hero2, winner, person } = match;
-    const winnerHero = hero1 === winner ? hero1 : hero2;
-    const loserHero = hero1 === winner ? hero2 : hero1;
-    const loserPerson = person === "Balázs" ? "Keca" : "Balázs";
+  const distinctPlayersStats = {};
 
-    let winnerHeroStats = playerStats[person].find(hero => hero.name === winnerHero);
-    if (!winnerHeroStats) {
-      winnerHeroStats = {
-        name: winnerHero,
-        wins: 0,
-        losses: 0,
-        plays: 0,
-      };
-      playerStats[person].push(winnerHeroStats);
-    }
-    winnerHeroStats.wins++;
-    winnerHeroStats.plays++;
+  distinctPlayers.forEach((player) => {
+    const playerStats = {
+      wins: 0,
+      losses: 0,
+      plays: 0,
+      winPercent: 0,
+    };
+    const playerMatches = matches.filter(match => match.player1 === player || match.player2 === player);
+    const playerHeroes = {};
 
-    let loserHeroStats = playerStats[loserPerson].find(hero => hero.name === loserHero);
-    if (!loserHeroStats) {
-      loserHeroStats = {
-        name: loserHero,
-        wins: 0,
-        losses: 0,
-        plays: 0,
-      };
-      playerStats[loserPerson].push(loserHeroStats);
-    }
-    loserHeroStats.losses++;
-    loserHeroStats.plays++;
+    playerMatches.forEach((match) => {
+      const { player1, player2, winner, hero1, hero2 } = match;
+      const isPlayer1 = player1 === player;
+      const playerHero = isPlayer1 ? hero1 : hero2;
+      const isWinner = winner === playerHero;
+
+      if (!playerHeroes[playerHero]) {
+        playerHeroes[playerHero] = { wins: 0, losses: 0, plays: 0 };
+      }
+
+      playerHeroes[playerHero].plays++;
+      playerStats.plays++;
+      if (isWinner) {
+        playerHeroes[playerHero].wins++;
+        playerStats.wins++;
+      } else {
+        playerHeroes[playerHero].losses++;
+        playerStats.losses++;
+      }
+    });
+
+    const heroStatsArray = Object.entries(playerHeroes).map(([name, stats]) => ({
+      name,
+      wins: stats.wins,
+      losses: stats.losses,
+      plays: stats.plays,
+      winRate: Math.round((stats.wins / stats.plays) * 100),
+    }));
+
+    distinctPlayersStats[player] = { ...playerStats, winRate: Math.round((playerStats.wins / playerStats.plays) * 100), heroStats: heroStatsArray };
   });
 
-  // Sort hero arrays by plays
-  playerStats.Balázs.sort((a, b) => b.plays - a.plays);
-  playerStats.Keca.sort((a, b) => b.plays - a.plays);
-
-  // Calculate win rate for each hero
-  playerStats.Balázs.forEach((hero) => {
-    hero.winRate = Math.round((hero.wins / hero.plays) * 100);
-  });
-  playerStats.Keca.forEach((hero) => {
-    hero.winRate = Math.round((hero.wins / hero.plays) * 100);
-  });
-
-  return playerStats;
+  return distinctPlayersStats;
 }
 
 function deleteMatchLogById(logId) {
@@ -172,6 +168,6 @@ module.exports = {
   getHeroStats,
   getMatchLogs,
   logMatch,
-  getPlayerTopHeroStats,
+  getPlayerStatistics,
   deleteMatchLogById
 }
