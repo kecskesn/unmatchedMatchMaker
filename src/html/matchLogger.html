@@ -328,8 +328,7 @@
                   tdMatchup.classList.add("align-middle");
 
                   const tdWinner = document.createElement("td");
-                  const winnerPlayer = log.winner === log.hero1 ? log.player1 : log.player2;
-                  tdWinner.textContent = log.winner + " (" + winnerPlayer + ")";
+                  tdWinner.textContent = log.winner + " (" + log.winnerPlayer + ")";
                   tdWinner.classList.add("align-middle");
 
                   const tdDate = document.createElement("td");

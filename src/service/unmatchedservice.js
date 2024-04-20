@@ -123,10 +123,9 @@ async function getPlayerStatistics() {
     const playerHeroes = {};
 
     playerMatches.forEach((match) => {
-      const { player1, player2, winner, hero1, hero2 } = match;
-      const isPlayer1 = player1 === player;
-      const playerHero = isPlayer1 ? hero1 : hero2;
-      const isWinner = winner === playerHero;
+      const { player1, winnerPlayer, hero1, hero2 } = match;
+      const playerHero = player1 === player ? hero1 : hero2;
+      const isWinner = player === winnerPlayer;
 
       if (!playerHeroes[playerHero]) {
         playerHeroes[playerHero] = { wins: 0, losses: 0, plays: 0 };

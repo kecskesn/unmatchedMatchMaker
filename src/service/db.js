@@ -14,14 +14,16 @@ db.run(`
     player1 TEXT NOT NULL,
     player2 TEXT NOT NULL,
     winner TEXT NOT NULL,
+    winnerPlayer TEXT NOT NULL,
     timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
   )
 `);
 
 async function saveMatchToDB(hero1, hero2, player1, player2, winner) {
-  const sql = 'INSERT INTO matches (hero1, hero2, player1, player2, winner) VALUES (?, ?, ?, ?, ?)';
+  const sql = 'INSERT INTO matches (hero1, hero2, player1, player2, winner, winnerPlayer) VALUES (?, ?, ?, ?, ?, ?)';
   try {
-    await runAsync(sql, [hero1, hero2, player1, player2, winner]);
+    const winnerPlayer = winner === hero1 ? player1 : player2;
+    await runAsync(sql, [hero1, hero2, player1, player2, winner, winnerPlayer]);
     return { success: true };
   } catch (err) {
     console.error(err);
@@ -30,7 +32,7 @@ async function saveMatchToDB(hero1, hero2, player1, player2, winner) {
 }
 
 async function getMatchLogsFromDB(dateFilter, heroFilter) {
-  let query = 'SELECT id, hero1, hero2, player1, player2, winner, DATE(timestamp) as date FROM matches';
+  let query = 'SELECT id, hero1, hero2, player1, player2, winner, winnerPlayer, DATE(timestamp) as date FROM matches';
   let params = [];
 
   if (dateFilter === '2w') {
