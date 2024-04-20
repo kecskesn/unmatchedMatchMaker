@@ -123,19 +123,17 @@
 
             const worstWinRateList = document.createElement("ul");
             worstWinRateList.classList.add("list-group", "list-group-flush");
-            const heroesWithAtLeast2Plays = playerStats.heroStats.filter(hero => hero.plays >= 2);
-            if (heroesWithAtLeast2Plays.length === 0) {
-                console.log("No heroes with at least 2 plays.");
+            const worstHeroes = playerStats.heroStats.filter(hero => hero.plays >= 2);
+            if (worstHeroes.length === 0) {
                 const listItem = document.createElement("li");
                 listItem.classList.add("list-group-item");
                 listItem.textContent = "-";
                 worstWinRateList.appendChild(listItem);
             } else {
-                console.log("Heroes with at least 2 plays:", heroesWithAtLeast2Plays);
-                const worstHero = heroesWithAtLeast2Plays.reduce((prev, curr) => prev.winRate < curr.winRate ? prev : curr, null);
+                const worstHero = worstHeroes.reduce((prev, curr) => prev.winRate < curr.winRate ? prev : curr);
                 const listItem = document.createElement("li");
                 listItem.classList.add("list-group-item");
-                listItem.textContent = `${worstHero.name} - Plays: ${worstHero.plays} (${worstHero.wins}W/${worstHero.losses}L ${heroesWithAtLeast2Plays.winRate}%)`;
+                listItem.textContent = `${worstHero.name} - Plays: ${worstHero.plays} (${worstHero.wins}W/${worstHero.losses}L ${worstHero.winRate}%)`;
                 worstWinRateList.appendChild(listItem);
             }
 
