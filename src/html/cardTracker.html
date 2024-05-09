@@ -12,10 +12,18 @@
 <body>
   <div class="container">
     <div class="d-flex justify-content-between align-items-center">
-      <a class="btn btn-primary" id="heroStatBtn" data-url="heroStat"><i class="fas fa-chart-bar"></i></a>
-      <a class="btn btn-primary active" id="cardTrackerBtn" data-url="cardTracker"><i class="fas fa-layer-group"></i></a>
-      <a class="btn btn-primary" id="matchLoggerBtn" data-url="matchLogger"><i class="fas fa-file-alt"></i></a>
-      <a class="btn btn-primary" id="playerStatsBtn" data-url="playerStats"><i class="fas fa-users"></i></a>
+      <a class="btn btn-primary" id="heroStatBtn" href="heroStat"
+        ><i class="fas fa-chart-bar"></i
+      ></a>
+      <a class="btn btn-primary active" id="cardTrackerBtn" href="cardTracker"
+        ><i class="fas fa-layer-group"></i
+      ></a>
+      <a class="btn btn-primary" id="matchLoggerBtn" href="matchLogger"
+        ><i class="fas fa-file-alt"></i
+      ></a>
+      <a class="btn btn-primary" id="playerStatsBtn" href="playerStats"
+        ><i class="fas fa-users"></i
+      ></a>
     </div>
 
     <div class="form-group">
@@ -41,10 +49,6 @@
     </div>
   </div>
   <script>
-    const heroStatBtn = document.getElementById("heroStatBtn");
-    const cardTrackerBtn = document.getElementById("cardTrackerBtn");
-    const matchLoggerBtn = document.getElementById("matchLoggerBtn");
-    const playerStatsBtn = document.getElementById("playerStatsBtn");
     const heroSelect = document.getElementById("heroSelect");
     const handContainer = document.querySelector(".hand");
     const deckContainer = document.querySelector(".deck");
@@ -54,10 +58,6 @@
     let totalCardCount = 0;
     let discardedCardCount = 0;
 
-    heroStatBtn.addEventListener("click", handleButtonClick);
-    cardTrackerBtn.addEventListener("click", handleButtonClick);
-    matchLoggerBtn.addEventListener("click", handleButtonClick);
-    playerStatsBtn.addEventListener("click", handleButtonClick);
     heroSelect.addEventListener("change", handleHeroSelectChange);
 
     window.onload = function () {
@@ -65,19 +65,13 @@
       fetchHeroes();
     };
 
-    function handleButtonClick() {
-        const baseUrl = this.getAttribute("data-url");
-        const urlParams = new URLSearchParams(window.location.search);
-        const newUrl = `${baseUrl}?${urlParams.toString()}`;
-        window.location.href = newUrl;
-    }
-
     function handleHeroSelectChange() {
-      const selectedHero = heroSelect.value;
-      if (selectedHero) {
+      const hero = heroSelect.value;
+      sessionStorage.setItem("hero", hero);
+      if (hero) {
         deckContainer.removeEventListener("click", handleDeckButtonClick);
         discardContainer.removeEventListener("click", handleDeckButtonClick);
-        fetchDeckConfig(selectedHero);
+        fetchDeckConfig(hero);
       }
     }
 
@@ -92,8 +86,7 @@
             heroSelect.add(option);
           });
 
-          const urlParams = new URLSearchParams(window.location.search);
-          const selectedHero = urlParams.get('hero');
+          const selectedHero = sessionStorage.getItem("hero");
           if (selectedHero) {
             heroSelect.value = selectedHero;
             fetchDeckConfig(selectedHero);
@@ -103,11 +96,6 @@
     }
 
     function fetchDeckConfig(hero) {
-      const urlParams = new URLSearchParams(window.location.search);
-      urlParams.set('hero', hero);
-      const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
-      window.history.pushState({}, '', newUrl);
-
       totalCardCount = 0;
       discardedCardCount = 0;
       handContainer.innerHTML = "";
@@ -121,9 +109,6 @@
           if (data === null) {
             console.error("Deck configuration not found for hero:", hero);
             heroSelect.value = "";
-            const urlParams = new URLSearchParams(window.location.search);
-            urlParams.delete('hero');
-            window.history.pushState({}, '', urlParams.toString());
             return;
           }
 
