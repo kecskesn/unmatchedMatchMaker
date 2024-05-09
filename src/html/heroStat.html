@@ -129,7 +129,7 @@
       playerStatsBtn.addEventListener("click", handleButtonClick);
       heroSelect.addEventListener("change", fetchMatches);
       modeSelect.addEventListener("change", handleModeChange);
-      fairnessThresholdInput.addEventListener("change", handleModeChange);
+      fairnessThresholdInput.addEventListener("change", fetchMatches);
       numberOfPlaysSelect.addEventListener("change", fetchMatches);
       sourceSelect.addEventListener("change", fetchMatches);
 
@@ -138,6 +138,12 @@
       });
 
       window.onload = function () {
+        modeSelect.value = sessionStorage.getItem('mode') || 'excludeUnfair';
+        numberOfPlaysSelect.disabled = modeSelect.value === "excludeUnfair";
+        fairnessThresholdInput.value = sessionStorage.getItem('fairnessThreshold') || 60;
+        fairnessThresholdValue.textContent = sessionStorage.getItem('fairnessThreshold') || 60;
+        numberOfPlaysSelect.value = sessionStorage.getItem('numberOfPlays') || 0;
+        sourceSelect.value = sessionStorage.getItem('source') || 'both';
         fetchHeroes();
       };
 
@@ -200,6 +206,11 @@
         const fairnessThreshold = fairnessThresholdInput.value;
         const numberOfPlays = numberOfPlaysSelect.value;
         const source = sourceSelect.value;
+
+        sessionStorage.setItem('mode', modeSelect.value);
+        sessionStorage.setItem('fairnessThreshold', fairnessThresholdInput.value);
+        sessionStorage.setItem('numberOfPlays', numberOfPlaysSelect.value);
+        sessionStorage.setItem('source', sourceSelect.value);
 
         if (!hero) return;
 
