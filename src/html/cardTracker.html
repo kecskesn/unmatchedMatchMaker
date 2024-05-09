@@ -66,10 +66,10 @@
     };
 
     function handleButtonClick() {
-      const baseUrl = this.getAttribute("data-url");
-      const hero = encodeURIComponent(heroSelect.value);
-      const newUrl = hero ? `${baseUrl}?hero=${hero}` : baseUrl;
-      window.location.href = newUrl;
+        const baseUrl = this.getAttribute("data-url");
+        const urlParams = new URLSearchParams(window.location.search);
+        const newUrl = `${baseUrl}?${urlParams.toString()}`;
+        window.location.href = newUrl;
     }
 
     function handleHeroSelectChange() {
@@ -103,7 +103,9 @@
     }
 
     function fetchDeckConfig(hero) {
-      const newUrl = `/cardTracker?hero=${hero}`;
+      const urlParams = new URLSearchParams(window.location.search);
+      urlParams.set('hero', hero);
+      const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
       window.history.pushState({}, '', newUrl);
 
       totalCardCount = 0;

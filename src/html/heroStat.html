@@ -203,7 +203,9 @@
 
         if (!hero) return;
 
-        const newUrl = `/heroStat?hero=${hero}`;
+        const urlParams = new URLSearchParams(window.location.search);
+        urlParams.set("hero", hero);
+        const newUrl = `${window.location.pathname}?${urlParams.toString()}`;
         window.history.pushState({}, "", newUrl);
 
         loadingOverlay.classList.remove("hidden");
@@ -220,8 +222,9 @@
               const row = document.createElement("tr");
 
               row.addEventListener("click", () => {
-                const encodedHero = encodeURIComponent(item.hero);
-                const newUrl = `/cardTracker?hero=${encodedHero}`;
+                const urlParams = new URLSearchParams();
+                urlParams.set("hero", encodeURIComponent(item.hero));
+                const newUrl = `/cardTracker?${urlParams.toString()}`;
                 window.location.href = newUrl;
               });
 
