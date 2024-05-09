@@ -117,27 +117,35 @@ async function getPlayerStatistics() {
       wins: 0,
       losses: 0,
       plays: 0,
-      winPercent: 0,
     };
     const playerMatches = matches.filter(match => match.player1 === player || match.player2 === player);
     const playerHeroes = {};
+    const enemyPlayers = {};
 
     playerMatches.forEach((match) => {
-      const { player1, winnerPlayer, hero1, hero2 } = match;
+      const { player1, player2, winnerPlayer, hero1, hero2 } = match;
       const playerHero = player1 === player ? hero1 : hero2;
       const isWinner = player === winnerPlayer;
+      const enemyPlayer = player1 === player ? player2 : player1;
 
       if (!playerHeroes[playerHero]) {
         playerHeroes[playerHero] = { wins: 0, losses: 0, plays: 0 };
       }
 
+      if (!enemyPlayers[enemyPlayer]) {
+        enemyPlayers[enemyPlayer] = { wins: 0, losses: 0, plays: 0 };
+      }
+
       playerHeroes[playerHero].plays++;
+      enemyPlayers[enemyPlayer].plays++;
       playerStats.plays++;
       if (isWinner) {
         playerHeroes[playerHero].wins++;
+        enemyPlayers[enemyPlayer].wins++;
         playerStats.wins++;
       } else {
         playerHeroes[playerHero].losses++;
+        enemyPlayers[enemyPlayer].losses++;
         playerStats.losses++;
       }
     });
@@ -150,7 +158,15 @@ async function getPlayerStatistics() {
       winRate: Math.round((stats.wins / stats.plays) * 100),
     }));
 
-    distinctPlayersStats[player] = { ...playerStats, winRate: Math.round((playerStats.wins / playerStats.plays) * 100), heroStats: heroStatsArray };
+    const enemyStatsArray = Object.entries(enemyPlayers).map(([name, stats]) => ({
+      name,
+      wins: stats.wins,
+      losses: stats.losses,
+      plays: stats.plays,
+      winRate: Math.round((stats.wins / stats.plays) * 100),
+    }));
+
+    distinctPlayersStats[player] = { ...playerStats, winRate: Math.round((playerStats.wins / playerStats.plays) * 100), heroStats: heroStatsArray, enemyStats: enemyStatsArray };
   });
 
   return distinctPlayersStats;

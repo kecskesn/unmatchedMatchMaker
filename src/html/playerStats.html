@@ -65,12 +65,32 @@
             cardTitle.classList.add("card-title");
             cardTitle.textContent = playerName;
 
-            const winsParagraph = document.createElement("p");
-            winsParagraph.classList.add("card-text", "mb-3");
-            winsParagraph.textContent = `Plays: ${playerStats.plays} (${playerStats.wins}W/${playerStats.losses}L ${playerStats.winRate}%)`;
+            const totalPlaysParagraph = document.createElement("p");
+            totalPlaysParagraph.classList.add("card-text", "mb-1");
+            totalPlaysParagraph.textContent = `Total Plays: ${playerStats.plays} (${playerStats.wins}W/${playerStats.losses}L ${playerStats.winRate}%)`;
+
+            let enemyPlayersTitle, enemyPlayersList;
+
+            if (playerStats.enemyStats.length > 1) {
+                enemyPlayersTitle = document.createElement("div");
+                enemyPlayersTitle.classList.add("card-subtitle", "mb-1");
+                enemyPlayersTitle.textContent = "Plays by Enemy Players";
+
+                enemyPlayersList = document.createElement("ul");
+                enemyPlayersList.classList.add("list-group", "list-group-flush");
+
+                playerStats.enemyStats.sort((a, b) => b.plays - a.plays);
+
+                playerStats.enemyStats.forEach(enemyStat => {
+                    const listItem = document.createElement("li");
+                    listItem.classList.add("list-group-item");
+                    listItem.textContent = `${enemyStat.name} - Plays: ${enemyStat.plays} (${enemyStat.wins}W/${enemyStat.losses}L ${enemyStat.winRate}%)`;
+                    enemyPlayersList.appendChild(listItem);
+                });
+            }
 
             const topHeroesTitle = document.createElement("div");
-            topHeroesTitle.classList.add("card-subtitle", "mb-3");
+            topHeroesTitle.classList.add("card-subtitle", "mb-1");
             topHeroesTitle.textContent = "Top 3 Most Played Heroes";
 
             const topHeroesList = document.createElement("ul");
@@ -88,7 +108,7 @@
             }
 
             const topWinRateTitle = document.createElement("div");
-            topWinRateTitle.classList.add("card-subtitle", "mb-3");
+            topWinRateTitle.classList.add("card-subtitle", "mb-1");
             topWinRateTitle.textContent = "Top 3 Highest Win Rate Heroes";
 
             const topWinRateList = document.createElement("ul");
@@ -108,7 +128,7 @@
             }
 
             const worstWinRateTitle = document.createElement("div");
-            worstWinRateTitle.classList.add("card-subtitle", "mb-3");
+            worstWinRateTitle.classList.add("card-subtitle", "mb-1");
             worstWinRateTitle.textContent = "Worst Win Rate Hero";
 
             const worstWinRateList = document.createElement("ul");
@@ -128,7 +148,13 @@
             }
 
             cardBody.appendChild(cardTitle);
-            cardBody.appendChild(winsParagraph);
+            cardBody.appendChild(totalPlaysParagraph);
+
+            if (enemyPlayersTitle && enemyPlayersList) {
+                cardBody.appendChild(enemyPlayersTitle);
+                cardBody.appendChild(enemyPlayersList);
+            }
+
             cardBody.appendChild(topHeroesTitle);
             cardBody.appendChild(topHeroesList);
             cardBody.appendChild(topWinRateTitle);
