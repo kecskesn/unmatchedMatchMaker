@@ -1,86 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="src/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-  </head>
 
-  <body>
-    <div class="container">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="src/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <a class="btn btn-primary active" id="heroStatBtn" href="heroStat"><i class="fas fa-chart-bar"></i></a>
+      <a class="btn btn-primary" id="cardTrackerBtn" href="cardTracker"><i class="fas fa-layer-group"></i></a>
+      <a class="btn btn-primary" id="matchLoggerBtn" href="matchLogger"><i class="fas fa-file-alt"></i></a>
+      <a class="btn btn-primary" id="playerStatsBtn" href="playerStats"><i class="fas fa-users"></i></a>
+    </div>
+
+    <div class="form-group">
+      <label for="heroSelect">Hero</label>
+      <select class="form-control" id="heroSelect">
+        <option value="" disabled selected>Please select one...</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="modeSelect">Mode</label>
+      <select class="form-control" id="modeSelect">
+        <option value="normal">Normal search</option>
+        <option value="fair">Fair matchups</option>
+        <option value="excludeUnfair" selected>
+          Exclude unfair matchups
+        </option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="fairnessThreshold">Fairness Threshold</label>
+      <input type="range" class="form-control-range" id="fairnessThreshold" min="0" max="100" value="60" />
+      <span id="fairnessThresholdValue">60</span>
+    </div>
+    <div class="form-group">
+      <label for="numberOfPlaysSelect">Minimum Number of Plays</label>
+      <select class="form-control" id="numberOfPlaysSelect" disabled>
+        <option value="0" selected>0</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="30">30</option>
+        <option value="40">40</option>
+        <option value="50">50</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="sourceSelect">Source</label>
+      <select class="form-control" id="sourceSelect">
+        <option value="umleague">UMLeague</option>
+        <option value="local">Local</option>
+        <option value="both" selected>UMLeague + local</option>
+      </select>
+    </div>
+    <div class="form-group">
       <div class="d-flex justify-content-between align-items-center">
-        <a class="btn btn-primary active" id="heroStatBtn" href="heroStat"
-          ><i class="fas fa-chart-bar"></i
-        ></a>
-        <a class="btn btn-primary" id="cardTrackerBtn" href="cardTracker"
-          ><i class="fas fa-layer-group"></i
-        ></a>
-        <a class="btn btn-primary" id="matchLoggerBtn" href="matchLogger"
-          ><i class="fas fa-file-alt"></i
-        ></a>
-        <a class="btn btn-primary" id="playerStatsBtn" href="playerStats"
-          ><i class="fas fa-users"></i
-        ></a>
-      </div>
-
-      <div class="form-group">
-        <label for="heroSelect">Hero</label>
-        <select class="form-control" id="heroSelect">
-          <option value="" disabled selected>Please select one...</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="modeSelect">Mode</label>
-        <select class="form-control" id="modeSelect">
-          <option value="normal">Normal search</option>
-          <option value="fair">Fair matchups</option>
-          <option value="excludeUnfair" selected>
-            Exclude unfair matchups
-          </option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="fairnessThreshold">Fairness Threshold</label>
-        <input
-          type="range"
-          class="form-control-range"
-          id="fairnessThreshold"
-          min="0"
-          max="100"
-          value="60"
-        />
-        <span id="fairnessThresholdValue">60</span>
-      </div>
-      <div class="form-group">
-        <label for="numberOfPlaysSelect">Minimum Number of Plays</label>
-        <select class="form-control" id="numberOfPlaysSelect" disabled>
-          <option value="0" selected>0</option>
-          <option value="10">10</option>
-          <option value="20">20</option>
-          <option value="30">30</option>
-          <option value="40">40</option>
-          <option value="50">50</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="sourceSelect">Source</label>
-        <select class="form-control" id="sourceSelect">
-          <option value="umleague">UMLeague</option>
-          <option value="local">Local</option>
-          <option value="both" selected>UMLeague + local</option>
-        </select>
-      </div>
-      <div class="form-group">
         <button type="button" id="toggleWinPercentages" class="btn btn-primary">
           Show Win Percentages
+        </button>
+        <button type="button" id="resetFiltersToDefault" class="btn btn-primary">
+          Reset
         </button>
       </div>
       <table class="table table-bordered table-hover">
@@ -112,6 +96,9 @@
       const sourceSelect = document.getElementById("sourceSelect");
       const toggleWinPercentagesButton = document.getElementById(
         "toggleWinPercentages"
+      );
+      const resetFiltersToDefaultButton = document.getElementById(
+        "resetFiltersToDefault"
       );
       const resultsTable = document.getElementById("results");
       const winPercentageHeader = document.getElementById(
@@ -160,6 +147,22 @@
             toggleWinPercentagesButton.textContent = "Hide Win Percentages";
           }
         });
+      });
+
+      resetFiltersToDefault.addEventListener("click", function () {
+        modeSelect.value = "excludeUnfair";
+        fairnessThresholdInput.value = 60;
+        fairnessThresholdValue.textContent = 60;
+        numberOfPlaysSelect.value = "0";
+        numberOfPlaysSelect.disabled = true; // Disable the numberOfPlaysSelect since the default mode is "excludeUnfair"
+        sourceSelect.value = "both";
+
+        sessionStorage.removeItem('mode');
+        sessionStorage.removeItem('fairnessThreshold');
+        sessionStorage.removeItem('numberOfPlays');
+        sessionStorage.removeItem('source');
+
+        fetchMatches();
       });
 
       function fetchHeroes() {
@@ -222,7 +225,7 @@
               const heroCell = createTableCell(item.hero);
               const playsCell = createTableCell(
                 item.plays +
-                  (item.combinedPlays ? " (" + item.combinedPlays + ")" : "")
+                (item.combinedPlays ? " (" + item.combinedPlays + ")" : "")
               );
               const winPercentCell = document.createElement("td");
               winPercentCell.appendChild(getWinPercentContent(item));
@@ -262,10 +265,10 @@
           item.winPercent === "-"
             ? item.winPercent
             : item.winPercent +
-              "%" +
-              (item.combinedWinPercent
-                ? " (" + item.combinedWinPercent + "%)"
-                : "");
+            "%" +
+            (item.combinedWinPercent
+              ? " (" + item.combinedWinPercent + "%)"
+              : "");
         actualWinPercentDiv.classList.add("hidden");
 
         winPercentContainer.appendChild(hiddenMessageDiv);
@@ -274,5 +277,6 @@
         return winPercentContainer;
       }
     </script>
-  </body>
+</body>
+
 </html>
