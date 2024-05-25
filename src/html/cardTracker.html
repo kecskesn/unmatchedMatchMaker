@@ -12,18 +12,10 @@
 <body>
   <div class="container">
     <div class="d-flex justify-content-between align-items-center">
-      <a class="btn btn-primary" id="heroStatBtn" href="heroStat"
-        ><i class="fas fa-chart-bar"></i
-      ></a>
-      <a class="btn btn-primary active" id="cardTrackerBtn" href="cardTracker"
-        ><i class="fas fa-layer-group"></i
-      ></a>
-      <a class="btn btn-primary" id="matchLoggerBtn" href="matchLogger"
-        ><i class="fas fa-file-alt"></i
-      ></a>
-      <a class="btn btn-primary" id="playerStatsBtn" href="playerStats"
-        ><i class="fas fa-users"></i
-      ></a>
+      <a class="btn btn-primary" id="heroStatBtn" href="heroStat"><i class="fas fa-chart-bar"></i></a>
+      <a class="btn btn-primary active" id="cardTrackerBtn" href="cardTracker"><i class="fas fa-layer-group"></i></a>
+      <a class="btn btn-primary" id="matchLoggerBtn" href="matchLogger"><i class="fas fa-file-alt"></i></a>
+      <a class="btn btn-primary" id="playerStatsBtn" href="playerStats"><i class="fas fa-users"></i></a>
     </div>
 
     <div class="form-group">
@@ -31,6 +23,9 @@
       <select class="form-control" id="heroSelect">
         <option value="" disabled selected>Please select one...</option>
       </select>
+    </div>
+    <div class="d-flex justify-content-start mt-4">
+      <button class="btn btn-danger" id="resetButton">Reset</button>
     </div>
     <div class="d-flex justify-content-center align-items-center mt-4 mb-4">
       <div class="mx-3">
@@ -50,6 +45,7 @@
   </div>
   <script>
     const heroSelect = document.getElementById("heroSelect");
+    const reserButton = document.getElementById("resetButton");
     const handContainer = document.querySelector(".hand");
     const deckContainer = document.querySelector(".deck");
     const discardContainer = document.querySelector(".discard");
@@ -59,10 +55,20 @@
     let discardedCardCount = 0;
 
     heroSelect.addEventListener("change", handleHeroSelectChange);
+    reserButton.addEventListener("click", handleResetButtonClick);
 
     window.onload = function () {
       deckContainer.appendChild(deckButtons);
       fetchHeroes();
+      const trackedHero = sessionStorage.getItem("trackedHero");
+      const deckCards = sessionStorage.getItem("deckCards");
+      const handCards = sessionStorage.getItem("handCards");
+      const discardCards = sessionStorage.getItem("discardCards");
+      if (trackedHero && deckCards && handCards && discardCards) {
+        loadCardState();
+      } else {
+        fetchDeckConfig(heroSelect.value);
+      }
     };
 
     function handleHeroSelectChange() {
@@ -71,8 +77,16 @@
       if (hero) {
         deckContainer.removeEventListener("click", handleDeckButtonClick);
         discardContainer.removeEventListener("click", handleDeckButtonClick);
-        fetchDeckConfig(hero);
+        fetchDeckConfig(hero, true);
       }
+    }
+
+    function handleResetButtonClick() {
+      sessionStorage.removeItem("trackedHero");
+      sessionStorage.removeItem("deckCards");
+      sessionStorage.removeItem("handCards");
+      sessionStorage.removeItem("discardCards");
+      fetchDeckConfig(heroSelect.value);
     }
 
     function fetchHeroes() {
@@ -86,7 +100,8 @@
             heroSelect.add(option);
           });
 
-          const selectedHero = sessionStorage.getItem("hero");
+          const trackedHero = sessionStorage.getItem("trackedHero");
+          const selectedHero = trackedHero ? trackedHero : sessionStorage.getItem("hero");
           if (selectedHero) {
             heroSelect.value = selectedHero;
             fetchDeckConfig(selectedHero);
@@ -95,7 +110,15 @@
         .catch(error => console.error("Error fetching heroes:", error));
     }
 
-    function fetchDeckConfig(hero) {
+    function fetchDeckConfig(hero, force = false) {
+      if (!hero) {
+        return;
+      }
+
+      if (!force && sessionStorage.getItem("trackedHero")) {
+        return;
+      }
+
       totalCardCount = 0;
       discardedCardCount = 0;
       handContainer.innerHTML = "";
@@ -225,6 +248,8 @@
           updateCardCounters();
         }
       }
+
+      saveCardState();
     }
 
     function handleHandButtonClick(event) {
@@ -250,6 +275,63 @@
 
       deckCardButton.addEventListener("click", handleDeckButtonClick);
       handCardButton.addEventListener("click", handleHandButtonClick);
+      updateCardCounters();
+      saveCardState();
+    }
+
+    function saveCardState() {
+      const trackedHero = heroSelect.value;
+      const deckCards = Array.from(deckContainer.querySelectorAll(".deck-card-row")).map(cardRow => cardRow.innerHTML);
+      const handCards = Array.from(handContainer.querySelectorAll(".deck-card-row")).map(cardRow => cardRow.innerHTML);
+      const discardCards = Array.from(discardContainer.querySelectorAll(".deck-card-row")).map(cardRow => cardRow.innerHTML);
+
+      sessionStorage.setItem("trackedHero", trackedHero);
+      sessionStorage.setItem("deckCards", JSON.stringify(deckCards));
+      sessionStorage.setItem("handCards", JSON.stringify(handCards));
+      sessionStorage.setItem("discardCards", JSON.stringify(discardCards));
+    }
+
+    function loadCardState() {
+      const deckCards = JSON.parse(sessionStorage.getItem("deckCards") || "[]");
+      const handCards = JSON.parse(sessionStorage.getItem("handCards") || "[]");
+      const discardCards = JSON.parse(sessionStorage.getItem("discardCards") || "[]");
+
+      deckButtons.innerHTML = "";
+      handContainer.innerHTML = "";
+      discardContainer.innerHTML = "";
+
+      totalCardCount = deckCards.length + handCards.length + discardCards.length;
+      discardedCardCount = discardCards.length;
+
+      deckCards.forEach(html => {
+        const cardRow = document.createElement("div");
+        cardRow.classList.add("deck-card-row");
+        cardRow.innerHTML = html;
+        deckButtons.appendChild(cardRow);
+      });
+
+      handCards.forEach(html => {
+        const cardRow = document.createElement("div");
+        cardRow.classList.add("deck-card-row");
+        cardRow.innerHTML = html;
+        handContainer.appendChild(cardRow);
+      });
+
+      discardCards.forEach(html => {
+        const cardRow = document.createElement("div");
+        cardRow.classList.add("deck-card-row");
+        cardRow.innerHTML = html;
+        discardContainer.appendChild(cardRow);
+      });
+
+      document.querySelectorAll(".deck-card-button").forEach(button => {
+        button.addEventListener("click", handleDeckButtonClick);
+      });
+
+      document.querySelectorAll(".hand-card-button").forEach(button => {
+        button.addEventListener("click", handleHandButtonClick);
+      });
+
       updateCardCounters();
     }
 
