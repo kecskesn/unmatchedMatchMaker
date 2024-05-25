@@ -36,7 +36,7 @@
     </div>
     <div class="form-group">
       <label for="fairnessThreshold">Fairness Threshold</label>
-      <input type="range" class="form-control-range" id="fairnessThreshold" min="0" max="100" value="60" />
+      <input type="range" class="form-control-range" id="fairnessThreshold" min="50" max="100" value="60" />
       <span id="fairnessThresholdValue">60</span>
     </div>
     <div class="form-group">
@@ -63,7 +63,7 @@
         <button type="button" id="toggleWinPercentages" class="btn btn-primary">
           Show Win Percentages
         </button>
-        <button type="button" id="resetFiltersToDefault" class="btn btn-primary">
+        <button type="button" id="resetFiltersToDefault" class="btn btn-danger">
           Reset
         </button>
       </div>
@@ -154,7 +154,7 @@
         fairnessThresholdInput.value = 60;
         fairnessThresholdValue.textContent = 60;
         numberOfPlaysSelect.value = "0";
-        numberOfPlaysSelect.disabled = true; // Disable the numberOfPlaysSelect since the default mode is "excludeUnfair"
+        numberOfPlaysSelect.disabled = true;
         sourceSelect.value = "both";
 
         sessionStorage.removeItem('mode');
