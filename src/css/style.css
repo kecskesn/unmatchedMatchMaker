@@ -141,6 +141,9 @@ a.btn.btn-primary.active {
     #heroStatBtn::after {
         content: " Hero Stats";
     }
+    #mapStatBtn::after {
+        content: " Map Stats";
+    }
     #cardTrackerBtn::after {
         content: " Card Tracker";
     }
@@ -149,20 +152,5 @@ a.btn.btn-primary.active {
     }
     #playerStatsBtn::after {
         content: " Player Stats";
-    }
-}
-
-@media (max-width: 768px) {
-    #heroStatBtn::after {
-        content: " Stats";
-    }
-    #cardTrackerBtn::after {
-        content: " Cards";
-    }
-    #matchLoggerBtn::after {
-        content: " Logs";
-    }
-    #playerStatsBtn::after {
-        content: " Players";
     }
 }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="src/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <a class="btn btn-primary" id="heroStatBtn" href="heroStat"><i class="fas fa-shield-alt"></i></a>
+      <a class="btn btn-primary active" id="mapStatBtn" href="mapStat"><i class="fas fa-map"></i></a>
+      <a class="btn btn-primary" id="cardTrackerBtn" href="cardTracker"><i class="fas fa-layer-group"></i></a>
+      <a class="btn btn-primary" id="matchLoggerBtn" href="matchLogger"><i class="fas fa-file-alt"></i></a>
+      <a class="btn btn-primary" id="playerStatsBtn" href="playerStats"><i class="fas fa-users"></i></a>
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="form-group text-center">
+        <label for="heroSelect1" class="font-weight-bold mt-2">Hero 1</label>
+        <select class="form-control" id="heroSelect1">
+          <option value="" disabled selected>Select one...</option>
+        </select>
+      </div>
+      <div class="form-group text-center">
+        <label for="heroSelect2" class="font-weight-bold mt-2">Hero 2</label>
+        <select class="form-control" id="heroSelect2">
+          <option value="" disabled selected>Select one...</option>
+        </select>
+      </div>
+    </div>
+    <script>
+      const heroSelect1 = document.getElementById("heroSelect1");
+      const heroSelect2 = document.getElementById("heroSelect2");
+
+      window.onload = function () {
+        fetchHeroes();
+      };
+
+      function fetchHeroes() {
+        fetch("/heroes")
+          .then((response) => response.json())
+          .then((heroes) => {
+            const select1 = document.getElementById("heroSelect1");
+            const select2 = document.getElementById("heroSelect2");
+            heroes.forEach((hero) => {
+              const encodedHero = encodeURIComponent(hero);
+              const option1 = document.createElement("option");
+              option1.value = encodedHero;
+              option1.text = hero;
+              select1.add(option1);
+
+              const option2 = document.createElement("option");
+              option2.value = encodedHero;
+              option2.text = hero;
+              select2.add(option2);
+            });
+
+            const selectedHero = sessionStorage.getItem("hero");
+            if (selectedHero) {
+              heroSelect1.value = selectedHero;
+            }
+          });
+      }
+    </script>
+</body>
+
+</html>

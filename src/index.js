@@ -16,6 +16,10 @@ app.get("/heroStat", function (req, res) {
   res.sendFile(__dirname + "/html/heroStat.html");
 });
 
+app.get("/mapStat", function (req, res) {
+  res.sendFile(__dirname + "/html/mapStat.html");
+});
+
 app.get("/cardTracker", function (req, res) {
   res.sendFile(__dirname + "/html/cardTracker.html");
 });

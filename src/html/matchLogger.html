@@ -1,356 +1,340 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="src/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
-        <a class="btn btn-primary" id="heroStatBtn" href="heroStat"
-          ><i class="fas fa-chart-bar"></i
-        ></a>
-        <a class="btn btn-primary" id="cardTrackerBtn" href="cardTracker"
-          ><i class="fas fa-layer-group"></i
-        ></a>
-        <a class="btn btn-primary active" id="matchLoggerBtn" href="matchLogger"
-          ><i class="fas fa-file-alt"></i
-        ></a>
-        <a class="btn btn-primary" id="playerStatsBtn" href="playerStats"
-          ><i class="fas fa-users"></i
-        ></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="src/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <a class="btn btn-primary" id="heroStatBtn" href="heroStat"><i class="fas fa-shield-alt"></i></a>
+      <a class="btn btn-primary" id="mapStatBtn" href="mapStat"><i class="fas fa-map"></i></a>
+      <a class="btn btn-primary" id="cardTrackerBtn" href="cardTracker"><i class="fas fa-layer-group"></i></a>
+      <a class="btn btn-primary active" id="matchLoggerBtn" href="matchLogger"><i class="fas fa-file-alt"></i></a>
+      <a class="btn btn-primary" id="playerStatsBtn" href="playerStats"><i class="fas fa-users"></i></a>
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="form-group text-center">
+        <label for="playerSelect1" class="font-weight-bold">Player 1</label>
+        <select class="form-control" id="playerSelect1">
+          <option value="" disabled selected>Select one...</option>
+        </select>
+        <label for="heroSelect1" class="font-weight-bold mt-2">Hero 1</label>
+        <select class="form-control" id="heroSelect1">
+          <option value="" disabled selected>Select one...</option>
+        </select>
       </div>
 
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="form-group text-center">
-          <label for="playerSelect1" class="font-weight-bold">Player 1</label>
-          <select class="form-control" id="playerSelect1">
-            <option value="" disabled selected>Select one...</option>
-          </select>
-          <label for="heroSelect1" class="font-weight-bold mt-2">Hero 1</label>
-          <select class="form-control" id="heroSelect1">
-            <option value="" disabled selected>Select one...</option>
-          </select>
-        </div>
-
-        <div class="d-flex align-items-center justify-content-center align-self-end">
-          <button class="btn btn-primary mb-3 mr-2" id="switchHeroBtn">
-            <i class="fas fa-exchange-alt"></i>
-          </button>
-        </div>
-
-        <div class="form-group text-center">
-          <label for="playerSelect2" class="font-weight-bold">Player 2</label>
-          <select class="form-control" id="playerSelect2">
-            <option value="" disabled selected>Select one...</option>
-          </select>
-          <label for="heroSelect2" class="font-weight-bold mt-2">Hero 2</label>
-          <select class="form-control" id="heroSelect2">
-            <option value="" disabled selected>Select one...</option>
-          </select>
-        </div>
+      <div class="d-flex align-items-center justify-content-center align-self-end">
+        <button class="btn btn-primary mb-3 mr-2" id="switchHeroBtn">
+          <i class="fas fa-exchange-alt"></i>
+        </button>
       </div>
 
-      <div class="d-flex flex-column align-items-center">
-        <h2>Select Winner</h2>
-        <div class="d-flex justify-content-between align-items-center">
-          <button class="btn btn-primary" id="hero1Btn" disabled>
-            Select One...
-          </button>
-          <span class="mx-2">vs</span>
-          <button class="btn btn-primary" id="hero2Btn" disabled>
-            Select One...
-          </button>
-        </div>
-      </div>
-
-      <hr class="my-4" />
-
-      <div class="d-flex flex-column align-items-center mt-4">
-        <h2 class="mb-3">Match History</h2>
-        <div id="winRateTracker" class="mb-4"></div>
-        <div class="row mb-3 justify-content-center">
-          <div class="col-md-5">
-            <div class="form-group">
-              <select class="form-control" id="dateFilter">
-                <option value="2w" selected>Last 2 Weeks</option>
-                <option value="1m">Last Month</option>
-                <option value="3m">Last 3 Months</option>
-                <option value="all">All Time</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div class="form-group">
-              <select class="form-control" id="heroFilter">
-                <option value="" selected>All Heroes</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div id="matchLogsContainer" class="container-margin mx-3"></div>
+      <div class="form-group text-center">
+        <label for="playerSelect2" class="font-weight-bold">Player 2</label>
+        <select class="form-control" id="playerSelect2">
+          <option value="" disabled selected>Select one...</option>
+        </select>
+        <label for="heroSelect2" class="font-weight-bold mt-2">Hero 2</label>
+        <select class="form-control" id="heroSelect2">
+          <option value="" disabled selected>Select one...</option>
+        </select>
       </div>
     </div>
 
-    <script>
-      const heroSelect1 = document.getElementById("heroSelect1");
-      const heroSelect2 = document.getElementById("heroSelect2");
-      const dateFilterSelect = document.getElementById("dateFilter");
-      const heroFilterSelect = document.getElementById("heroFilter");
+    <div class="d-flex flex-column align-items-center">
+      <h2>Select Winner</h2>
+      <div class="d-flex justify-content-between align-items-center">
+        <button class="btn btn-primary" id="hero1Btn" disabled>
+          Select One...
+        </button>
+        <span class="mx-2">vs</span>
+        <button class="btn btn-primary" id="hero2Btn" disabled>
+          Select One...
+        </button>
+      </div>
+    </div>
 
-      dateFilterSelect.addEventListener("change", fetchMatchLogs);
-      heroFilterSelect.addEventListener("change", fetchMatchLogs);
+    <hr class="my-4" />
 
-      window.onload = function () {
-        fetchHeroes();
-        fetchPlayers();
-        fetchMatchLogs();
-      };
+    <div class="d-flex flex-column align-items-center mt-4">
+      <h2 class="mb-3">Match History</h2>
+      <div id="winRateTracker" class="mb-4"></div>
+      <div class="row mb-3 justify-content-center">
+        <div class="col-md-5">
+          <div class="form-group">
+            <select class="form-control" id="dateFilter">
+              <option value="2w" selected>Last 2 Weeks</option>
+              <option value="1m">Last Month</option>
+              <option value="3m">Last 3 Months</option>
+              <option value="all">All Time</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="form-group">
+            <select class="form-control" id="heroFilter">
+              <option value="" selected>All Heroes</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div id="matchLogsContainer" class="container-margin mx-3"></div>
+    </div>
+  </div>
 
-      switchHeroBtn.addEventListener("click", function () {
-        const tempHero1 = heroSelect1.value;
-        heroSelect1.value = heroSelect2.value;
-        heroSelect2.value = tempHero1;
+  <script>
+    const heroSelect1 = document.getElementById("heroSelect1");
+    const heroSelect2 = document.getElementById("heroSelect2");
+    const dateFilterSelect = document.getElementById("dateFilter");
+    const heroFilterSelect = document.getElementById("heroFilter");
 
-        heroSelect1.dispatchEvent(new Event("change"));
-        heroSelect2.dispatchEvent(new Event("change"));
-      });
+    dateFilterSelect.addEventListener("change", fetchMatchLogs);
+    heroFilterSelect.addEventListener("change", fetchMatchLogs);
 
-      heroSelect1.addEventListener("change", function () {
-        const hero = heroSelect1.options[heroSelect1.selectedIndex].value;
-        sessionStorage.setItem("hero", hero);
-        updateButtonFromSelect(heroSelect1, hero1Btn);
-        enableButtons();
-      });
+    window.onload = function () {
+      fetchHeroes();
+      fetchPlayers();
+      fetchMatchLogs();
+    };
 
-      heroSelect2.addEventListener("change", function () {
-        updateButtonFromSelect(heroSelect2, hero2Btn);
-        enableButtons();
-      });
+    switchHeroBtn.addEventListener("click", function () {
+      const tempHero1 = heroSelect1.value;
+      heroSelect1.value = heroSelect2.value;
+      heroSelect2.value = tempHero1;
 
-      function enableButtons() {
-        hero1Btn.disabled = !(heroSelect1.value && heroSelect2.value);
-        hero2Btn.disabled = !(heroSelect1.value && heroSelect2.value);
-      }
+      heroSelect1.dispatchEvent(new Event("change"));
+      heroSelect2.dispatchEvent(new Event("change"));
+    });
 
-      function updateButtonFromSelect(select, button) {
-        const selectedOption = select.options[select.selectedIndex];
-        button.textContent = selectedOption.text;
-        button.value = selectedOption.value;
-      }
+    heroSelect1.addEventListener("change", function () {
+      const hero = heroSelect1.options[heroSelect1.selectedIndex].value;
+      sessionStorage.setItem("hero", hero);
+      updateButtonFromSelect(heroSelect1, hero1Btn);
+      enableButtons();
+    });
 
-      hero1Btn.addEventListener("click", function () {
-        handleHeroButtonClick(heroSelect1, heroSelect2, hero1Btn);
-      });
+    heroSelect2.addEventListener("change", function () {
+      updateButtonFromSelect(heroSelect2, hero2Btn);
+      enableButtons();
+    });
 
-      hero2Btn.addEventListener("click", function () {
-        handleHeroButtonClick(heroSelect1, heroSelect2, hero2Btn);
-      });
+    function enableButtons() {
+      hero1Btn.disabled = !(heroSelect1.value && heroSelect2.value);
+      hero2Btn.disabled = !(heroSelect1.value && heroSelect2.value);
+    }
 
-      function handleHeroButtonClick(select1, select2, button) {
-        const hero1 = select1.options[select1.selectedIndex].text;
-        const hero2 = select2.options[select2.selectedIndex].text;
-        const player1 = document.getElementById("playerSelect1").value;
-        const player2 = document.getElementById("playerSelect2").value;
-        const winner = button.textContent;
+    function updateButtonFromSelect(select, button) {
+      const selectedOption = select.options[select.selectedIndex];
+      button.textContent = selectedOption.text;
+      button.value = selectedOption.value;
+    }
 
-        fetch("/matchLogs", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ hero1, hero2, player1, player2, winner }),
+    hero1Btn.addEventListener("click", function () {
+      handleHeroButtonClick(heroSelect1, heroSelect2, hero1Btn);
+    });
+
+    hero2Btn.addEventListener("click", function () {
+      handleHeroButtonClick(heroSelect1, heroSelect2, hero2Btn);
+    });
+
+    function handleHeroButtonClick(select1, select2, button) {
+      const hero1 = select1.options[select1.selectedIndex].text;
+      const hero2 = select2.options[select2.selectedIndex].text;
+      const player1 = document.getElementById("playerSelect1").value;
+      const player2 = document.getElementById("playerSelect2").value;
+      const winner = button.textContent;
+
+      fetch("/matchLogs", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ hero1, hero2, player1, player2, winner }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.success) {
+            fetchMatchLogs();
+          } else {
+            alert(data.error);
+          }
         })
-          .then((response) => response.json())
-          .then((data) => {
-            if (data.success) {
-              resetForm();
-              fetchMatchLogs();
-            } else {
-              alert(data.error);
-            }
-          })
-          .catch((error) => {
-            console.error("Error:", error);
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    }
+
+    function fetchHeroes() {
+      fetch("/heroes")
+        .then((response) => response.json())
+        .then((heroes) => {
+          const select1 = document.getElementById("heroSelect1");
+          const select2 = document.getElementById("heroSelect2");
+          const select3 = document.getElementById("heroFilter");
+          heroes.forEach((hero) => {
+            const encodedHero = encodeURIComponent(hero);
+            const option1 = document.createElement("option");
+            option1.value = encodedHero;
+            option1.text = hero;
+            select1.add(option1);
+
+            const option2 = document.createElement("option");
+            option2.value = encodedHero;
+            option2.text = hero;
+            select2.add(option2);
+
+            const option3 = document.createElement("option");
+            option3.value = encodedHero;
+            option3.text = hero;
+            select3.add(option3);
           });
-      }
 
-      function resetForm() {
-        window.location.href = "matchLogger";
-      }
+          const selectedHero = sessionStorage.getItem("hero");
+          if (selectedHero) {
+            heroSelect1.value = selectedHero;
+            updateButtonFromSelect(heroSelect1, hero1Btn);
+          }
+        });
+    }
 
-      function fetchHeroes() {
-        fetch("/heroes")
-          .then((response) => response.json())
-          .then((heroes) => {
-            const select1 = document.getElementById("heroSelect1");
-            const select2 = document.getElementById("heroSelect2");
-            const select3 = document.getElementById("heroFilter");
-            heroes.forEach((hero) => {
-              const encodedHero = encodeURIComponent(hero);
-              const option1 = document.createElement("option");
-              option1.value = encodedHero;
-              option1.text = hero;
-              select1.add(option1);
+    function fetchPlayers() {
+      fetch("/players")
+        .then((response) => response.json())
+        .then((players) => {
+          const select1 = document.getElementById("playerSelect1");
+          const select2 = document.getElementById("playerSelect2");
 
-              const option2 = document.createElement("option");
-              option2.value = encodedHero;
-              option2.text = hero;
-              select2.add(option2);
+          players.forEach((player) => {
+            const option1 = document.createElement("option");
+            option1.value = player;
+            option1.text = player;
+            select1.add(option1);
 
-              const option3 = document.createElement("option");
-              option3.value = encodedHero;
-              option3.text = hero;
-              select3.add(option3);
-            });
-
-            const selectedHero = sessionStorage.getItem("hero");
-            if (selectedHero) {
-              heroSelect1.value = selectedHero;
-              updateButtonFromSelect(heroSelect1, hero1Btn);
-            }
+            const option2 = document.createElement("option");
+            option2.value = player;
+            option2.text = player;
+            select2.add(option2);
           });
-      }
 
-      function fetchPlayers() {
-        fetch("/players")
-          .then((response) => response.json())
-          .then((players) => {
-            const select1 = document.getElementById("playerSelect1");
-            const select2 = document.getElementById("playerSelect2");
+          select1.value = "Balázs";
+          select2.value = "Keca";
 
-            players.forEach((player) => {
-              const option1 = document.createElement("option");
-              option1.value = player;
-              option1.text = player;
-              select1.add(option1);
+          select1.dispatchEvent(new Event("change"));
+          select2.dispatchEvent(new Event("change"));
+        });
+    }
 
-              const option2 = document.createElement("option");
-              option2.value = player;
-              option2.text = player;
-              select2.add(option2);
-            });
+    function fetchMatchLogs() {
+      const dateFilter = dateFilterSelect.value;
+      const heroFilter = heroFilterSelect.value;
 
-            select1.value = "Balázs";
-            select2.value = "Keca";
+      fetch(`/matchLogs?date=${dateFilter}&hero=${heroFilter}`)
+        .then((response) => response.json())
+        .then((matchLogs) => {
+          if (matchLogs.success) {
+            const matches = matchLogs.matches;
+            const matchLogsContainer =
+              document.getElementById("matchLogsContainer");
+            matchLogsContainer.innerHTML = "";
 
-            select1.dispatchEvent(new Event("change"));
-            select2.dispatchEvent(new Event("change"));
-          });
-      }
+            if (matches && matches.length > 0) {
+              const table = document.createElement("table");
+              table.classList.add("table", "table-borderless");
 
-      function fetchMatchLogs() {
-        const dateFilter = dateFilterSelect.value;
-        const heroFilter = heroFilterSelect.value;
+              const thead = document.createElement("thead");
+              const tr = document.createElement("tr");
 
-        fetch(`/matchLogs?date=${dateFilter}&hero=${heroFilter}`)
-          .then((response) => response.json())
-          .then((matchLogs) => {
-            if (matchLogs.success) {
-              const matches = matchLogs.matches;
-              const matchLogsContainer =
-                document.getElementById("matchLogsContainer");
-              matchLogsContainer.innerHTML = "";
+              const headers = ["Matchup", "Winner", "Date", ""];
+              headers.forEach((header) => {
+                const th = document.createElement("th");
+                th.textContent = header;
+                tr.appendChild(th);
+              });
 
-              if (matches && matches.length > 0) {
-                const table = document.createElement("table");
-                table.classList.add("table", "table-borderless");
+              thead.style.borderBottom = "1px solid #1c1d1f";
 
-                const thead = document.createElement("thead");
+              thead.appendChild(tr);
+              table.appendChild(thead);
+
+              const tbody = document.createElement("tbody");
+
+              matches.forEach((log) => {
                 const tr = document.createElement("tr");
 
-                const headers = ["Matchup", "Winner", "Date", ""];
-                headers.forEach((header) => {
-                  const th = document.createElement("th");
-                  th.textContent = header;
-                  tr.appendChild(th);
-                });
+                const tdMatchup = document.createElement("td");
+                tdMatchup.textContent = log.hero1 + " (" + log.player1 + ") vs " + log.hero2 + " (" + log.player2 + ")";
+                tdMatchup.classList.add("align-middle");
 
-                thead.style.borderBottom = "1px solid #1c1d1f";
+                const tdWinner = document.createElement("td");
+                tdWinner.textContent = log.winner + " (" + log.winnerPlayer + ")";
+                tdWinner.classList.add("align-middle");
 
-                thead.appendChild(tr);
-                table.appendChild(thead);
+                const tdDate = document.createElement("td");
+                tdDate.textContent = log.date;
+                tdDate.classList.add("align-middle");
 
-                const tbody = document.createElement("tbody");
+                const tdActions = document.createElement("td");
+                const deleteButton = document.createElement("button");
+                deleteButton.textContent = "X";
+                deleteButton.classList.add("btn", "btn-danger");
+                deleteButton.addEventListener("click", () =>
+                  handleDeleteLog(log.id)
+                );
+                tdActions.appendChild(deleteButton);
+                tdActions.classList.add("align-middle");
 
-                matches.forEach((log) => {
-                  const tr = document.createElement("tr");
+                tr.appendChild(tdMatchup);
+                tr.appendChild(tdWinner);
+                tr.appendChild(tdDate);
+                tr.appendChild(tdActions);
 
-                  const tdMatchup = document.createElement("td");
-                  tdMatchup.textContent = log.hero1  + " (" + log.player1 + ") vs " + log.hero2 + " (" + log.player2 + ")";
-                  tdMatchup.classList.add("align-middle");
+                tr.style.borderBottom = "1px solid #dee2e6";
 
-                  const tdWinner = document.createElement("td");
-                  tdWinner.textContent = log.winner + " (" + log.winnerPlayer + ")";
-                  tdWinner.classList.add("align-middle");
+                tbody.appendChild(tr);
+              });
 
-                  const tdDate = document.createElement("td");
-                  tdDate.textContent = log.date;
-                  tdDate.classList.add("align-middle");
-
-                  const tdActions = document.createElement("td");
-                  const deleteButton = document.createElement("button");
-                  deleteButton.textContent = "X";
-                  deleteButton.classList.add("btn", "btn-danger");
-                  deleteButton.addEventListener("click", () =>
-                    handleDeleteLog(log.id)
-                  );
-                  tdActions.appendChild(deleteButton);
-                  tdActions.classList.add("align-middle");
-
-                  tr.appendChild(tdMatchup);
-                  tr.appendChild(tdWinner);
-                  tr.appendChild(tdDate);
-                  tr.appendChild(tdActions);
-
-                  tr.style.borderBottom = "1px solid #dee2e6";
-
-                  tbody.appendChild(tr);
-                });
-
-                table.appendChild(tbody);
-                matchLogsContainer.appendChild(table);
-              } else {
-                matchLogsContainer.textContent = "No match logs available.";
-              }
+              table.appendChild(tbody);
+              matchLogsContainer.appendChild(table);
             } else {
-              console.error("Error fetching match logs:", matchLogs.error);
+              matchLogsContainer.textContent = "No match logs available.";
             }
-          })
-          .catch((error) => {
-            console.error("Error fetching match logs:", error);
-          });
-      }
-
-      function handleDeleteLog(logId) {
-        const confirmation = confirm(
-          "Are you sure you want to delete this match log?"
-        );
-        if (!confirmation) {
-          return;
-        }
-
-        fetch(`/deleteMatchLog/${logId}`, {
-          method: "DELETE",
+          } else {
+            console.error("Error fetching match logs:", matchLogs.error);
+          }
         })
-          .then((response) => response.json())
-          .then((data) => {
-            fetchMatchLogs();
-          })
-          .catch((error) => {
-            console.error("Error deleting match log:", error);
-          });
+        .catch((error) => {
+          console.error("Error fetching match logs:", error);
+        });
+    }
+
+    function handleDeleteLog(logId) {
+      const confirmation = confirm(
+        "Are you sure you want to delete this match log?"
+      );
+      if (!confirmation) {
+        return;
       }
-    </script>
-  </body>
+
+      fetch(`/deleteMatchLog/${logId}`, {
+        method: "DELETE",
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          fetchMatchLogs();
+        })
+        .catch((error) => {
+          console.error("Error deleting match log:", error);
+        });
+    }
+  </script>
+</body>
+
 </html>
