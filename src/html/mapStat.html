@@ -51,6 +51,11 @@
         <tbody id="results"></tbody>
       </table>
     </div>
+    <div id="loadingOverlay" class="loading-overlay hidden">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
     <script>
       const heroSelect1 = document.getElementById("heroSelect1");
       const heroSelect2 = document.getElementById("heroSelect2");
@@ -59,6 +64,7 @@
       );
       const resultsTable = document.getElementById("results");
       const fairnessThreshold = sessionStorage.getItem("fairnessThreshold") || 60;
+      const loadingOverlay = document.getElementById("loadingOverlay");
 
       heroSelect1.addEventListener("change", function () {
         const hero = heroSelect1.options[heroSelect1.selectedIndex].value;
@@ -77,6 +83,8 @@
         if (!(hero1 && hero2)) {
           return;
         }
+
+        loadingOverlay.classList.remove("hidden");
 
         fetch(`/mapStats?hero1=${hero1}&hero2=${hero2}`)
           .then((response) => response.json())
@@ -105,9 +113,12 @@
 
               resultsTable.appendChild(row);
             });
+
+            loadingOverlay.classList.add("hidden");
           })
           .catch((error) => {
             console.error("Error fetching matches:", error);
+            loadingOverlay.classList.add("hidden");
           });
       }
 
