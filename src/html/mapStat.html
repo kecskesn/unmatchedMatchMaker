@@ -81,7 +81,7 @@
         fetch(`/mapStats?hero1=${hero1}&hero2=${hero2}`)
           .then((response) => response.json())
           .then((data) => {
-            winPercentageHeader.textContent = `${hero1} Win Percentage`;
+            winPercentageHeader.textContent = `${decodeURIComponent(hero1)} Win Percentage`;
             resultsTable.innerHTML = "";
 
             data.result.forEach((item) => {
