@@ -33,9 +33,125 @@
         </select>
       </div>
     </div>
+
+    <div class="form-group">
+      <button type="button" id="toggleWinPercentages" class="btn btn-primary">
+        Show Win Percentages
+      </button>
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th class="text-center align-middle">Map</th>
+            <th class="text-center align-middle">Plays</th>
+            <th class="text-center align-middle" id="winPercentageHeader">
+              Win Percentage
+            </th>
+          </tr>
+        </thead>
+        <tbody id="results"></tbody>
+      </table>
+    </div>
     <script>
       const heroSelect1 = document.getElementById("heroSelect1");
       const heroSelect2 = document.getElementById("heroSelect2");
+      const toggleWinPercentagesButton = document.getElementById(
+        "toggleWinPercentages"
+      );
+      const resultsTable = document.getElementById("results");
+      const fairnessThreshold = sessionStorage.getItem("fairnessThreshold") || 60;
+
+      heroSelect1.addEventListener("change", function () {
+        const hero = heroSelect1.options[heroSelect1.selectedIndex].value;
+        sessionStorage.setItem("hero", hero);
+        getMapStats();
+      });
+
+      heroSelect2.addEventListener("change", function () {
+        getMapStats();
+      });
+
+      function getMapStats() {
+        const hero1 = heroSelect1.value;
+        const hero2 = heroSelect2.value;
+
+        if (!(hero1 && hero2)) {
+          return;
+        }
+
+        fetch(`/mapStats?hero1=${hero1}&hero2=${hero2}`)
+          .then((response) => response.json())
+          .then((data) => {
+            winPercentageHeader.textContent = `${hero1} Win Percentage`;
+            resultsTable.innerHTML = "";
+
+            data.result.forEach((item) => {
+              const row = document.createElement("tr");
+
+              const mapCell = createTableCell(item.map);
+              const playsCell = createTableCell(item.plays);
+              const winPercentCell = document.createElement("td");
+              winPercentCell.appendChild(getWinPercentContent(item));
+
+              const winPercent = parseFloat(item.winpercent);
+              if (winPercent <= fairnessThreshold && winPercent >= (100 - fairnessThreshold)) {
+                const starIcon = document.createElement("i");
+                starIcon.classList.add("fas", "fa-star", "star-icon");
+                mapCell.appendChild(starIcon);
+              }
+
+              row.appendChild(mapCell);
+              row.appendChild(playsCell);
+              row.appendChild(winPercentCell);
+
+              resultsTable.appendChild(row);
+            });
+          })
+          .catch((error) => {
+            console.error("Error fetching matches:", error);
+          });
+      }
+
+      function createTableCell(content) {
+        const cell = document.createElement("td");
+        cell.textContent = content;
+        return cell;
+      }
+
+      function getWinPercentContent(item) {
+        const winPercentContainer = document.createElement("div");
+        winPercentContainer.classList.add("win-percent-cell");
+
+        const hiddenMessageDiv = document.createElement("div");
+        hiddenMessageDiv.classList.add("hidden-message");
+        hiddenMessageDiv.textContent = "Hidden";
+
+        const actualWinPercentDiv = document.createElement("div");
+        actualWinPercentDiv.classList.add("actual-win-percent");
+        actualWinPercentDiv.textContent = item.winpercent;
+        actualWinPercentDiv.classList.add("hidden");
+
+        winPercentContainer.appendChild(hiddenMessageDiv);
+        winPercentContainer.appendChild(actualWinPercentDiv);
+
+        return winPercentContainer;
+      }
+
+      toggleWinPercentagesButton.addEventListener("click", function () {
+        const winPercentCells = document.querySelectorAll(".win-percent-cell");
+        winPercentCells.forEach((cell) => {
+          const hiddenMessageDiv = cell.querySelector(".hidden-message");
+          const actualWinPercentDiv = cell.querySelector(".actual-win-percent");
+
+          hiddenMessageDiv.classList.toggle("hidden");
+          actualWinPercentDiv.classList.toggle("hidden");
+
+          if (hiddenMessageDiv.classList.contains("hidden")) {
+            toggleWinPercentagesButton.textContent = "Show Win Percentages";
+          } else {
+            toggleWinPercentagesButton.textContent = "Hide Win Percentages";
+          }
+        });
+      });
 
       window.onload = function () {
         fetchHeroes();

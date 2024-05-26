@@ -97,6 +97,25 @@ async function getHeroStats(hero, numberOfPlays, mode, source, fairnessThreshold
   return result;
 }
 
+async function getMapStats(hero1, hero2) {
+  const apiRes = await axios.get(`https://www.umleague.net/api/analytics/getHeroResultsByMap?hero=${encodeURIComponent(hero1)}&campaignid=10000&organizerid=0`);
+  const opponent = apiRes.data.repeatOpponent.find((opponent) => opponent.hero === hero2);
+  
+  if (!opponent) {
+    return null;
+  }
+
+  const filteredMapStats = opponent.repeatMap.filter((item) => item.queryResult.length > 0);
+  const mappedMapStats = filteredMapStats.map((item) => ({
+    map: item.mapName,
+    plays: item.queryResult[0].plays,
+    winpercent: item.queryResult[0].winpercent,
+  }))
+  const sortedMapStats = mappedMapStats.sort((a, b) => b.winpercent - a.winpercent || b.plays - a.plays);
+  
+  return sortedMapStats;
+}
+
 function getMatchLogs(heroFilter, dateFilter) {
   return getMatchLogsFromDB(heroFilter, dateFilter);
 }
@@ -181,6 +200,7 @@ module.exports = {
   getPlayers,
   getHeroDeck,
   getHeroStats,
+  getMapStats,
   getMatchLogs,
   logMatch,
   getPlayerStatistics,
