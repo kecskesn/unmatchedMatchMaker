@@ -92,6 +92,11 @@
             winPercentageHeader.textContent = `${decodeURIComponent(hero1)} Win Percentage`;
             resultsTable.innerHTML = "";
 
+            if (data.result === null) {
+              loadingOverlay.classList.add("hidden");
+              return;
+            }
+
             data.result.forEach((item) => {
               const row = document.createElement("tr");
 
