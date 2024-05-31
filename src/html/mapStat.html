@@ -73,6 +73,8 @@
       });
 
       heroSelect2.addEventListener("change", function () {
+        const hero = heroSelect2.options[heroSelect2.selectedIndex].value;
+        sessionStorage.setItem("hero2", hero);
         getMapStats();
       });
 
@@ -196,6 +198,13 @@
             if (selectedHero) {
               heroSelect1.value = selectedHero;
             }
+
+            const selectedHero2 = sessionStorage.getItem("hero2");
+            if (selectedHero2) {
+              heroSelect2.value = selectedHero2;
+            }
+
+            getMapStats();
           });
       }
     </script>

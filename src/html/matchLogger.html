@@ -110,6 +110,9 @@
       heroSelect1.value = heroSelect2.value;
       heroSelect2.value = tempHero1;
 
+      sessionStorage.setItem("hero", heroSelect2.value);
+      sessionStorage.setItem("hero2", heroSelect1.value);
+
       heroSelect1.dispatchEvent(new Event("change"));
       heroSelect2.dispatchEvent(new Event("change"));
     });
@@ -122,6 +125,8 @@
     });
 
     heroSelect2.addEventListener("change", function () {
+      const hero = heroSelect2.options[heroSelect2.selectedIndex].value;
+      sessionStorage.setItem("hero2", hero);
       updateButtonFromSelect(heroSelect2, hero2Btn);
       enableButtons();
     });
@@ -202,6 +207,14 @@
             heroSelect1.value = selectedHero;
             updateButtonFromSelect(heroSelect1, hero1Btn);
           }
+
+          const selectedHero2 = sessionStorage.getItem("hero2");
+          if (selectedHero2) {
+            heroSelect2.value = selectedHero2;
+            updateButtonFromSelect(heroSelect2, hero2Btn);
+          }
+
+          enableButtons();
         });
     }
 
