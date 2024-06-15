@@ -10,6 +10,14 @@ const util = require('util');
 const { mergeStats } = require("../util/helper");
 const readFileAsync = util.promisify(fs.readFile);
 
+function toCamelCase(str) {
+  const symbolRemovedName = str.replace(/[^\w\s]/g, '');
+  const finalName = symbolRemovedName.replace(/(?:^\w|[A-Z]|\b\w)/g, (match, index) => {
+      return index === 0 ? match.toLowerCase() : match.toUpperCase();
+  }).replace(/\s+/g, '');
+  return finalName;
+}
+
 function getHeroes() {
   return heroes.sort((a, b) => {
     const nameA = a.toLowerCase();
@@ -26,17 +34,14 @@ function getPlayers() {
 
 async function getHeroDeck(hero) {
   const decodedName = decodeURIComponent(hero);
-  const symbolRemovedName = decodedName.replace(/[^\w\s]/g, '');
-  const finalName = symbolRemovedName.replace(/(?:^\w|[A-Z]|\b\w)/g, (match, index) => {
-    return index === 0 ? match.toLowerCase() : match.toUpperCase();
-  }).replace(/\s+/g, '');
+  const camelCaseHeroName = toCamelCase(decodedName);
 
   const deckFilePath = path.join(
     __dirname,
     "../..",
     "config",
     "decks",
-    `${finalName}.json`
+    `${camelCaseHeroName}.json`
   );
 
   try {
@@ -49,16 +54,17 @@ async function getHeroDeck(hero) {
 }
 
 async function getHeroStats(hero, numberOfPlays, mode, source, fairnessThreshold) {
-  const encodedHero = encodeURIComponent(hero);
+  const umleagueStatsFilePath = path.join(__dirname, '..', '..', 'config', 'heroStats', `${toCamelCase(hero)}.json`);
 
   let umleagueData = [];
   let localData = [];
 
   try {
     if (source === 'umleague' || source === 'both') {
-      const apiRes = await axios.get(`https://www.umleague.net/api/analytics/getHeroResultsByMap?hero=${encodedHero}&campaignid=10000&organizerid=0`);
+      const data = await readFileAsync(umleagueStatsFilePath, 'utf8');
+      const umleagueResult = JSON.parse(data);
 
-      umleagueData = apiRes.data.repeatOpponent.map((item) => ({
+      umleagueData = umleagueResult.repeatOpponent.map((item) => ({
         hero: item.hero,
         plays: Number(item.queryOpponentOverall[0].plays),
         wins: Number(item.queryOpponentOverall[0].wins),
@@ -98,8 +104,11 @@ async function getHeroStats(hero, numberOfPlays, mode, source, fairnessThreshold
 }
 
 async function getMapStats(hero1, hero2) {
-  const apiRes = await axios.get(`https://www.umleague.net/api/analytics/getHeroResultsByMap?hero=${encodeURIComponent(hero1)}&campaignid=10000&organizerid=0`);
-  const opponent = apiRes.data.repeatOpponent.find((opponent) => opponent.hero === hero2);
+  const umleagueStatsFilePath = path.join(__dirname, '..', '..', 'config', 'heroStats', `${toCamelCase(hero1)}.json`);
+
+  const data = await readFileAsync(umleagueStatsFilePath, 'utf8');
+  const umleagueResult = JSON.parse(data);
+  const opponent = umleagueResult.repeatOpponent.find((opponent) => opponent.hero === hero2);
   
   if (!opponent) {
     return null;
