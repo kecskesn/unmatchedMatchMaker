@@ -101,8 +101,6 @@ app.delete('/deleteMatchLog/:logId', async (req, res) => {
   res.send(deleteResult);
 });
 
-app.get('/favicon.ico', (req, res) => res.status(204).end());
-
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
