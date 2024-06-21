@@ -129,7 +129,14 @@
 
       function handleModeChange() {
         const selectedMode = modeSelect.value;
-        numberOfPlaysSelect.disabled = selectedMode === "excludeUnfair";
+
+        if (selectedMode === "excludeUnfair") {
+          numberOfPlaysSelect.value = "0";
+          numberOfPlaysSelect.disabled = true;
+        } else {
+          numberOfPlaysSelect.disabled = false;
+        }
+        
         fetchMatches();
       }
 
