@@ -103,7 +103,7 @@
 
           const trackedHero = sessionStorage.getItem("trackedHero");
           const selectedHero = trackedHero ? trackedHero : sessionStorage.getItem("hero");
-          sessionStorage.setItem("hero", trackedHero);
+          sessionStorage.setItem("hero", selectedHero);
           if (selectedHero) {
             heroSelect.value = selectedHero;
             fetchDeckConfig(selectedHero);

@@ -9,6 +9,10 @@
       "mapName": "Baskerville Manor"
     },
     {
+      "mapId": 23,
+      "mapName": "Globe Theatre"
+    },
+    {
       "mapId": 12,
       "mapName": "Hanging Gardens"
     },
@@ -107,6 +111,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
@@ -251,10 +259,10 @@
       "hero": "Alice",
       "queryOpponentOverall": [
         {
-          "plays": 15,
-          "wins": 7,
+          "plays": 16,
+          "wins": 8,
           "losses": 8,
-          "winpercent": 47
+          "winpercent": 50
         }
       ],
       "repeatMap": [
@@ -272,6 +280,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
@@ -344,7 +356,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Alice",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -384,10 +404,10 @@
       "hero": "Annie Christmas",
       "queryOpponentOverall": [
         {
-          "plays": 5,
+          "plays": 6,
           "wins": 2,
-          "losses": 3,
-          "winpercent": 40
+          "losses": 4,
+          "winpercent": 33
         }
       ],
       "repeatMap": [
@@ -405,6 +425,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
@@ -464,9 +488,9 @@
           "queryResult": [
             {
               "opponent": "Annie Christmas",
-              "plays": 1,
+              "plays": 2,
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "winpercent": 0
             }
           ]
@@ -538,6 +562,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
@@ -682,6 +710,10 @@
           ]
         },
         {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
           "mapName": "Hanging Gardens",
           "queryResult": []
         },
@@ -815,6 +847,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
           "mapName": "Hanging Gardens",
           "queryResult": []
         },
@@ -929,6 +965,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
@@ -1094,6 +1134,111 @@
       ]
     },
     {
+      "hero": "Bloody Mary",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 1,
+          "losses": 0,
+          "winpercent": 100
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": [
+            {
+              "opponent": "Bloody Mary",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "Yukon",
+          "queryResult": []
+        }
+      ]
+    },
+    {
       "hero": "Buffy (Giles)",
       "queryOpponentOverall": [
         {
@@ -1110,6 +1255,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
@@ -1220,6 +1369,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
         },
         {
           "mapName": "Hanging Gardens",
@@ -1355,6 +1508,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
           "mapName": "Hanging Gardens",
           "queryResult": []
         },
@@ -1448,10 +1605,10 @@
       "hero": "Daredevil",
       "queryOpponentOverall": [
         {
-          "plays": 29,
+          "plays": 31,
           "wins": 23,
-          "losses": 6,
-          "winpercent": 79
+          "losses": 8,
+          "winpercent": 74
         }
       ],
       "repeatMap": [
@@ -1469,6 +1626,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
@@ -1524,10 +1685,10 @@
           "queryResult": [
             {
               "opponent": "Daredevil",
-              "plays": 1,
+              "plays": 2,
               "wins": 1,
-              "losses": 0,
-              "winpercent": 100
+              "losses": 1,
+              "winpercent": 50
             }
           ]
         },
@@ -1584,9 +1745,9 @@
           "queryResult": [
             {
               "opponent": "Daredevil",
-              "plays": 1,
+              "plays": 2,
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "winpercent": 0
             }
           ]
@@ -1613,10 +1774,10 @@
       "hero": "Doctor Strange",
       "queryOpponentOverall": [
         {
-          "plays": 41,
+          "plays": 42,
           "wins": 21,
-          "losses": 20,
-          "winpercent": 51
+          "losses": 21,
+          "winpercent": 50
         }
       ],
       "repeatMap": [
@@ -1634,6 +1795,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
@@ -1669,10 +1834,10 @@
           "queryResult": [
             {
               "opponent": "Doctor Strange",
-              "plays": 4,
+              "plays": 5,
               "wins": 2,
-              "losses": 2,
-              "winpercent": 50
+              "losses": 3,
+              "winpercent": 40
             }
           ]
         },
@@ -1778,10 +1943,10 @@
       "hero": "Dr. Jill Trent",
       "queryOpponentOverall": [
         {
-          "plays": 10,
-          "wins": 8,
+          "plays": 11,
+          "wins": 9,
           "losses": 2,
-          "winpercent": 80
+          "winpercent": 82
         }
       ],
       "repeatMap": [
@@ -1799,6 +1964,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
@@ -1831,7 +2000,15 @@
         },
         {
           "mapName": "Marmoreal",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Dr. Jill Trent",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "McMinnville, OR",
@@ -1959,6 +2136,10 @@
           ]
         },
         {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
           "mapName": "Hanging Gardens",
           "queryResult": []
         },
@@ -2073,6 +2254,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
@@ -2217,6 +2402,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
           "mapName": "Hanging Gardens",
           "queryResult": []
         },
@@ -2307,6 +2496,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
@@ -2403,19 +2596,31 @@
       "hero": "Golden Bat",
       "queryOpponentOverall": [
         {
-          "plays": 12,
-          "wins": 8,
-          "losses": 4,
+          "plays": 15,
+          "wins": 10,
+          "losses": 5,
           "winpercent": 67
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Golden Bat",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
@@ -2488,7 +2693,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Golden Bat",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -2500,7 +2713,15 @@
         },
         {
           "mapName": "Sherwood Forest",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Golden Bat",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Soho",
@@ -2566,6 +2787,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
         },
         {
           "mapName": "Hanging Gardens",
@@ -2677,6 +2902,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
           "mapName": "Hanging Gardens",
           "queryResult": [
             {
@@ -2783,6 +3012,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
@@ -2919,6 +3152,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
           "mapName": "Hanging Gardens",
           "queryResult": []
         },
@@ -3041,6 +3278,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
@@ -3193,6 +3434,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
           "mapName": "Hanging Gardens",
           "queryResult": []
         },
@@ -3342,6 +3587,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
           "mapName": "Hanging Gardens",
           "queryResult": [
             {
@@ -3448,6 +3697,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
@@ -3632,6 +3885,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
           "mapName": "Hanging Gardens",
           "queryResult": []
         },
@@ -3773,6 +4030,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
           "mapName": "Hanging Gardens",
           "queryResult": []
         },
@@ -3879,6 +4140,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
@@ -4028,6 +4293,111 @@
       ]
     },
     {
+      "hero": "Shakespeare",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 1,
+          "losses": 0,
+          "winpercent": 100
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": [
+            {
+              "opponent": "Shakespeare",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "Yukon",
+          "queryResult": []
+        }
+      ]
+    },
+    {
       "hero": "She-Hulk",
       "queryOpponentOverall": [
         {
@@ -4044,6 +4414,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
@@ -4188,6 +4562,10 @@
           ]
         },
         {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
           "mapName": "Hanging Gardens",
           "queryResult": [
             {
@@ -4294,6 +4672,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
@@ -4406,6 +4788,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
           "mapName": "Hanging Gardens",
           "queryResult": []
         },
@@ -4491,9 +4877,9 @@
       "hero": "Sun Wukong",
       "queryOpponentOverall": [
         {
-          "plays": 6,
+          "plays": 8,
           "wins": 0,
-          "losses": 6,
+          "losses": 8,
           "winpercent": 0
         }
       ],
@@ -4523,12 +4909,24 @@
           ]
         },
         {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
           "mapName": "Hanging Gardens",
           "queryResult": []
         },
         {
           "mapName": "Helicarrier",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Sun Wukong",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Hell's Kitchen",
@@ -4600,7 +4998,15 @@
         },
         {
           "mapName": "Soho",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Sun Wukong",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
@@ -4653,6 +5059,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
@@ -4786,6 +5196,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
@@ -4935,6 +5349,111 @@
       ]
     },
     {
+      "hero": "Titania",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": [
+            {
+              "opponent": "Titania",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "Yukon",
+          "queryResult": []
+        }
+      ]
+    },
+    {
       "hero": "Winter Soldier",
       "queryOpponentOverall": [
         {
@@ -4960,6 +5479,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
         },
         {
           "mapName": "Hanging Gardens",
@@ -5095,10 +5618,10 @@
       "hero": "Yennenga",
       "queryOpponentOverall": [
         {
-          "plays": 53,
+          "plays": 54,
           "wins": 20,
-          "losses": 33,
-          "winpercent": 38
+          "losses": 34,
+          "winpercent": 37
         }
       ],
       "repeatMap": [
@@ -5116,6 +5639,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
@@ -5223,10 +5750,10 @@
           "queryResult": [
             {
               "opponent": "Yennenga",
-              "plays": 15,
+              "plays": 16,
               "wins": 4,
-              "losses": 11,
-              "winpercent": 27
+              "losses": 12,
+              "winpercent": 25
             }
           ]
         },
@@ -5277,10 +5804,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 75,
+          "plays": 76,
           "wins": 38,
-          "losses": 37,
-          "winpercent": 51
+          "losses": 38,
+          "winpercent": 50
         }
       ]
     },
@@ -5297,6 +5824,16 @@
     {
       "queryHeroMapResults": [
         {
+          "plays": 1,
+          "wins": 1,
+          "losses": 0,
+          "winpercent": 100
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
           "plays": 5,
           "wins": 3,
           "losses": 2,
@@ -5307,10 +5844,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 30,
+          "plays": 31,
           "wins": 17,
-          "losses": 13,
-          "winpercent": 57
+          "losses": 14,
+          "winpercent": 55
         }
       ]
     },
@@ -5347,20 +5884,20 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 52,
-          "wins": 21,
-          "losses": 31,
-          "winpercent": 40
+          "plays": 54,
+          "wins": 22,
+          "losses": 32,
+          "winpercent": 41
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 17,
+          "plays": 18,
           "wins": 13,
-          "losses": 4,
-          "winpercent": 76
+          "losses": 5,
+          "winpercent": 72
         }
       ]
     },
@@ -5377,20 +5914,20 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 45,
-          "wins": 27,
+          "plays": 46,
+          "wins": 28,
           "losses": 18,
-          "winpercent": 60
+          "winpercent": 61
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 119,
-          "wins": 66,
+          "plays": 121,
+          "wins": 68,
           "losses": 53,
-          "winpercent": 55
+          "winpercent": 56
         }
       ]
     },
@@ -5407,30 +5944,30 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 9,
+          "plays": 10,
           "wins": 4,
-          "losses": 5,
-          "winpercent": 44
+          "losses": 6,
+          "winpercent": 40
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 11,
-          "wins": 8,
+          "plays": 12,
+          "wins": 9,
           "losses": 3,
-          "winpercent": 73
+          "winpercent": 75
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 98,
+          "plays": 101,
           "wins": 50,
-          "losses": 48,
-          "winpercent": 51
+          "losses": 51,
+          "winpercent": 50
         }
       ]
     },
@@ -5447,10 +5984,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 13,
+          "plays": 14,
           "wins": 7,
-          "losses": 6,
-          "winpercent": 54
+          "losses": 7,
+          "winpercent": 50
         }
       ]
     },
@@ -5477,10 +6014,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 683,
-      "wins": 360,
-      "losses": 323,
-      "winpercent": 53
+      "plays": 698,
+      "wins": 366,
+      "losses": 332,
+      "winpercent": 52
     }
   ]
 }

@@ -1973,10 +1973,10 @@
       "hero": "Bullseye",
       "queryOpponentOverall": [
         {
-          "plays": 22,
+          "plays": 23,
           "wins": 5,
-          "losses": 17,
-          "winpercent": 23
+          "losses": 18,
+          "winpercent": 22
         }
       ],
       "repeatMap": [
@@ -2121,9 +2121,9 @@
           "queryResult": [
             {
               "opponent": "Bullseye",
-              "plays": 1,
+              "plays": 2,
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "winpercent": 0
             }
           ]
@@ -2553,10 +2553,10 @@
       "hero": "Dr. Jill Trent",
       "queryOpponentOverall": [
         {
-          "plays": 12,
-          "wins": 4,
+          "plays": 13,
+          "wins": 5,
           "losses": 8,
-          "winpercent": 33
+          "winpercent": 38
         }
       ],
       "repeatMap": [
@@ -2622,7 +2622,15 @@
         },
         {
           "mapName": "Navy Pier",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Dr. Jill Trent",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Point Pleasant",
@@ -2690,10 +2698,10 @@
       "hero": "Dr. Sattler",
       "queryOpponentOverall": [
         {
-          "plays": 14,
-          "wins": 9,
-          "losses": 5,
-          "winpercent": 64
+          "plays": 16,
+          "wins": 10,
+          "losses": 6,
+          "winpercent": 63
         }
       ],
       "repeatMap": [
@@ -2783,7 +2791,15 @@
         },
         {
           "mapName": "Soho",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Dr. Sattler",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
@@ -2802,10 +2818,10 @@
           "queryResult": [
             {
               "opponent": "Dr. Sattler",
-              "plays": 4,
-              "wins": 3,
+              "plays": 5,
+              "wins": 4,
               "losses": 1,
-              "winpercent": 75
+              "winpercent": 80
             }
           ]
         },
@@ -7418,10 +7434,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 7,
-          "wins": 2,
+          "plays": 8,
+          "wins": 3,
           "losses": 5,
-          "winpercent": 29
+          "winpercent": 38
         }
       ]
     },
@@ -7478,10 +7494,20 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 78,
+          "plays": 79,
           "wins": 34,
-          "losses": 44,
-          "winpercent": 44
+          "losses": 45,
+          "winpercent": 43
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 71,
+          "wins": 41,
+          "losses": 30,
+          "winpercent": 58
         }
       ]
     },
@@ -7489,19 +7515,9 @@
       "queryHeroMapResults": [
         {
           "plays": 70,
-          "wins": 41,
-          "losses": 29,
-          "winpercent": 59
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 69,
-          "wins": 41,
+          "wins": 42,
           "losses": 28,
-          "winpercent": 59
+          "winpercent": 60
         }
       ]
     },
@@ -7538,9 +7554,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 984,
-      "wins": 525,
-      "losses": 459,
+      "plays": 988,
+      "wins": 527,
+      "losses": 461,
       "winpercent": 53
     }
   ]

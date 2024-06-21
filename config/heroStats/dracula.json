@@ -90,9 +90,9 @@
       "hero": "Achilles",
       "queryOpponentOverall": [
         {
-          "plays": 58,
+          "plays": 59,
           "wins": 31,
-          "losses": 27,
+          "losses": 28,
           "winpercent": 53
         }
       ],
@@ -170,10 +170,10 @@
           "queryResult": [
             {
               "opponent": "Achilles",
-              "plays": 1,
+              "plays": 2,
               "wins": 1,
-              "losses": 0,
-              "winpercent": 100
+              "losses": 1,
+              "winpercent": 50
             }
           ]
         },
@@ -573,10 +573,10 @@
       "hero": "Annie Christmas",
       "queryOpponentOverall": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 1,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 1,
+          "winpercent": 50
         }
       ],
       "repeatMap": [
@@ -626,7 +626,15 @@
         },
         {
           "mapName": "Navy Pier",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Annie Christmas",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Point Pleasant",
@@ -2094,10 +2102,10 @@
       "hero": "Bullseye",
       "queryOpponentOverall": [
         {
-          "plays": 37,
+          "plays": 38,
           "wins": 22,
-          "losses": 15,
-          "winpercent": 59
+          "losses": 16,
+          "winpercent": 58
         }
       ],
       "repeatMap": [
@@ -2179,7 +2187,15 @@
         },
         {
           "mapName": "Navy Pier",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Bullseye",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Point Pleasant",
@@ -2722,10 +2738,10 @@
       "hero": "Dr. Jill Trent",
       "queryOpponentOverall": [
         {
-          "plays": 21,
+          "plays": 22,
           "wins": 7,
-          "losses": 14,
-          "winpercent": 33
+          "losses": 15,
+          "winpercent": 32
         }
       ],
       "repeatMap": [
@@ -2867,7 +2883,15 @@
         },
         {
           "mapName": "The Bronze",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Dr. Jill Trent",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "The Raft",
@@ -3495,10 +3519,10 @@
       "hero": "Houdini",
       "queryOpponentOverall": [
         {
-          "plays": 75,
+          "plays": 76,
           "wins": 36,
-          "losses": 39,
-          "winpercent": 48
+          "losses": 40,
+          "winpercent": 47
         }
       ],
       "repeatMap": [
@@ -3639,10 +3663,10 @@
           "queryResult": [
             {
               "opponent": "Houdini",
-              "plays": 2,
+              "plays": 3,
               "wins": 1,
-              "losses": 1,
-              "winpercent": 50
+              "losses": 2,
+              "winpercent": 33
             }
           ]
         },
@@ -8073,10 +8097,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 48,
+          "plays": 49,
           "wins": 19,
-          "losses": 29,
-          "winpercent": 40
+          "losses": 30,
+          "winpercent": 39
         }
       ]
     },
@@ -8093,10 +8117,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 3,
+          "plays": 5,
           "wins": 2,
-          "losses": 1,
-          "winpercent": 67
+          "losses": 3,
+          "winpercent": 40
         }
       ]
     },
@@ -8133,10 +8157,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 90,
+          "plays": 91,
           "wins": 50,
-          "losses": 40,
-          "winpercent": 56
+          "losses": 41,
+          "winpercent": 55
         }
       ]
     },
@@ -8183,9 +8207,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 110,
+          "plays": 111,
           "wins": 53,
-          "losses": 57,
+          "losses": 58,
           "winpercent": 48
         }
       ]
@@ -8213,9 +8237,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 1202,
+      "plays": 1207,
       "wins": 622,
-      "losses": 580,
+      "losses": 585,
       "winpercent": 52
     }
   ]

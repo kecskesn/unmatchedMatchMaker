@@ -2784,16 +2784,24 @@
       "hero": "Houdini",
       "queryOpponentOverall": [
         {
-          "plays": 101,
-          "wins": 66,
+          "plays": 102,
+          "wins": 67,
           "losses": 35,
-          "winpercent": 65
+          "winpercent": 66
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Houdini",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
@@ -4551,10 +4559,10 @@
       "hero": "Raptors",
       "queryOpponentOverall": [
         {
-          "plays": 16,
+          "plays": 17,
           "wins": 2,
-          "losses": 14,
-          "winpercent": 13
+          "losses": 15,
+          "winpercent": 12
         }
       ],
       "repeatMap": [
@@ -4632,7 +4640,15 @@
         },
         {
           "mapName": "Sarpedon",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Raptors",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sherwood Forest",
@@ -6726,10 +6742,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 2,
-          "wins": 1,
+          "plays": 3,
+          "wins": 2,
           "losses": 1,
-          "winpercent": 50
+          "winpercent": 67
         }
       ]
     },
@@ -6866,10 +6882,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 41,
+          "plays": 42,
           "wins": 19,
-          "losses": 22,
-          "winpercent": 46
+          "losses": 23,
+          "winpercent": 45
         }
       ]
     },
@@ -6946,9 +6962,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 901,
-      "wins": 410,
-      "losses": 491,
+      "plays": 903,
+      "wins": 411,
+      "losses": 492,
       "winpercent": 46
     }
   ]

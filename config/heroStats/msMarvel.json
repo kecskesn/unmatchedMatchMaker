@@ -3787,10 +3787,10 @@
       "hero": "Sinbad",
       "queryOpponentOverall": [
         {
-          "plays": 11,
+          "plays": 12,
           "wins": 3,
-          "losses": 8,
-          "winpercent": 27
+          "losses": 9,
+          "winpercent": 25
         }
       ],
       "repeatMap": [
@@ -3888,7 +3888,15 @@
         },
         {
           "mapName": "Sherwood Forest",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Sinbad",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Soho",
@@ -4999,10 +5007,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 2,
+          "plays": 3,
           "wins": 1,
-          "losses": 1,
-          "winpercent": 50
+          "losses": 2,
+          "winpercent": 33
         }
       ]
     },
@@ -5059,9 +5067,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 239,
+      "plays": 240,
       "wins": 88,
-      "losses": 151,
+      "losses": 152,
       "winpercent": 37
     }
   ]
