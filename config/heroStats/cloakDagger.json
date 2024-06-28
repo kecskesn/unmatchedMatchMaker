@@ -1076,10 +1076,10 @@
       "hero": "Bullseye",
       "queryOpponentOverall": [
         {
-          "plays": 11,
-          "wins": 8,
+          "plays": 12,
+          "wins": 9,
           "losses": 3,
-          "winpercent": 73
+          "winpercent": 75
         }
       ],
       "repeatMap": [
@@ -1153,7 +1153,15 @@
         },
         {
           "mapName": "Sarpedon",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Bullseye",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sherwood Forest",
@@ -4485,10 +4493,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 1,
-          "wins": 0,
+          "plays": 2,
+          "wins": 1,
           "losses": 1,
-          "winpercent": 0
+          "winpercent": 50
         }
       ]
     },
@@ -4565,10 +4573,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 288,
-      "wins": 128,
+      "plays": 289,
+      "wins": 129,
       "losses": 160,
-      "winpercent": 44
+      "winpercent": 45
     }
   ]
 }

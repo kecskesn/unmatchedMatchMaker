@@ -1137,10 +1137,10 @@
       "hero": "Bruce Lee",
       "queryOpponentOverall": [
         {
-          "plays": 8,
+          "plays": 9,
           "wins": 1,
-          "losses": 7,
-          "winpercent": 13
+          "losses": 8,
+          "winpercent": 11
         }
       ],
       "repeatMap": [
@@ -1266,7 +1266,15 @@
         },
         {
           "mapName": "Yukon",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Bruce Lee",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         }
       ]
     },
@@ -6029,19 +6037,19 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 9,
+          "plays": 10,
           "wins": 4,
-          "losses": 5,
-          "winpercent": 44
+          "losses": 6,
+          "winpercent": 40
         }
       ]
     }
   ],
   "queryHeroOverall": [
     {
-      "plays": 487,
+      "plays": 488,
       "wins": 174,
-      "losses": 313,
+      "losses": 314,
       "winpercent": 36
     }
   ]

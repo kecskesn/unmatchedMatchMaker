@@ -1277,10 +1277,10 @@
       "hero": "Daredevil",
       "queryOpponentOverall": [
         {
-          "plays": 9,
+          "plays": 10,
           "wins": 4,
-          "losses": 5,
-          "winpercent": 44
+          "losses": 6,
+          "winpercent": 40
         }
       ],
       "repeatMap": [
@@ -1314,7 +1314,15 @@
         },
         {
           "mapName": "Hell's Kitchen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Daredevil",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Heorot",
@@ -3912,10 +3920,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 9,
+          "plays": 10,
           "wins": 4,
-          "losses": 5,
-          "winpercent": 44
+          "losses": 6,
+          "winpercent": 40
         }
       ]
     },
@@ -4052,9 +4060,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 177,
+      "plays": 178,
       "wins": 81,
-      "losses": 96,
+      "losses": 97,
       "winpercent": 46
     }
   ]

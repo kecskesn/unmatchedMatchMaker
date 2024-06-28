@@ -1152,9 +1152,9 @@
       "hero": "Buffy (Xander)",
       "queryOpponentOverall": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 0,
-          "losses": 1,
+          "losses": 2,
           "winpercent": 0
         }
       ],
@@ -1229,7 +1229,15 @@
         },
         {
           "mapName": "The Bronze",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Buffy (Xander)",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "The Raft",
@@ -4307,10 +4315,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 11,
+          "plays": 12,
           "wins": 5,
-          "losses": 6,
-          "winpercent": 45
+          "losses": 7,
+          "winpercent": 42
         }
       ]
     },
@@ -4337,10 +4345,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 172,
+      "plays": 173,
       "wins": 82,
-      "losses": 90,
-      "winpercent": 48
+      "losses": 91,
+      "winpercent": 47
     }
   ]
 }

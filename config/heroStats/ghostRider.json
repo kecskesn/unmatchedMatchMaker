@@ -4865,10 +4865,10 @@
       "hero": "Nikola Tesla",
       "queryOpponentOverall": [
         {
-          "plays": 7,
+          "plays": 8,
           "wins": 2,
-          "losses": 5,
-          "winpercent": 29
+          "losses": 6,
+          "winpercent": 25
         }
       ],
       "repeatMap": [
@@ -4918,7 +4918,15 @@
         },
         {
           "mapName": "Navy Pier",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Nikola Tesla",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Point Pleasant",
@@ -5397,9 +5405,9 @@
       "hero": "She-Hulk",
       "queryOpponentOverall": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 0,
-          "losses": 1,
+          "losses": 2,
           "winpercent": 0
         }
       ],
@@ -5474,7 +5482,15 @@
         },
         {
           "mapName": "Soho",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "She-Hulk",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
@@ -6952,10 +6968,10 @@
       "hero": "Yennenga",
       "queryOpponentOverall": [
         {
-          "plays": 18,
+          "plays": 19,
           "wins": 6,
-          "losses": 12,
-          "winpercent": 33
+          "losses": 13,
+          "winpercent": 32
         }
       ],
       "repeatMap": [
@@ -7004,9 +7020,9 @@
           "queryResult": [
             {
               "opponent": "Yennenga",
-              "plays": 1,
+              "plays": 2,
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "winpercent": 0
             }
           ]
@@ -7182,9 +7198,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 61,
+          "plays": 62,
           "wins": 32,
-          "losses": 29,
+          "losses": 30,
           "winpercent": 52
         }
       ]
@@ -7212,10 +7228,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 14,
+          "plays": 15,
           "wins": 6,
-          "losses": 8,
-          "winpercent": 43
+          "losses": 9,
+          "winpercent": 40
         }
       ]
     },
@@ -7272,9 +7288,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 80,
+          "plays": 81,
           "wins": 29,
-          "losses": 51,
+          "losses": 52,
           "winpercent": 36
         }
       ]
@@ -7332,9 +7348,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 743,
+      "plays": 746,
       "wins": 299,
-      "losses": 444,
+      "losses": 447,
       "winpercent": 40
     }
   ]

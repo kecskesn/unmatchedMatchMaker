@@ -1434,10 +1434,10 @@
       "hero": "Bruce Lee",
       "queryOpponentOverall": [
         {
-          "plays": 22,
+          "plays": 23,
           "wins": 8,
-          "losses": 14,
-          "winpercent": 36
+          "losses": 15,
+          "winpercent": 35
         }
       ],
       "repeatMap": [
@@ -1531,7 +1531,15 @@
         },
         {
           "mapName": "Sherwood Forest",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Bruce Lee",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Soho",
@@ -4647,10 +4655,10 @@
       "hero": "Moon Knight",
       "queryOpponentOverall": [
         {
-          "plays": 13,
-          "wins": 4,
+          "plays": 14,
+          "wins": 5,
           "losses": 9,
-          "winpercent": 31
+          "winpercent": 36
         }
       ],
       "repeatMap": [
@@ -4736,7 +4744,15 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Moon Knight",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sarpedon",
@@ -7611,10 +7627,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 27,
-          "wins": 18,
+          "plays": 28,
+          "wins": 19,
           "losses": 9,
-          "winpercent": 67
+          "winpercent": 68
         }
       ]
     },
@@ -7631,10 +7647,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 13,
+          "plays": 14,
           "wins": 6,
-          "losses": 7,
-          "winpercent": 46
+          "losses": 8,
+          "winpercent": 43
         }
       ]
     },
@@ -7701,9 +7717,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 982,
-      "wins": 439,
-      "losses": 543,
+      "plays": 984,
+      "wins": 440,
+      "losses": 544,
       "winpercent": 45
     }
   ]

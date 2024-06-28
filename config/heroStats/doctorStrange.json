@@ -2379,16 +2379,24 @@
       "hero": "Golden Bat",
       "queryOpponentOverall": [
         {
-          "plays": 10,
-          "wins": 5,
+          "plays": 11,
+          "wins": 6,
           "losses": 5,
-          "winpercent": 50
+          "winpercent": 55
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Golden Bat",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
@@ -2645,10 +2653,10 @@
       "hero": "Houdini",
       "queryOpponentOverall": [
         {
-          "plays": 23,
-          "wins": 11,
+          "plays": 24,
+          "wins": 12,
           "losses": 12,
-          "winpercent": 48
+          "winpercent": 50
         }
       ],
       "repeatMap": [
@@ -2754,7 +2762,15 @@
         },
         {
           "mapName": "Sherwood Forest",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Houdini",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Soho",
@@ -5597,8 +5613,8 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 2,
-          "wins": 2,
+          "plays": 3,
+          "wins": 3,
           "losses": 0,
           "winpercent": 100
         }
@@ -5747,10 +5763,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 59,
-          "wins": 35,
+          "plays": 60,
+          "wins": 36,
           "losses": 24,
-          "winpercent": 59
+          "winpercent": 60
         }
       ]
     },
@@ -5817,10 +5833,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 683,
-      "wins": 351,
+      "plays": 685,
+      "wins": 353,
       "losses": 332,
-      "winpercent": 51
+      "winpercent": 52
     }
   ]
 }
