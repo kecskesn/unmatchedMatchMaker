@@ -291,10 +291,10 @@
       "hero": "Alice",
       "queryOpponentOverall": [
         {
-          "plays": 17,
-          "wins": 10,
+          "plays": 18,
+          "wins": 11,
           "losses": 7,
-          "winpercent": 59
+          "winpercent": 61
         }
       ],
       "repeatMap": [
@@ -307,10 +307,10 @@
           "queryResult": [
             {
               "opponent": "Alice",
-              "plays": 1,
-              "wins": 0,
+              "plays": 2,
+              "wins": 1,
               "losses": 1,
-              "winpercent": 0
+              "winpercent": 50
             }
           ]
         },
@@ -794,16 +794,24 @@
       "hero": "Bigfoot",
       "queryOpponentOverall": [
         {
-          "plays": 17,
+          "plays": 18,
           "wins": 3,
-          "losses": 14,
-          "winpercent": 18
+          "losses": 15,
+          "winpercent": 17
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Bigfoot",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
@@ -1925,10 +1933,10 @@
       "hero": "Doctor Strange",
       "queryOpponentOverall": [
         {
-          "plays": 38,
+          "plays": 39,
           "wins": 20,
-          "losses": 18,
-          "winpercent": 53
+          "losses": 19,
+          "winpercent": 51
         }
       ],
       "repeatMap": [
@@ -2053,10 +2061,10 @@
           "queryResult": [
             {
               "opponent": "Doctor Strange",
-              "plays": 5,
+              "plays": 6,
               "wins": 5,
-              "losses": 0,
-              "winpercent": 100
+              "losses": 1,
+              "winpercent": 83
             }
           ]
         },
@@ -3697,10 +3705,10 @@
       "hero": "Little Red Riding Hood",
       "queryOpponentOverall": [
         {
-          "plays": 42,
+          "plays": 43,
           "wins": 13,
-          "losses": 29,
-          "winpercent": 31
+          "losses": 30,
+          "winpercent": 30
         }
       ],
       "repeatMap": [
@@ -3713,10 +3721,10 @@
           "queryResult": [
             {
               "opponent": "Little Red Riding Hood",
-              "plays": 7,
+              "plays": 8,
               "wins": 3,
-              "losses": 4,
-              "winpercent": 43
+              "losses": 5,
+              "winpercent": 38
             }
           ]
         },
@@ -5390,10 +5398,10 @@
       "hero": "Shakespeare",
       "queryOpponentOverall": [
         {
-          "plays": 8,
+          "plays": 9,
           "wins": 6,
-          "losses": 2,
-          "winpercent": 75
+          "losses": 3,
+          "winpercent": 67
         }
       ],
       "repeatMap": [
@@ -5418,10 +5426,10 @@
           "queryResult": [
             {
               "opponent": "Shakespeare",
-              "plays": 4,
+              "plays": 5,
               "wins": 2,
-              "losses": 2,
-              "winpercent": 50
+              "losses": 3,
+              "winpercent": 40
             }
           ]
         },
@@ -7640,30 +7648,30 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 43,
+          "plays": 44,
           "wins": 17,
-          "losses": 26,
-          "winpercent": 40
+          "losses": 27,
+          "winpercent": 39
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 66,
-          "wins": 30,
-          "losses": 36,
-          "winpercent": 45
+          "plays": 68,
+          "wins": 31,
+          "losses": 37,
+          "winpercent": 46
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 20,
+          "plays": 21,
           "wins": 8,
-          "losses": 12,
-          "winpercent": 40
+          "losses": 13,
+          "winpercent": 38
         }
       ]
     },
@@ -7790,10 +7798,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 46,
+          "plays": 47,
           "wins": 26,
-          "losses": 20,
-          "winpercent": 57
+          "losses": 21,
+          "winpercent": 55
         }
       ]
     },
@@ -7860,9 +7868,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 1103,
-      "wins": 488,
-      "losses": 615,
+      "plays": 1108,
+      "wins": 489,
+      "losses": 619,
       "winpercent": 44
     }
   ]

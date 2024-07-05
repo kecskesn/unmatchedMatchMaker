@@ -94,10 +94,10 @@
       "hero": "Achilles",
       "queryOpponentOverall": [
         {
-          "plays": 74,
+          "plays": 75,
           "wins": 63,
-          "losses": 11,
-          "winpercent": 85
+          "losses": 12,
+          "winpercent": 84
         }
       ],
       "repeatMap": [
@@ -170,10 +170,10 @@
           "queryResult": [
             {
               "opponent": "Achilles",
-              "plays": 1,
+              "plays": 2,
               "wins": 1,
-              "losses": 0,
-              "winpercent": 100
+              "losses": 1,
+              "winpercent": 50
             }
           ]
         },
@@ -794,8 +794,8 @@
       "hero": "Bigfoot",
       "queryOpponentOverall": [
         {
-          "plays": 138,
-          "wins": 92,
+          "plays": 139,
+          "wins": 93,
           "losses": 46,
           "winpercent": 67
         }
@@ -894,10 +894,10 @@
           "queryResult": [
             {
               "opponent": "Bigfoot",
-              "plays": 16,
-              "wins": 11,
+              "plays": 17,
+              "wins": 12,
               "losses": 5,
-              "winpercent": 69
+              "winpercent": 71
             }
           ]
         },
@@ -3365,9 +3365,9 @@
       "hero": "Golden Bat",
       "queryOpponentOverall": [
         {
-          "plays": 99,
+          "plays": 100,
           "wins": 40,
-          "losses": 59,
+          "losses": 60,
           "winpercent": 40
         }
       ],
@@ -3457,10 +3457,10 @@
           "queryResult": [
             {
               "opponent": "Golden Bat",
-              "plays": 10,
+              "plays": 11,
               "wins": 5,
-              "losses": 5,
-              "winpercent": 50
+              "losses": 6,
+              "winpercent": 45
             }
           ]
         },
@@ -3839,10 +3839,10 @@
       "hero": "InGen",
       "queryOpponentOverall": [
         {
-          "plays": 16,
-          "wins": 13,
+          "plays": 17,
+          "wins": 14,
           "losses": 3,
-          "winpercent": 81
+          "winpercent": 82
         }
       ],
       "repeatMap": [
@@ -3868,7 +3868,15 @@
         },
         {
           "mapName": "Hanging Gardens",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "InGen",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Helicarrier",
@@ -7655,10 +7663,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 44,
-          "wins": 33,
+          "plays": 45,
+          "wins": 34,
           "losses": 11,
-          "winpercent": 75
+          "winpercent": 76
         }
       ]
     },
@@ -7705,9 +7713,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 209,
-          "wins": 140,
-          "losses": 69,
+          "plays": 212,
+          "wins": 141,
+          "losses": 71,
           "winpercent": 67
         }
       ]
@@ -7845,9 +7853,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 1858,
-      "wins": 1129,
-      "losses": 729,
+      "plays": 1862,
+      "wins": 1131,
+      "losses": 731,
       "winpercent": 61
     }
   ]

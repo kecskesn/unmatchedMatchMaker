@@ -1,193 +1,197 @@
 .btn-primary {
-    background-color: #2c76ac;
-    border-color: #2c76ac;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  background-color: #2c76ac;
+  border-color: #2c76ac;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active {
-    background-color: #215981;
-    border-color: #25303b;
+  background-color: #215981;
+  border-color: #25303b;
 }
 
 .btn-primary:disabled {
-    background-color: #2c76ac;
-    border-color: #2c76ac;
+  background-color: #2c76ac;
+  border-color: #2c76ac;
 }
 
 a.btn.btn-primary.active {
-    color: #ffffff !important;
-    background-color: #215981 !important;
-    border-color: #25303b !important;
+  color: #ffffff !important;
+  background-color: #215981 !important;
+  border-color: #25303b !important;
 }
 
 .btn-danger {
-    background-color: #dc3034;
-    border-color: #dc3034;
+  background-color: #dc3034;
+  border-color: #dc3034;
 }
 
 .badge-primary {
-    background-color: #2c76ac;
+  background-color: #2c76ac;
 }
 
 .badge-danger {
-    background-color: #dc3034;
+  background-color: #dc3034;
 }
 
 .btn-red {
-    color: #fff;
-    background-color: #dc3034;
-    border-color: #dc3034;
+  color: #fff;
+  background-color: #dc3034;
+  border-color: #dc3034;
 }
 
 .btn-blue {
-    color: #fff;
-    background-color: #2c76ac;
-    border-color: #2c76ac;
+  color: #fff;
+  background-color: #2c76ac;
+  border-color: #2c76ac;
 }
 
 .btn-purple {
-    color: #fff;
-    background-color: #6c4e8d;
-    border-color: #6c4e8d;
+  color: #fff;
+  background-color: #6c4e8d;
+  border-color: #6c4e8d;
 }
 
 .btn-yellow {
-    color: #fff;
-    background-color: #fcbd71;
-    border-color: #fcbd71;
+  color: #fff;
+  background-color: #fcbd71;
+  border-color: #fcbd71;
 }
 
 .deck-card-row {
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .deck-card-button,
 .hand-card-button {
-    flex: 1;
-    margin: 3px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
+  flex: 1;
+  margin: 3px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .hand-card-button {
-    flex: 0 0 auto;
-    width: 50px;
+  flex: 0 0 auto;
+  width: 50px;
 }
 
 .deck-card-button.disabled {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 @media (max-width: 576px) {
-    .deck-card-button {
-        width: 90%;
-    }
+  .deck-card-button {
+    width: 90%;
+  }
 }
 
 .extra-info {
-    display: inline-block;
-    padding: 2px 6px;
-    background-color: white;
-    color: black;
-    border-radius: 20px;
-    text-align: center;
-    margin-left: 5px;
-    font-weight: 700;
+  display: inline-block;
+  padding: 2px 6px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  text-align: center;
+  margin-left: 5px;
+  font-weight: 700;
 }
 
 .extra-info.boost {
-    display: inline-block;
-    padding: 2px 5px;
-    background-color: #999999;
-    color: #ffffff;
-    border-radius: 4px;
-    font-weight: 700;
+  display: inline-block;
+  padding: 2px 5px;
+  background-color: #999999;
+  color: #ffffff;
+  border-radius: 4px;
+  font-weight: 700;
 }
 
 .d-flex .form-group {
-    flex: 1;
-    margin-right: 10px;
+  flex: 1;
+  margin-right: 10px;
 }
 
 .d-flex .form-group:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .loading-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .loading-overlay .spinner-border {
-    width: 3rem;
-    height: 3rem;
-    margin-bottom: 1rem;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .card-title {
-    margin-bottom: 0.75rem;
-    text-align: center;
-    font-weight: bold;
+  margin-bottom: 0.75rem;
+  text-align: center;
+  font-weight: bold;
 }
 
 .card-subtitle {
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .card-text {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .list-group-item {
-    padding: 0.75rem 1.25rem;
+  padding: 0.75rem 1.25rem;
 }
 
 @media (min-width: 768px) {
-    #heroStatBtn::after {
-        content: " Hero Stats";
-    }
+  #heroStatBtn::after {
+    content: " Hero Stats";
+  }
 
-    #mapStatBtn::after {
-        content: " Map Stats";
-    }
+  #mapStatBtn::after {
+    content: " Map Stats";
+  }
 
-    #cardTrackerBtn::after {
-        content: " Card Tracker";
-    }
+  #cardTrackerBtn::after {
+    content: " Card Tracker";
+  }
 
-    #matchLoggerBtn::after {
-        content: " Match Logger";
-    }
+  #matchLoggerBtn::after {
+    content: " Match Logger";
+  }
 
-    #playerStatsBtn::after {
-        content: " Player Stats";
-    }
+  #playerStatsBtn::after {
+    content: " Player Stats";
+  }
 }
 
 .star-icon {
-    color: #fcbd71;
-    margin-left: 5px;
+  color: #fcbd71;
+  margin-left: 5px;
+}
+
+.icon {
+  margin-left: 5px; /* Adjust this value as needed */
 }

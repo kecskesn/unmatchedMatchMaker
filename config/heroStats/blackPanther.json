@@ -626,10 +626,10 @@
       "hero": "Bigfoot",
       "queryOpponentOverall": [
         {
-          "plays": 20,
-          "wins": 6,
+          "plays": 21,
+          "wins": 7,
           "losses": 14,
-          "winpercent": 30
+          "winpercent": 33
         }
       ],
       "repeatMap": [
@@ -674,10 +674,10 @@
           "queryResult": [
             {
               "opponent": "Bigfoot",
-              "plays": 1,
-              "wins": 0,
+              "plays": 2,
+              "wins": 1,
               "losses": 1,
-              "winpercent": 0
+              "winpercent": 50
             }
           ]
         },
@@ -5900,10 +5900,10 @@
       "hero": "T. Rex",
       "queryOpponentOverall": [
         {
-          "plays": 32,
-          "wins": 18,
+          "plays": 33,
+          "wins": 19,
           "losses": 14,
-          "winpercent": 56
+          "winpercent": 58
         }
       ],
       "repeatMap": [
@@ -5917,7 +5917,15 @@
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "T. Rex",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -6887,10 +6895,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 3,
-          "wins": 2,
+          "plays": 4,
+          "wins": 3,
           "losses": 1,
-          "winpercent": 67
+          "winpercent": 75
         }
       ]
     },
@@ -6917,10 +6925,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 11,
-          "wins": 6,
+          "plays": 12,
+          "wins": 7,
           "losses": 5,
-          "winpercent": 55
+          "winpercent": 58
         }
       ]
     },
@@ -7087,8 +7095,8 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 911,
-      "wins": 413,
+      "plays": 913,
+      "wins": 415,
       "losses": 498,
       "winpercent": 45
     }

@@ -45,5 +45,9 @@ module.exports = [
     'Tomoe Gozen',
     'Oda Nobunaga',
     'Mothman',
-    'Martian Invader'
+    'Martian Invader',
+    'Hamlet',
+    'Shakespeare',
+    'Titania',
+    'The Wayward Sisters',
 ]

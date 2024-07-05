@@ -3279,10 +3279,10 @@
       "hero": "Golden Bat",
       "queryOpponentOverall": [
         {
-          "plays": 2,
+          "plays": 3,
           "wins": 1,
-          "losses": 1,
-          "winpercent": 50
+          "losses": 2,
+          "winpercent": 33
         }
       ],
       "repeatMap": [
@@ -3364,7 +3364,15 @@
         },
         {
           "mapName": "Soho",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Golden Bat",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
@@ -5437,10 +5445,10 @@
       "hero": "Raptors",
       "queryOpponentOverall": [
         {
-          "plays": 7,
+          "plays": 8,
           "wins": 5,
-          "losses": 2,
-          "winpercent": 71
+          "losses": 3,
+          "winpercent": 63
         }
       ],
       "repeatMap": [
@@ -5518,7 +5526,15 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Raptors",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sarpedon",
@@ -7788,9 +7804,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 3,
+          "plays": 4,
           "wins": 0,
-          "losses": 3,
+          "losses": 4,
           "winpercent": 0
         }
       ]
@@ -7818,10 +7834,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 60,
+          "plays": 61,
           "wins": 33,
-          "losses": 27,
-          "winpercent": 55
+          "losses": 28,
+          "winpercent": 54
         }
       ]
     },
@@ -7878,10 +7894,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 981,
+      "plays": 983,
       "wins": 476,
-      "losses": 505,
-      "winpercent": 49
+      "losses": 507,
+      "winpercent": 48
     }
   ]
 }

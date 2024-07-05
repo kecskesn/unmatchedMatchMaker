@@ -94,10 +94,10 @@
       "hero": "Achilles",
       "queryOpponentOverall": [
         {
-          "plays": 107,
-          "wins": 42,
-          "losses": 65,
-          "winpercent": 39
+          "plays": 116,
+          "wins": 46,
+          "losses": 70,
+          "winpercent": 40
         }
       ],
       "repeatMap": [
@@ -110,16 +110,24 @@
           "queryResult": [
             {
               "opponent": "Achilles",
-              "plays": 4,
-              "wins": 2,
+              "plays": 5,
+              "wins": 3,
               "losses": 2,
-              "winpercent": 50
+              "winpercent": 60
             }
           ]
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Achilles",
+              "plays": 4,
+              "wins": 1,
+              "losses": 3,
+              "winpercent": 25
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -178,10 +186,10 @@
           "queryResult": [
             {
               "opponent": "Achilles",
-              "plays": 8,
-              "wins": 2,
+              "plays": 9,
+              "wins": 3,
               "losses": 6,
-              "winpercent": 25
+              "winpercent": 33
             }
           ]
         },
@@ -230,9 +238,9 @@
           "queryResult": [
             {
               "opponent": "Achilles",
-              "plays": 2,
+              "plays": 3,
               "wins": 0,
-              "losses": 2,
+              "losses": 3,
               "winpercent": 0
             }
           ]
@@ -278,10 +286,10 @@
           "queryResult": [
             {
               "opponent": "Achilles",
-              "plays": 6,
-              "wins": 3,
+              "plays": 7,
+              "wins": 4,
               "losses": 3,
-              "winpercent": 50
+              "winpercent": 57
             }
           ]
         },
@@ -314,10 +322,10 @@
           "queryResult": [
             {
               "opponent": "Achilles",
-              "plays": 4,
+              "plays": 5,
               "wins": 2,
-              "losses": 2,
-              "winpercent": 50
+              "losses": 3,
+              "winpercent": 40
             }
           ]
         },
@@ -669,10 +677,10 @@
       "hero": "Annie Christmas",
       "queryOpponentOverall": [
         {
-          "plays": 11,
-          "wins": 3,
+          "plays": 12,
+          "wins": 4,
           "losses": 8,
-          "winpercent": 27
+          "winpercent": 33
         }
       ],
       "repeatMap": [
@@ -798,7 +806,15 @@
         },
         {
           "mapName": "T. Rex Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Annie Christmas",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "The Bronze",
@@ -1007,9 +1023,9 @@
       "hero": "Bigfoot",
       "queryOpponentOverall": [
         {
-          "plays": 58,
+          "plays": 59,
           "wins": 18,
-          "losses": 40,
+          "losses": 41,
           "winpercent": 31
         }
       ],
@@ -1171,10 +1187,10 @@
           "queryResult": [
             {
               "opponent": "Bigfoot",
-              "plays": 3,
+              "plays": 4,
               "wins": 2,
-              "losses": 1,
-              "winpercent": 67
+              "losses": 2,
+              "winpercent": 50
             }
           ]
         },
@@ -2359,26 +2375,34 @@
       "hero": "Daredevil",
       "queryOpponentOverall": [
         {
-          "plays": 58,
-          "wins": 36,
-          "losses": 22,
-          "winpercent": 62
+          "plays": 63,
+          "wins": 40,
+          "losses": 23,
+          "winpercent": 63
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Daredevil",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
           "queryResult": [
             {
               "opponent": "Daredevil",
-              "plays": 3,
-              "wins": 2,
+              "plays": 4,
+              "wins": 3,
               "losses": 1,
-              "winpercent": 67
+              "winpercent": 75
             }
           ]
         },
@@ -2543,9 +2567,9 @@
           "queryResult": [
             {
               "opponent": "Daredevil",
-              "plays": 3,
-              "wins": 2,
-              "losses": 1,
+              "plays": 6,
+              "wins": 4,
+              "losses": 2,
               "winpercent": 67
             }
           ]
@@ -3171,10 +3195,10 @@
       "hero": "Dracula",
       "queryOpponentOverall": [
         {
-          "plays": 31,
-          "wins": 10,
+          "plays": 32,
+          "wins": 11,
           "losses": 21,
-          "winpercent": 32
+          "winpercent": 34
         }
       ],
       "repeatMap": [
@@ -3227,8 +3251,8 @@
           "queryResult": [
             {
               "opponent": "Dracula",
-              "plays": 1,
-              "wins": 1,
+              "plays": 2,
+              "wins": 2,
               "losses": 0,
               "winpercent": 100
             }
@@ -3778,16 +3802,24 @@
       "hero": "Golden Bat",
       "queryOpponentOverall": [
         {
-          "plays": 34,
-          "wins": 21,
+          "plays": 36,
+          "wins": 23,
           "losses": 13,
-          "winpercent": 62
+          "winpercent": 64
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Golden Bat",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
@@ -3846,10 +3878,10 @@
           "queryResult": [
             {
               "opponent": "Golden Bat",
-              "plays": 3,
-              "wins": 0,
+              "plays": 4,
+              "wins": 1,
               "losses": 3,
-              "winpercent": 0
+              "winpercent": 25
             }
           ]
         },
@@ -5543,8 +5575,8 @@
       "hero": "Moon Knight",
       "queryOpponentOverall": [
         {
-          "plays": 125,
-          "wins": 66,
+          "plays": 126,
+          "wins": 67,
           "losses": 59,
           "winpercent": 53
         }
@@ -5759,8 +5791,8 @@
           "queryResult": [
             {
               "opponent": "Moon Knight",
-              "plays": 1,
-              "wins": 1,
+              "plays": 2,
+              "wins": 2,
               "losses": 0,
               "winpercent": 100
             }
@@ -5905,26 +5937,34 @@
       "hero": "Nikola Tesla",
       "queryOpponentOverall": [
         {
-          "plays": 64,
-          "wins": 48,
-          "losses": 16,
-          "winpercent": 75
+          "plays": 71,
+          "wins": 54,
+          "losses": 17,
+          "winpercent": 76
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Nikola Tesla",
+              "plays": 3,
+              "wins": 3,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
           "queryResult": [
             {
               "opponent": "Nikola Tesla",
-              "plays": 2,
-              "wins": 1,
-              "losses": 1,
-              "winpercent": 50
+              "plays": 5,
+              "wins": 3,
+              "losses": 2,
+              "winpercent": 60
             }
           ]
         },
@@ -6026,7 +6066,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Nikola Tesla",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -6554,13 +6602,138 @@
       ]
     },
     {
+      "hero": "Shakespeare",
+      "queryOpponentOverall": [
+        {
+          "plays": 8,
+          "wins": 8,
+          "losses": 0,
+          "winpercent": 100
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": [
+            {
+              "opponent": "Shakespeare",
+              "plays": 4,
+              "wins": 4,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": [
+            {
+              "opponent": "Shakespeare",
+              "plays": 3,
+              "wins": 3,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": [
+            {
+              "opponent": "Shakespeare",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        },
+        {
+          "mapName": "Yukon",
+          "queryResult": []
+        }
+      ]
+    },
+    {
       "hero": "She-Hulk",
       "queryOpponentOverall": [
         {
-          "plays": 47,
+          "plays": 48,
           "wins": 29,
-          "losses": 18,
-          "winpercent": 62
+          "losses": 19,
+          "winpercent": 60
         }
       ],
       "repeatMap": [
@@ -6733,10 +6906,10 @@
           "queryResult": [
             {
               "opponent": "She-Hulk",
-              "plays": 1,
+              "plays": 2,
               "wins": 1,
-              "losses": 0,
-              "winpercent": 100
+              "losses": 1,
+              "winpercent": 50
             }
           ]
         },
@@ -7491,9 +7664,9 @@
       "hero": "Sun Wukong",
       "queryOpponentOverall": [
         {
-          "plays": 78,
-          "wins": 32,
-          "losses": 46,
+          "plays": 81,
+          "wins": 33,
+          "losses": 48,
           "winpercent": 41
         }
       ],
@@ -7615,10 +7788,10 @@
           "queryResult": [
             {
               "opponent": "Sun Wukong",
-              "plays": 3,
+              "plays": 5,
               "wins": 1,
-              "losses": 2,
-              "winpercent": 33
+              "losses": 4,
+              "winpercent": 20
             }
           ]
         },
@@ -7671,10 +7844,10 @@
           "queryResult": [
             {
               "opponent": "Sun Wukong",
-              "plays": 14,
-              "wins": 6,
+              "plays": 15,
+              "wins": 7,
               "losses": 8,
-              "winpercent": 43
+              "winpercent": 47
             }
           ]
         },
@@ -7720,32 +7893,48 @@
       "hero": "T. Rex",
       "queryOpponentOverall": [
         {
-          "plays": 63,
-          "wins": 25,
-          "losses": 38,
-          "winpercent": 40
+          "plays": 74,
+          "wins": 29,
+          "losses": 45,
+          "winpercent": 39
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "T. Rex",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
           "queryResult": [
             {
               "opponent": "T. Rex",
-              "plays": 2,
-              "wins": 1,
+              "plays": 3,
+              "wins": 2,
               "losses": 1,
-              "winpercent": 50
+              "winpercent": 67
             }
           ]
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "T. Rex",
+              "plays": 5,
+              "wins": 2,
+              "losses": 3,
+              "winpercent": 40
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -7812,10 +8001,10 @@
           "queryResult": [
             {
               "opponent": "T. Rex",
-              "plays": 2,
-              "wins": 0,
-              "losses": 2,
-              "winpercent": 0
+              "plays": 4,
+              "wins": 1,
+              "losses": 3,
+              "winpercent": 25
             }
           ]
         },
@@ -7888,9 +8077,9 @@
           "queryResult": [
             {
               "opponent": "T. Rex",
-              "plays": 2,
+              "plays": 3,
               "wins": 0,
-              "losses": 2,
+              "losses": 3,
               "winpercent": 0
             }
           ]
@@ -7916,10 +8105,10 @@
           "queryResult": [
             {
               "opponent": "T. Rex",
-              "plays": 1,
+              "plays": 2,
               "wins": 1,
-              "losses": 0,
-              "winpercent": 100
+              "losses": 1,
+              "winpercent": 50
             }
           ]
         },
@@ -7941,10 +8130,10 @@
       "hero": "The Genie",
       "queryOpponentOverall": [
         {
-          "plays": 11,
-          "wins": 10,
+          "plays": 13,
+          "wins": 12,
           "losses": 1,
-          "winpercent": 91
+          "winpercent": 92
         }
       ],
       "repeatMap": [
@@ -7957,8 +8146,8 @@
           "queryResult": [
             {
               "opponent": "The Genie",
-              "plays": 1,
-              "wins": 1,
+              "plays": 3,
+              "wins": 3,
               "losses": 0,
               "winpercent": 100
             }
@@ -8114,24 +8303,48 @@
       "hero": "The Wayward Sisters",
       "queryOpponentOverall": [
         {
-          "plays": 1,
-          "wins": 0,
+          "plays": 4,
+          "wins": 3,
           "losses": 1,
-          "winpercent": 0
+          "winpercent": 75
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "The Wayward Sisters",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "The Wayward Sisters",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "The Wayward Sisters",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -8223,24 +8436,48 @@
       "hero": "Titania",
       "queryOpponentOverall": [
         {
-          "plays": 1,
-          "wins": 1,
-          "losses": 0,
-          "winpercent": 100
+          "plays": 6,
+          "wins": 5,
+          "losses": 1,
+          "winpercent": 83
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Titania",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Titania",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Titania",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -8308,7 +8545,15 @@
         },
         {
           "mapName": "Sunnydale High",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Titania",
+              "plays": 2,
+              "wins": 2,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "T. Rex Paddock",
@@ -8332,10 +8577,10 @@
       "hero": "Tomoe Gozen",
       "queryOpponentOverall": [
         {
-          "plays": 9,
-          "wins": 7,
+          "plays": 13,
+          "wins": 11,
           "losses": 2,
-          "winpercent": 78
+          "winpercent": 85
         }
       ],
       "repeatMap": [
@@ -8344,8 +8589,8 @@
           "queryResult": [
             {
               "opponent": "Tomoe Gozen",
-              "plays": 1,
-              "wins": 1,
+              "plays": 4,
+              "wins": 4,
               "losses": 0,
               "winpercent": 100
             }
@@ -8357,7 +8602,15 @@
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Tomoe Gozen",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -8787,9 +9040,9 @@
       "hero": "Yennenga",
       "queryOpponentOverall": [
         {
-          "plays": 98,
-          "wins": 58,
-          "losses": 40,
+          "plays": 100,
+          "wins": 59,
+          "losses": 41,
           "winpercent": 59
         }
       ],
@@ -8820,7 +9073,15 @@
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Yennenga",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -9023,10 +9284,10 @@
           "queryResult": [
             {
               "opponent": "Yennenga",
-              "plays": 2,
+              "plays": 3,
               "wins": 2,
-              "losses": 0,
-              "winpercent": 100
+              "losses": 1,
+              "winpercent": 67
             }
           ]
         },
@@ -9049,30 +9310,30 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 7,
-          "wins": 5,
-          "losses": 2,
-          "winpercent": 71
+          "plays": 18,
+          "wins": 14,
+          "losses": 4,
+          "winpercent": 78
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 84,
-          "wins": 44,
-          "losses": 39,
-          "winpercent": 52
+          "plays": 98,
+          "wins": 57,
+          "losses": 40,
+          "winpercent": 58
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 2,
-          "wins": 2,
-          "losses": 0,
-          "winpercent": 100
+          "plays": 18,
+          "wins": 12,
+          "losses": 6,
+          "winpercent": 67
         }
       ]
     },
@@ -9099,10 +9360,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 42,
-          "wins": 27,
+          "plays": 43,
+          "wins": 28,
           "losses": 15,
-          "winpercent": 64
+          "winpercent": 65
         }
       ]
     },
@@ -9129,10 +9390,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 117,
-          "wins": 60,
+          "plays": 119,
+          "wins": 62,
           "losses": 57,
-          "winpercent": 51
+          "winpercent": 52
         }
       ]
     },
@@ -9149,10 +9410,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 26,
-          "wins": 16,
-          "losses": 10,
-          "winpercent": 62
+          "plays": 28,
+          "wins": 17,
+          "losses": 11,
+          "winpercent": 61
         }
       ]
     },
@@ -9169,9 +9430,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 152,
-          "wins": 96,
-          "losses": 56,
+          "plays": 155,
+          "wins": 97,
+          "losses": 58,
           "winpercent": 63
         }
       ]
@@ -9179,10 +9440,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 42,
+          "plays": 43,
           "wins": 24,
-          "losses": 18,
-          "winpercent": 57
+          "losses": 19,
+          "winpercent": 56
         }
       ]
     },
@@ -9199,9 +9460,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 103,
+          "plays": 104,
           "wins": 55,
-          "losses": 48,
+          "losses": 49,
           "winpercent": 53
         }
       ]
@@ -9209,9 +9470,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 180,
+          "plays": 181,
           "wins": 96,
-          "losses": 84,
+          "losses": 85,
           "winpercent": 53
         }
       ]
@@ -9219,18 +9480,18 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 118,
-          "wins": 68,
-          "losses": 50,
-          "winpercent": 58
+          "plays": 126,
+          "wins": 74,
+          "losses": 52,
+          "winpercent": 59
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 215,
-          "wins": 111,
+          "plays": 217,
+          "wins": 113,
           "losses": 104,
           "winpercent": 52
         }
@@ -9239,20 +9500,20 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 57,
-          "wins": 36,
+          "plays": 58,
+          "wins": 37,
           "losses": 21,
-          "winpercent": 63
+          "winpercent": 64
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 84,
+          "plays": 87,
           "wins": 50,
-          "losses": 34,
-          "winpercent": 60
+          "losses": 37,
+          "winpercent": 57
         }
       ]
     },
@@ -9269,10 +9530,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 1757,
-      "wins": 975,
-      "losses": 781,
-      "winpercent": 55
+      "plays": 1823,
+      "wins": 1021,
+      "losses": 801,
+      "winpercent": 56
     }
   ]
 }

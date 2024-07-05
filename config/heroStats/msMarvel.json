@@ -2730,10 +2730,10 @@
       "hero": "Little Red Riding Hood",
       "queryOpponentOverall": [
         {
-          "plays": 19,
+          "plays": 20,
           "wins": 4,
-          "losses": 15,
-          "winpercent": 21
+          "losses": 16,
+          "winpercent": 20
         }
       ],
       "repeatMap": [
@@ -2875,7 +2875,15 @@
         },
         {
           "mapName": "T. Rex Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Little Red Riding Hood",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "The Bronze",
@@ -5134,10 +5142,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 25,
+          "plays": 26,
           "wins": 8,
-          "losses": 17,
-          "winpercent": 32
+          "losses": 18,
+          "winpercent": 31
         }
       ]
     },
@@ -5164,10 +5172,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 241,
+      "plays": 242,
       "wins": 88,
-      "losses": 153,
-      "winpercent": 37
+      "losses": 154,
+      "winpercent": 36
     }
   ]
 }

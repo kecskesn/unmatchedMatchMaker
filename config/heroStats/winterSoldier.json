@@ -372,10 +372,10 @@
       "hero": "Annie Christmas",
       "queryOpponentOverall": [
         {
-          "plays": 3,
+          "plays": 4,
           "wins": 1,
-          "losses": 2,
-          "winpercent": 33
+          "losses": 3,
+          "winpercent": 25
         }
       ],
       "repeatMap": [
@@ -449,7 +449,15 @@
         },
         {
           "mapName": "Sarpedon",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Annie Christmas",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sherwood Forest",
@@ -7040,10 +7048,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 35,
+          "plays": 36,
           "wins": 9,
-          "losses": 26,
-          "winpercent": 26
+          "losses": 27,
+          "winpercent": 25
         }
       ]
     },
@@ -7120,9 +7128,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 1087,
+      "plays": 1088,
       "wins": 418,
-      "losses": 669,
+      "losses": 670,
       "winpercent": 38
     }
   ]

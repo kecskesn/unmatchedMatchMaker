@@ -1563,10 +1563,10 @@
       "hero": "Bruce Lee",
       "queryOpponentOverall": [
         {
-          "plays": 7,
-          "wins": 2,
+          "plays": 8,
+          "wins": 3,
           "losses": 5,
-          "winpercent": 29
+          "winpercent": 38
         }
       ],
       "repeatMap": [
@@ -1648,7 +1648,15 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Bruce Lee",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sarpedon",
@@ -4663,8 +4671,8 @@
       "hero": "Little Red Riding Hood",
       "queryOpponentOverall": [
         {
-          "plays": 67,
-          "wins": 48,
+          "plays": 69,
+          "wins": 50,
           "losses": 19,
           "winpercent": 72
         }
@@ -4688,7 +4696,15 @@
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Little Red Riding Hood",
+              "plays": 2,
+              "wins": 2,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -5198,16 +5214,24 @@
       "hero": "Moon Knight",
       "queryOpponentOverall": [
         {
-          "plays": 35,
-          "wins": 23,
+          "plays": 36,
+          "wins": 24,
           "losses": 12,
-          "winpercent": 66
+          "winpercent": 67
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Moon Knight",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
@@ -6063,10 +6087,10 @@
       "hero": "She-Hulk",
       "queryOpponentOverall": [
         {
-          "plays": 6,
-          "wins": 4,
+          "plays": 7,
+          "wins": 5,
           "losses": 2,
-          "winpercent": 67
+          "winpercent": 71
         }
       ],
       "repeatMap": [
@@ -6179,8 +6203,8 @@
           "queryResult": [
             {
               "opponent": "She-Hulk",
-              "plays": 2,
-              "wins": 2,
+              "plays": 3,
+              "wins": 3,
               "losses": 0,
               "winpercent": 100
             }
@@ -8238,8 +8262,8 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 1,
-          "wins": 1,
+          "plays": 2,
+          "wins": 2,
           "losses": 0,
           "winpercent": 100
         }
@@ -8258,10 +8282,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 53,
-          "wins": 35,
+          "plays": 55,
+          "wins": 37,
           "losses": 18,
-          "winpercent": 66
+          "winpercent": 67
         }
       ]
     },
@@ -8368,10 +8392,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 59,
-          "wins": 30,
+          "plays": 60,
+          "wins": 31,
           "losses": 29,
-          "winpercent": 51
+          "winpercent": 52
         }
       ]
     },
@@ -8418,8 +8442,8 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 110,
-          "wins": 60,
+          "plays": 111,
+          "wins": 61,
           "losses": 50,
           "winpercent": 55
         }
@@ -8458,8 +8482,8 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 1055,
-      "wins": 580,
+      "plays": 1060,
+      "wins": 585,
       "losses": 475,
       "winpercent": 55
     }
