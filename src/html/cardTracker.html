@@ -271,7 +271,7 @@
       }
 
       function handleDeckButtonClick(event) {
-        const targetButton = event.target;
+        const targetButton = event.currentTarget;
 
         if (targetButton.classList.contains("deck-card-button")) {
           const isGrayedOut = targetButton.style.opacity === "0.3";
@@ -299,6 +299,7 @@
 
       function handleHandButtonClick(event) {
         const target = event.target;
+
         const cardRow = target.closest(".deck-card-row");
         const deckCardButton = cardRow.querySelector(".deck-card-button");
         const handCardButton = cardRow.querySelector(".hand-card-button");
