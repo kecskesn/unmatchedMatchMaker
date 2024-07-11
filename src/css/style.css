@@ -19,7 +19,7 @@
 }
 
 a.btn.btn-primary.active {
-  color: #ffffff !important;
+  color: #f8eadc !important;
   background-color: #215981 !important;
   border-color: #25303b !important;
 }
@@ -38,30 +38,30 @@ a.btn.btn-primary.active {
 }
 
 .btn-natural {
-  background-color: #333; /* dark grey */
-  color: white;
+  background-color: #24282d; /* dark grey */
+  color: #f8eadc;
 }
 
 .btn-red {
-  color: #fff;
+  color: #f8eadc;
   background-color: #dc3034;
   border-color: #dc3034;
 }
 
 .btn-blue {
-  color: #fff;
+  color: #f8eadc;
   background-color: #2c76ac;
   border-color: #2c76ac;
 }
 
 .btn-purple {
-  color: #fff;
+  color: #f8eadc;
   background-color: #6c4e8d;
   border-color: #6c4e8d;
 }
 
 .btn-yellow {
-  color: #fff;
+  color: #f8eadc;
   background-color: #fcbd71;
   border-color: #fcbd71;
 }
@@ -75,7 +75,7 @@ a.btn.btn-primary.active {
 .value-container {
   padding: 6px 6px;
   border-radius: 4px;
-  color: white;
+  color: #f8eadc;
   text-align: center;
   font-weight: 700;
   min-width: 50px; /* Ensure the container has a minimum width */
@@ -91,7 +91,7 @@ a.btn.btn-primary.active {
   height: 25px; /* Adjust icon size as needed */
   width: auto;
   margin-bottom: 2px; /* Space between icon and value */
-  filter: brightness(0) invert(1); /* Invert the colors to make the icon white */
+  filter: invert(99%) sepia(17%) saturate(1166%) hue-rotate(315deg) brightness(100%) contrast(93%);
 }
 
 .deck-card-button {
@@ -116,6 +116,10 @@ a.btn.btn-primary.active {
   box-sizing: border-box;
   border: none;
   border-radius: 8px;
+}
+
+.hand-card-button img {
+  filter: invert(99%) sepia(17%) saturate(1166%) hue-rotate(315deg) brightness(100%) contrast(93%);
 }
 
 .text-container {
@@ -146,8 +150,8 @@ a.btn.btn-primary.active {
   display: inline-block;
   padding: 2px 8px; /* Adjust padding for space around the number */
   background-color: #000000;
-  color: #ffffff;
-  border: 2px solid #ffffff;
+  color: #f8eadc;
+  border: 2px solid #f8eadc;
   border-radius: 50%;
   margin-left: 10px;
   margin-right: 10px; /* Add margin on the right side of the circle */
@@ -159,7 +163,7 @@ a.btn.btn-primary.active {
 .extra-info {
   display: inline-block;
   padding: 2px 6px;
-  background-color: white;
+  background-color: #f8eadc;
   color: black;
   border-radius: 20px;
   text-align: center;
