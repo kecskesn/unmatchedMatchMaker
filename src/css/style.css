@@ -37,6 +37,11 @@ a.btn.btn-primary.active {
   background-color: #dc3034;
 }
 
+.btn-natural {
+  background-color: #333; /* dark grey */
+  color: white;
+}
+
 .btn-red {
   color: #fff;
   background-color: #dc3034;
@@ -67,20 +72,60 @@ a.btn.btn-primary.active {
   justify-content: center;
 }
 
-.deck-card-button,
-.hand-card-button {
-  flex: 1;
-  margin: 3px;
-  padding: 10px;
+.value-container {
+  padding: 6px 6px;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  min-width: 50px; /* Ensure the container has a minimum width */
+  height: 100%; /* Fill the height of the button */
+  display: flex;
+  flex-direction: column; /* Stack icon and value vertically */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  margin: 2; /* Remove margins */
+}
+
+.card-type-icon {
+  height: 25px; /* Adjust icon size as needed */
+  width: auto;
+  margin-bottom: 2px; /* Space between icon and value */
+  filter: brightness(0) invert(1); /* Invert the colors to make the icon white */
+}
+
+.deck-card-button {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between; /* Ensure even spacing between value and text */
+  padding: 0; /* Remove padding */
+  border: none;
+  border-radius: 8px;
+  width: 100%;
   box-sizing: border-box;
 }
 
 .hand-card-button {
   flex: 0 0 auto;
   width: 50px;
+  margin-left: 3px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+}
+
+.text-container {
+  margin: 10px;
+  flex: 1;
+}
+
+.title-row {
+  margin-bottom: 10px; /* Add space below the title */
+  font-size: 1.1em; /* Increase the font size slightly */
 }
 
 .deck-card-button.disabled {
@@ -93,6 +138,25 @@ a.btn.btn-primary.active {
   }
 }
 
+.boost-container {
+  display: flex;
+  align-items: center;
+}
+
+.extra-info.boost {
+  display: inline-block;
+  padding: 2px 8px; /* Adjust padding for space around the number */
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px; /* Add margin on the right side of the circle */
+  text-align: center;
+  line-height: 20px; /* Adjust line height to center content vertically */
+  min-width: 20px; /* Ensure minimum width to prevent squeezing */
+}
+
 .extra-info {
   display: inline-block;
   padding: 2px 6px;
@@ -101,15 +165,6 @@ a.btn.btn-primary.active {
   border-radius: 20px;
   text-align: center;
   margin-left: 5px;
-  font-weight: 700;
-}
-
-.extra-info.boost {
-  display: inline-block;
-  padding: 2px 5px;
-  background-color: #999999;
-  color: #ffffff;
-  border-radius: 4px;
   font-weight: 700;
 }
 
