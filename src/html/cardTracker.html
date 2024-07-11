@@ -46,7 +46,7 @@
   </div>
   <script>
     const heroSelect = document.getElementById("heroSelect");
-    const reserButton = document.getElementById("resetButton");
+    const resetButton = document.getElementById("resetButton");
     const handContainer = document.querySelector(".hand");
     const deckContainer = document.querySelector(".deck");
     const discardContainer = document.querySelector(".discard");
@@ -56,7 +56,7 @@
     let discardedCardCount = 0;
 
     heroSelect.addEventListener("change", handleHeroSelectChange);
-    reserButton.addEventListener("click", handleResetButtonClick);
+    resetButton.addEventListener("click", handleResetButtonClick);
 
     window.onload = function () {
       deckContainer.appendChild(deckButtons);
@@ -148,7 +148,6 @@
           });
 
           deckContainer.appendChild(deckButtons);
-          deckButtons.addEventListener("click", handleDeckButtonClick);
           updateCardCounters();
         })
         .catch((error) =>
@@ -246,15 +245,17 @@
       button.appendChild(textContainer);
       button.appendChild(boostContainer);
 
+      button.addEventListener("click", handleDeckButtonClick);
+
       return button;
     }
 
     function handleDeckButtonClick(event) {
-      const targetButton = event.currentTarget; // Use currentTarget instead of target
+      const targetButton = event.currentTarget;
 
       const deckCardButton = targetButton.closest(".deck-card-button");
       if (!deckCardButton) {
-        return; // Exit if clicked outside of any deck card button
+        return;
       }
 
       const isGrayedOut = deckCardButton.style.opacity === "0.3";
