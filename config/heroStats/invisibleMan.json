@@ -2539,9 +2539,9 @@
       "hero": "Elektra",
       "queryOpponentOverall": [
         {
-          "plays": 2,
+          "plays": 3,
           "wins": 0,
-          "losses": 2,
+          "losses": 3,
           "winpercent": 0
         }
       ],
@@ -2616,7 +2616,15 @@
         },
         {
           "mapName": "Soho",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Elektra",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
@@ -6525,10 +6533,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 87,
+          "plays": 88,
           "wins": 40,
-          "losses": 47,
-          "winpercent": 46
+          "losses": 48,
+          "winpercent": 45
         }
       ]
     },
@@ -6585,9 +6593,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 597,
+      "plays": 598,
       "wins": 227,
-      "losses": 370,
+      "losses": 371,
       "winpercent": 38
     }
   ]

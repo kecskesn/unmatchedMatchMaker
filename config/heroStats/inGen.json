@@ -2029,10 +2029,10 @@
       "hero": "Bullseye",
       "queryOpponentOverall": [
         {
-          "plays": 24,
+          "plays": 25,
           "wins": 5,
-          "losses": 19,
-          "winpercent": 21
+          "losses": 20,
+          "winpercent": 20
         }
       ],
       "repeatMap": [
@@ -2041,9 +2041,9 @@
           "queryResult": [
             {
               "opponent": "Bullseye",
-              "plays": 1,
+              "plays": 2,
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "winpercent": 0
             }
           ]
@@ -5188,9 +5188,9 @@
       "hero": "Nikola Tesla",
       "queryOpponentOverall": [
         {
-          "plays": 12,
+          "plays": 13,
           "wins": 1,
-          "losses": 11,
+          "losses": 12,
           "winpercent": 8
         }
       ],
@@ -5285,7 +5285,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Nikola Tesla",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -5353,10 +5361,10 @@
       "hero": "Raptors",
       "queryOpponentOverall": [
         {
-          "plays": 17,
+          "plays": 18,
           "wins": 9,
-          "losses": 8,
-          "winpercent": 53
+          "losses": 9,
+          "winpercent": 50
         }
       ],
       "repeatMap": [
@@ -5414,7 +5422,15 @@
         },
         {
           "mapName": "McMinnville, OR",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Raptors",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Navy Pier",
@@ -6846,10 +6862,10 @@
       "hero": "The Genie",
       "queryOpponentOverall": [
         {
-          "plays": 16,
+          "plays": 17,
           "wins": 7,
-          "losses": 9,
-          "winpercent": 44
+          "losses": 10,
+          "winpercent": 41
         }
       ],
       "repeatMap": [
@@ -6998,10 +7014,10 @@
           "queryResult": [
             {
               "opponent": "The Genie",
-              "plays": 1,
+              "plays": 2,
               "wins": 1,
-              "losses": 0,
-              "winpercent": 100
+              "losses": 1,
+              "winpercent": 50
             }
           ]
         },
@@ -7693,9 +7709,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 3,
+          "plays": 4,
           "wins": 0,
-          "losses": 3,
+          "losses": 4,
           "winpercent": 0
         }
       ]
@@ -7783,10 +7799,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 8,
+          "plays": 9,
           "wins": 1,
-          "losses": 7,
-          "winpercent": 13
+          "losses": 8,
+          "winpercent": 11
         }
       ]
     },
@@ -7813,9 +7829,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 118,
+          "plays": 119,
           "wins": 65,
-          "losses": 53,
+          "losses": 54,
           "winpercent": 55
         }
       ]
@@ -7883,10 +7899,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 43,
+          "plays": 44,
           "wins": 26,
-          "losses": 17,
-          "winpercent": 60
+          "losses": 18,
+          "winpercent": 59
         }
       ]
     },
@@ -7913,9 +7929,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 1000,
+      "plays": 1004,
       "wins": 531,
-      "losses": 469,
+      "losses": 473,
       "winpercent": 53
     }
   ]

@@ -626,10 +626,10 @@
       "hero": "Bigfoot",
       "queryOpponentOverall": [
         {
-          "plays": 8,
+          "plays": 10,
           "wins": 6,
-          "losses": 2,
-          "winpercent": 75
+          "losses": 4,
+          "winpercent": 60
         }
       ],
       "repeatMap": [
@@ -679,11 +679,27 @@
         },
         {
           "mapName": "King Solomon's Mine",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Bigfoot",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Marmoreal",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Bigfoot",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "McMinnville, OR",
@@ -3241,16 +3257,24 @@
       "hero": "Medusa",
       "queryOpponentOverall": [
         {
-          "plays": 20,
-          "wins": 10,
+          "plays": 22,
+          "wins": 12,
           "losses": 10,
-          "winpercent": 50
+          "winpercent": 55
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Medusa",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
@@ -3302,7 +3326,15 @@
         },
         {
           "mapName": "McMinnville, OR",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Medusa",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Navy Pier",
@@ -3579,10 +3611,10 @@
       "hero": "Nikola Tesla",
       "queryOpponentOverall": [
         {
-          "plays": 36,
+          "plays": 37,
           "wins": 11,
-          "losses": 25,
-          "winpercent": 31
+          "losses": 26,
+          "winpercent": 30
         }
       ],
       "repeatMap": [
@@ -3720,7 +3752,15 @@
         },
         {
           "mapName": "Yukon",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Nikola Tesla",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         }
       ]
     },
@@ -5431,10 +5471,10 @@
       "hero": "Yennenga",
       "queryOpponentOverall": [
         {
-          "plays": 45,
+          "plays": 46,
           "wins": 19,
-          "losses": 26,
-          "winpercent": 42
+          "losses": 27,
+          "winpercent": 41
         }
       ],
       "repeatMap": [
@@ -5476,7 +5516,15 @@
         },
         {
           "mapName": "King Solomon's Mine",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Yennenga",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Marmoreal",
@@ -5629,8 +5677,8 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 3,
-          "wins": 3,
+          "plays": 4,
+          "wins": 4,
           "losses": 0,
           "winpercent": 100
         }
@@ -5699,30 +5747,30 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 10,
+          "plays": 12,
           "wins": 7,
-          "losses": 3,
-          "winpercent": 70
+          "losses": 5,
+          "winpercent": 58
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 84,
+          "plays": 85,
           "wins": 36,
-          "losses": 48,
-          "winpercent": 43
+          "losses": 49,
+          "winpercent": 42
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 3,
-          "wins": 1,
+          "plays": 4,
+          "wins": 2,
           "losses": 2,
-          "winpercent": 33
+          "winpercent": 50
         }
       ]
     },
@@ -5839,19 +5887,19 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 5,
+          "plays": 6,
           "wins": 4,
-          "losses": 1,
-          "winpercent": 80
+          "losses": 2,
+          "winpercent": 67
         }
       ]
     }
   ],
   "queryHeroOverall": [
     {
-      "plays": 689,
-      "wins": 356,
-      "losses": 333,
+      "plays": 695,
+      "wins": 358,
+      "losses": 337,
       "winpercent": 52
     }
   ]

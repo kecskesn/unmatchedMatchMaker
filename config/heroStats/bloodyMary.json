@@ -7113,9 +7113,9 @@
       "hero": "Winter Soldier",
       "queryOpponentOverall": [
         {
-          "plays": 2,
+          "plays": 3,
           "wins": 0,
-          "losses": 2,
+          "losses": 3,
           "winpercent": 0
         }
       ],
@@ -7198,7 +7198,15 @@
         },
         {
           "mapName": "Sherwood Forest",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Winter Soldier",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Soho",
@@ -7578,10 +7586,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 11,
+          "plays": 12,
           "wins": 6,
-          "losses": 5,
-          "winpercent": 55
+          "losses": 6,
+          "winpercent": 50
         }
       ]
     },
@@ -7648,9 +7656,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 758,
+      "plays": 759,
       "wins": 348,
-      "losses": 410,
+      "losses": 411,
       "winpercent": 46
     }
   ]

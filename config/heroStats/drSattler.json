@@ -5198,9 +5198,9 @@
       "hero": "Spider-Man",
       "queryOpponentOverall": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 0,
-          "losses": 1,
+          "losses": 2,
           "winpercent": 0
         }
       ],
@@ -5239,7 +5239,15 @@
         },
         {
           "mapName": "Marmoreal",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Spider-Man",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Navy Pier",
@@ -6560,10 +6568,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 14,
+          "plays": 15,
           "wins": 2,
-          "losses": 12,
-          "winpercent": 14
+          "losses": 13,
+          "winpercent": 13
         }
       ]
     },
@@ -6690,9 +6698,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 600,
+      "plays": 601,
       "wins": 332,
-      "losses": 268,
+      "losses": 269,
       "winpercent": 55
     }
   ]

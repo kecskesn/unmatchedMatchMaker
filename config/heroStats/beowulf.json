@@ -275,10 +275,10 @@
       "hero": "Alice",
       "queryOpponentOverall": [
         {
-          "plays": 44,
-          "wins": 18,
+          "plays": 46,
+          "wins": 20,
           "losses": 26,
-          "winpercent": 41
+          "winpercent": 43
         }
       ],
       "repeatMap": [
@@ -336,7 +336,15 @@
         },
         {
           "mapName": "Heorot",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Alice",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "King Solomon's Mine",
@@ -347,10 +355,10 @@
           "queryResult": [
             {
               "opponent": "Alice",
-              "plays": 5,
-              "wins": 2,
+              "plays": 6,
+              "wins": 3,
               "losses": 3,
-              "winpercent": 40
+              "winpercent": 50
             }
           ]
         },
@@ -6937,10 +6945,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 87,
-          "wins": 40,
+          "plays": 88,
+          "wins": 41,
           "losses": 47,
-          "winpercent": 46
+          "winpercent": 47
         }
       ]
     },
@@ -6957,10 +6965,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 56,
-          "wins": 22,
+          "plays": 57,
+          "wins": 23,
           "losses": 34,
-          "winpercent": 39
+          "winpercent": 40
         }
       ]
     },
@@ -7087,8 +7095,8 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 665,
-      "wins": 278,
+      "plays": 667,
+      "wins": 280,
       "losses": 387,
       "winpercent": 42
     }

@@ -1562,10 +1562,10 @@
       "hero": "Bullseye",
       "queryOpponentOverall": [
         {
-          "plays": 2,
+          "plays": 3,
           "wins": 1,
-          "losses": 1,
-          "winpercent": 50
+          "losses": 2,
+          "winpercent": 33
         }
       ],
       "repeatMap": [
@@ -1663,7 +1663,15 @@
         },
         {
           "mapName": "Yukon",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Bullseye",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         }
       ]
     },
@@ -2163,8 +2171,8 @@
       "hero": "Dr. Sattler",
       "queryOpponentOverall": [
         {
-          "plays": 1,
-          "wins": 1,
+          "plays": 2,
+          "wins": 2,
           "losses": 0,
           "winpercent": 100
         }
@@ -2200,7 +2208,15 @@
         },
         {
           "mapName": "Marmoreal",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Dr. Sattler",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "McMinnville, OR",
@@ -5353,8 +5369,8 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 2,
-          "wins": 2,
+          "plays": 3,
+          "wins": 3,
           "losses": 0,
           "winpercent": 100
         }
@@ -5473,19 +5489,19 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 2,
+          "plays": 3,
           "wins": 1,
-          "losses": 1,
-          "winpercent": 50
+          "losses": 2,
+          "winpercent": 33
         }
       ]
     }
   ],
   "queryHeroOverall": [
     {
-      "plays": 268,
-      "wins": 102,
-      "losses": 166,
+      "plays": 270,
+      "wins": 103,
+      "losses": 167,
       "winpercent": 38
     }
   ]

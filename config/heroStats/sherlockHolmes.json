@@ -477,10 +477,10 @@
       "hero": "Annie Christmas",
       "queryOpponentOverall": [
         {
-          "plays": 5,
-          "wins": 2,
+          "plays": 7,
+          "wins": 4,
           "losses": 3,
-          "winpercent": 40
+          "winpercent": 57
         }
       ],
       "repeatMap": [
@@ -518,7 +518,15 @@
         },
         {
           "mapName": "Hell's Kitchen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Annie Christmas",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Heorot",
@@ -545,10 +553,10 @@
           "queryResult": [
             {
               "opponent": "Annie Christmas",
-              "plays": 1,
-              "wins": 0,
+              "plays": 2,
+              "wins": 1,
               "losses": 1,
-              "winpercent": 0
+              "winpercent": 50
             }
           ]
         },
@@ -2371,16 +2379,24 @@
       "hero": "Elektra",
       "queryOpponentOverall": [
         {
-          "plays": 13,
-          "wins": 8,
+          "plays": 14,
+          "wins": 9,
           "losses": 5,
-          "winpercent": 62
+          "winpercent": 64
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Elektra",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
@@ -6153,10 +6169,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 3,
-          "wins": 1,
+          "plays": 4,
+          "wins": 2,
           "losses": 2,
-          "winpercent": 33
+          "winpercent": 50
         }
       ]
     },
@@ -6193,10 +6209,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 10,
-          "wins": 8,
+          "plays": 11,
+          "wins": 9,
           "losses": 2,
-          "winpercent": 80
+          "winpercent": 82
         }
       ]
     },
@@ -6233,10 +6249,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 2,
-          "wins": 0,
+          "plays": 3,
+          "wins": 1,
           "losses": 2,
-          "winpercent": 0
+          "winpercent": 33
         }
       ]
     },
@@ -6353,10 +6369,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 677,
-      "wins": 436,
+      "plays": 680,
+      "wins": 439,
       "losses": 241,
-      "winpercent": 64
+      "winpercent": 65
     }
   ]
 }
