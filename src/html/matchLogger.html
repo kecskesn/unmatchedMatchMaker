@@ -167,6 +167,10 @@
         .then((response) => response.json())
         .then((data) => {
           if (data.success) {
+            sessionStorage.removeItem("trackedHero");
+            sessionStorage.removeItem("deckCards");
+            sessionStorage.removeItem("handCards");
+            sessionStorage.removeItem("discardCards");
             fetchMatchLogs();
           } else {
             alert(data.error);
