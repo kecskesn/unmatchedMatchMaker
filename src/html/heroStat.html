@@ -226,8 +226,8 @@
               const row = document.createElement("tr");
 
               row.addEventListener("click", () => {
-                sessionStorage.setItem('hero', encodeURIComponent(item.hero));
-                window.location.href = '/cardTracker';
+                sessionStorage.setItem('hero2', encodeURIComponent(item.hero));
+                window.location.href = '/mapStat';
               });
 
               const heroCell = createTableCell(item.hero);

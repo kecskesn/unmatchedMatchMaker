@@ -25,8 +25,11 @@
         <option value="" disabled selected>Please select one...</option>
       </select>
     </div>
-    <div class="d-flex justify-content-start mt-4">
-      <button class="btn btn-danger" id="resetButton">Reset</button>
+    <div class="d-flex justify-content-start align-items-center mt-4">
+      <button class="btn btn-danger " id="resetButton">Reset</button>
+      <button class="btn btn-primary  ml-2 d-none" id="switchHeroBtn">
+        <i class="fas fa-exchange-alt"></i> <span id="switchHeroText"></span>
+      </button>
     </div>
     <div class="d-flex justify-content-center align-items-center mt-4 mb-4">
       <div class="mx-3">
@@ -47,6 +50,8 @@
   <script>
     const heroSelect = document.getElementById("heroSelect");
     const resetButton = document.getElementById("resetButton");
+    const switchHeroBtn = document.getElementById("switchHeroBtn");
+    const switchHeroText = document.getElementById("switchHeroText");
     const handContainer = document.querySelector(".hand");
     const deckContainer = document.querySelector(".deck");
     const discardContainer = document.querySelector(".discard");
@@ -57,6 +62,7 @@
 
     heroSelect.addEventListener("change", handleHeroSelectChange);
     resetButton.addEventListener("click", handleResetButtonClick);
+    switchHeroBtn.addEventListener("click", handleSwitchHeroClick);
 
     window.onload = function () {
       deckContainer.appendChild(deckButtons);
@@ -70,6 +76,8 @@
       } else {
         fetchDeckConfig(heroSelect.value);
       }
+
+      checkSwitchHeroButtonVisibility();
     };
 
     function handleHeroSelectChange() {
@@ -88,6 +96,31 @@
       sessionStorage.removeItem("handCards");
       sessionStorage.removeItem("discardCards");
       fetchDeckConfig(heroSelect.value);
+    }
+
+    function handleSwitchHeroClick() {
+      const hero = sessionStorage.getItem("hero");
+      const hero2 = sessionStorage.getItem("hero2");
+      if (hero && hero2) {
+        sessionStorage.setItem("hero", hero2);
+        sessionStorage.setItem("hero2", hero);
+        heroSelect.value = hero2;
+        heroSelect.dispatchEvent(new Event("change"));
+        checkSwitchHeroButtonVisibility();
+      }
+    }
+
+    function checkSwitchHeroButtonVisibility() {
+      const hero = sessionStorage.getItem("hero");
+      const hero2 = sessionStorage.getItem("hero2");
+
+      if (hero && hero2) {
+        switchHeroBtn.classList.remove("d-none");
+        const heroName = decodeURIComponent(hero2);
+        switchHeroText.textContent = `Switch to ${heroName}`;
+      } else {
+        switchHeroBtn.classList.add("d-none");
+      }
     }
 
     function fetchHeroes() {
