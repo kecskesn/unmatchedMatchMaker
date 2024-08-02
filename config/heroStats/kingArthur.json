@@ -791,25 +791,33 @@
       "hero": "Bigfoot",
       "queryOpponentOverall": [
         {
-          "plays": 13,
+          "plays": 15,
           "wins": 3,
-          "losses": 10,
-          "winpercent": 23
+          "losses": 12,
+          "winpercent": 20
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
-        },
-        {
-          "mapName": "Baskerville Manor",
           "queryResult": [
             {
               "opponent": "Bigfoot",
               "plays": 1,
               "wins": 0,
               "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": [
+            {
+              "opponent": "Bigfoot",
+              "plays": 2,
+              "wins": 0,
+              "losses": 2,
               "winpercent": 0
             }
           ]
@@ -1279,7 +1287,7 @@
       ]
     },
     {
-      "hero": "Buffy (Giles)",
+      "hero": "Buffy Giles",
       "queryOpponentOverall": [
         {
           "plays": 8,
@@ -1297,7 +1305,7 @@
           "mapName": "Baskerville Manor",
           "queryResult": [
             {
-              "opponent": "Buffy (Giles)",
+              "opponent": "Buffy Giles",
               "plays": 2,
               "wins": 0,
               "losses": 2,
@@ -1345,7 +1353,7 @@
           "mapName": "Raptor Paddock",
           "queryResult": [
             {
-              "opponent": "Buffy (Giles)",
+              "opponent": "Buffy Giles",
               "plays": 2,
               "wins": 1,
               "losses": 1,
@@ -1361,7 +1369,7 @@
           "mapName": "Sarpedon",
           "queryResult": [
             {
-              "opponent": "Buffy (Giles)",
+              "opponent": "Buffy Giles",
               "plays": 1,
               "wins": 1,
               "losses": 0,
@@ -1389,7 +1397,7 @@
           "mapName": "The Bronze",
           "queryResult": [
             {
-              "opponent": "Buffy (Giles)",
+              "opponent": "Buffy Giles",
               "plays": 3,
               "wins": 0,
               "losses": 3,
@@ -3732,10 +3740,10 @@
       "hero": "Medusa",
       "queryOpponentOverall": [
         {
-          "plays": 24,
+          "plays": 25,
           "wins": 3,
-          "losses": 21,
-          "winpercent": 13
+          "losses": 22,
+          "winpercent": 12
         }
       ],
       "repeatMap": [
@@ -3749,7 +3757,15 @@
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Medusa",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -4812,10 +4828,10 @@
       "hero": "Sinbad",
       "queryOpponentOverall": [
         {
-          "plays": 22,
+          "plays": 23,
           "wins": 10,
-          "losses": 12,
-          "winpercent": 45
+          "losses": 13,
+          "winpercent": 43
         }
       ],
       "repeatMap": [
@@ -4860,10 +4876,10 @@
           "queryResult": [
             {
               "opponent": "Sinbad",
-              "plays": 6,
+              "plays": 7,
               "wins": 2,
-              "losses": 4,
-              "winpercent": 33
+              "losses": 5,
+              "winpercent": 29
             }
           ]
         },
@@ -5942,29 +5958,29 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 4,
+          "plays": 5,
           "wins": 3,
-          "losses": 1,
-          "winpercent": 75
+          "losses": 2,
+          "winpercent": 60
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 38,
+          "plays": 39,
           "wins": 16,
-          "losses": 22,
-          "winpercent": 42
+          "losses": 23,
+          "winpercent": 41
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 0,
-          "losses": 1,
+          "losses": 2,
           "winpercent": 0
         }
       ]
@@ -6012,9 +6028,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 45,
+          "plays": 46,
           "wins": 11,
-          "losses": 34,
+          "losses": 35,
           "winpercent": 24
         }
       ]
@@ -6152,10 +6168,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 491,
+      "plays": 495,
       "wins": 175,
-      "losses": 316,
-      "winpercent": 36
+      "losses": 320,
+      "winpercent": 35
     }
   ]
 }

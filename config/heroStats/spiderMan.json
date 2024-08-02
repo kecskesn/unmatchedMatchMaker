@@ -1341,13 +1341,13 @@
       ]
     },
     {
-      "hero": "Buffy (Giles)",
+      "hero": "Buffy Giles",
       "queryOpponentOverall": [
         {
-          "plays": 3,
+          "plays": 4,
           "wins": 3,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 1,
+          "winpercent": 75
         }
       ],
       "repeatMap": [
@@ -1359,7 +1359,7 @@
           "mapName": "Baskerville Manor",
           "queryResult": [
             {
-              "opponent": "Buffy (Giles)",
+              "opponent": "Buffy Giles",
               "plays": 1,
               "wins": 1,
               "losses": 0,
@@ -1373,7 +1373,15 @@
         },
         {
           "mapName": "Helicarrier",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Buffy Giles",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Hell's Kitchen",
@@ -1407,7 +1415,7 @@
           "mapName": "Raptor Paddock",
           "queryResult": [
             {
-              "opponent": "Buffy (Giles)",
+              "opponent": "Buffy Giles",
               "plays": 1,
               "wins": 1,
               "losses": 0,
@@ -1443,7 +1451,7 @@
           "mapName": "The Raft",
           "queryResult": [
             {
-              "opponent": "Buffy (Giles)",
+              "opponent": "Buffy Giles",
               "plays": 1,
               "wins": 1,
               "losses": 0,
@@ -1458,7 +1466,7 @@
       ]
     },
     {
-      "hero": "Buffy (Xander)",
+      "hero": "Buffy Xander",
       "queryOpponentOverall": [
         {
           "plays": 2,
@@ -1516,7 +1524,7 @@
           "mapName": "Raptor Paddock",
           "queryResult": [
             {
-              "opponent": "Buffy (Xander)",
+              "opponent": "Buffy Xander",
               "plays": 2,
               "wins": 1,
               "losses": 1,
@@ -2490,9 +2498,9 @@
       "hero": "Golden Bat",
       "queryOpponentOverall": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 0,
-          "losses": 1,
+          "losses": 2,
           "winpercent": 0
         }
       ],
@@ -2519,7 +2527,15 @@
         },
         {
           "mapName": "Heorot",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Golden Bat",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "King Solomon's Mine",
@@ -5329,10 +5345,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 19,
+          "plays": 20,
           "wins": 4,
-          "losses": 15,
-          "winpercent": 21
+          "losses": 16,
+          "winpercent": 20
         }
       ]
     },
@@ -5349,10 +5365,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 21,
+          "plays": 22,
           "wins": 9,
-          "losses": 12,
-          "winpercent": 43
+          "losses": 13,
+          "winpercent": 41
         }
       ]
     },
@@ -5499,9 +5515,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 270,
+      "plays": 272,
       "wins": 103,
-      "losses": 167,
+      "losses": 169,
       "winpercent": 38
     }
   ]

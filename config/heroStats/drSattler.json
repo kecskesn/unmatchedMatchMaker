@@ -1424,7 +1424,7 @@
       ]
     },
     {
-      "hero": "Buffy (Giles)",
+      "hero": "Buffy Giles",
       "queryOpponentOverall": [
         {
           "plays": 7,
@@ -1442,7 +1442,7 @@
           "mapName": "Baskerville Manor",
           "queryResult": [
             {
-              "opponent": "Buffy (Giles)",
+              "opponent": "Buffy Giles",
               "plays": 3,
               "wins": 2,
               "losses": 1,
@@ -1458,7 +1458,7 @@
           "mapName": "Hanging Gardens",
           "queryResult": [
             {
-              "opponent": "Buffy (Giles)",
+              "opponent": "Buffy Giles",
               "plays": 1,
               "wins": 1,
               "losses": 0,
@@ -1478,7 +1478,7 @@
           "mapName": "Heorot",
           "queryResult": [
             {
-              "opponent": "Buffy (Giles)",
+              "opponent": "Buffy Giles",
               "plays": 1,
               "wins": 0,
               "losses": 1,
@@ -1506,7 +1506,7 @@
           "mapName": "Raptor Paddock",
           "queryResult": [
             {
-              "opponent": "Buffy (Giles)",
+              "opponent": "Buffy Giles",
               "plays": 1,
               "wins": 0,
               "losses": 1,
@@ -1538,7 +1538,7 @@
           "mapName": "T. Rex Paddock",
           "queryResult": [
             {
-              "opponent": "Buffy (Giles)",
+              "opponent": "Buffy Giles",
               "plays": 1,
               "wins": 1,
               "losses": 0,
@@ -1561,7 +1561,7 @@
       ]
     },
     {
-      "hero": "Buffy (Xander)",
+      "hero": "Buffy Xander",
       "queryOpponentOverall": [
         {
           "plays": 3,
@@ -1579,7 +1579,7 @@
           "mapName": "Baskerville Manor",
           "queryResult": [
             {
-              "opponent": "Buffy (Xander)",
+              "opponent": "Buffy Xander",
               "plays": 1,
               "wins": 1,
               "losses": 0,
@@ -1631,7 +1631,7 @@
           "mapName": "Sanctum Sanctorum",
           "queryResult": [
             {
-              "opponent": "Buffy (Xander)",
+              "opponent": "Buffy Xander",
               "plays": 1,
               "wins": 1,
               "losses": 0,
@@ -1655,7 +1655,7 @@
           "mapName": "Sunnydale High",
           "queryResult": [
             {
-              "opponent": "Buffy (Xander)",
+              "opponent": "Buffy Xander",
               "plays": 1,
               "wins": 1,
               "losses": 0,
@@ -2749,10 +2749,10 @@
       "hero": "Ghost Rider",
       "queryOpponentOverall": [
         {
-          "plays": 8,
+          "plays": 9,
           "wins": 5,
-          "losses": 3,
-          "winpercent": 63
+          "losses": 4,
+          "winpercent": 56
         }
       ],
       "repeatMap": [
@@ -2874,7 +2874,15 @@
         },
         {
           "mapName": "The Raft",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Ghost Rider",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Yukon",
@@ -4457,9 +4465,9 @@
       "hero": "Nikola Tesla",
       "queryOpponentOverall": [
         {
-          "plays": 2,
+          "plays": 3,
           "wins": 0,
-          "losses": 2,
+          "losses": 3,
           "winpercent": 0
         }
       ],
@@ -4506,7 +4514,15 @@
         },
         {
           "mapName": "Marmoreal",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Nikola Tesla",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Navy Pier",
@@ -6568,9 +6584,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 15,
+          "plays": 16,
           "wins": 2,
-          "losses": 13,
+          "losses": 14,
           "winpercent": 13
         }
       ]
@@ -6678,10 +6694,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 30,
+          "plays": 31,
           "wins": 20,
-          "losses": 10,
-          "winpercent": 67
+          "losses": 11,
+          "winpercent": 65
         }
       ]
     },
@@ -6698,9 +6714,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 601,
+      "plays": 603,
       "wins": 332,
-      "losses": 269,
+      "losses": 271,
       "winpercent": 55
     }
   ]

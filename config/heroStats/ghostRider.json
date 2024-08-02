@@ -533,10 +533,10 @@
       "hero": "Annie Christmas",
       "queryOpponentOverall": [
         {
-          "plays": 3,
+          "plays": 4,
           "wins": 3,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 1,
+          "winpercent": 75
         }
       ],
       "repeatMap": [
@@ -597,10 +597,10 @@
           "queryResult": [
             {
               "opponent": "Annie Christmas",
-              "plays": 1,
+              "plays": 2,
               "wins": 1,
-              "losses": 0,
-              "winpercent": 100
+              "losses": 1,
+              "winpercent": 50
             }
           ]
         },
@@ -1475,10 +1475,10 @@
       "hero": "Bruce Lee",
       "queryOpponentOverall": [
         {
-          "plays": 14,
-          "wins": 5,
+          "plays": 15,
+          "wins": 6,
           "losses": 9,
-          "winpercent": 36
+          "winpercent": 40
         }
       ],
       "repeatMap": [
@@ -1516,7 +1516,15 @@
         },
         {
           "mapName": "Hell's Kitchen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Bruce Lee",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Heorot",
@@ -1625,7 +1633,7 @@
       ]
     },
     {
-      "hero": "Buffy (Giles)",
+      "hero": "Buffy Giles",
       "queryOpponentOverall": [
         {
           "plays": 9,
@@ -1639,7 +1647,7 @@
           "mapName": "Baskerville Manor",
           "queryResult": [
             {
-              "opponent": "Buffy (Giles)",
+              "opponent": "Buffy Giles",
               "plays": 3,
               "wins": 3,
               "losses": 0,
@@ -1655,7 +1663,7 @@
           "mapName": "Hanging Gardens",
           "queryResult": [
             {
-              "opponent": "Buffy (Giles)",
+              "opponent": "Buffy Giles",
               "plays": 2,
               "wins": 1,
               "losses": 1,
@@ -1675,7 +1683,7 @@
           "mapName": "Heorot",
           "queryResult": [
             {
-              "opponent": "Buffy (Giles)",
+              "opponent": "Buffy Giles",
               "plays": 2,
               "wins": 0,
               "losses": 2,
@@ -1719,7 +1727,7 @@
           "mapName": "Sherwood Forest",
           "queryResult": [
             {
-              "opponent": "Buffy (Giles)",
+              "opponent": "Buffy Giles",
               "plays": 1,
               "wins": 0,
               "losses": 1,
@@ -1747,7 +1755,7 @@
           "mapName": "The Raft",
           "queryResult": [
             {
-              "opponent": "Buffy (Giles)",
+              "opponent": "Buffy Giles",
               "plays": 1,
               "wins": 1,
               "losses": 0,
@@ -2595,10 +2603,10 @@
       "hero": "Dr. Sattler",
       "queryOpponentOverall": [
         {
-          "plays": 8,
-          "wins": 3,
+          "plays": 9,
+          "wins": 4,
           "losses": 5,
-          "winpercent": 38
+          "winpercent": 44
         }
       ],
       "repeatMap": [
@@ -2720,7 +2728,15 @@
         },
         {
           "mapName": "The Raft",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Dr. Sattler",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Yukon",
@@ -4390,10 +4406,10 @@
       "hero": "Medusa",
       "queryOpponentOverall": [
         {
-          "plays": 35,
+          "plays": 36,
           "wins": 17,
-          "losses": 18,
-          "winpercent": 49
+          "losses": 19,
+          "winpercent": 47
         }
       ],
       "repeatMap": [
@@ -4402,10 +4418,10 @@
           "queryResult": [
             {
               "opponent": "Medusa",
-              "plays": 5,
+              "plays": 6,
               "wins": 5,
-              "losses": 0,
-              "winpercent": 100
+              "losses": 1,
+              "winpercent": 83
             }
           ]
         },
@@ -5421,9 +5437,9 @@
       "hero": "She-Hulk",
       "queryOpponentOverall": [
         {
-          "plays": 2,
+          "plays": 3,
           "wins": 0,
-          "losses": 2,
+          "losses": 3,
           "winpercent": 0
         }
       ],
@@ -5462,7 +5478,15 @@
         },
         {
           "mapName": "McMinnville, OR",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "She-Hulk",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Navy Pier",
@@ -7170,10 +7194,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 104,
+          "plays": 105,
           "wins": 60,
-          "losses": 44,
-          "winpercent": 58
+          "losses": 45,
+          "winpercent": 57
         }
       ]
     },
@@ -7210,10 +7234,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 18,
-          "wins": 4,
+          "plays": 19,
+          "wins": 5,
           "losses": 14,
-          "winpercent": 22
+          "winpercent": 26
         }
       ]
     },
@@ -7250,9 +7274,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 0,
-          "losses": 1,
+          "losses": 2,
           "winpercent": 0
         }
       ]
@@ -7280,10 +7304,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 72,
+          "plays": 73,
           "wins": 28,
-          "losses": 44,
-          "winpercent": 39
+          "losses": 45,
+          "winpercent": 38
         }
       ]
     },
@@ -7360,10 +7384,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 39,
-          "wins": 14,
+          "plays": 40,
+          "wins": 15,
           "losses": 25,
-          "winpercent": 36
+          "winpercent": 38
         }
       ]
     },
@@ -7380,9 +7404,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 758,
-      "wins": 303,
-      "losses": 455,
+      "plays": 763,
+      "wins": 305,
+      "losses": 458,
       "winpercent": 40
     }
   ]

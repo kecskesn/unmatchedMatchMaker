@@ -9,6 +9,10 @@
       "mapName": "Hanging Gardens"
     },
     {
+      "mapId": 14,
+      "mapName": "Hell's Kitchen"
+    },
+    {
       "mapId": 10,
       "mapName": "Heorot"
     },
@@ -98,6 +102,10 @@
           ]
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Heorot",
           "queryResult": []
         },
@@ -171,10 +179,10 @@
       "hero": "Alice",
       "queryOpponentOverall": [
         {
-          "plays": 5,
-          "wins": 2,
-          "losses": 3,
-          "winpercent": 40
+          "plays": 7,
+          "wins": 3,
+          "losses": 4,
+          "winpercent": 43
         }
       ],
       "repeatMap": [
@@ -201,6 +209,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
         },
         {
           "mapName": "Heorot",
@@ -244,7 +256,15 @@
         },
         {
           "mapName": "Sherwood Forest",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Alice",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Soho",
@@ -256,7 +276,15 @@
         },
         {
           "mapName": "T. Rex Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Alice",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "The Bronze",
@@ -289,6 +317,10 @@
         },
         {
           "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
           "queryResult": []
         },
         {
@@ -373,9 +405,9 @@
       "hero": "Beowulf",
       "queryOpponentOverall": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 0,
-          "losses": 1,
+          "losses": 2,
           "winpercent": 0
         }
       ],
@@ -387,6 +419,18 @@
         {
           "mapName": "Hanging Gardens",
           "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": [
+            {
+              "opponent": "Beowulf",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Heorot",
@@ -486,6 +530,10 @@
           ]
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Heorot",
           "queryResult": []
         },
@@ -559,8 +607,8 @@
       "hero": "Black Panther",
       "queryOpponentOverall": [
         {
-          "plays": 1,
-          "wins": 1,
+          "plays": 2,
+          "wins": 2,
           "losses": 0,
           "winpercent": 100
         }
@@ -580,6 +628,10 @@
         },
         {
           "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
           "queryResult": []
         },
         {
@@ -628,7 +680,15 @@
         },
         {
           "mapName": "T. Rex Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Black Panther",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "The Bronze",
@@ -669,6 +729,10 @@
         },
         {
           "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
           "queryResult": []
         },
         {
@@ -777,6 +841,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Heorot",
           "queryResult": []
         },
@@ -850,10 +918,10 @@
       "hero": "Bruce Lee",
       "queryOpponentOverall": [
         {
-          "plays": 11,
+          "plays": 12,
           "wins": 7,
-          "losses": 4,
-          "winpercent": 64
+          "losses": 5,
+          "winpercent": 58
         }
       ],
       "repeatMap": [
@@ -871,6 +939,10 @@
         },
         {
           "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
           "queryResult": []
         },
         {
@@ -954,9 +1026,9 @@
           "queryResult": [
             {
               "opponent": "Bruce Lee",
-              "plays": 1,
+              "plays": 2,
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "winpercent": 0
             }
           ]
@@ -976,13 +1048,13 @@
       ]
     },
     {
-      "hero": "Buffy (Xander)",
+      "hero": "Buffy Xander",
       "queryOpponentOverall": [
         {
-          "plays": 3,
+          "plays": 4,
           "wins": 1,
-          "losses": 2,
-          "winpercent": 33
+          "losses": 3,
+          "winpercent": 25
         }
       ],
       "repeatMap": [
@@ -990,7 +1062,7 @@
           "mapName": "Baskerville Manor",
           "queryResult": [
             {
-              "opponent": "Buffy (Xander)",
+              "opponent": "Buffy Xander",
               "plays": 2,
               "wins": 1,
               "losses": 1,
@@ -1003,6 +1075,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Heorot",
           "queryResult": []
         },
@@ -1010,7 +1086,7 @@
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
-              "opponent": "Buffy (Xander)",
+              "opponent": "Buffy Xander",
               "plays": 1,
               "wins": 0,
               "losses": 1,
@@ -1056,7 +1132,15 @@
         },
         {
           "mapName": "T. Rex Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Buffy Xander",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "The Bronze",
@@ -1076,10 +1160,10 @@
       "hero": "Bullseye",
       "queryOpponentOverall": [
         {
-          "plays": 12,
-          "wins": 9,
+          "plays": 13,
+          "wins": 10,
           "losses": 3,
-          "winpercent": 75
+          "winpercent": 77
         }
       ],
       "repeatMap": [
@@ -1089,6 +1173,10 @@
         },
         {
           "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
           "queryResult": []
         },
         {
@@ -1117,7 +1205,15 @@
         },
         {
           "mapName": "Marmoreal",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Bullseye",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "McMinnville, OR",
@@ -1221,6 +1317,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Heorot",
           "queryResult": []
         },
@@ -1310,6 +1410,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Heorot",
           "queryResult": []
         },
@@ -1396,6 +1500,10 @@
         },
         {
           "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
           "queryResult": []
         },
         {
@@ -1502,6 +1610,10 @@
               "winpercent": 33
             }
           ]
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
         },
         {
           "mapName": "Heorot",
@@ -1617,6 +1729,10 @@
           ]
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Heorot",
           "queryResult": []
         },
@@ -1695,6 +1811,10 @@
         },
         {
           "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
           "queryResult": []
         },
         {
@@ -1803,6 +1923,10 @@
           ]
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Heorot",
           "queryResult": []
         },
@@ -1908,6 +2032,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Heorot",
           "queryResult": []
         },
@@ -2003,6 +2131,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
         },
         {
           "mapName": "Heorot",
@@ -2107,6 +2239,10 @@
         },
         {
           "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
           "queryResult": []
         },
         {
@@ -2223,6 +2359,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Heorot",
           "queryResult": []
         },
@@ -2326,6 +2466,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
         },
         {
           "mapName": "Heorot",
@@ -2465,6 +2609,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Heorot",
           "queryResult": []
         },
@@ -2551,6 +2699,10 @@
         },
         {
           "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
           "queryResult": []
         },
         {
@@ -2643,10 +2795,10 @@
       "hero": "Ms. Marvel",
       "queryOpponentOverall": [
         {
-          "plays": 18,
-          "wins": 11,
+          "plays": 19,
+          "wins": 12,
           "losses": 7,
-          "winpercent": 61
+          "winpercent": 63
         }
       ],
       "repeatMap": [
@@ -2673,6 +2825,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
         },
         {
           "mapName": "Heorot",
@@ -2763,10 +2919,10 @@
           "queryResult": [
             {
               "opponent": "Ms. Marvel",
-              "plays": 2,
-              "wins": 1,
+              "plays": 3,
+              "wins": 2,
               "losses": 1,
-              "winpercent": 50
+              "winpercent": 67
             }
           ]
         },
@@ -2826,6 +2982,10 @@
               "winpercent": 20
             }
           ]
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
         },
         {
           "mapName": "Heorot",
@@ -2946,6 +3106,10 @@
         },
         {
           "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
           "queryResult": []
         },
         {
@@ -3078,10 +3242,10 @@
       "hero": "Robin Hood",
       "queryOpponentOverall": [
         {
-          "plays": 10,
+          "plays": 12,
           "wins": 7,
-          "losses": 3,
-          "winpercent": 70
+          "losses": 5,
+          "winpercent": 58
         }
       ],
       "repeatMap": [
@@ -3099,6 +3263,10 @@
         },
         {
           "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
           "queryResult": []
         },
         {
@@ -3131,7 +3299,15 @@
         },
         {
           "mapName": "McMinnville, OR",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Robin Hood",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Navy Pier",
@@ -3167,7 +3343,15 @@
         },
         {
           "mapName": "Sherwood Forest",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Robin Hood",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Soho",
@@ -3212,6 +3396,107 @@
       ]
     },
     {
+      "hero": "Shakespeare",
+      "queryOpponentOverall": [
+        {
+          "plays": 2,
+          "wins": 0,
+          "losses": 2,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": [
+            {
+              "opponent": "Shakespeare",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Heorot",
+          "queryResult": [
+            {
+              "opponent": "Shakespeare",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        },
+        {
+          "mapName": "Yukon",
+          "queryResult": []
+        }
+      ]
+    },
+    {
       "hero": "Sherlock Holmes",
       "queryOpponentOverall": [
         {
@@ -3228,6 +3513,10 @@
         },
         {
           "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
           "queryResult": []
         },
         {
@@ -3304,10 +3593,10 @@
       "hero": "Sinbad",
       "queryOpponentOverall": [
         {
-          "plays": 9,
-          "wins": 5,
+          "plays": 10,
+          "wins": 6,
           "losses": 4,
-          "winpercent": 56
+          "winpercent": 60
         }
       ],
       "repeatMap": [
@@ -3336,12 +3625,24 @@
           ]
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Heorot",
           "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Sinbad",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Marmoreal",
@@ -3449,6 +3750,10 @@
           ]
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Heorot",
           "queryResult": []
         },
@@ -3538,6 +3843,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Heorot",
           "queryResult": []
         },
@@ -3624,6 +3933,10 @@
         },
         {
           "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
           "queryResult": []
         },
         {
@@ -3724,9 +4037,9 @@
       "hero": "Sun Wukong",
       "queryOpponentOverall": [
         {
-          "plays": 2,
+          "plays": 3,
           "wins": 0,
-          "losses": 2,
+          "losses": 3,
           "winpercent": 0
         }
       ],
@@ -3740,6 +4053,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Heorot",
           "queryResult": []
         },
@@ -3749,7 +4066,15 @@
         },
         {
           "mapName": "Marmoreal",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Sun Wukong",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "McMinnville, OR",
@@ -3834,6 +4159,10 @@
         },
         {
           "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
           "queryResult": []
         },
         {
@@ -3932,6 +4261,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
         },
         {
           "mapName": "Heorot",
@@ -4055,6 +4388,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Heorot",
           "queryResult": []
         },
@@ -4141,6 +4478,10 @@
         },
         {
           "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
           "queryResult": []
         },
         {
@@ -4255,6 +4596,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
         },
         {
           "mapName": "Heorot",
@@ -4384,6 +4729,10 @@
               "winpercent": 75
             }
           ]
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
         },
         {
           "mapName": "Heorot",
@@ -4520,29 +4869,39 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 18,
+          "plays": 2,
+          "wins": 0,
+          "losses": 2,
+          "winpercent": 0
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 19,
           "wins": 11,
-          "losses": 7,
-          "winpercent": 61
+          "losses": 8,
+          "winpercent": 58
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 32,
-          "wins": 12,
+          "plays": 33,
+          "wins": 13,
           "losses": 20,
-          "winpercent": 38
+          "winpercent": 39
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 12,
-          "wins": 6,
-          "losses": 6,
+          "plays": 14,
+          "wins": 7,
+          "losses": 7,
           "winpercent": 50
         }
       ]
@@ -4550,10 +4909,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 1,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 1,
+          "winpercent": 50
         }
       ]
     },
@@ -4600,9 +4959,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 2,
+          "plays": 4,
           "wins": 0,
-          "losses": 2,
+          "losses": 4,
           "winpercent": 0
         }
       ]
@@ -4630,10 +4989,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 41,
-          "wins": 17,
-          "losses": 24,
-          "winpercent": 41
+          "plays": 46,
+          "wins": 20,
+          "losses": 26,
+          "winpercent": 43
         }
       ]
     },
@@ -4670,10 +5029,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 292,
-      "wins": 130,
-      "losses": 162,
-      "winpercent": 45
+      "plays": 306,
+      "wins": 135,
+      "losses": 171,
+      "winpercent": 44
     }
   ]
 }

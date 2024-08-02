@@ -490,10 +490,10 @@
       "hero": "Bloody Mary",
       "queryOpponentOverall": [
         {
-          "plays": 30,
+          "plays": 31,
           "wins": 11,
-          "losses": 19,
-          "winpercent": 37
+          "losses": 20,
+          "winpercent": 35
         }
       ],
       "repeatMap": [
@@ -611,7 +611,15 @@
         },
         {
           "mapName": "The Raft",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Bloody Mary",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Yukon",
@@ -3249,10 +3257,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 1,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 1,
+          "winpercent": 50
         }
       ]
     },
@@ -3269,9 +3277,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 180,
+      "plays": 181,
       "wins": 88,
-      "losses": 92,
+      "losses": 93,
       "winpercent": 49
     }
   ]

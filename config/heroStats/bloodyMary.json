@@ -1432,7 +1432,7 @@
       ]
     },
     {
-      "hero": "Buffy (Giles)",
+      "hero": "Buffy Giles",
       "queryOpponentOverall": [
         {
           "plays": 2,
@@ -1514,7 +1514,7 @@
           "mapName": "Sunnydale High",
           "queryResult": [
             {
-              "opponent": "Buffy (Giles)",
+              "opponent": "Buffy Giles",
               "plays": 1,
               "wins": 1,
               "losses": 0,
@@ -1530,7 +1530,7 @@
           "mapName": "The Bronze",
           "queryResult": [
             {
-              "opponent": "Buffy (Giles)",
+              "opponent": "Buffy Giles",
               "plays": 1,
               "wins": 1,
               "losses": 0,
@@ -1549,7 +1549,7 @@
       ]
     },
     {
-      "hero": "Buffy (Xander)",
+      "hero": "Buffy Xander",
       "queryOpponentOverall": [
         {
           "plays": 5,
@@ -1567,7 +1567,7 @@
           "mapName": "Baskerville Manor",
           "queryResult": [
             {
-              "opponent": "Buffy (Xander)",
+              "opponent": "Buffy Xander",
               "plays": 1,
               "wins": 1,
               "losses": 0,
@@ -1595,7 +1595,7 @@
           "mapName": "Heorot",
           "queryResult": [
             {
-              "opponent": "Buffy (Xander)",
+              "opponent": "Buffy Xander",
               "plays": 1,
               "wins": 0,
               "losses": 1,
@@ -1627,7 +1627,7 @@
           "mapName": "Raptor Paddock",
           "queryResult": [
             {
-              "opponent": "Buffy (Xander)",
+              "opponent": "Buffy Xander",
               "plays": 2,
               "wins": 1,
               "losses": 1,
@@ -1663,7 +1663,7 @@
           "mapName": "The Bronze",
           "queryResult": [
             {
-              "opponent": "Buffy (Xander)",
+              "opponent": "Buffy Xander",
               "plays": 1,
               "wins": 1,
               "losses": 0,
@@ -2108,10 +2108,10 @@
       "hero": "Deadpool",
       "queryOpponentOverall": [
         {
-          "plays": 30,
-          "wins": 19,
+          "plays": 31,
+          "wins": 20,
           "losses": 11,
-          "winpercent": 63
+          "winpercent": 65
         }
       ],
       "repeatMap": [
@@ -2253,7 +2253,15 @@
         },
         {
           "mapName": "The Raft",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Deadpool",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Yukon",
@@ -2374,9 +2382,9 @@
       "hero": "Dr. Jill Trent",
       "queryOpponentOverall": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 0,
-          "losses": 1,
+          "losses": 2,
           "winpercent": 0
         }
       ],
@@ -2391,7 +2399,15 @@
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Dr. Jill Trent",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -7456,10 +7472,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 2,
+          "plays": 3,
           "wins": 1,
-          "losses": 1,
-          "winpercent": 50
+          "losses": 2,
+          "winpercent": 33
         }
       ]
     },
@@ -7636,10 +7652,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 32,
-          "wins": 10,
+          "plays": 33,
+          "wins": 11,
           "losses": 22,
-          "winpercent": 31
+          "winpercent": 33
         }
       ]
     },
@@ -7656,9 +7672,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 759,
-      "wins": 348,
-      "losses": 411,
+      "plays": 761,
+      "wins": 349,
+      "losses": 412,
       "winpercent": 46
     }
   ]

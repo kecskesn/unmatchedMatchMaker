@@ -1080,7 +1080,7 @@
       ]
     },
     {
-      "hero": "Buffy (Xander)",
+      "hero": "Buffy Xander",
       "queryOpponentOverall": [
         {
           "plays": 1,
@@ -1162,7 +1162,7 @@
           "mapName": "T. Rex Paddock",
           "queryResult": [
             {
-              "opponent": "Buffy (Xander)",
+              "opponent": "Buffy Xander",
               "plays": 1,
               "wins": 0,
               "losses": 1,
@@ -3546,10 +3546,10 @@
       "hero": "Tomoe Gozen",
       "queryOpponentOverall": [
         {
-          "plays": 19,
-          "wins": 9,
+          "plays": 20,
+          "wins": 10,
           "losses": 10,
-          "winpercent": 47
+          "winpercent": 50
         }
       ],
       "repeatMap": [
@@ -3671,7 +3671,15 @@
         },
         {
           "mapName": "Soho",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Tomoe Gozen",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
@@ -4133,10 +4141,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 2,
-          "wins": 1,
+          "plays": 3,
+          "wins": 2,
           "losses": 1,
-          "winpercent": 50
+          "winpercent": 67
         }
       ]
     },
@@ -4173,10 +4181,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 181,
-      "wins": 82,
+      "plays": 182,
+      "wins": 83,
       "losses": 99,
-      "winpercent": 45
+      "winpercent": 46
     }
   ]
 }
