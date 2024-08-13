@@ -5779,10 +5779,10 @@
       "hero": "She-Hulk",
       "queryOpponentOverall": [
         {
-          "plays": 11,
+          "plays": 12,
           "wins": 5,
-          "losses": 6,
-          "winpercent": 45
+          "losses": 7,
+          "winpercent": 42
         }
       ],
       "repeatMap": [
@@ -5844,7 +5844,15 @@
         },
         {
           "mapName": "Navy Pier",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "She-Hulk",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Point Pleasant",
@@ -7873,10 +7881,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 8,
+          "plays": 9,
           "wins": 3,
-          "losses": 5,
-          "winpercent": 38
+          "losses": 6,
+          "winpercent": 33
         }
       ]
     },
@@ -7993,9 +8001,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 1021,
+      "plays": 1022,
       "wins": 538,
-      "losses": 483,
+      "losses": 484,
       "winpercent": 53
     }
   ]

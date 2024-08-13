@@ -2875,10 +2875,10 @@
       "hero": "Golden Bat",
       "queryOpponentOverall": [
         {
-          "plays": 8,
+          "plays": 9,
           "wins": 1,
-          "losses": 7,
-          "winpercent": 13
+          "losses": 8,
+          "winpercent": 11
         }
       ],
       "repeatMap": [
@@ -2948,7 +2948,15 @@
         },
         {
           "mapName": "Navy Pier",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Golden Bat",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Point Pleasant",
@@ -7498,10 +7506,10 @@
       "hero": "Yennenga",
       "queryOpponentOverall": [
         {
-          "plays": 56,
-          "wins": 28,
+          "plays": 57,
+          "wins": 29,
           "losses": 28,
-          "winpercent": 50
+          "winpercent": 51
         }
       ],
       "repeatMap": [
@@ -7574,10 +7582,10 @@
           "queryResult": [
             {
               "opponent": "Yennenga",
-              "plays": 5,
-              "wins": 3,
+              "plays": 6,
+              "wins": 4,
               "losses": 2,
-              "winpercent": 60
+              "winpercent": 67
             }
           ]
         },
@@ -7784,10 +7792,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 58,
-          "wins": 32,
+          "plays": 59,
+          "wins": 33,
           "losses": 26,
-          "winpercent": 55
+          "winpercent": 56
         }
       ]
     },
@@ -7804,10 +7812,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 27,
+          "plays": 28,
           "wins": 8,
-          "losses": 19,
-          "winpercent": 30
+          "losses": 20,
+          "winpercent": 29
         }
       ]
     },
@@ -7924,9 +7932,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 1120,
-      "wins": 494,
-      "losses": 626,
+      "plays": 1122,
+      "wins": 495,
+      "losses": 627,
       "winpercent": 44
     }
   ]

@@ -1379,16 +1379,24 @@
       "hero": "Bruce Lee",
       "queryOpponentOverall": [
         {
-          "plays": 9,
-          "wins": 8,
+          "plays": 10,
+          "wins": 9,
           "losses": 1,
-          "winpercent": 89
+          "winpercent": 90
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Bruce Lee",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
@@ -5520,10 +5528,10 @@
       "hero": "Sinbad",
       "queryOpponentOverall": [
         {
-          "plays": 36,
-          "wins": 21,
+          "plays": 37,
+          "wins": 22,
           "losses": 15,
-          "winpercent": 58
+          "winpercent": 59
         }
       ],
       "repeatMap": [
@@ -5573,7 +5581,15 @@
         },
         {
           "mapName": "King Solomon's Mine",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Sinbad",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Marmoreal",
@@ -6688,10 +6704,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 4,
-          "wins": 2,
+          "plays": 5,
+          "wins": 3,
           "losses": 2,
-          "winpercent": 50
+          "winpercent": 60
         }
       ]
     },
@@ -6758,10 +6774,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 19,
-          "wins": 15,
+          "plays": 20,
+          "wins": 16,
           "losses": 4,
-          "winpercent": 79
+          "winpercent": 80
         }
       ]
     },
@@ -6898,10 +6914,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 689,
-      "wins": 444,
+      "plays": 691,
+      "wins": 446,
       "losses": 245,
-      "winpercent": 64
+      "winpercent": 65
     }
   ]
 }

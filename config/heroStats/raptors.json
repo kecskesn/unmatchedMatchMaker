@@ -3793,16 +3793,24 @@
       "hero": "Hamlet",
       "queryOpponentOverall": [
         {
-          "plays": 12,
-          "wins": 9,
+          "plays": 13,
+          "wins": 10,
           "losses": 3,
-          "winpercent": 75
+          "winpercent": 77
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Hamlet",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
@@ -3910,10 +3918,10 @@
       "hero": "Houdini",
       "queryOpponentOverall": [
         {
-          "plays": 14,
+          "plays": 15,
           "wins": 6,
-          "losses": 8,
-          "winpercent": 43
+          "losses": 9,
+          "winpercent": 40
         }
       ],
       "repeatMap": [
@@ -4027,7 +4035,15 @@
         },
         {
           "mapName": "Sherwood Forest",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Houdini",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Soho",
@@ -6236,10 +6252,10 @@
       "hero": "She-Hulk",
       "queryOpponentOverall": [
         {
-          "plays": 9,
+          "plays": 10,
           "wins": 7,
-          "losses": 2,
-          "winpercent": 78
+          "losses": 3,
+          "winpercent": 70
         }
       ],
       "repeatMap": [
@@ -6305,7 +6321,15 @@
         },
         {
           "mapName": "Point Pleasant",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "She-Hulk",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Raptor Paddock",
@@ -8016,10 +8040,10 @@
       "hero": "Winter Soldier",
       "queryOpponentOverall": [
         {
-          "plays": 29,
-          "wins": 25,
-          "losses": 4,
-          "winpercent": 86
+          "plays": 31,
+          "wins": 26,
+          "losses": 5,
+          "winpercent": 84
         }
       ],
       "repeatMap": [
@@ -8032,10 +8056,10 @@
           "queryResult": [
             {
               "opponent": "Winter Soldier",
-              "plays": 7,
+              "plays": 8,
               "wins": 7,
-              "losses": 0,
-              "winpercent": 100
+              "losses": 1,
+              "winpercent": 88
             }
           ]
         },
@@ -8152,10 +8176,10 @@
           "queryResult": [
             {
               "opponent": "Winter Soldier",
-              "plays": 3,
-              "wins": 2,
+              "plays": 4,
+              "wins": 3,
               "losses": 1,
-              "winpercent": 67
+              "winpercent": 75
             }
           ]
         },
@@ -8411,8 +8435,8 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 2,
-          "wins": 2,
+          "plays": 3,
+          "wins": 3,
           "losses": 0,
           "winpercent": 100
         }
@@ -8421,9 +8445,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 168,
+          "plays": 169,
           "wins": 113,
-          "losses": 55,
+          "losses": 56,
           "winpercent": 67
         }
       ]
@@ -8521,10 +8545,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 7,
+          "plays": 8,
           "wins": 6,
-          "losses": 1,
-          "winpercent": 86
+          "losses": 2,
+          "winpercent": 75
         }
       ]
     },
@@ -8561,10 +8585,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 28,
+          "plays": 29,
           "wins": 17,
-          "losses": 11,
-          "winpercent": 61
+          "losses": 12,
+          "winpercent": 59
         }
       ]
     },
@@ -8581,10 +8605,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 19,
-          "wins": 10,
+          "plays": 20,
+          "wins": 11,
           "losses": 9,
-          "winpercent": 53
+          "winpercent": 55
         }
       ]
     },
@@ -8631,9 +8655,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 1077,
-      "wins": 593,
-      "losses": 484,
+      "plays": 1082,
+      "wins": 595,
+      "losses": 487,
       "winpercent": 55
     }
   ]

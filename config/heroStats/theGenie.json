@@ -3157,10 +3157,10 @@
       "hero": "Ghost Rider",
       "queryOpponentOverall": [
         {
-          "plays": 35,
-          "wins": 23,
+          "plays": 36,
+          "wins": 24,
           "losses": 12,
-          "winpercent": 66
+          "winpercent": 67
         }
       ],
       "repeatMap": [
@@ -3238,7 +3238,15 @@
         },
         {
           "mapName": "Marmoreal",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Ghost Rider",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "McMinnville, OR",
@@ -4839,10 +4847,10 @@
       "hero": "Moon Knight",
       "queryOpponentOverall": [
         {
-          "plays": 15,
+          "plays": 16,
           "wins": 6,
-          "losses": 9,
-          "winpercent": 40
+          "losses": 10,
+          "winpercent": 38
         }
       ],
       "repeatMap": [
@@ -4896,7 +4904,15 @@
         },
         {
           "mapName": "Heorot",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Moon Knight",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "King Solomon's Mine",
@@ -8112,9 +8128,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 68,
+          "plays": 69,
           "wins": 24,
-          "losses": 44,
+          "losses": 45,
           "winpercent": 35
         }
       ]
@@ -8132,10 +8148,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 57,
-          "wins": 27,
+          "plays": 58,
+          "wins": 28,
           "losses": 30,
-          "winpercent": 47
+          "winpercent": 48
         }
       ]
     },
@@ -8272,9 +8288,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 1103,
-      "wins": 485,
-      "losses": 618,
+      "plays": 1105,
+      "wins": 486,
+      "losses": 619,
       "winpercent": 44
     }
   ]

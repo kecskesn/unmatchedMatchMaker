@@ -315,10 +315,10 @@
       "hero": "Alice",
       "queryOpponentOverall": [
         {
-          "plays": 74,
-          "wins": 41,
+          "plays": 75,
+          "wins": 42,
           "losses": 33,
-          "winpercent": 55
+          "winpercent": 56
         }
       ],
       "repeatMap": [
@@ -331,10 +331,10 @@
           "queryResult": [
             {
               "opponent": "Alice",
-              "plays": 14,
-              "wins": 9,
+              "plays": 15,
+              "wins": 10,
               "losses": 5,
-              "winpercent": 64
+              "winpercent": 67
             }
           ]
         },
@@ -882,9 +882,9 @@
       "hero": "Bigfoot",
       "queryOpponentOverall": [
         {
-          "plays": 65,
+          "plays": 66,
           "wins": 34,
-          "losses": 31,
+          "losses": 32,
           "winpercent": 52
         }
       ],
@@ -1062,10 +1062,10 @@
           "queryResult": [
             {
               "opponent": "Bigfoot",
-              "plays": 13,
+              "plays": 14,
               "wins": 4,
-              "losses": 9,
-              "winpercent": 31
+              "losses": 10,
+              "winpercent": 29
             }
           ]
         },
@@ -3972,16 +3972,24 @@
       "hero": "Houdini",
       "queryOpponentOverall": [
         {
-          "plays": 54,
-          "wins": 21,
-          "losses": 33,
+          "plays": 56,
+          "wins": 22,
+          "losses": 34,
           "winpercent": 39
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Houdini",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
@@ -4176,10 +4184,10 @@
           "queryResult": [
             {
               "opponent": "Houdini",
-              "plays": 7,
+              "plays": 8,
               "wins": 4,
-              "losses": 3,
-              "winpercent": 57
+              "losses": 4,
+              "winpercent": 50
             }
           ]
         },
@@ -7701,10 +7709,10 @@
       "hero": "The Genie",
       "queryOpponentOverall": [
         {
-          "plays": 15,
-          "wins": 9,
+          "plays": 16,
+          "wins": 10,
           "losses": 6,
-          "winpercent": 60
+          "winpercent": 63
         }
       ],
       "repeatMap": [
@@ -7758,7 +7766,15 @@
         },
         {
           "mapName": "Heorot",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "The Genie",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "King Solomon's Mine",
@@ -8780,18 +8796,18 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 10,
-          "wins": 5,
+          "plays": 11,
+          "wins": 6,
           "losses": 5,
-          "winpercent": 50
+          "winpercent": 55
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 142,
-          "wins": 81,
+          "plays": 143,
+          "wins": 82,
           "losses": 61,
           "winpercent": 57
         }
@@ -8840,10 +8856,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 53,
-          "wins": 27,
+          "plays": 54,
+          "wins": 28,
           "losses": 26,
-          "winpercent": 51
+          "winpercent": 52
         }
       ]
     },
@@ -8960,9 +8976,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 153,
+          "plays": 155,
           "wins": 74,
-          "losses": 79,
+          "losses": 81,
           "winpercent": 48
         }
       ]
@@ -9000,9 +9016,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 1441,
-      "wins": 732,
-      "losses": 709,
+      "plays": 1446,
+      "wins": 735,
+      "losses": 711,
       "winpercent": 51
     }
   ]

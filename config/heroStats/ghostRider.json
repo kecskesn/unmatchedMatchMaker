@@ -1475,10 +1475,10 @@
       "hero": "Bruce Lee",
       "queryOpponentOverall": [
         {
-          "plays": 15,
+          "plays": 16,
           "wins": 6,
-          "losses": 9,
-          "winpercent": 40
+          "losses": 10,
+          "winpercent": 38
         }
       ],
       "repeatMap": [
@@ -1488,7 +1488,15 @@
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Bruce Lee",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -6500,10 +6508,10 @@
       "hero": "The Genie",
       "queryOpponentOverall": [
         {
-          "plays": 35,
+          "plays": 36,
           "wins": 12,
-          "losses": 23,
-          "winpercent": 34
+          "losses": 24,
+          "winpercent": 33
         }
       ],
       "repeatMap": [
@@ -6577,7 +6585,15 @@
         },
         {
           "mapName": "Marmoreal",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "The Genie",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "McMinnville, OR",
@@ -7204,10 +7220,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 1,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 1,
+          "winpercent": 50
         }
       ]
     },
@@ -7264,10 +7280,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 42,
+          "plays": 43,
           "wins": 16,
-          "losses": 26,
-          "winpercent": 38
+          "losses": 27,
+          "winpercent": 37
         }
       ]
     },
@@ -7404,9 +7420,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 763,
+      "plays": 765,
       "wins": 305,
-      "losses": 458,
+      "losses": 460,
       "winpercent": 40
     }
   ]
