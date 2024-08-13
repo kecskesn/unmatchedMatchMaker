@@ -68,8 +68,8 @@ app.get("/mapStats", async (req, res) => {
 });
 
 app.get('/matchLogs', async (req, res) => {
-  const { date = '2w', hero = '' } = req.query;
-  const matchLogsResult = await getMatchLogs(date, hero);
+  const { date = '2w', hero = '', player = '' } = req.query;
+  const matchLogsResult = await getMatchLogs(date, hero, player);
   res.send(matchLogsResult);
 });
 

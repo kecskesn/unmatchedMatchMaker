@@ -85,6 +85,13 @@
             </select>
           </div>
         </div>
+        <div class="col-md-5">
+          <div class="form-group">
+            <select class="form-control" id="playerFilter">
+              <option value="" selected>All Players</option>
+            </select>
+          </div>
+        </div>
       </div>
       <div id="matchLogsContainer" class="container-margin mx-3"></div>
     </div>
@@ -93,11 +100,15 @@
   <script>
     const heroSelect1 = document.getElementById("heroSelect1");
     const heroSelect2 = document.getElementById("heroSelect2");
+    const playerSelect1 = document.getElementById("playerSelect1");
+    const playerSelect2 = document.getElementById("playerSelect2");
     const dateFilterSelect = document.getElementById("dateFilter");
     const heroFilterSelect = document.getElementById("heroFilter");
+    const playerFilterSelect = document.getElementById("playerFilter");
 
     dateFilterSelect.addEventListener("change", fetchMatchLogs);
     heroFilterSelect.addEventListener("change", fetchMatchLogs);
+    playerFilterSelect.addEventListener("change", fetchMatchLogs);
 
     window.onload = function () {
       fetchHeroes();
@@ -129,6 +140,16 @@
       sessionStorage.setItem("hero2", hero);
       updateButtonFromSelect(heroSelect2, hero2Btn);
       enableButtons();
+    });
+
+    playerSelect1.addEventListener("change", function() {
+      const player = playerSelect1.options[playerSelect1.selectedIndex].value;
+      sessionStorage.setItem("player", player);
+    });
+
+    playerSelect2.addEventListener("change", function() {
+      const player = playerSelect2.options[playerSelect2.selectedIndex].value;
+      sessionStorage.setItem("player2", player);
     });
 
     function enableButtons() {
@@ -228,6 +249,7 @@
         .then((players) => {
           const select1 = document.getElementById("playerSelect1");
           const select2 = document.getElementById("playerSelect2");
+          const select3 = document.getElementById("playerFilter")
 
           players.forEach((player) => {
             const option1 = document.createElement("option");
@@ -239,21 +261,40 @@
             option2.value = player;
             option2.text = player;
             select2.add(option2);
+
+            const option3 = document.createElement("option");
+            option3.value = player;
+            option3.text = player;
+            select3.add(option3);
           });
 
-          select1.value = "Balázs";
-          select2.value = "Keca";
+          const selectedPlayer = sessionStorage.getItem("player");
+          if (selectedPlayer) {
+            select1.value = selectedPlayer;
+          } else {
+            select1.selectedIndex = 1;
+          }
+
+          const selectedPlayer2 = sessionStorage.getItem("player2");
+          if (selectedPlayer2) {
+            select2.value = selectedPlayer2;
+          } else {
+            select2.selectedIndex = 2;
+          }
+
 
           select1.dispatchEvent(new Event("change"));
           select2.dispatchEvent(new Event("change"));
+          select3.dispatchEvent(new Event("change"));
         });
     }
 
     function fetchMatchLogs() {
       const dateFilter = dateFilterSelect.value;
       const heroFilter = heroFilterSelect.value;
+      const playerFilter = playerFilterSelect.value;
 
-      fetch(`/matchLogs?date=${dateFilter}&hero=${heroFilter}`)
+      fetch(`/matchLogs?date=${dateFilter}&hero=${heroFilter}&player=${playerFilter}`)
         .then((response) => response.json())
         .then((matchLogs) => {
           if (matchLogs.success) {

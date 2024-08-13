@@ -31,25 +31,28 @@ async function saveMatchToDB(hero1, hero2, player1, player2, winner) {
   }
 }
 
-async function getMatchLogsFromDB(dateFilter, heroFilter) {
-  let query = 'SELECT id, hero1, hero2, player1, player2, winner, winnerPlayer, DATE(timestamp) as date FROM matches';
+async function getMatchLogsFromDB(dateFilter, heroFilter, playerFilter) {
+  let query = 'SELECT id, hero1, hero2, player1, player2, winner, winnerPlayer, DATE(timestamp) as date FROM matches WHERE 1=1';
   let params = [];
-
-  if (dateFilter === '2w') {
-    query += ' WHERE timestamp >= date(\'now\', \'-15 days\')';
-  } else if (dateFilter === '1m') {
-    query += ' WHERE timestamp >= date(\'now\', \'-1 month\')';
-  } else if (dateFilter === '3m') {
-    query += ' WHERE timestamp >= date(\'now\', \'-3 months\')';
+  
+  if (heroFilter) {
+    query += ' AND (hero1 = ? OR hero2 = ?)';
+    params.push(heroFilter, heroFilter);
   }
 
-  if (heroFilter) {
-    if (dateFilter === '2w' || dateFilter === '1m' || dateFilter === '3m') {
-      query += ' AND (hero1 = ? OR hero2 = ?)';
-    } else {
-      query += ' WHERE (hero1 = ? OR hero2 = ?)';
+  if (playerFilter) {
+    query += ' AND (player1 = ? OR player2 = ?)';
+    params.push(playerFilter, playerFilter);
+  }
+
+  if (dateFilter) {
+    if (dateFilter === '2w') {
+      query += ' AND timestamp >= date(\'now\', \'-15 days\')';
+    } else if (dateFilter === '1m') {
+      query += ' AND timestamp >= date(\'now\', \'-1 month\')';
+    } else if (dateFilter === '3m') {
+      query += ' AND timestamp >= date(\'now\', \'-3 months\')';
     }
-    params.push(heroFilter, heroFilter);
   }
 
   query += ' ORDER BY timestamp DESC';

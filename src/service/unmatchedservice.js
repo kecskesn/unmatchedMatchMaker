@@ -125,8 +125,8 @@ async function getMapStats(hero1, hero2) {
   return sortedMapStats;
 }
 
-function getMatchLogs(heroFilter, dateFilter) {
-  return getMatchLogsFromDB(heroFilter, dateFilter);
+function getMatchLogs(heroFilter, dateFilter, player) {
+  return getMatchLogsFromDB(heroFilter, dateFilter, player);
 }
 
 function logMatch(hero1, hero2, player1, player2, winner) {
