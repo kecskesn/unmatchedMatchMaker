@@ -1,6 +1,10 @@
 {
   "queryGameMaps": [
     {
+      "mapId": 22,
+      "mapName": "Azuchi Castle"
+    },
+    {
       "mapId": 7,
       "mapName": "Baskerville Manor"
     },
@@ -89,6 +93,10 @@
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
@@ -195,13 +203,17 @@
       "hero": "Alice",
       "queryOpponentOverall": [
         {
-          "plays": 11,
-          "wins": 3,
-          "losses": 8,
-          "winpercent": 27
+          "plays": 18,
+          "wins": 7,
+          "losses": 11,
+          "winpercent": 39
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": [
@@ -232,17 +244,25 @@
         },
         {
           "mapName": "Hell's Kitchen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Alice",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Heorot",
           "queryResult": [
             {
               "opponent": "Alice",
-              "plays": 1,
-              "wins": 0,
+              "plays": 2,
+              "wins": 1,
               "losses": 1,
-              "winpercent": 0
+              "winpercent": 50
             }
           ]
         },
@@ -287,9 +307,9 @@
           "queryResult": [
             {
               "opponent": "Alice",
-              "plays": 2,
+              "plays": 3,
               "wins": 0,
-              "losses": 2,
+              "losses": 3,
               "winpercent": 0
             }
           ]
@@ -307,10 +327,10 @@
           "queryResult": [
             {
               "opponent": "Alice",
-              "plays": 3,
-              "wins": 1,
-              "losses": 2,
-              "winpercent": 33
+              "plays": 7,
+              "wins": 3,
+              "losses": 4,
+              "winpercent": 43
             }
           ]
         },
@@ -332,13 +352,17 @@
       "hero": "Annie Christmas",
       "queryOpponentOverall": [
         {
-          "plays": 3,
+          "plays": 6,
           "wins": 0,
-          "losses": 3,
+          "losses": 6,
           "winpercent": 0
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
@@ -397,7 +421,15 @@
         },
         {
           "mapName": "Sherwood Forest",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Annie Christmas",
+              "plays": 3,
+              "wins": 0,
+              "losses": 3,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Soho",
@@ -437,13 +469,17 @@
       "hero": "Beowulf",
       "queryOpponentOverall": [
         {
-          "plays": 6,
-          "wins": 2,
-          "losses": 4,
-          "winpercent": 33
+          "plays": 10,
+          "wins": 3,
+          "losses": 7,
+          "winpercent": 30
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
@@ -461,10 +497,10 @@
           "queryResult": [
             {
               "opponent": "Beowulf",
-              "plays": 1,
-              "wins": 0,
+              "plays": 2,
+              "wins": 1,
               "losses": 1,
-              "winpercent": 0
+              "winpercent": 50
             }
           ]
         },
@@ -486,7 +522,15 @@
         },
         {
           "mapName": "Marmoreal",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Beowulf",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "McMinnville, OR",
@@ -525,10 +569,10 @@
           "queryResult": [
             {
               "opponent": "Beowulf",
-              "plays": 3,
+              "plays": 5,
               "wins": 1,
-              "losses": 2,
-              "winpercent": 33
+              "losses": 4,
+              "winpercent": 20
             }
           ]
         },
@@ -565,6 +609,10 @@
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
@@ -663,13 +711,17 @@
       "hero": "Black Panther",
       "queryOpponentOverall": [
         {
-          "plays": 7,
-          "wins": 5,
-          "losses": 2,
-          "winpercent": 71
+          "plays": 12,
+          "wins": 7,
+          "losses": 5,
+          "winpercent": 58
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": [
@@ -744,7 +796,15 @@
         },
         {
           "mapName": "Sherwood Forest",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Black Panther",
+              "plays": 3,
+              "wins": 1,
+              "losses": 2,
+              "winpercent": 33
+            }
+          ]
         },
         {
           "mapName": "Soho",
@@ -759,10 +819,10 @@
           "queryResult": [
             {
               "opponent": "Black Panther",
-              "plays": 3,
-              "wins": 2,
-              "losses": 1,
-              "winpercent": 67
+              "plays": 5,
+              "wins": 3,
+              "losses": 2,
+              "winpercent": 60
             }
           ]
         },
@@ -791,6 +851,10 @@
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": [
@@ -913,6 +977,10 @@
       ],
       "repeatMap": [
         {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
           "mapName": "Baskerville Manor",
           "queryResult": []
         },
@@ -1002,13 +1070,17 @@
       "hero": "Bruce Lee",
       "queryOpponentOverall": [
         {
-          "plays": 17,
-          "wins": 9,
-          "losses": 8,
-          "winpercent": 53
+          "plays": 22,
+          "wins": 10,
+          "losses": 12,
+          "winpercent": 45
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": [
@@ -1122,9 +1194,9 @@
           "queryResult": [
             {
               "opponent": "Bruce Lee",
-              "plays": 5,
-              "wins": 1,
-              "losses": 4,
+              "plays": 10,
+              "wins": 2,
+              "losses": 8,
               "winpercent": 20
             }
           ]
@@ -1147,13 +1219,17 @@
       "hero": "Buffy Xander",
       "queryOpponentOverall": [
         {
-          "plays": 4,
-          "wins": 1,
-          "losses": 3,
-          "winpercent": 25
+          "plays": 9,
+          "wins": 2,
+          "losses": 7,
+          "winpercent": 22
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": [
@@ -1176,7 +1252,15 @@
         },
         {
           "mapName": "Hell's Kitchen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Buffy Xander",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Heorot",
@@ -1220,7 +1304,15 @@
         },
         {
           "mapName": "Sherwood Forest",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Buffy Xander",
+              "plays": 2,
+              "wins": 1,
+              "losses": 1,
+              "winpercent": 50
+            }
+          ]
         },
         {
           "mapName": "Soho",
@@ -1252,7 +1344,15 @@
         },
         {
           "mapName": "Yukon",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Buffy Xander",
+              "plays": 2,
+              "wins": 0,
+              "losses": 2,
+              "winpercent": 0
+            }
+          ]
         }
       ]
     },
@@ -1260,13 +1360,17 @@
       "hero": "Bullseye",
       "queryOpponentOverall": [
         {
-          "plays": 18,
+          "plays": 19,
           "wins": 12,
-          "losses": 6,
-          "winpercent": 67
+          "losses": 7,
+          "winpercent": 63
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
@@ -1320,10 +1424,10 @@
           "queryResult": [
             {
               "opponent": "Bullseye",
-              "plays": 2,
+              "plays": 3,
               "wins": 1,
-              "losses": 1,
-              "winpercent": 50
+              "losses": 2,
+              "winpercent": 33
             }
           ]
         },
@@ -1420,6 +1524,10 @@
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
@@ -1518,6 +1626,10 @@
       ],
       "repeatMap": [
         {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
           "mapName": "Baskerville Manor",
           "queryResult": []
         },
@@ -1615,6 +1727,10 @@
       ],
       "repeatMap": [
         {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
           "mapName": "Baskerville Manor",
           "queryResult": []
         },
@@ -1704,13 +1820,25 @@
       "hero": "Dr. Sattler",
       "queryOpponentOverall": [
         {
-          "plays": 8,
+          "plays": 9,
           "wins": 3,
-          "losses": 5,
-          "winpercent": 38
+          "losses": 6,
+          "winpercent": 33
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": [
+            {
+              "opponent": "Dr. Sattler",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": [
@@ -1833,13 +1961,17 @@
       "hero": "Dracula",
       "queryOpponentOverall": [
         {
-          "plays": 9,
-          "wins": 3,
-          "losses": 6,
-          "winpercent": 33
+          "plays": 11,
+          "wins": 4,
+          "losses": 7,
+          "winpercent": 36
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
@@ -1862,17 +1994,25 @@
         },
         {
           "mapName": "Hell's Kitchen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Dracula",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Heorot",
           "queryResult": [
             {
               "opponent": "Dracula",
-              "plays": 3,
+              "plays": 4,
               "wins": 1,
-              "losses": 2,
-              "winpercent": 33
+              "losses": 3,
+              "winpercent": 25
             }
           ]
         },
@@ -1970,6 +2110,10 @@
       ],
       "repeatMap": [
         {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
           "mapName": "Baskerville Manor",
           "queryResult": []
         },
@@ -2066,6 +2210,10 @@
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": [
@@ -2188,13 +2336,17 @@
       "hero": "Golden Bat",
       "queryOpponentOverall": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 0,
-          "losses": 1,
+          "losses": 2,
           "winpercent": 0
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
@@ -2217,7 +2369,15 @@
         },
         {
           "mapName": "King Solomon's Mine",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Golden Bat",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Marmoreal",
@@ -2285,13 +2445,17 @@
       "hero": "Hamlet",
       "queryOpponentOverall": [
         {
-          "plays": 6,
+          "plays": 7,
           "wins": 4,
-          "losses": 2,
-          "winpercent": 67
+          "losses": 3,
+          "winpercent": 57
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
@@ -2361,10 +2525,10 @@
           "queryResult": [
             {
               "opponent": "Hamlet",
-              "plays": 1,
+              "plays": 2,
               "wins": 1,
-              "losses": 0,
-              "winpercent": 100
+              "losses": 1,
+              "winpercent": 50
             }
           ]
         },
@@ -2413,6 +2577,10 @@
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
@@ -2526,6 +2694,10 @@
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": [
@@ -2656,6 +2828,10 @@
       ],
       "repeatMap": [
         {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
           "mapName": "Baskerville Manor",
           "queryResult": []
         },
@@ -2745,21 +2921,25 @@
       "hero": "Little Red Riding Hood",
       "queryOpponentOverall": [
         {
-          "plays": 42,
+          "plays": 43,
           "wins": 13,
-          "losses": 29,
-          "winpercent": 31
+          "losses": 30,
+          "winpercent": 30
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": [
             {
               "opponent": "Little Red Riding Hood",
-              "plays": 3,
+              "plays": 4,
               "wins": 0,
-              "losses": 3,
+              "losses": 4,
               "winpercent": 0
             }
           ]
@@ -2906,13 +3086,17 @@
       "hero": "Medusa",
       "queryOpponentOverall": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 0,
-          "losses": 1,
+          "losses": 2,
           "winpercent": 0
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
@@ -2931,7 +3115,15 @@
         },
         {
           "mapName": "Heorot",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Medusa",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "King Solomon's Mine",
@@ -3010,6 +3202,10 @@
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
@@ -3116,13 +3312,17 @@
       "hero": "Ms. Marvel",
       "queryOpponentOverall": [
         {
-          "plays": 21,
-          "wins": 14,
-          "losses": 7,
-          "winpercent": 67
+          "plays": 26,
+          "wins": 17,
+          "losses": 9,
+          "winpercent": 65
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": [
@@ -3156,8 +3356,8 @@
           "queryResult": [
             {
               "opponent": "Ms. Marvel",
-              "plays": 1,
-              "wins": 1,
+              "plays": 2,
+              "wins": 2,
               "losses": 0,
               "winpercent": 100
             }
@@ -3168,10 +3368,10 @@
           "queryResult": [
             {
               "opponent": "Ms. Marvel",
-              "plays": 1,
-              "wins": 1,
-              "losses": 0,
-              "winpercent": 100
+              "plays": 3,
+              "wins": 2,
+              "losses": 1,
+              "winpercent": 67
             }
           ]
         },
@@ -3252,10 +3452,10 @@
           "queryResult": [
             {
               "opponent": "Ms. Marvel",
-              "plays": 4,
-              "wins": 3,
-              "losses": 1,
-              "winpercent": 75
+              "plays": 6,
+              "wins": 4,
+              "losses": 2,
+              "winpercent": 67
             }
           ]
         },
@@ -3285,13 +3485,17 @@
       "hero": "Nikola Tesla",
       "queryOpponentOverall": [
         {
-          "plays": 19,
+          "plays": 20,
           "wins": 7,
-          "losses": 12,
-          "winpercent": 37
+          "losses": 13,
+          "winpercent": 35
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": [
@@ -3370,7 +3574,15 @@
         },
         {
           "mapName": "Sarpedon",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Nikola Tesla",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sherwood Forest",
@@ -3429,6 +3641,10 @@
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": [
@@ -3583,13 +3799,17 @@
       "hero": "Robin Hood",
       "queryOpponentOverall": [
         {
-          "plays": 14,
-          "wins": 8,
-          "losses": 6,
-          "winpercent": 57
+          "plays": 21,
+          "wins": 13,
+          "losses": 8,
+          "winpercent": 62
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": [
@@ -3635,10 +3855,10 @@
           "queryResult": [
             {
               "opponent": "Robin Hood",
-              "plays": 2,
-              "wins": 1,
+              "plays": 4,
+              "wins": 3,
               "losses": 1,
-              "winpercent": 50
+              "winpercent": 75
             }
           ]
         },
@@ -3691,10 +3911,10 @@
           "queryResult": [
             {
               "opponent": "Robin Hood",
-              "plays": 2,
-              "wins": 1,
-              "losses": 1,
-              "winpercent": 50
+              "plays": 7,
+              "wins": 4,
+              "losses": 3,
+              "winpercent": 57
             }
           ]
         },
@@ -3744,13 +3964,17 @@
       "hero": "Shakespeare",
       "queryOpponentOverall": [
         {
-          "plays": 6,
-          "wins": 3,
-          "losses": 3,
-          "winpercent": 50
+          "plays": 11,
+          "wins": 4,
+          "losses": 7,
+          "winpercent": 36
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
@@ -3768,9 +3992,9 @@
           "queryResult": [
             {
               "opponent": "Shakespeare",
-              "plays": 1,
+              "plays": 2,
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "winpercent": 0
             }
           ]
@@ -3780,10 +4004,10 @@
           "queryResult": [
             {
               "opponent": "Shakespeare",
-              "plays": 1,
-              "wins": 0,
+              "plays": 2,
+              "wins": 1,
               "losses": 1,
-              "winpercent": 0
+              "winpercent": 50
             }
           ]
         },
@@ -3793,7 +4017,15 @@
         },
         {
           "mapName": "Marmoreal",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Shakespeare",
+              "plays": 2,
+              "wins": 0,
+              "losses": 2,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "McMinnville, OR",
@@ -3809,7 +4041,15 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Shakespeare",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sarpedon",
@@ -3865,13 +4105,17 @@
       "hero": "Sherlock Holmes",
       "queryOpponentOverall": [
         {
-          "plays": 1,
-          "wins": 0,
+          "plays": 2,
+          "wins": 1,
           "losses": 1,
-          "winpercent": 0
+          "winpercent": 50
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
@@ -3914,7 +4158,15 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Sherlock Holmes",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sarpedon",
@@ -3969,6 +4221,10 @@
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": [
@@ -4107,6 +4363,10 @@
       ],
       "repeatMap": [
         {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
           "mapName": "Baskerville Manor",
           "queryResult": []
         },
@@ -4212,6 +4472,10 @@
       ],
       "repeatMap": [
         {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
           "mapName": "Baskerville Manor",
           "queryResult": []
         },
@@ -4308,6 +4572,10 @@
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
@@ -4430,6 +4698,10 @@
       ],
       "repeatMap": [
         {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
           "mapName": "Baskerville Manor",
           "queryResult": []
         },
@@ -4535,13 +4807,17 @@
       "hero": "T. Rex",
       "queryOpponentOverall": [
         {
-          "plays": 1,
-          "wins": 1,
-          "losses": 0,
-          "winpercent": 100
+          "plays": 3,
+          "wins": 2,
+          "losses": 1,
+          "winpercent": 67
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
@@ -4612,7 +4888,15 @@
         },
         {
           "mapName": "T. Rex Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "T. Rex",
+              "plays": 2,
+              "wins": 1,
+              "losses": 1,
+              "winpercent": 50
+            }
+          ]
         },
         {
           "mapName": "The Bronze",
@@ -4639,6 +4923,10 @@
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
@@ -4777,6 +5065,10 @@
       ],
       "repeatMap": [
         {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
           "mapName": "Baskerville Manor",
           "queryResult": []
         },
@@ -4873,6 +5165,10 @@
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
@@ -4978,6 +5274,10 @@
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": [
@@ -5115,6 +5415,10 @@
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
         {
           "mapName": "Baskerville Manor",
           "queryResult": [
@@ -5270,10 +5574,20 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 33,
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 34,
           "wins": 15,
-          "losses": 18,
-          "winpercent": 45
+          "losses": 19,
+          "winpercent": 44
         }
       ]
     },
@@ -5300,19 +5614,19 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 7,
-          "wins": 4,
-          "losses": 3,
-          "winpercent": 57
+          "plays": 13,
+          "wins": 8,
+          "losses": 5,
+          "winpercent": 62
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 32,
-          "wins": 17,
-          "losses": 15,
+          "plays": 38,
+          "wins": 20,
+          "losses": 18,
           "winpercent": 53
         }
       ]
@@ -5320,20 +5634,20 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 33,
+          "plays": 34,
           "wins": 13,
-          "losses": 20,
-          "winpercent": 39
+          "losses": 21,
+          "winpercent": 38
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 17,
-          "wins": 7,
-          "losses": 10,
-          "winpercent": 41
+          "plays": 23,
+          "wins": 9,
+          "losses": 14,
+          "winpercent": 39
         }
       ]
     },
@@ -5370,9 +5684,19 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 6,
-          "wins": 2,
-          "losses": 4,
+          "plays": 8,
+          "wins": 3,
+          "losses": 5,
+          "winpercent": 38
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 3,
+          "wins": 1,
+          "losses": 2,
           "winpercent": 33
         }
       ]
@@ -5380,20 +5704,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 2,
-          "wins": 1,
-          "losses": 1,
-          "winpercent": 50
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 10,
-          "wins": 4,
-          "losses": 6,
-          "winpercent": 40
+          "plays": 25,
+          "wins": 9,
+          "losses": 16,
+          "winpercent": 36
         }
       ]
     },
@@ -5420,10 +5734,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 64,
-          "wins": 28,
-          "losses": 36,
-          "winpercent": 44
+          "plays": 81,
+          "wins": 34,
+          "losses": 47,
+          "winpercent": 42
         }
       ]
     },
@@ -5450,9 +5764,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 2,
+          "plays": 4,
           "wins": 0,
-          "losses": 2,
+          "losses": 4,
           "winpercent": 0
         }
       ]
@@ -5460,10 +5774,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 353,
-      "wins": 157,
-      "losses": 196,
-      "winpercent": 44
+      "plays": 411,
+      "wins": 178,
+      "losses": 233,
+      "winpercent": 43
     }
   ]
 }
