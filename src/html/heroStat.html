@@ -11,13 +11,7 @@
 
 <body>
   <div class="container">
-    <div class="d-flex justify-content-between align-items-center">
-      <a class="btn btn-primary active" id="heroStatBtn" href="heroStat"><i class="fas fa-shield-alt"></i></a>
-      <a class="btn btn-primary" id="mapStatBtn" href="mapStat"><i class="fas fa-map"></i></a>
-      <a class="btn btn-primary" id="cardTrackerBtn" href="cardTracker"><i class="fas fa-layer-group"></i></a>
-      <a class="btn btn-primary" id="matchLoggerBtn" href="matchLogger"><i class="fas fa-file-alt"></i></a>
-      <a class="btn btn-primary" id="playerStatsBtn" href="playerStats"><i class="fas fa-users"></i></a>
-    </div>
+    <div id="menu"></div>
 
     <div class="form-group">
       <label for="heroSelect">Hero</label>
@@ -25,49 +19,53 @@
         <option value="" disabled selected>Please select one...</option>
       </select>
     </div>
-    <div class="form-group">
-      <label for="modeSelect">Mode</label>
-      <select class="form-control" id="modeSelect">
-        <option value="normal">Normal search</option>
-        <option value="fair">Fair matchups</option>
-        <option value="excludeUnfair" selected>
-          Exclude unfair matchups
-        </option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="fairnessThreshold">Fairness Threshold</label>
-      <input type="range" class="form-control-range" id="fairnessThreshold" min="50" max="100" value="60" />
-      <span id="fairnessThresholdValue">60</span>
-    </div>
-    <div class="form-group">
-      <label for="numberOfPlaysSelect">Minimum Number of Plays</label>
-      <select class="form-control" id="numberOfPlaysSelect" disabled>
-        <option value="0" selected>0</option>
-        <option value="10">10</option>
-        <option value="20">20</option>
-        <option value="30">30</option>
-        <option value="40">40</option>
-        <option value="50">50</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="sourceSelect">Source</label>
-      <select class="form-control" id="sourceSelect">
-        <option value="umleague">UMLeague</option>
-        <option value="local">Local</option>
-        <option value="both" selected>UMLeague + local</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <div class="d-flex justify-content-between align-items-center">
-        <button type="button" id="toggleWinPercentages" class="btn btn-primary">
-          Show Win Percentages
-        </button>
+
+    <button type="button" id="toggleSettings" class="btn btn-primary">
+      Show Settings
+    </button>
+
+    <div id="settings" style="display: none;">
+      <div class="form-group">
+        <label for="modeSelect">Mode</label>
+        <select class="form-control" id="modeSelect">
+          <option value="normal">Normal search</option>
+          <option value="fair">Fair matchups</option>
+          <option value="excludeUnfair" selected>
+            Exclude unfair matchups
+          </option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="fairnessThreshold">Fairness Threshold</label>
+        <input type="range" class="form-control-range" id="fairnessThreshold" min="50" max="100" value="60" />
+        <span id="fairnessThresholdValue">60</span>
+      </div>
+      <div class="form-group">
+        <label for="numberOfPlaysSelect">Minimum Number of Plays</label>
+        <select class="form-control" id="numberOfPlaysSelect" disabled>
+          <option value="0" selected>0</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="40">40</option>
+          <option value="50">50</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="sourceSelect">Source</label>
+        <select class="form-control" id="sourceSelect">
+          <option value="umleague">UMLeague</option>
+          <option value="local">Local</option>
+          <option value="both" selected>UMLeague + local</option>
+        </select>
+      </div>
+      <div class="form-group">
         <button type="button" id="resetFiltersToDefault" class="btn btn-danger">
           Reset
         </button>
       </div>
+    </div>
+    <div class="form-group">
       <table class="table table-bordered table-hover">
         <thead>
           <tr>
@@ -86,6 +84,7 @@
         <span class="sr-only">Loading...</span>
       </div>
     </div>
+    <script src="src/js/menu.js"></script>
     <script>
       const heroSelect = document.getElementById("heroSelect");
       const modeSelect = document.getElementById("modeSelect");
@@ -95,9 +94,6 @@
         "numberOfPlaysSelect"
       );
       const sourceSelect = document.getElementById("sourceSelect");
-      const toggleWinPercentagesButton = document.getElementById(
-        "toggleWinPercentages"
-      );
       const resetFiltersToDefaultButton = document.getElementById(
         "resetFiltersToDefault"
       );
@@ -106,6 +102,8 @@
         "winPercentageHeader"
       );
       const loadingOverlay = document.getElementById("loadingOverlay");
+      const toggleSettingsButton = document.getElementById("toggleSettings");
+      const settingsDiv = document.getElementById("settings");
 
       heroSelect.addEventListener("change", fetchMatches);
       modeSelect.addEventListener("change", handleModeChange);
@@ -117,7 +115,18 @@
         fairnessThresholdValue.textContent = this.value;
       });
 
+      toggleSettingsButton.addEventListener("click", function () {
+        if (settingsDiv.style.display === "none") {
+          settingsDiv.style.display = "block";
+          toggleSettingsButton.textContent = "Hide Settings";
+        } else {
+          settingsDiv.style.display = "none";
+          toggleSettingsButton.textContent = "Show Settings";
+        }
+      });
+
       window.onload = function () {
+        loadMenu();
         modeSelect.value = sessionStorage.getItem('mode') || 'excludeUnfair';
         numberOfPlaysSelect.disabled = modeSelect.value === "excludeUnfair";
         fairnessThresholdInput.value = sessionStorage.getItem('fairnessThreshold') || 60;
@@ -136,26 +145,17 @@
         } else {
           numberOfPlaysSelect.disabled = false;
         }
-        
+
         fetchMatches();
       }
 
-      toggleWinPercentagesButton.addEventListener("click", function () {
-        const winPercentCells = document.querySelectorAll(".win-percent-cell");
-        winPercentCells.forEach((cell) => {
-          const hiddenMessageDiv = cell.querySelector(".hidden-message");
-          const actualWinPercentDiv = cell.querySelector(".actual-win-percent");
+      function toggleWinPercentageVisibility(cell) {
+        const hiddenMessageDiv = cell.querySelector(".hidden-message");
+        const actualWinPercentDiv = cell.querySelector(".actual-win-percent");
 
-          hiddenMessageDiv.classList.toggle("hidden");
-          actualWinPercentDiv.classList.toggle("hidden");
-
-          if (hiddenMessageDiv.classList.contains("hidden")) {
-            toggleWinPercentagesButton.textContent = "Show Win Percentages";
-          } else {
-            toggleWinPercentagesButton.textContent = "Hide Win Percentages";
-          }
-        });
-      });
+        hiddenMessageDiv.classList.toggle("hidden");
+        actualWinPercentDiv.classList.toggle("hidden");
+      }
 
       resetFiltersToDefault.addEventListener("click", function () {
         modeSelect.value = "excludeUnfair";
@@ -225,11 +225,6 @@
             data.result.forEach((item) => {
               const row = document.createElement("tr");
 
-              row.addEventListener("click", () => {
-                sessionStorage.setItem('hero2', encodeURIComponent(item.hero));
-                window.location.href = '/mapStat';
-              });
-
               const heroCell = createTableCell(item.hero);
               const playsCell = createTableCell(
                 item.plays +
@@ -237,6 +232,15 @@
               );
               const winPercentCell = document.createElement("td");
               winPercentCell.appendChild(getWinPercentContent(item));
+
+              heroCell.addEventListener("click", () => {
+                sessionStorage.setItem('hero2', encodeURIComponent(item.hero));
+                window.location.href = '/mapStat';
+              });
+
+              winPercentCell.addEventListener("click", () => {
+                toggleWinPercentageVisibility(winPercentCell);
+              });
 
               row.appendChild(heroCell);
               row.appendChild(playsCell);
