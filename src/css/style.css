@@ -217,6 +217,13 @@ a.btn.btn-primary.active {
   margin-top: 10px; /* Space between title and revealed stats */
 }
 
+.card {
+  user-select: none; /* Prevent text selection on cards */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
 .card-title {
   margin-bottom: 0.75rem;
   text-align: center;
