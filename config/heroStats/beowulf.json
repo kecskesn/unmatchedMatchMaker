@@ -283,10 +283,10 @@
       "hero": "Alice",
       "queryOpponentOverall": [
         {
-          "plays": 63,
-          "wins": 26,
+          "plays": 64,
+          "wins": 27,
           "losses": 37,
-          "winpercent": 41
+          "winpercent": 42
         }
       ],
       "repeatMap": [
@@ -295,10 +295,10 @@
           "queryResult": [
             {
               "opponent": "Alice",
-              "plays": 1,
-              "wins": 0,
+              "plays": 2,
+              "wins": 1,
               "losses": 1,
-              "winpercent": 0
+              "winpercent": 50
             }
           ]
         },
@@ -927,10 +927,10 @@
       "hero": "Black Panther",
       "queryOpponentOverall": [
         {
-          "plays": 12,
+          "plays": 13,
           "wins": 2,
-          "losses": 10,
-          "winpercent": 17
+          "losses": 11,
+          "winpercent": 15
         }
       ],
       "repeatMap": [
@@ -944,7 +944,15 @@
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Black Panther",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -1990,10 +1998,10 @@
       "hero": "Cloak & Dagger",
       "queryOpponentOverall": [
         {
-          "plays": 10,
+          "plays": 11,
           "wins": 7,
-          "losses": 3,
-          "winpercent": 70
+          "losses": 4,
+          "winpercent": 64
         }
       ],
       "repeatMap": [
@@ -2007,7 +2015,15 @@
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Cloak & Dagger",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -3408,16 +3424,24 @@
       "hero": "Houdini",
       "queryOpponentOverall": [
         {
-          "plays": 19,
+          "plays": 20,
           "wins": 9,
-          "losses": 10,
-          "winpercent": 47
+          "losses": 11,
+          "winpercent": 45
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Houdini",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
@@ -5630,10 +5654,10 @@
       "hero": "Shakespeare",
       "queryOpponentOverall": [
         {
-          "plays": 10,
-          "wins": 7,
+          "plays": 11,
+          "wins": 8,
           "losses": 3,
-          "winpercent": 70
+          "winpercent": 73
         }
       ],
       "repeatMap": [
@@ -5655,7 +5679,15 @@
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Shakespeare",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -6226,8 +6258,8 @@
       "hero": "Spider-Man",
       "queryOpponentOverall": [
         {
-          "plays": 2,
-          "wins": 2,
+          "plays": 3,
+          "wins": 3,
           "losses": 0,
           "winpercent": 100
         }
@@ -6295,7 +6327,15 @@
         },
         {
           "mapName": "Sarpedon",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Spider-Man",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sherwood Forest",
@@ -7525,10 +7565,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 13,
-          "wins": 5,
-          "losses": 8,
-          "winpercent": 38
+          "plays": 15,
+          "wins": 6,
+          "losses": 9,
+          "winpercent": 40
         }
       ]
     },
@@ -7545,10 +7585,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 1,
-          "wins": 0,
-          "losses": 1,
-          "winpercent": 0
+          "plays": 4,
+          "wins": 1,
+          "losses": 3,
+          "winpercent": 25
         }
       ]
     },
@@ -7655,10 +7695,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 41,
-          "wins": 23,
+          "plays": 42,
+          "wins": 24,
           "losses": 18,
-          "winpercent": 56
+          "winpercent": 57
         }
       ]
     },
@@ -7735,9 +7775,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 808,
-      "wins": 346,
-      "losses": 462,
+      "plays": 814,
+      "wins": 349,
+      "losses": 465,
       "winpercent": 43
     }
   ]
