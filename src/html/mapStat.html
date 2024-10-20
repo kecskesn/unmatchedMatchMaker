@@ -22,7 +22,7 @@
       </div>
 
       <div class="d-flex align-items-center justify-content-center align-self-end">
-        <button class="btn btn-primary mb-3 mr-2" id="switchHeroBtn">
+        <button class="btn btn-primary mb-0 mr-2" id="switchHeroBtn">
           <i class="fas fa-exchange-alt"></i>
         </button>
       </div>
@@ -39,7 +39,7 @@
       Show Settings
     </button>
 
-    <div id="settings" style="display: none;">
+    <div id="settings">
       <div class="form-group">
         <label for="fairnessThreshold" class="font-weight-bold">Fairness Threshold</label>
         <input type="range" class="form-control-range" id="fairnessThreshold" min="50" max="100" value="60" />
@@ -214,8 +214,8 @@
       }
 
       toggleSettingsButton.addEventListener("click", function () {
-        if (settingsDiv.style.display === "none") {
-          settingsDiv.style.display = "block";
+        if (!settingsDiv.classList.contains("show")) {
+          settingsDiv.classList.add("show");
           toggleSettingsButton.textContent = "Hide Settings";
 
           const winPercentCells = document.querySelectorAll(".win-percent-cell");
@@ -232,7 +232,7 @@
             ? "Hide Win Percentages"
             : "Show Win Percentages";
         } else {
-          settingsDiv.style.display = "none";
+          settingsDiv.classList.remove("show");
           toggleSettingsButton.textContent = "Show Settings";
         }
       });
