@@ -31,11 +31,22 @@
                 Object.entries(playerStatsResult).forEach(([playerName, playerStats]) => {
                     const playerCard = createPlayerCard(playerName, playerStats);
                     container.appendChild(playerCard);
+                    addDoubleClickListener(playerCard); // Add triple-click listener to each card
                 });
-
             } catch (error) {
                 console.error('Error fetching player stats:', error);
             }
+        }
+
+        function addDoubleClickListener(card) {
+            const hiddenElements = card.querySelectorAll('.hidden');
+
+            card.addEventListener('dblclick', () => {
+                hiddenElements.forEach(element => {
+                    element.classList.toggle('hidden');
+                    element.classList.toggle('revealed');
+                });
+            });
         }
 
         function createPlayerCard(playerName, playerStats) {
@@ -137,32 +148,6 @@
                 listItem.textContent = `${worstHero.name} - Plays: ${worstHero.plays} (${worstHero.wins}W/${worstHero.losses}L ${worstHero.winRate}%)`;
                 worstWinRateList.appendChild(listItem);
             }
-
-            let holdTimeout;
-
-            card.addEventListener("pointerdown", () => {
-                holdTimeout = setTimeout(() => {
-                    hiddenStatsContainer.classList.remove("hidden");
-                    hiddenStatsContainer.classList.add("revealed");
-                }, 1000); // 1 second hold
-            });
-
-            card.addEventListener("pointerup", () => {
-                clearTimeout(holdTimeout);
-                hideStats();
-            });
-
-            card.addEventListener("pointerleave", () => {
-                clearTimeout(holdTimeout);
-                hideStats();
-            });
-
-            function hideStats() {
-                hiddenStatsContainer.classList.add("hidden");
-                hiddenStatsContainer.classList.remove("revealed");
-            }
-
-            card.addEventListener("contextmenu", (event) => event.preventDefault());
 
             cardBody.appendChild(cardTitle);
             cardBody.appendChild(hiddenStatsContainer);

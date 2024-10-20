@@ -35,6 +35,28 @@
       </div>
     </div>
 
+    <button type="button" id="toggleSettings" class="btn btn-primary">
+      Show Settings
+    </button>
+
+    <div id="settings" style="display: none;">
+      <div class="form-group">
+        <label for="fairnessThreshold" class="font-weight-bold">Fairness Threshold</label>
+        <input type="range" class="form-control-range" id="fairnessThreshold" min="50" max="100" value="60" />
+        <span id="fairnessThresholdValue">60</span>
+      </div>
+      <div class="form-group">
+        <div class="d-flex justify-content-between align-items-center">
+          <button type="button" id="toggleWinPercentages" class="btn btn-primary">
+            Show Win Percentages
+          </button>
+          <button type="button" id="resetFiltersToDefault" class="btn btn-danger">
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+
     <div class="form-group">
       <table class="table table-bordered table-hover">
         <thead>
@@ -58,8 +80,17 @@
     <script>
       const heroSelect1 = document.getElementById("heroSelect1");
       const heroSelect2 = document.getElementById("heroSelect2");
+      const toggleSettingsButton = document.getElementById("toggleSettings");
+      const settingsDiv = document.getElementById("settings");
+      const fairnessThresholdInput =
+        document.getElementById("fairnessThreshold");
+      const toggleWinPercentagesButton = document.getElementById(
+        "toggleWinPercentages"
+      );
+      const resetFiltersToDefaultButton = document.getElementById(
+        "resetFiltersToDefault"
+      );
       const resultsTable = document.getElementById("results");
-      const fairnessThreshold = sessionStorage.getItem("fairnessThreshold") || 60;
       const loadingOverlay = document.getElementById("loadingOverlay");
 
       switchHeroBtn.addEventListener("click", function () {
@@ -86,9 +117,17 @@
         getMapStats();
       });
 
+      fairnessThresholdInput.addEventListener("change", getMapStats);
+      fairnessThresholdInput.addEventListener("input", function () {
+        fairnessThresholdValue.textContent = this.value;
+      });
+
       function getMapStats() {
         const hero1 = heroSelect1.value;
         const hero2 = heroSelect2.value;
+        const fairnessThreshold = fairnessThresholdInput.value;
+
+        sessionStorage.setItem('fairnessThreshold', fairnessThresholdInput.value);
 
         if (!(hero1 && hero2)) {
           return;
@@ -174,6 +213,64 @@
         return winPercentContainer;
       }
 
+      toggleSettingsButton.addEventListener("click", function () {
+        if (settingsDiv.style.display === "none") {
+          settingsDiv.style.display = "block";
+          toggleSettingsButton.textContent = "Hide Settings";
+
+          const winPercentCells = document.querySelectorAll(".win-percent-cell");
+          let allWinPercentagesVisible = true;
+
+          winPercentCells.forEach((cell) => {
+            const actualWinPercentDiv = cell.querySelector(".actual-win-percent");
+            if (actualWinPercentDiv && actualWinPercentDiv.classList.contains("hidden")) {
+              allWinPercentagesVisible = false;
+            }
+          });
+
+          toggleWinPercentagesButton.textContent = allWinPercentagesVisible
+            ? "Hide Win Percentages"
+            : "Show Win Percentages";
+        } else {
+          settingsDiv.style.display = "none";
+          toggleSettingsButton.textContent = "Show Settings";
+        }
+      });
+
+      resetFiltersToDefaultButton.addEventListener("click", function () {
+        fairnessThresholdInput.value = 60;
+        fairnessThresholdValue.textContent = 60;
+        toggleWinPercentagesButton.textContent = "Show Win Percentages";
+
+        sessionStorage.removeItem('fairnessThreshold');
+
+        getMapStats();
+      });
+
+      toggleWinPercentagesButton.addEventListener("click", function () {
+        const winPercentCells = document.querySelectorAll(".win-percent-cell");
+
+        if (toggleWinPercentagesButton.textContent === "Show Win Percentages") {
+          winPercentCells.forEach((cell) => {
+            const hiddenMessageDiv = cell.querySelector(".hidden-message");
+            const actualWinPercentDiv = cell.querySelector(".actual-win-percent");
+
+            hiddenMessageDiv.classList.add("hidden");
+            actualWinPercentDiv.classList.remove("hidden");
+          });
+          toggleWinPercentagesButton.textContent = "Hide Win Percentages";
+        } else {
+          winPercentCells.forEach((cell) => {
+            const hiddenMessageDiv = cell.querySelector(".hidden-message");
+            const actualWinPercentDiv = cell.querySelector(".actual-win-percent");
+
+            hiddenMessageDiv.classList.remove("hidden");
+            actualWinPercentDiv.classList.add("hidden");
+          });
+          toggleWinPercentagesButton.textContent = "Show Win Percentages";
+        }
+      });
+
       function toggleWinPercentageVisibility(cell) {
         const hiddenMessageDiv = cell.querySelector(".hidden-message");
         const actualWinPercentDiv = cell.querySelector(".actual-win-percent");
@@ -183,6 +280,8 @@
       }
 
       window.onload = function () {
+        fairnessThresholdInput.value = sessionStorage.getItem('fairnessThreshold') || 60;
+        fairnessThresholdValue.textContent = sessionStorage.getItem('fairnessThreshold') || 60;
         loadMenu();
         fetchHeroes();
       };
