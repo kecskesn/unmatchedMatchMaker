@@ -256,7 +256,7 @@
             hiddenMessageDiv.classList.add("hidden");
             actualWinPercentDiv.classList.remove("hidden");
           });
-          toggleWinPercentagesButton.innerHtml = "Hide Win Pdsadasercentages <i class='fas fa-eye-slash'></i>";
+          toggleWinPercentagesButton.innerHTML = "Hide Win Percentages <i class='fas fa-eye-slash'></i>";
         } else {
           winPercentCells.forEach((cell) => {
             const hiddenMessageDiv = cell.querySelector(".hidden-message");
@@ -265,7 +265,7 @@
             hiddenMessageDiv.classList.remove("hidden");
             actualWinPercentDiv.classList.add("hidden");
           });
-          toggleWinPercentagesButton.innerHtml = "Show Win Percentages <i class='fas fa-eye'></i>";
+          toggleWinPercentagesButton.innerHTML = "Show Win Percentages <i class='fas fa-eye'></i>";
         }
       });
 
