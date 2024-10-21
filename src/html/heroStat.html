@@ -14,18 +14,17 @@
     <div id="menu"></div>
 
     <div class="form-group">
-      <label for="heroSelect" class="font-weight-bold">Hero</label>
       <select class="form-control" id="heroSelect">
-        <option value="" disabled selected>Please select one...</option>
+        <option value="" disabled selected>Select a Hero...</option>
       </select>
     </div>
 
     <button type="button" id="toggleSettings" class="btn btn-primary">
-      Show Settings
+      Show Settings <i class="fas fa-angle-down"></i>
     </button>
 
     <div id="settings">
-      <div class="form-group">
+      <div class="form-group mt-2">
         <label for="modeSelect" class="font-weight-bold">Mode</label>
         <select class="form-control" id="modeSelect">
           <option value="normal">Normal search</option>
@@ -35,12 +34,12 @@
           </option>
         </select>
       </div>
-      <div class="form-group">
+      <div class="form-group mt-2">
         <label for="fairnessThreshold" class="font-weight-bold">Fairness Threshold</label>
         <input type="range" class="form-control-range" id="fairnessThreshold" min="50" max="100" value="60" />
         <span id="fairnessThresholdValue">60</span>
       </div>
-      <div class="form-group">
+      <div class="form-group mt-2">
         <label for="numberOfPlaysSelect" class="font-weight-bold">Minimum Number of Plays</label>
         <select class="form-control" id="numberOfPlaysSelect" disabled>
           <option value="0" selected>0</option>
@@ -51,7 +50,7 @@
           <option value="50">50</option>
         </select>
       </div>
-      <div class="form-group">
+      <div class="form-group mt-2">
         <label for="sourceSelect" class="font-weight-bold">Source</label>
         <select class="form-control" id="sourceSelect">
           <option value="umleague">UMLeague</option>
@@ -59,10 +58,10 @@
           <option value="both" selected>UMLeague + local</option>
         </select>
       </div>
-      <div class="form-group">
+      <div class="form-group mt-2">
         <div class="d-flex justify-content-between align-items-center">
           <button type="button" id="toggleWinPercentages" class="btn btn-primary">
-            Show Win Percentages
+            Show Win Percentages <i class="fas fa-eye"></i>
           </button>
           <button type="button" id="resetFiltersToDefault" class="btn btn-danger">
             Reset
@@ -71,12 +70,12 @@
       </div>
     </div>
     <div class="form-group">
-      <table class="table table-bordered table-hover">
+      <table class="table table-borderless">
         <thead>
           <tr>
-            <th class="text-center align-middle">Hero</th>
-            <th class="text-center align-middle">Plays</th>
-            <th class="text-center align-middle" id="winPercentageHeader">
+            <th>Hero</th>
+            <th>Plays</th>
+            <th id="winPercentageHeader">
               Win Percentage
             </th>
           </tr>
@@ -126,7 +125,7 @@
       toggleSettingsButton.addEventListener("click", function () {
         if (!settingsDiv.classList.contains("show")) {
           settingsDiv.classList.add("show");
-          toggleSettingsButton.textContent = "Hide Settings";
+          toggleSettingsButton.innerHTML = "Hide settings <i class='fas fa-angle-up'>";
 
           const winPercentCells = document.querySelectorAll(".win-percent-cell");
           let allWinPercentagesVisible = true;
@@ -138,12 +137,12 @@
             }
           });
 
-          toggleWinPercentagesButton.textContent = allWinPercentagesVisible
-            ? "Hide Win Percentages"
-            : "Show Win Percentages";
+          toggleWinPercentagesButton.innerHTML = allWinPercentagesVisible
+            ? "Hide Win Percentages <i class='fas fa-eye-slash'></i>"
+            : "Show Win Percentages <i class='fas fa-eye'></i>";
         } else {
           settingsDiv.classList.remove("show");
-          toggleSettingsButton.textContent = "Show Settings";
+          toggleSettingsButton.innerHTML = "Show Settings <i class='fas fa-angle-down'>";
         }
       });
 
@@ -174,7 +173,7 @@
       toggleWinPercentagesButton.addEventListener("click", function () {
         const winPercentCells = document.querySelectorAll(".win-percent-cell");
 
-        if (toggleWinPercentagesButton.textContent === "Show Win Percentages") {
+        if (toggleWinPercentagesButton.textContent.includes("Show")) {
           winPercentCells.forEach((cell) => {
             const hiddenMessageDiv = cell.querySelector(".hidden-message");
             const actualWinPercentDiv = cell.querySelector(".actual-win-percent");
@@ -182,7 +181,7 @@
             hiddenMessageDiv.classList.add("hidden");
             actualWinPercentDiv.classList.remove("hidden");
           });
-          toggleWinPercentagesButton.textContent = "Hide Win Percentages";
+          toggleWinPercentagesButton.innerHTML = "Hide Win Percentages <i class='fas fa-eye-slash'></i>";
         } else {
           winPercentCells.forEach((cell) => {
             const hiddenMessageDiv = cell.querySelector(".hidden-message");
@@ -191,7 +190,7 @@
             hiddenMessageDiv.classList.remove("hidden");
             actualWinPercentDiv.classList.add("hidden");
           });
-          toggleWinPercentagesButton.textContent = "Show Win Percentages";
+          toggleWinPercentagesButton.innerHTML = "Show Win Percentages <i class='fas fa-eye'></i>";
         }
       });
 
@@ -210,7 +209,7 @@
         numberOfPlaysSelect.value = "0";
         numberOfPlaysSelect.disabled = true;
         sourceSelect.value = "both";
-        toggleWinPercentagesButton.textContent = "Show Win Percentages";
+        toggleWinPercentagesButton.innerHTML = "Show Win Percentages <i class='fas fa-eye'></i>";
 
         sessionStorage.removeItem('mode');
         sessionStorage.removeItem('fairnessThreshold');

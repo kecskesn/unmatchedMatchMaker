@@ -15,43 +15,39 @@
 
     <div class="d-flex justify-content-between align-items-center">
       <div class="form-group text-center">
-        <label for="playerSelect1" class="font-weight-bold">Player 1</label>
         <select class="form-control" id="playerSelect1">
-          <option value="" disabled selected>Select one...</option>
+          <option value="" disabled selected>Select a Player...</option>
         </select>
-        <label for="heroSelect1" class="font-weight-bold mt-2">Hero 1</label>
-        <select class="form-control" id="heroSelect1">
-          <option value="" disabled selected>Select one...</option>
+        <select class="form-control mt-2" id="heroSelect1">
+          <option value="" disabled selected>Select a Hero...</option>
         </select>
       </div>
 
       <div class="d-flex align-items-center justify-content-center align-self-end">
-        <button class="btn btn-primary mr-2 mb-0" id="switchHeroBtn">
+        <button class="btn btn-primary mr-2 mb-0 mt-2" id="switchHeroBtn">
           <i class="fas fa-exchange-alt"></i>
         </button>
       </div>
 
       <div class="form-group text-center">
-        <label for="playerSelect2" class="font-weight-bold">Player 2</label>
         <select class="form-control" id="playerSelect2">
-          <option value="" disabled selected>Select one...</option>
+          <option value="" disabled selected>Select a Player...</option>
         </select>
-        <label for="heroSelect2" class="font-weight-bold mt-2">Hero 2</label>
-        <select class="form-control" id="heroSelect2">
-          <option value="" disabled selected>Select one...</option>
+        <select class="form-control mt-2" id="heroSelect2">
+          <option value="" disabled selected>Select a Hero...</option>
         </select>
       </div>
     </div>
 
-    <div class="d-flex flex-column align-items-center">
-      <h2>Select Winner</h2>
+    <div class="d-flex flex-column align-items-center mt-4">
+      <h4>Select Winner</h4>
       <div class="d-flex justify-content-between align-items-center">
         <button class="btn btn-primary" id="hero1Btn" disabled>
-          Select One...
+          Select a Hero...
         </button>
         <span class="mx-2">vs</span>
         <button class="btn btn-primary" id="hero2Btn" disabled>
-          Select One...
+          Select a Hero...
         </button>
       </div>
     </div>
@@ -62,7 +58,7 @@
       <h2 class="mb-3">Match History</h2>
       <div id="winRateTracker" class="mb-4"></div>
       <div class="row mb-3 justify-content-center">
-        <div class="col-md-5">
+        <div class="col-md-5 mt-2">
           <div class="form-group">
             <select class="form-control" id="dateFilter">
               <option value="2w" selected>Last 2 Weeks</option>
@@ -72,14 +68,14 @@
             </select>
           </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 mt-2">
           <div class="form-group">
             <select class="form-control" id="heroFilter">
               <option value="" selected>All Heroes</option>
             </select>
           </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 mt-2">
           <div class="form-group">
             <select class="form-control" id="playerFilter">
               <option value="" selected>All Players</option>
@@ -313,8 +309,6 @@
                 tr.appendChild(th);
               });
 
-              thead.style.borderBottom = "1px solid #1c1d1f";
-
               thead.appendChild(tr);
               table.appendChild(thead);
 
@@ -325,15 +319,12 @@
 
                 const tdMatchup = document.createElement("td");
                 tdMatchup.textContent = log.hero1 + " (" + log.player1 + ") vs " + log.hero2 + " (" + log.player2 + ")";
-                tdMatchup.classList.add("align-middle");
 
                 const tdWinner = document.createElement("td");
                 tdWinner.textContent = log.winner + " (" + log.winnerPlayer + ")";
-                tdWinner.classList.add("align-middle");
 
                 const tdDate = document.createElement("td");
                 tdDate.textContent = log.date;
-                tdDate.classList.add("align-middle");
 
                 const tdActions = document.createElement("td");
                 const deleteButton = document.createElement("button");
@@ -343,14 +334,11 @@
                   handleDeleteLog(log.id)
                 );
                 tdActions.appendChild(deleteButton);
-                tdActions.classList.add("align-middle");
 
                 tr.appendChild(tdMatchup);
                 tr.appendChild(tdWinner);
                 tr.appendChild(tdDate);
                 tr.appendChild(tdActions);
-
-                tr.style.borderBottom = "1px solid #dee2e6";
 
                 tbody.appendChild(tr);
               });
