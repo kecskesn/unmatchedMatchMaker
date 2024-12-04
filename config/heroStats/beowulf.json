@@ -613,16 +613,24 @@
       "hero": "Annie Christmas",
       "queryOpponentOverall": [
         {
-          "plays": 13,
-          "wins": 4,
+          "plays": 14,
+          "wins": 5,
           "losses": 9,
-          "winpercent": 31
+          "winpercent": 36
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Annie Christmas",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
@@ -927,10 +935,10 @@
       "hero": "Black Panther",
       "queryOpponentOverall": [
         {
-          "plays": 13,
+          "plays": 15,
           "wins": 2,
-          "losses": 11,
-          "winpercent": 15
+          "losses": 13,
+          "winpercent": 13
         }
       ],
       "repeatMap": [
@@ -956,7 +964,15 @@
         },
         {
           "mapName": "Hanging Gardens",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Black Panther",
+              "plays": 2,
+              "wins": 0,
+              "losses": 2,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Helicarrier",
@@ -2530,16 +2546,24 @@
       "hero": "Dr. Jill Trent",
       "queryOpponentOverall": [
         {
-          "plays": 2,
-          "wins": 1,
-          "losses": 1,
-          "winpercent": 50
+          "plays": 6,
+          "wins": 2,
+          "losses": 4,
+          "winpercent": 33
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Dr. Jill Trent",
+              "plays": 2,
+              "wins": 0,
+              "losses": 2,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
@@ -2599,7 +2623,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Dr. Jill Trent",
+              "plays": 2,
+              "wins": 1,
+              "losses": 1,
+              "winpercent": 50
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -4575,9 +4607,9 @@
       "hero": "Luke Cage",
       "queryOpponentOverall": [
         {
-          "plays": 40,
-          "wins": 19,
-          "losses": 21,
+          "plays": 42,
+          "wins": 20,
+          "losses": 22,
           "winpercent": 48
         }
       ],
@@ -4663,9 +4695,9 @@
           "queryResult": [
             {
               "opponent": "Luke Cage",
-              "plays": 5,
+              "plays": 6,
               "wins": 0,
-              "losses": 5,
+              "losses": 6,
               "winpercent": 0
             }
           ]
@@ -4707,10 +4739,10 @@
           "queryResult": [
             {
               "opponent": "Luke Cage",
-              "plays": 3,
-              "wins": 1,
+              "plays": 4,
+              "wins": 2,
               "losses": 2,
-              "winpercent": 33
+              "winpercent": 50
             }
           ]
         },
@@ -7742,10 +7774,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 15,
-          "wins": 6,
-          "losses": 9,
-          "winpercent": 40
+          "plays": 18,
+          "wins": 7,
+          "losses": 11,
+          "winpercent": 39
         }
       ]
     },
@@ -7772,10 +7804,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 27,
+          "plays": 29,
           "wins": 8,
-          "losses": 19,
-          "winpercent": 30
+          "losses": 21,
+          "winpercent": 28
         }
       ]
     },
@@ -7852,9 +7884,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 59,
-          "wins": 22,
-          "losses": 37,
+          "plays": 62,
+          "wins": 23,
+          "losses": 39,
           "winpercent": 37
         }
       ]
@@ -7902,10 +7934,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 45,
-          "wins": 22,
+          "plays": 46,
+          "wins": 23,
           "losses": 23,
-          "winpercent": 49
+          "winpercent": 50
         }
       ]
     },
@@ -7952,9 +7984,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 826,
-      "wins": 358,
-      "losses": 468,
+      "plays": 835,
+      "wins": 361,
+      "losses": 474,
       "winpercent": 43
     }
   ]

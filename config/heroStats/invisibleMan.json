@@ -6445,10 +6445,10 @@
       "hero": "T. Rex",
       "queryOpponentOverall": [
         {
-          "plays": 3,
+          "plays": 4,
           "wins": 1,
-          "losses": 2,
-          "winpercent": 33
+          "losses": 3,
+          "winpercent": 25
         }
       ],
       "repeatMap": [
@@ -6458,7 +6458,15 @@
         },
         {
           "mapName": "Baskerville Manor",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "T. Rex",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Globe Theatre",
@@ -7129,10 +7137,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 83,
+          "plays": 84,
           "wins": 38,
-          "losses": 45,
-          "winpercent": 46
+          "losses": 46,
+          "winpercent": 45
         }
       ]
     },
@@ -7339,9 +7347,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 623,
+      "plays": 624,
       "wins": 237,
-      "losses": 386,
+      "losses": 387,
       "winpercent": 38
     }
   ]

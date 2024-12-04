@@ -49,4 +49,10 @@ module.exports = [
     'Shakespeare',
     'Titania',
     'The Wayward Sisters',
+    'Ancient Leshen',
+    'Geralt of Rivia',
+    'Ciri',
+    'Philippa',
+    'Eredin',
+    'Yennefer & Triss',
 ]

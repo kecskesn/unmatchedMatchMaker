@@ -94,10 +94,10 @@
       "hero": "Achilles",
       "queryOpponentOverall": [
         {
-          "plays": 30,
+          "plays": 31,
           "wins": 12,
-          "losses": 18,
-          "winpercent": 40
+          "losses": 19,
+          "winpercent": 39
         }
       ],
       "repeatMap": [
@@ -255,7 +255,15 @@
         },
         {
           "mapName": "T. Rex Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Achilles",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "The Bronze",
@@ -4110,10 +4118,10 @@
       "hero": "Houdini",
       "queryOpponentOverall": [
         {
-          "plays": 18,
+          "plays": 19,
           "wins": 7,
-          "losses": 11,
-          "winpercent": 39
+          "losses": 12,
+          "winpercent": 37
         }
       ],
       "repeatMap": [
@@ -4274,10 +4282,10 @@
           "queryResult": [
             {
               "opponent": "Houdini",
-              "plays": 6,
+              "plays": 7,
               "wins": 3,
-              "losses": 3,
-              "winpercent": 50
+              "losses": 4,
+              "winpercent": 43
             }
           ]
         },
@@ -5550,9 +5558,9 @@
       "hero": "Moon Knight",
       "queryOpponentOverall": [
         {
-          "plays": 59,
-          "wins": 36,
-          "losses": 23,
+          "plays": 62,
+          "wins": 38,
+          "losses": 24,
           "winpercent": 61
         }
       ],
@@ -5698,10 +5706,10 @@
           "queryResult": [
             {
               "opponent": "Moon Knight",
-              "plays": 8,
-              "wins": 5,
+              "plays": 9,
+              "wins": 6,
               "losses": 3,
-              "winpercent": 63
+              "winpercent": 67
             }
           ]
         },
@@ -5722,10 +5730,10 @@
           "queryResult": [
             {
               "opponent": "Moon Knight",
-              "plays": 12,
-              "wins": 7,
-              "losses": 5,
-              "winpercent": 58
+              "plays": 14,
+              "wins": 8,
+              "losses": 6,
+              "winpercent": 57
             }
           ]
         },
@@ -9368,8 +9376,8 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 107,
-          "wins": 68,
+          "plays": 108,
+          "wins": 69,
           "losses": 39,
           "winpercent": 64
         }
@@ -9388,10 +9396,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 195,
-          "wins": 105,
-          "losses": 90,
-          "winpercent": 54
+          "plays": 199,
+          "wins": 106,
+          "losses": 93,
+          "winpercent": 53
         }
       ]
     },
@@ -9428,9 +9436,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 1447,
-      "wins": 803,
-      "losses": 644,
+      "plays": 1452,
+      "wins": 805,
+      "losses": 647,
       "winpercent": 55
     }
   ]

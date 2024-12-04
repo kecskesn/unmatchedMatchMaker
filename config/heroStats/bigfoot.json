@@ -2319,8 +2319,8 @@
       "hero": "Daredevil",
       "queryOpponentOverall": [
         {
-          "plays": 42,
-          "wins": 39,
+          "plays": 43,
+          "wins": 40,
           "losses": 3,
           "winpercent": 93
         }
@@ -2444,7 +2444,15 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Daredevil",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sarpedon",
@@ -2846,9 +2854,9 @@
       "hero": "Dr. Jill Trent",
       "queryOpponentOverall": [
         {
-          "plays": 111,
+          "plays": 112,
           "wins": 41,
-          "losses": 70,
+          "losses": 71,
           "winpercent": 37
         }
       ],
@@ -3006,10 +3014,10 @@
           "queryResult": [
             {
               "opponent": "Dr. Jill Trent",
-              "plays": 6,
+              "plays": 7,
               "wins": 3,
-              "losses": 3,
-              "winpercent": 50
+              "losses": 4,
+              "winpercent": 43
             }
           ]
         },
@@ -5423,8 +5431,8 @@
       "hero": "Luke Cage",
       "queryOpponentOverall": [
         {
-          "plays": 88,
-          "wins": 65,
+          "plays": 89,
+          "wins": 66,
           "losses": 23,
           "winpercent": 74
         }
@@ -5471,10 +5479,10 @@
           "queryResult": [
             {
               "opponent": "Luke Cage",
-              "plays": 6,
-              "wins": 4,
+              "plays": 7,
+              "wins": 5,
               "losses": 2,
-              "winpercent": 67
+              "winpercent": 71
             }
           ]
         },
@@ -6166,10 +6174,10 @@
       "hero": "Ms. Marvel",
       "queryOpponentOverall": [
         {
-          "plays": 4,
-          "wins": 3,
+          "plays": 5,
+          "wins": 4,
           "losses": 1,
-          "winpercent": 75
+          "winpercent": 80
         }
       ],
       "repeatMap": [
@@ -6199,7 +6207,15 @@
         },
         {
           "mapName": "Heorot",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Ms. Marvel",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "King Solomon's Mine",
@@ -9926,8 +9942,8 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 135,
-          "wins": 77,
+          "plays": 136,
+          "wins": 78,
           "losses": 58,
           "winpercent": 57
         }
@@ -9956,8 +9972,8 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 107,
-          "wins": 62,
+          "plays": 108,
+          "wins": 63,
           "losses": 45,
           "winpercent": 58
         }
@@ -10026,8 +10042,8 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 128,
-          "wins": 66,
+          "plays": 129,
+          "wins": 67,
           "losses": 62,
           "winpercent": 52
         }
@@ -10046,9 +10062,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 220,
+          "plays": 221,
           "wins": 100,
-          "losses": 120,
+          "losses": 121,
           "winpercent": 45
         }
       ]
@@ -10116,9 +10132,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 2427,
-      "wins": 1275,
-      "losses": 1152,
+      "plays": 2431,
+      "wins": 1278,
+      "losses": 1153,
       "winpercent": 53
     }
   ]

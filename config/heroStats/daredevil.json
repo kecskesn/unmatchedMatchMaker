@@ -94,10 +94,10 @@
       "hero": "Achilles",
       "queryOpponentOverall": [
         {
-          "plays": 100,
-          "wins": 32,
+          "plays": 101,
+          "wins": 33,
           "losses": 68,
-          "winpercent": 32
+          "winpercent": 33
         }
       ],
       "repeatMap": [
@@ -298,10 +298,10 @@
           "queryResult": [
             {
               "opponent": "Achilles",
-              "plays": 11,
-              "wins": 5,
+              "plays": 12,
+              "wins": 6,
               "losses": 6,
-              "winpercent": 45
+              "winpercent": 50
             }
           ]
         },
@@ -898,9 +898,9 @@
       "hero": "Bigfoot",
       "queryOpponentOverall": [
         {
-          "plays": 42,
+          "plays": 43,
           "wins": 3,
-          "losses": 39,
+          "losses": 40,
           "winpercent": 7
         }
       ],
@@ -1023,7 +1023,15 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Bigfoot",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sarpedon",
@@ -6823,9 +6831,9 @@
       "hero": "Sherlock Holmes",
       "queryOpponentOverall": [
         {
-          "plays": 7,
+          "plays": 8,
           "wins": 0,
-          "losses": 7,
+          "losses": 8,
           "winpercent": 0
         }
       ],
@@ -6931,9 +6939,9 @@
           "queryResult": [
             {
               "opponent": "Sherlock Holmes",
-              "plays": 1,
+              "plays": 2,
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "winpercent": 0
             }
           ]
@@ -9347,9 +9355,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 66,
+          "plays": 67,
           "wins": 28,
-          "losses": 38,
+          "losses": 39,
           "winpercent": 42
         }
       ]
@@ -9377,10 +9385,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 50,
+          "plays": 51,
           "wins": 26,
-          "losses": 24,
-          "winpercent": 52
+          "losses": 25,
+          "winpercent": 51
         }
       ]
     },
@@ -9397,8 +9405,8 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 137,
-          "wins": 63,
+          "plays": 138,
+          "wins": 64,
           "losses": 74,
           "winpercent": 46
         }
@@ -9437,9 +9445,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 1678,
-      "wins": 722,
-      "losses": 956,
+      "plays": 1681,
+      "wins": 723,
+      "losses": 958,
       "winpercent": 43
     }
   ]

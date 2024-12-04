@@ -674,10 +674,10 @@
       "hero": "Bigfoot",
       "queryOpponentOverall": [
         {
-          "plays": 4,
+          "plays": 5,
           "wins": 1,
-          "losses": 3,
-          "winpercent": 25
+          "losses": 4,
+          "winpercent": 20
         }
       ],
       "repeatMap": [
@@ -707,7 +707,15 @@
         },
         {
           "mapName": "Heorot",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Bigfoot",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "King Solomon's Mine",
@@ -4704,9 +4712,9 @@
       "hero": "Shakespeare",
       "queryOpponentOverall": [
         {
-          "plays": 16,
-          "wins": 7,
-          "losses": 9,
+          "plays": 18,
+          "wins": 8,
+          "losses": 10,
           "winpercent": 44
         }
       ],
@@ -4721,7 +4729,15 @@
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Shakespeare",
+              "plays": 2,
+              "wins": 1,
+              "losses": 1,
+              "winpercent": 50
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -4853,10 +4869,10 @@
       "hero": "She-Hulk",
       "queryOpponentOverall": [
         {
-          "plays": 4,
-          "wins": 1,
+          "plays": 5,
+          "wins": 2,
           "losses": 3,
-          "winpercent": 25
+          "winpercent": 40
         }
       ],
       "repeatMap": [
@@ -4869,10 +4885,10 @@
           "queryResult": [
             {
               "opponent": "She-Hulk",
-              "plays": 1,
-              "wins": 0,
+              "plays": 2,
+              "wins": 1,
               "losses": 1,
-              "winpercent": 0
+              "winpercent": 50
             }
           ]
         },
@@ -6726,20 +6742,20 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 34,
-          "wins": 12,
+          "plays": 35,
+          "wins": 13,
           "losses": 22,
-          "winpercent": 35
+          "winpercent": 37
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 4,
-          "wins": 1,
-          "losses": 3,
-          "winpercent": 25
+          "plays": 6,
+          "wins": 2,
+          "losses": 4,
+          "winpercent": 33
         }
       ]
     },
@@ -6776,10 +6792,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 55,
+          "plays": 56,
           "wins": 23,
-          "losses": 32,
-          "winpercent": 42
+          "losses": 33,
+          "winpercent": 41
         }
       ]
     },
@@ -6936,10 +6952,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 411,
-      "wins": 158,
-      "losses": 253,
-      "winpercent": 38
+      "plays": 415,
+      "wins": 160,
+      "losses": 255,
+      "winpercent": 39
     }
   ]
 }

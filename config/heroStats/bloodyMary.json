@@ -4615,10 +4615,10 @@
       "hero": "Luke Cage",
       "queryOpponentOverall": [
         {
-          "plays": 22,
+          "plays": 23,
           "wins": 5,
-          "losses": 17,
-          "winpercent": 23
+          "losses": 18,
+          "winpercent": 22
         }
       ],
       "repeatMap": [
@@ -4632,7 +4632,15 @@
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Luke Cage",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -8042,10 +8050,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 6,
+          "plays": 7,
           "wins": 2,
-          "losses": 4,
-          "winpercent": 33
+          "losses": 5,
+          "winpercent": 29
         }
       ]
     },
@@ -8242,9 +8250,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 857,
+      "plays": 858,
       "wins": 391,
-      "losses": 466,
+      "losses": 467,
       "winpercent": 46
     }
   ]
