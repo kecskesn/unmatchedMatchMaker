@@ -55,4 +55,6 @@ module.exports = [
     'Philippa',
     'Eredin',
     'Yennefer & Triss',
+    'Yennefer',
+    'Triss',
 ]

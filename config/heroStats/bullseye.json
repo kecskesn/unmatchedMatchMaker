@@ -2907,10 +2907,10 @@
       "hero": "Dr. Sattler",
       "queryOpponentOverall": [
         {
-          "plays": 18,
+          "plays": 19,
           "wins": 6,
-          "losses": 12,
-          "winpercent": 33
+          "losses": 13,
+          "winpercent": 32
         }
       ],
       "repeatMap": [
@@ -2932,7 +2932,15 @@
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Dr. Sattler",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -3450,9 +3458,9 @@
       "hero": "Ghost Rider",
       "queryOpponentOverall": [
         {
-          "plays": 20,
-          "wins": 10,
-          "losses": 10,
+          "plays": 24,
+          "wins": 12,
+          "losses": 12,
           "winpercent": 50
         }
       ],
@@ -3475,7 +3483,15 @@
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Ghost Rider",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -3559,7 +3575,15 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Ghost Rider",
+              "plays": 3,
+              "wins": 1,
+              "losses": 2,
+              "winpercent": 33
+            }
+          ]
         },
         {
           "mapName": "Sarpedon",
@@ -3905,10 +3929,10 @@
       "hero": "Houdini",
       "queryOpponentOverall": [
         {
-          "plays": 16,
+          "plays": 17,
           "wins": 3,
-          "losses": 13,
-          "winpercent": 19
+          "losses": 14,
+          "winpercent": 18
         }
       ],
       "repeatMap": [
@@ -3925,9 +3949,9 @@
           "queryResult": [
             {
               "opponent": "Houdini",
-              "plays": 1,
+              "plays": 2,
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "winpercent": 0
             }
           ]
@@ -7173,10 +7197,10 @@
       "hero": "Sun Wukong",
       "queryOpponentOverall": [
         {
-          "plays": 19,
-          "wins": 4,
+          "plays": 20,
+          "wins": 5,
           "losses": 15,
-          "winpercent": 21
+          "winpercent": 25
         }
       ],
       "repeatMap": [
@@ -7285,8 +7309,8 @@
           "queryResult": [
             {
               "opponent": "Sun Wukong",
-              "plays": 1,
-              "wins": 1,
+              "plays": 2,
+              "wins": 2,
               "losses": 0,
               "winpercent": 100
             }
@@ -7362,9 +7386,9 @@
       "hero": "T. Rex",
       "queryOpponentOverall": [
         {
-          "plays": 41,
+          "plays": 42,
           "wins": 5,
-          "losses": 36,
+          "losses": 37,
           "winpercent": 12
         }
       ],
@@ -7446,9 +7470,9 @@
           "queryResult": [
             {
               "opponent": "T. Rex",
-              "plays": 2,
+              "plays": 3,
               "wins": 0,
-              "losses": 2,
+              "losses": 3,
               "winpercent": 0
             }
           ]
@@ -8639,10 +8663,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 4,
-          "wins": 3,
-          "losses": 1,
-          "winpercent": 75
+          "plays": 7,
+          "wins": 4,
+          "losses": 3,
+          "winpercent": 57
         }
       ]
     },
@@ -8719,10 +8743,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 31,
+          "plays": 32,
           "wins": 9,
-          "losses": 22,
-          "winpercent": 29
+          "losses": 23,
+          "winpercent": 28
         }
       ]
     },
@@ -8749,10 +8773,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 14,
-          "wins": 10,
-          "losses": 4,
-          "winpercent": 71
+          "plays": 18,
+          "wins": 12,
+          "losses": 6,
+          "winpercent": 67
         }
       ]
     },
@@ -8839,9 +8863,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 1238,
-      "wins": 510,
-      "losses": 728,
+      "plays": 1246,
+      "wins": 513,
+      "losses": 733,
       "winpercent": 41
     }
   ]

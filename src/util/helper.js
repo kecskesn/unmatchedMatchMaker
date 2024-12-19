@@ -25,6 +25,21 @@ function mergeStats(umleagueData, localData) {
     return mergedData;
 }
 
+function replaceHeroName(req, res, next) {
+    const decodedName = decodeURIComponent(req.query.hero);
+
+    const replacements = {
+        "Yennefer": "Yennefer & Triss",
+        "Triss": "Yennefer & Triss",
+    };
+
+    const heroName = replacements[decodedName] || decodedName;
+    req.query.hero = encodeURIComponent(heroName);
+
+    next();
+}
+
 module.exports = {
     mergeStats,
+    replaceHeroName,
 }

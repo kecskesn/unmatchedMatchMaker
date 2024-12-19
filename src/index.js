@@ -1,7 +1,8 @@
 const express = require("express");
 const path = require("path");
 const bodyParser = require('body-parser');
-const { getHeroes, getPlayers, getHeroDeck, getHeroStats, getMapStats, getMatchLogs, logMatch, getPlayerStatistics, deleteMatchLogById } = require('./service/unmatchedservice')
+const { getHeroes, getPlayers, getHeroDeck, getHeroStats, getMapStats, getMatchLogs, logMatch, getPlayerStatistics, deleteMatchLogById } = require('./service/unmatchedservice');
+const { replaceHeroName } = require("./util/helper");
 
 const app = express();
 
@@ -42,7 +43,7 @@ app.get("/players", (req, res) => {
   res.json(players);
 });
 
-app.get("/deck", async (req, res) => {
+app.get("/deck", replaceHeroName, async (req, res) => {
   const hero = req.query.hero;
   const deck = await getHeroDeck(hero);
   res.json(deck);

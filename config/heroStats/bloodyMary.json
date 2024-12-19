@@ -243,10 +243,10 @@
       "hero": "Alice",
       "queryOpponentOverall": [
         {
-          "plays": 13,
-          "wins": 3,
+          "plays": 14,
+          "wins": 4,
           "losses": 10,
-          "winpercent": 23
+          "winpercent": 29
         }
       ],
       "repeatMap": [
@@ -344,7 +344,15 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Alice",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sarpedon",
@@ -7377,10 +7385,10 @@
       "hero": "Tomoe Gozen",
       "queryOpponentOverall": [
         {
-          "plays": 10,
-          "wins": 6,
+          "plays": 11,
+          "wins": 7,
           "losses": 4,
-          "winpercent": 60
+          "winpercent": 64
         }
       ],
       "repeatMap": [
@@ -7505,8 +7513,8 @@
           "queryResult": [
             {
               "opponent": "Tomoe Gozen",
-              "plays": 1,
-              "wins": 1,
+              "plays": 2,
+              "wins": 2,
               "losses": 0,
               "winpercent": 100
             }
@@ -8160,10 +8168,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 39,
-          "wins": 13,
+          "plays": 40,
+          "wins": 14,
           "losses": 26,
-          "winpercent": 33
+          "winpercent": 35
         }
       ]
     },
@@ -8220,10 +8228,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 45,
-          "wins": 26,
+          "plays": 46,
+          "wins": 27,
           "losses": 19,
-          "winpercent": 58
+          "winpercent": 59
         }
       ]
     },
@@ -8250,8 +8258,8 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 858,
-      "wins": 391,
+      "plays": 860,
+      "wins": 393,
       "losses": 467,
       "winpercent": 46
     }
