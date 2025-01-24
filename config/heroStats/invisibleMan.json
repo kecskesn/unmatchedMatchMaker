@@ -408,10 +408,10 @@
       "hero": "Angel",
       "queryOpponentOverall": [
         {
-          "plays": 8,
-          "wins": 3,
+          "plays": 9,
+          "wins": 4,
           "losses": 5,
-          "winpercent": 38
+          "winpercent": 44
         }
       ],
       "repeatMap": [
@@ -437,7 +437,15 @@
         },
         {
           "mapName": "Hanging Gardens",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Angel",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Helicarrier",
@@ -6445,10 +6453,10 @@
       "hero": "T. Rex",
       "queryOpponentOverall": [
         {
-          "plays": 4,
+          "plays": 5,
           "wins": 1,
-          "losses": 3,
-          "winpercent": 25
+          "losses": 4,
+          "winpercent": 20
         }
       ],
       "repeatMap": [
@@ -6502,7 +6510,15 @@
         },
         {
           "mapName": "Marmoreal",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "T. Rex",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "McMinnville, OR",
@@ -7157,10 +7173,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 36,
-          "wins": 12,
+          "plays": 37,
+          "wins": 13,
           "losses": 24,
-          "winpercent": 33
+          "winpercent": 35
         }
       ]
     },
@@ -7207,10 +7223,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 14,
+          "plays": 15,
           "wins": 5,
-          "losses": 9,
-          "winpercent": 36
+          "losses": 10,
+          "winpercent": 33
         }
       ]
     },
@@ -7347,9 +7363,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 624,
-      "wins": 237,
-      "losses": 387,
+      "plays": 626,
+      "wins": 238,
+      "losses": 388,
       "winpercent": 38
     }
   ]

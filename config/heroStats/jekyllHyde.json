@@ -650,10 +650,10 @@
       "hero": "Beowulf",
       "queryOpponentOverall": [
         {
-          "plays": 15,
-          "wins": 9,
+          "plays": 16,
+          "wins": 10,
           "losses": 6,
-          "winpercent": 60
+          "winpercent": 63
         }
       ],
       "repeatMap": [
@@ -755,7 +755,15 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Beowulf",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sarpedon",
@@ -823,10 +831,10 @@
       "hero": "Bigfoot",
       "queryOpponentOverall": [
         {
-          "plays": 9,
-          "wins": 0,
-          "losses": 9,
-          "winpercent": 0
+          "plays": 13,
+          "wins": 1,
+          "losses": 12,
+          "winpercent": 8
         }
       ],
       "repeatMap": [
@@ -892,16 +900,24 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Bigfoot",
+              "plays": 3,
+              "wins": 1,
+              "losses": 2,
+              "winpercent": 33
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
           "queryResult": [
             {
               "opponent": "Bigfoot",
-              "plays": 1,
+              "plays": 2,
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "winpercent": 0
             }
           ]
@@ -2180,10 +2196,10 @@
       "hero": "Daredevil",
       "queryOpponentOverall": [
         {
-          "plays": 8,
+          "plays": 9,
           "wins": 5,
-          "losses": 3,
-          "winpercent": 63
+          "losses": 4,
+          "winpercent": 56
         }
       ],
       "repeatMap": [
@@ -2253,7 +2269,15 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Daredevil",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sarpedon",
@@ -2704,10 +2728,10 @@
       "hero": "Dracula",
       "queryOpponentOverall": [
         {
-          "plays": 37,
-          "wins": 8,
-          "losses": 29,
-          "winpercent": 22
+          "plays": 40,
+          "wins": 9,
+          "losses": 31,
+          "winpercent": 23
         }
       ],
       "repeatMap": [
@@ -2800,10 +2824,10 @@
           "queryResult": [
             {
               "opponent": "Dracula",
-              "plays": 1,
-              "wins": 0,
-              "losses": 1,
-              "winpercent": 0
+              "plays": 4,
+              "wins": 1,
+              "losses": 3,
+              "winpercent": 25
             }
           ]
         },
@@ -3324,10 +3348,10 @@
       "hero": "Golden Bat",
       "queryOpponentOverall": [
         {
-          "plays": 10,
-          "wins": 1,
-          "losses": 9,
-          "winpercent": 10
+          "plays": 13,
+          "wins": 2,
+          "losses": 11,
+          "winpercent": 15
         }
       ],
       "repeatMap": [
@@ -3340,9 +3364,9 @@
           "queryResult": [
             {
               "opponent": "Golden Bat",
-              "plays": 1,
+              "plays": 2,
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "winpercent": 0
             }
           ]
@@ -3393,7 +3417,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Golden Bat",
+              "plays": 2,
+              "wins": 1,
+              "losses": 1,
+              "winpercent": 50
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -4061,10 +4093,10 @@
       "hero": "King Arthur",
       "queryOpponentOverall": [
         {
-          "plays": 46,
-          "wins": 19,
+          "plays": 47,
+          "wins": 20,
           "losses": 27,
-          "winpercent": 41
+          "winpercent": 43
         }
       ],
       "repeatMap": [
@@ -4217,10 +4249,10 @@
           "queryResult": [
             {
               "opponent": "King Arthur",
-              "plays": 3,
-              "wins": 0,
+              "plays": 4,
+              "wins": 1,
               "losses": 3,
-              "winpercent": 0
+              "winpercent": 25
             }
           ]
         },
@@ -4250,10 +4282,10 @@
       "hero": "Little Red Riding Hood",
       "queryOpponentOverall": [
         {
-          "plays": 18,
-          "wins": 7,
-          "losses": 11,
-          "winpercent": 39
+          "plays": 22,
+          "wins": 8,
+          "losses": 14,
+          "winpercent": 36
         }
       ],
       "repeatMap": [
@@ -4323,7 +4355,15 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Little Red Riding Hood",
+              "plays": 4,
+              "wins": 1,
+              "losses": 3,
+              "winpercent": 25
+            }
+          ]
         },
         {
           "mapName": "Sarpedon",
@@ -4407,10 +4447,10 @@
       "hero": "Luke Cage",
       "queryOpponentOverall": [
         {
-          "plays": 56,
+          "plays": 59,
           "wins": 22,
-          "losses": 33,
-          "winpercent": 39
+          "losses": 36,
+          "winpercent": 37
         }
       ],
       "repeatMap": [
@@ -4423,9 +4463,9 @@
           "queryResult": [
             {
               "opponent": "Luke Cage",
-              "plays": 4,
+              "plays": 5,
               "wins": 0,
-              "losses": 3,
+              "losses": 4,
               "winpercent": 0
             }
           ]
@@ -4436,7 +4476,15 @@
         },
         {
           "mapName": "Hanging Gardens",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Luke Cage",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Helicarrier",
@@ -4496,7 +4544,15 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Luke Cage",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sarpedon",
@@ -4697,10 +4753,10 @@
       "hero": "Moon Knight",
       "queryOpponentOverall": [
         {
-          "plays": 26,
+          "plays": 27,
           "wins": 7,
-          "losses": 19,
-          "winpercent": 27
+          "losses": 20,
+          "winpercent": 26
         }
       ],
       "repeatMap": [
@@ -4770,7 +4826,15 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Moon Knight",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sarpedon",
@@ -4846,10 +4910,10 @@
       "hero": "Ms. Marvel",
       "queryOpponentOverall": [
         {
-          "plays": 6,
+          "plays": 8,
           "wins": 5,
-          "losses": 1,
-          "winpercent": 83
+          "losses": 3,
+          "winpercent": 63
         }
       ],
       "repeatMap": [
@@ -4918,10 +4982,10 @@
           "queryResult": [
             {
               "opponent": "Ms. Marvel",
-              "plays": 3,
+              "plays": 5,
               "wins": 2,
-              "losses": 1,
-              "winpercent": 67
+              "losses": 3,
+              "winpercent": 40
             }
           ]
         },
@@ -5974,10 +6038,10 @@
       "hero": "Spider-Man",
       "queryOpponentOverall": [
         {
-          "plays": 17,
+          "plays": 18,
           "wins": 5,
-          "losses": 12,
-          "winpercent": 29
+          "losses": 13,
+          "winpercent": 28
         }
       ],
       "repeatMap": [
@@ -6007,7 +6071,15 @@
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Spider-Man",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -6961,10 +7033,10 @@
       "hero": "Tomoe Gozen",
       "queryOpponentOverall": [
         {
-          "plays": 1,
-          "wins": 1,
-          "losses": 0,
-          "winpercent": 100
+          "plays": 6,
+          "wins": 3,
+          "losses": 3,
+          "winpercent": 50
         }
       ],
       "repeatMap": [
@@ -7022,11 +7094,27 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Tomoe Gozen",
+              "plays": 3,
+              "wins": 0,
+              "losses": 3,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Tomoe Gozen",
+              "plays": 2,
+              "wins": 2,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sarpedon",
@@ -7536,30 +7624,30 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 76,
+          "plays": 78,
           "wins": 27,
-          "losses": 48,
-          "winpercent": 36
+          "losses": 50,
+          "winpercent": 35
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 1,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 1,
+          "winpercent": 50
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 39,
+          "plays": 40,
           "wins": 18,
-          "losses": 21,
-          "winpercent": 46
+          "losses": 22,
+          "winpercent": 45
         }
       ]
     },
@@ -7636,20 +7724,20 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 198,
-          "wins": 98,
-          "losses": 100,
-          "winpercent": 49
+          "plays": 211,
+          "wins": 101,
+          "losses": 110,
+          "winpercent": 48
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 24,
-          "wins": 7,
-          "losses": 17,
-          "winpercent": 29
+          "plays": 35,
+          "wins": 11,
+          "losses": 24,
+          "winpercent": 31
         }
       ]
     },
@@ -7706,10 +7794,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 24,
-          "wins": 10,
+          "plays": 25,
+          "wins": 11,
           "losses": 14,
-          "winpercent": 42
+          "winpercent": 44
         }
       ]
     },
@@ -7746,9 +7834,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 705,
-      "wins": 278,
-      "losses": 426,
+      "plays": 734,
+      "wins": 286,
+      "losses": 447,
       "winpercent": 39
     }
   ]

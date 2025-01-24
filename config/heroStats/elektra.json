@@ -549,10 +549,10 @@
       "hero": "Bigfoot",
       "queryOpponentOverall": [
         {
-          "plays": 11,
-          "wins": 10,
+          "plays": 12,
+          "wins": 11,
           "losses": 1,
-          "winpercent": 91
+          "winpercent": 92
         }
       ],
       "repeatMap": [
@@ -690,7 +690,15 @@
         },
         {
           "mapName": "Yukon",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Bigfoot",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         }
       ]
     },
@@ -2302,8 +2310,8 @@
       "hero": "Dr. Sattler",
       "queryOpponentOverall": [
         {
-          "plays": 2,
-          "wins": 2,
+          "plays": 3,
+          "wins": 3,
           "losses": 0,
           "winpercent": 100
         }
@@ -2367,7 +2375,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Dr. Sattler",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -6850,10 +6866,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 13,
-          "wins": 10,
+          "plays": 14,
+          "wins": 11,
           "losses": 3,
-          "winpercent": 77
+          "winpercent": 79
         }
       ]
     },
@@ -6940,18 +6956,18 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 18,
-          "wins": 15,
+          "plays": 19,
+          "wins": 16,
           "losses": 3,
-          "winpercent": 83
+          "winpercent": 84
         }
       ]
     }
   ],
   "queryHeroOverall": [
     {
-      "plays": 470,
-      "wins": 327,
+      "plays": 472,
+      "wins": 329,
       "losses": 143,
       "winpercent": 70
     }

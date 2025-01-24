@@ -2033,10 +2033,10 @@
       "hero": "Dr. Sattler",
       "queryOpponentOverall": [
         {
-          "plays": 9,
-          "wins": 3,
+          "plays": 10,
+          "wins": 4,
           "losses": 6,
-          "winpercent": 33
+          "winpercent": 40
         }
       ],
       "repeatMap": [
@@ -2082,7 +2082,15 @@
         },
         {
           "mapName": "Hell's Kitchen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Dr. Sattler",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Heorot",
@@ -2178,10 +2186,10 @@
       "hero": "Dracula",
       "queryOpponentOverall": [
         {
-          "plays": 11,
-          "wins": 4,
+          "plays": 12,
+          "wins": 5,
           "losses": 7,
-          "winpercent": 36
+          "winpercent": 42
         }
       ],
       "repeatMap": [
@@ -2263,7 +2271,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Dracula",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -6096,10 +6112,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 14,
-          "wins": 9,
+          "plays": 15,
+          "wins": 10,
           "losses": 5,
-          "winpercent": 64
+          "winpercent": 67
         }
       ]
     },
@@ -6166,10 +6182,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 56,
-          "wins": 26,
+          "plays": 57,
+          "wins": 27,
           "losses": 30,
-          "winpercent": 46
+          "winpercent": 47
         }
       ]
     },
@@ -6266,8 +6282,8 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 434,
-      "wins": 192,
+      "plays": 436,
+      "wins": 194,
       "losses": 242,
       "winpercent": 44
     }

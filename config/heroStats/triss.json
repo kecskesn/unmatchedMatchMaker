@@ -1,6 +1,10 @@
 {
   "queryGameMaps": [
     {
+      "mapId": 24,
+      "mapName": "Kaer Morhen"
+    },
+    {
       "mapId": 27,
       "mapName": "Streets of Novigrad"
     },
@@ -10,6 +14,39 @@
     }
   ],
   "repeatOpponent": [
+    {
+      "hero": "Ancient Leshen",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 1,
+          "losses": 0,
+          "winpercent": 100
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Ancient Leshen",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        }
+      ]
+    },
     {
       "hero": "Annie Christmas",
       "queryOpponentOverall": [
@@ -21,6 +58,10 @@
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
         {
           "mapName": "Streets of Novigrad",
           "queryResult": [
@@ -40,6 +81,39 @@
       ]
     },
     {
+      "hero": "Black Widow",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 1,
+          "losses": 0,
+          "winpercent": 100
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Black Widow",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        }
+      ]
+    },
+    {
       "hero": "Geralt of Rivia",
       "queryOpponentOverall": [
         {
@@ -50,6 +124,10 @@
         }
       ],
       "repeatMap": [
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
         {
           "mapName": "Streets of Novigrad",
           "queryResult": []
@@ -73,6 +151,16 @@
     {
       "queryHeroMapResults": [
         {
+          "plays": 2,
+          "wins": 2,
+          "losses": 0,
+          "winpercent": 100
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
           "plays": 1,
           "wins": 0,
           "losses": 1,
@@ -93,10 +181,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 2,
-      "wins": 0,
+      "plays": 4,
+      "wins": 2,
       "losses": 2,
-      "winpercent": 0
+      "winpercent": 50
     }
   ]
 }
