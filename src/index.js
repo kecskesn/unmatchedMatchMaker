@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const bodyParser = require('body-parser');
-const { getHeroes, getPlayers, getHeroDeck, getHeroStats, getMapStats, getMatchLogs, logMatch, getPlayerStatistics, deleteMatchLogById } = require('./service/unmatchedservice');
+const { getHeroes, getPlayers, getHeroDeck, getHeroStats, getMapStats, getMatchLogs, getOverallHeroStats, logMatch, getPlayerStatistics, deleteMatchLogById } = require('./service/unmatchedservice');
 const { replaceHeroName } = require("./util/helper");
 
 const app = express();
@@ -10,11 +10,11 @@ app.use(express.static(path.join(__dirname, '..', '')));
 app.use(bodyParser.json());
 
 app.get("/", function (req, res) {
-  res.redirect("/heroStat");
+  res.redirect("/matchups");
 });
 
-app.get("/heroStat", function (req, res) {
-  res.sendFile(__dirname + "/html/heroStat.html");
+app.get("/matchups", function (req, res) {
+  res.sendFile(__dirname + "/html/matchups.html");
 });
 
 app.get("/mapStat", function (req, res) {
@@ -31,6 +31,10 @@ app.get("/matchLogger", function (req, res) {
 
 app.get("/playerStats", function (req, res) {
   res.sendFile(__dirname + "/html/playerStats.html");
+});
+
+app.get("/heroStats", function (req, res) {
+  res.sendFile(__dirname + "/html/heroStats.html");
 });
 
 app.get("/heroes", (req, res) => {
@@ -72,6 +76,12 @@ app.get('/matchLogs', async (req, res) => {
   const { date = '2w', hero = '', player = '' } = req.query;
   const matchLogsResult = await getMatchLogs(date, hero, player);
   res.send(matchLogsResult);
+});
+
+app.post('/overallHeroStats', async (req, res) => {
+  const sources = req.body.sources;
+  const overallHeroStats = await getOverallHeroStats(sources);
+  res.send(overallHeroStats);
 });
 
 app.post('/matchLogs', async (req, res) => {

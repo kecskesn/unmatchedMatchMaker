@@ -34,7 +34,7 @@ async function saveMatchToDB(hero1, hero2, player1, player2, winner) {
 async function getMatchLogsFromDB(dateFilter, heroFilter, playerFilter) {
   let query = 'SELECT id, hero1, hero2, player1, player2, winner, winnerPlayer, DATE(timestamp) as date FROM matches WHERE 1=1';
   let params = [];
-  
+
   if (heroFilter) {
     query += ' AND (hero1 = ? OR hero2 = ?)';
     params.push(heroFilter, heroFilter);
@@ -63,6 +63,29 @@ async function getMatchLogsFromDB(dateFilter, heroFilter, playerFilter) {
   } catch (err) {
     console.error(err);
     throw { success: false, error: 'Failed to fetch match logs.' };
+  }
+}
+
+async function getOverallHeroStatsFromDB() {
+  const query = `
+    SELECT hero, 
+           COUNT(*) AS plays, 
+           SUM(CASE WHEN winner = hero THEN 1 ELSE 0 END) AS wins
+    FROM (
+      SELECT hero1 AS hero, winner FROM matches
+      UNION ALL
+      SELECT hero2 AS hero, winner FROM matches
+    ) AS combined
+    GROUP BY hero
+    ORDER BY wins DESC;
+  `;
+
+  try {
+    const results = await allAsync(query);
+    return { success: true, results };
+  } catch (err) {
+    console.error(err);
+    throw { success: false, error: 'Failed to fetch overall hero stats.' };
   }
 }
 
@@ -116,6 +139,7 @@ process.on('SIGINT', () => {
 module.exports = {
   saveMatchToDB,
   getMatchLogsFromDB,
+  getOverallHeroStatsFromDB,
   deleteMatchLogByIdFromDB,
   getMatchesByHero
 };

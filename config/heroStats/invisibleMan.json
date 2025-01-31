@@ -6453,10 +6453,10 @@
       "hero": "T. Rex",
       "queryOpponentOverall": [
         {
-          "plays": 5,
-          "wins": 1,
+          "plays": 6,
+          "wins": 2,
           "losses": 4,
-          "winpercent": 20
+          "winpercent": 33
         }
       ],
       "repeatMap": [
@@ -6566,7 +6566,15 @@
         },
         {
           "mapName": "T. Rex Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "T. Rex",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "The Bronze",
@@ -7323,10 +7331,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 11,
-          "wins": 5,
+          "plays": 12,
+          "wins": 6,
           "losses": 6,
-          "winpercent": 45
+          "winpercent": 50
         }
       ]
     },
@@ -7363,8 +7371,8 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 626,
-      "wins": 238,
+      "plays": 627,
+      "wins": 239,
       "losses": 388,
       "winpercent": 38
     }

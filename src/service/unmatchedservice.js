@@ -4,7 +4,7 @@ const path = require("path");
 const fs = require("fs");
 const axios = require("axios");
 const searchStrategies = require("./searchStrategies/searchStrategies");
-const { saveMatchToDB, getMatchLogsFromDB, deleteMatchLogByIdFromDB, getMatchesByHero } = require('./db')
+const { saveMatchToDB, getMatchLogsFromDB, getOverallHeroStatsFromDB, deleteMatchLogByIdFromDB, getMatchesByHero } = require('./db')
 
 const util = require('util');
 const { mergeStats } = require("../util/helper");
@@ -13,7 +13,7 @@ const readFileAsync = util.promisify(fs.readFile);
 function toCamelCase(str) {
   const symbolRemovedName = str.replace(/[^\w\s]/g, '');
   const finalName = symbolRemovedName.replace(/(?:^\w|[A-Z]|\b\w)/g, (match, index) => {
-      return index === 0 ? match.toLowerCase() : match.toUpperCase();
+    return index === 0 ? match.toLowerCase() : match.toUpperCase();
   }).replace(/\s+/g, '');
   return finalName;
 }
@@ -109,7 +109,7 @@ async function getMapStats(hero1, hero2) {
   const data = await readFileAsync(umleagueStatsFilePath, 'utf8');
   const umleagueResult = JSON.parse(data);
   const opponent = umleagueResult.repeatOpponent.find((opponent) => opponent.hero === hero2);
-  
+
   if (!opponent) {
     return null;
   }
@@ -121,12 +121,77 @@ async function getMapStats(hero1, hero2) {
     winpercent: item.queryResult[0].winpercent,
   }))
   const sortedMapStats = mappedMapStats.sort((a, b) => b.winpercent - a.winpercent || b.plays - a.plays);
-  
+
   return sortedMapStats;
 }
 
 function getMatchLogs(heroFilter, dateFilter, player) {
   return getMatchLogsFromDB(heroFilter, dateFilter, player);
+}
+
+async function getOverallHeroStats(sources) {
+  const overallHeroStats = [];
+
+  heroes.forEach(hero => {
+    overallHeroStats.push({
+      hero,
+      plays: 0,
+      wins: 0,
+      losses: 0,
+      winRate: 0,
+    });
+  });
+
+  if (sources.includes('Local')) {
+    const overallHeroStatsFromDB = await getOverallHeroStatsFromDB();
+
+    overallHeroStatsFromDB['results'].forEach((heroStat) => {
+      const heroIndex = overallHeroStats.findIndex(hero => hero.hero === heroStat.hero);
+      if (heroIndex !== -1) {
+        overallHeroStats[heroIndex].plays += heroStat.plays;
+        overallHeroStats[heroIndex].wins += heroStat.wins;
+        overallHeroStats[heroIndex].losses += heroStat.total - heroStat.wins;
+      }  else {
+        overallHeroStats.push(heroStat);
+      }
+    });
+  }
+
+  if (sources.includes('UMLeague')) {
+    const overallHeroStatsFromUmleague = await Promise.all(heroes.map(async (hero) => {
+      const umleagueStatsFilePath = path.join(__dirname, '..', '..', 'config', 'heroStats', `${toCamelCase(hero)}.json`);
+
+      const data = await readFileAsync(umleagueStatsFilePath, 'utf8');
+      const umleagueResult = JSON.parse(data);
+      const queryHeroOverall = umleagueResult.queryHeroOverall[0];
+
+      return {
+        hero,
+        plays: queryHeroOverall.plays,
+        wins: queryHeroOverall.wins,
+        losses: queryHeroOverall.losses,
+      };
+    }));
+
+    overallHeroStatsFromUmleague.forEach((heroStat) => {
+      const heroIndex = overallHeroStats.findIndex(hero => hero.hero === heroStat.hero);
+      if (heroIndex !== -1) {
+        overallHeroStats[heroIndex].plays += heroStat.plays;
+        overallHeroStats[heroIndex].wins += heroStat.wins;
+        overallHeroStats[heroIndex].losses += heroStat.losses;
+      } else {
+        overallHeroStats.push(heroStat);
+      }
+    });
+  }
+
+  overallHeroStats.forEach((heroStat) => {
+    heroStat.winRate = heroStat.plays > 0 ? Math.round((heroStat.wins / heroStat.plays) * 100) : 0;
+  });
+
+  overallHeroStats.sort((a, b) => b.winRate - a.winRate || b.plays - a.plays);
+
+  return overallHeroStats;
 }
 
 function logMatch(hero1, hero2, player1, player2, winner) {
@@ -211,6 +276,7 @@ module.exports = {
   getHeroStats,
   getMapStats,
   getMatchLogs,
+  getOverallHeroStats,
   logMatch,
   getPlayerStatistics,
   deleteMatchLogById

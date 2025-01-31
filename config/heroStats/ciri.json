@@ -21,6 +21,10 @@
       "mapName": "Helicarrier"
     },
     {
+      "mapId": 14,
+      "mapName": "Hell's Kitchen"
+    },
+    {
       "mapId": 24,
       "mapName": "Kaer Morhen"
     },
@@ -49,6 +53,10 @@
       "mapName": "Sanctum Sanctorum"
     },
     {
+      "mapId": 3,
+      "mapName": "Sherwood Forest"
+    },
+    {
       "mapId": 27,
       "mapName": "Streets of Novigrad"
     },
@@ -66,10 +74,10 @@
       "hero": "Achilles",
       "queryOpponentOverall": [
         {
-          "plays": 1,
+          "plays": 3,
           "wins": 1,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 2,
+          "winpercent": 33
         }
       ],
       "repeatMap": [
@@ -83,7 +91,15 @@
         },
         {
           "mapName": "Fayrlund Forest",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Achilles",
+              "plays": 2,
+              "wins": 0,
+              "losses": 2,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Globe Theatre",
@@ -99,6 +115,10 @@
         },
         {
           "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
           "queryResult": []
         },
         {
@@ -127,6 +147,10 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -175,6 +199,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
@@ -216,6 +244,10 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -272,6 +304,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
@@ -300,6 +336,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Streets of Novigrad",
           "queryResult": []
         },
@@ -318,6 +358,95 @@
               "winpercent": 100
             }
           ]
+        }
+      ]
+    },
+    {
+      "hero": "Bigfoot",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": [
+            {
+              "opponent": "Bigfoot",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
         }
       ]
     },
@@ -361,6 +490,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
@@ -386,6 +519,10 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -434,6 +571,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
@@ -467,6 +608,204 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "Daredevil",
+      "queryOpponentOverall": [
+        {
+          "plays": 2,
+          "wins": 1,
+          "losses": 1,
+          "winpercent": 50
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": [
+            {
+              "opponent": "Daredevil",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": [
+            {
+              "opponent": "Daredevil",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero": "Dr. Jill Trent",
+      "queryOpponentOverall": [
+        {
+          "plays": 2,
+          "wins": 1,
+          "losses": 1,
+          "winpercent": 50
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": [
+            {
+              "opponent": "Dr. Jill Trent",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": [
+            {
+              "opponent": "Dr. Jill Trent",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -523,6 +862,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
@@ -548,6 +891,10 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -604,6 +951,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
@@ -632,6 +983,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Streets of Novigrad",
           "queryResult": []
         },
@@ -657,10 +1012,10 @@
       "hero": "Geralt of Rivia",
       "queryOpponentOverall": [
         {
-          "plays": 3,
-          "wins": 1,
+          "plays": 4,
+          "wins": 2,
           "losses": 2,
-          "winpercent": 33
+          "winpercent": 50
         }
       ],
       "repeatMap": [
@@ -681,15 +1036,19 @@
           "queryResult": [
             {
               "opponent": "Geralt of Rivia",
-              "plays": 1,
-              "wins": 0,
+              "plays": 2,
+              "wins": 1,
               "losses": 1,
-              "winpercent": 0
+              "winpercent": 50
             }
           ]
         },
         {
           "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
           "queryResult": []
         },
         {
@@ -734,6 +1093,10 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -782,6 +1145,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": [
             {
@@ -815,6 +1182,99 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "Houdini",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Houdini",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -871,6 +1331,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
@@ -896,6 +1360,188 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "Medusa",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Medusa",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "Moon Knight",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Moon Knight",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -952,6 +1598,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
@@ -980,6 +1630,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Streets of Novigrad",
           "queryResult": []
         },
@@ -997,10 +1651,10 @@
       "hero": "Philippa",
       "queryOpponentOverall": [
         {
-          "plays": 3,
-          "wins": 2,
-          "losses": 1,
-          "winpercent": 67
+          "plays": 9,
+          "wins": 7,
+          "losses": 2,
+          "winpercent": 78
         }
       ],
       "repeatMap": [
@@ -1017,10 +1671,10 @@
           "queryResult": [
             {
               "opponent": "Philippa",
-              "plays": 2,
-              "wins": 1,
+              "plays": 6,
+              "wins": 5,
               "losses": 1,
-              "winpercent": 50
+              "winpercent": 83
             }
           ]
         },
@@ -1030,6 +1684,10 @@
         },
         {
           "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
           "queryResult": []
         },
         {
@@ -1046,7 +1704,15 @@
         },
         {
           "mapName": "Naglfar",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Philippa",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Navy Pier",
@@ -1069,6 +1735,10 @@
           ]
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Streets of Novigrad",
           "queryResult": []
         },
@@ -1078,7 +1748,15 @@
         },
         {
           "mapName": "T. Rex Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Philippa",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         }
       ]
     },
@@ -1122,6 +1800,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
@@ -1147,6 +1829,10 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -1203,6 +1889,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
@@ -1231,8 +1921,190 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Streets of Novigrad",
           "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "Sun Wukong",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": [
+            {
+              "opponent": "Sun Wukong",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "T. Rex",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": [
+            {
+              "opponent": "T. Rex",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
@@ -1276,6 +2148,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
@@ -1309,6 +2185,10 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -1365,6 +2245,10 @@
           ]
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
@@ -1390,6 +2274,10 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -1438,6 +2326,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
@@ -1474,6 +2366,10 @@
           ]
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Streets of Novigrad",
           "queryResult": []
         },
@@ -1488,13 +2384,13 @@
       ]
     },
     {
-      "hero": "Yennefer",
+      "hero": "Triss",
       "queryOpponentOverall": [
         {
-          "plays": 3,
-          "wins": 2,
-          "losses": 1,
-          "winpercent": 67
+          "plays": 1,
+          "wins": 1,
+          "losses": 0,
+          "winpercent": 100
         }
       ],
       "repeatMap": [
@@ -1519,10 +2415,224 @@
           "queryResult": []
         },
         {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": [
+            {
+              "opponent": "Triss",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero": "Yennefer",
+      "queryOpponentOverall": [
+        {
+          "plays": 6,
+          "wins": 3,
+          "losses": 3,
+          "winpercent": 50
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": [
             {
               "opponent": "Yennefer",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 2,
+              "wins": 1,
+              "losses": 1,
+              "winpercent": 50
+            }
+          ]
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "Yennenga",
+      "queryOpponentOverall": [
+        {
+          "plays": 2,
+          "wins": 2,
+          "losses": 0,
+          "winpercent": 100
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Yennenga",
               "plays": 1,
               "wins": 1,
               "losses": 0,
@@ -1555,10 +2665,14 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Streets of Novigrad",
           "queryResult": [
             {
-              "opponent": "Yennefer",
+              "opponent": "Yennenga",
               "plays": 1,
               "wins": 1,
               "losses": 0,
@@ -1568,15 +2682,7 @@
         },
         {
           "mapName": "Sunnydale High",
-          "queryResult": [
-            {
-              "opponent": "Yennefer",
-              "plays": 1,
-              "wins": 0,
-              "losses": 1,
-              "winpercent": 0
-            }
-          ]
+          "queryResult": []
         },
         {
           "mapName": "T. Rex Paddock",
@@ -1609,10 +2715,120 @@
     {
       "queryHeroMapResults": [
         {
+          "plays": 11,
+          "wins": 8,
+          "losses": 3,
+          "winpercent": 73
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 5,
+          "wins": 2,
+          "losses": 3,
+          "winpercent": 40
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 1,
+          "wins": 1,
+          "losses": 0,
+          "winpercent": 100
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 6,
+          "wins": 2,
+          "losses": 4,
+          "winpercent": 33
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 1,
+          "wins": 1,
+          "losses": 0,
+          "winpercent": 100
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 3,
+          "wins": 0,
+          "losses": 3,
+          "winpercent": 0
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 3,
+          "wins": 0,
+          "losses": 3,
+          "winpercent": 0
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
           "plays": 3,
           "wins": 2,
           "losses": 1,
           "winpercent": 67
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
         }
       ]
     },
@@ -1620,118 +2836,28 @@
       "queryHeroMapResults": [
         {
           "plays": 4,
-          "wins": 1,
-          "losses": 3,
-          "winpercent": 25
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 1,
-          "wins": 1,
-          "losses": 0,
-          "winpercent": 100
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 2,
-          "wins": 1,
-          "losses": 1,
-          "winpercent": 50
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 1,
-          "wins": 1,
-          "losses": 0,
-          "winpercent": 100
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 1,
-          "wins": 0,
-          "losses": 1,
-          "winpercent": 0
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 1,
-          "wins": 0,
-          "losses": 1,
-          "winpercent": 0
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 1,
-          "wins": 0,
-          "losses": 1,
-          "winpercent": 0
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 2,
-          "wins": 0,
-          "losses": 2,
-          "winpercent": 0
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 2,
-          "wins": 1,
-          "losses": 1,
-          "winpercent": 50
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 1,
-          "wins": 1,
-          "losses": 0,
-          "winpercent": 100
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 2,
-          "wins": 0,
-          "losses": 2,
-          "winpercent": 0
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 3,
           "wins": 2,
-          "losses": 1,
+          "losses": 2,
+          "winpercent": 50
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 2,
+          "wins": 0,
+          "losses": 2,
+          "winpercent": 0
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 6,
+          "wins": 4,
+          "losses": 2,
           "winpercent": 67
         }
       ]
@@ -1739,10 +2865,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 28,
-      "wins": 12,
-      "losses": 16,
-      "winpercent": 43
+      "plays": 53,
+      "wins": 24,
+      "losses": 29,
+      "winpercent": 45
     }
   ]
 }

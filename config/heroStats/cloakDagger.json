@@ -1001,10 +1001,10 @@
       "hero": "Black Widow",
       "queryOpponentOverall": [
         {
-          "plays": 6,
+          "plays": 7,
           "wins": 1,
-          "losses": 5,
-          "winpercent": 17
+          "losses": 6,
+          "winpercent": 14
         }
       ],
       "repeatMap": [
@@ -1077,9 +1077,9 @@
           "queryResult": [
             {
               "opponent": "Black Widow",
-              "plays": 1,
+              "plays": 2,
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "winpercent": 0
             }
           ]
@@ -1718,8 +1718,8 @@
       "hero": "Daredevil",
       "queryOpponentOverall": [
         {
-          "plays": 1,
-          "wins": 1,
+          "plays": 2,
+          "wins": 2,
           "losses": 0,
           "winpercent": 100
         }
@@ -1731,7 +1731,15 @@
         },
         {
           "mapName": "Baskerville Manor",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Daredevil",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Globe Theatre",
@@ -2444,10 +2452,10 @@
       "hero": "Ghost Rider",
       "queryOpponentOverall": [
         {
-          "plays": 13,
-          "wins": 4,
+          "plays": 14,
+          "wins": 5,
           "losses": 9,
-          "winpercent": 31
+          "winpercent": 36
         }
       ],
       "repeatMap": [
@@ -2525,7 +2533,15 @@
         },
         {
           "mapName": "Point Pleasant",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Ghost Rider",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Raptor Paddock",
@@ -3105,9 +3121,9 @@
       "hero": "King Arthur",
       "queryOpponentOverall": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 0,
-          "losses": 1,
+          "losses": 2,
           "winpercent": 0
         }
       ],
@@ -3166,7 +3182,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "King Arthur",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -6082,10 +6106,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 37,
-          "wins": 17,
+          "plays": 38,
+          "wins": 18,
           "losses": 20,
-          "winpercent": 46
+          "winpercent": 47
         }
       ]
     },
@@ -6172,8 +6196,8 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 2,
-          "wins": 2,
+          "plays": 3,
+          "wins": 3,
           "losses": 0,
           "winpercent": 100
         }
@@ -6182,9 +6206,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 57,
+          "plays": 58,
           "wins": 27,
-          "losses": 30,
+          "losses": 31,
           "winpercent": 47
         }
       ]
@@ -6192,10 +6216,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 9,
+          "plays": 10,
           "wins": 3,
-          "losses": 6,
-          "winpercent": 33
+          "losses": 7,
+          "winpercent": 30
         }
       ]
     },
@@ -6282,10 +6306,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 436,
-      "wins": 194,
-      "losses": 242,
-      "winpercent": 44
+      "plays": 440,
+      "wins": 196,
+      "losses": 244,
+      "winpercent": 45
     }
   ]
 }

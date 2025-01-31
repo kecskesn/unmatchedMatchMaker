@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="src/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div id="menu"></div>
+
+    <!-- Checkboxes Section -->
+    <div class="d-flex justify-content-center my-3">
+      <div class="form-check mx-3">
+        <input class="form-check-input" type="checkbox" id="umLeagueCheckbox" value="UMLeague" checked>
+        <label class="form-check-label" for="umLeagueCheckbox"> UMLeague</label>
+      </div>
+      <div class="form-check mx-3">
+        <input class="form-check-input" type="checkbox" id="localCheckbox" value="Local" checked>
+        <label class="form-check-label" for="localCheckbox">Local</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <table class="table table-borderless">
+        <thead>
+          <tr>
+            <th>Hero</th>
+            <th>Plays</th>
+            <th>Win Percentage</th>
+          </tr>
+        </thead>
+        <tbody id="results"></tbody>
+      </table>
+    </div>
+
+    <script src="src/js/menu.js"></script>
+    <script>
+      const resultsTable = document.getElementById("results");
+      const umLeagueCheckbox = document.getElementById("umLeagueCheckbox");
+      const localCheckbox = document.getElementById("localCheckbox");
+
+      window.onload = function () {
+        loadMenu();
+        fetchOverallHeroStats(); // Initial fetch
+      };
+
+      // Function to get selected checkboxes and fetch data
+      function fetchOverallHeroStats() {
+        const selectedSources = [];
+        if (umLeagueCheckbox.checked) selectedSources.push(umLeagueCheckbox.value);
+        if (localCheckbox.checked) selectedSources.push(localCheckbox.value);
+
+        fetch("/overallHeroStats", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ sources: selectedSources })
+        })
+          .then((response) => response.json())
+          .then((overallHeroStats) => {
+            resultsTable.innerHTML = ""; // Clear previous data
+            overallHeroStats.forEach((hero) => {
+              const row = document.createElement("tr");
+              row.innerHTML = `
+              <td>${hero.hero}</td>
+              <td>${hero.plays}</td>
+              <td>${hero.winRate}%</td>
+            `;
+              resultsTable.appendChild(row);
+            });
+          })
+          .catch((error) => console.error("Error fetching overall hero stats:", error));
+      }
+
+      umLeagueCheckbox.addEventListener("change", fetchOverallHeroStats);
+      localCheckbox.addEventListener("change", fetchOverallHeroStats);
+    </script>
+</body>
+
+</html>

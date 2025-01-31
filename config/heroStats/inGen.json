@@ -98,8 +98,8 @@
       "hero": "Achilles",
       "queryOpponentOverall": [
         {
-          "plays": 53,
-          "wins": 47,
+          "plays": 54,
+          "wins": 48,
           "losses": 6,
           "winpercent": 89
         }
@@ -310,8 +310,8 @@
           "queryResult": [
             {
               "opponent": "Achilles",
-              "plays": 5,
-              "wins": 5,
+              "plays": 6,
+              "wins": 6,
               "losses": 0,
               "winpercent": 100
             }
@@ -3735,9 +3735,9 @@
       "hero": "Geralt of Rivia",
       "queryOpponentOverall": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 0,
-          "losses": 1,
+          "losses": 2,
           "winpercent": 0
         }
       ],
@@ -3788,7 +3788,15 @@
         },
         {
           "mapName": "Marmoreal",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Geralt of Rivia",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "McMinnville, OR",
@@ -4033,10 +4041,10 @@
       "hero": "Golden Bat",
       "queryOpponentOverall": [
         {
-          "plays": 14,
+          "plays": 15,
           "wins": 3,
-          "losses": 11,
-          "winpercent": 21
+          "losses": 12,
+          "winpercent": 20
         }
       ],
       "repeatMap": [
@@ -4062,7 +4070,15 @@
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Golden Bat",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -9011,10 +9027,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 12,
+          "plays": 13,
           "wins": 6,
-          "losses": 6,
-          "winpercent": 50
+          "losses": 7,
+          "winpercent": 46
         }
       ]
     },
@@ -9071,10 +9087,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 119,
+          "plays": 120,
           "wins": 58,
-          "losses": 61,
-          "winpercent": 49
+          "losses": 62,
+          "winpercent": 48
         }
       ]
     },
@@ -9201,19 +9217,19 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 50,
-          "wins": 33,
+          "plays": 51,
+          "wins": 34,
           "losses": 17,
-          "winpercent": 66
+          "winpercent": 67
         }
       ]
     }
   ],
   "queryHeroOverall": [
     {
-      "plays": 1262,
-      "wins": 645,
-      "losses": 617,
+      "plays": 1265,
+      "wins": 646,
+      "losses": 619,
       "winpercent": 51
     }
   ]

@@ -7593,10 +7593,10 @@
       "hero": "Yennefer",
       "queryOpponentOverall": [
         {
-          "plays": 2,
+          "plays": 3,
           "wins": 2,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 1,
+          "winpercent": 67
         }
       ],
       "repeatMap": [
@@ -7674,7 +7674,15 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sarpedon",
@@ -8048,10 +8056,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 9,
+          "plays": 10,
           "wins": 3,
-          "losses": 6,
-          "winpercent": 33
+          "losses": 7,
+          "winpercent": 30
         }
       ]
     },
@@ -8138,9 +8146,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 876,
+      "plays": 877,
       "wins": 551,
-      "losses": 325,
+      "losses": 326,
       "winpercent": 63
     }
   ]

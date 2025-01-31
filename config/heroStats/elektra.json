@@ -706,10 +706,10 @@
       "hero": "Black Panther",
       "queryOpponentOverall": [
         {
-          "plays": 3,
-          "wins": 2,
+          "plays": 4,
+          "wins": 3,
           "losses": 1,
-          "winpercent": 67
+          "winpercent": 75
         }
       ],
       "repeatMap": [
@@ -743,7 +743,15 @@
         },
         {
           "mapName": "King Solomon's Mine",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Black Panther",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Marmoreal",
@@ -6545,6 +6553,115 @@
       ]
     },
     {
+      "hero": "Yennefer",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        },
+        {
+          "mapName": "Yukon",
+          "queryResult": []
+        }
+      ]
+    },
+    {
       "hero": "Yennenga",
       "queryOpponentOverall": [
         {
@@ -6816,10 +6933,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 11,
-          "wins": 8,
+          "plays": 12,
+          "wins": 9,
           "losses": 3,
-          "winpercent": 73
+          "winpercent": 75
         }
       ]
     },
@@ -6876,10 +6993,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 7,
+          "plays": 8,
           "wins": 5,
-          "losses": 2,
-          "winpercent": 71
+          "losses": 3,
+          "winpercent": 63
         }
       ]
     },
@@ -6966,9 +7083,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 472,
-      "wins": 329,
-      "losses": 143,
+      "plays": 474,
+      "wins": 330,
+      "losses": 144,
       "winpercent": 70
     }
   ]

@@ -114,6 +114,72 @@
       ]
     },
     {
+      "hero": "Ciri",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": [
+            {
+              "opponent": "Ciri",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero": "Daredevil",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Daredevil",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        }
+      ]
+    },
+    {
       "hero": "Geralt of Rivia",
       "queryOpponentOverall": [
         {
@@ -151,10 +217,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 2,
+          "plays": 3,
           "wins": 2,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 1,
+          "winpercent": 67
         }
       ]
     },
@@ -171,9 +237,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 0,
-          "losses": 1,
+          "losses": 2,
           "winpercent": 0
         }
       ]
@@ -181,10 +247,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 4,
+      "plays": 6,
       "wins": 2,
-      "losses": 2,
-      "winpercent": 50
+      "losses": 4,
+      "winpercent": 33
     }
   ]
 }

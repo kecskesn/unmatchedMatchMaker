@@ -94,9 +94,9 @@
       "hero": "Achilles",
       "queryOpponentOverall": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 0,
-          "losses": 1,
+          "losses": 2,
           "winpercent": 0
         }
       ],
@@ -183,7 +183,15 @@
         },
         {
           "mapName": "T. Rex Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Achilles",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "The Bronze",
@@ -831,10 +839,10 @@
       "hero": "Bigfoot",
       "queryOpponentOverall": [
         {
-          "plays": 13,
-          "wins": 1,
+          "plays": 14,
+          "wins": 2,
           "losses": 12,
-          "winpercent": 8
+          "winpercent": 14
         }
       ],
       "repeatMap": [
@@ -847,10 +855,10 @@
           "queryResult": [
             {
               "opponent": "Bigfoot",
-              "plays": 1,
-              "wins": 0,
+              "plays": 2,
+              "wins": 1,
               "losses": 1,
-              "winpercent": 0
+              "winpercent": 50
             }
           ]
         },
@@ -2478,9 +2486,9 @@
       "hero": "Dr. Jill Trent",
       "queryOpponentOverall": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 0,
-          "losses": 1,
+          "losses": 2,
           "winpercent": 0
         }
       ],
@@ -2539,7 +2547,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Dr. Jill Trent",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -3348,10 +3364,10 @@
       "hero": "Golden Bat",
       "queryOpponentOverall": [
         {
-          "plays": 13,
+          "plays": 14,
           "wins": 2,
-          "losses": 11,
-          "winpercent": 15
+          "losses": 12,
+          "winpercent": 14
         }
       ],
       "repeatMap": [
@@ -3420,10 +3436,10 @@
           "queryResult": [
             {
               "opponent": "Golden Bat",
-              "plays": 2,
+              "plays": 3,
               "wins": 1,
-              "losses": 1,
-              "winpercent": 50
+              "losses": 2,
+              "winpercent": 33
             }
           ]
         },
@@ -4447,9 +4463,9 @@
       "hero": "Luke Cage",
       "queryOpponentOverall": [
         {
-          "plays": 59,
+          "plays": 60,
           "wins": 22,
-          "losses": 36,
+          "losses": 37,
           "winpercent": 37
         }
       ],
@@ -4463,9 +4479,9 @@
           "queryResult": [
             {
               "opponent": "Luke Cage",
-              "plays": 5,
+              "plays": 6,
               "wins": 0,
-              "losses": 4,
+              "losses": 5,
               "winpercent": 0
             }
           ]
@@ -4910,10 +4926,10 @@
       "hero": "Ms. Marvel",
       "queryOpponentOverall": [
         {
-          "plays": 8,
+          "plays": 9,
           "wins": 5,
-          "losses": 3,
-          "winpercent": 63
+          "losses": 4,
+          "winpercent": 56
         }
       ],
       "repeatMap": [
@@ -4982,10 +4998,10 @@
           "queryResult": [
             {
               "opponent": "Ms. Marvel",
-              "plays": 5,
+              "plays": 6,
               "wins": 2,
-              "losses": 3,
-              "winpercent": 40
+              "losses": 4,
+              "winpercent": 33
             }
           ]
         },
@@ -5043,10 +5059,10 @@
       "hero": "Nikola Tesla",
       "queryOpponentOverall": [
         {
-          "plays": 3,
+          "plays": 4,
           "wins": 2,
-          "losses": 1,
-          "winpercent": 67
+          "losses": 2,
+          "winpercent": 50
         }
       ],
       "repeatMap": [
@@ -5099,10 +5115,10 @@
           "queryResult": [
             {
               "opponent": "Nikola Tesla",
-              "plays": 1,
+              "plays": 2,
               "wins": 1,
-              "losses": 0,
-              "winpercent": 100
+              "losses": 1,
+              "winpercent": 50
             }
           ]
         },
@@ -6924,9 +6940,9 @@
       "hero": "The Wayward Sisters",
       "queryOpponentOverall": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 0,
-          "losses": 1,
+          "losses": 2,
           "winpercent": 0
         }
       ],
@@ -6977,7 +6993,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "The Wayward Sisters",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -7624,9 +7648,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 78,
-          "wins": 27,
-          "losses": 50,
+          "plays": 80,
+          "wins": 28,
+          "losses": 51,
           "winpercent": 35
         }
       ]
@@ -7724,10 +7748,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 211,
+          "plays": 216,
           "wins": 101,
-          "losses": 110,
-          "winpercent": 48
+          "losses": 115,
+          "winpercent": 47
         }
       ]
     },
@@ -7794,10 +7818,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 25,
+          "plays": 26,
           "wins": 11,
-          "losses": 14,
-          "winpercent": 44
+          "losses": 15,
+          "winpercent": 42
         }
       ]
     },
@@ -7834,9 +7858,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 734,
-      "wins": 286,
-      "losses": 447,
+      "plays": 742,
+      "wins": 287,
+      "losses": 454,
       "winpercent": 39
     }
   ]

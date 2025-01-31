@@ -33,6 +33,10 @@
       "mapName": "Heorot"
     },
     {
+      "mapId": 24,
+      "mapName": "Kaer Morhen"
+    },
+    {
       "mapId": 16,
       "mapName": "King Solomon's Mine"
     },
@@ -43,6 +47,10 @@
     {
       "mapId": 21,
       "mapName": "McMinnville, OR"
+    },
+    {
+      "mapId": 26,
+      "mapName": "Naglfar"
     },
     {
       "mapId": 17,
@@ -71,6 +79,10 @@
     {
       "mapId": 6,
       "mapName": "Soho"
+    },
+    {
+      "mapId": 27,
+      "mapName": "Streets of Novigrad"
     },
     {
       "mapId": 8,
@@ -194,6 +206,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -228,6 +244,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
         },
         {
           "mapName": "Navy Pier",
@@ -312,6 +332,10 @@
               "winpercent": 75
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -443,6 +467,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -460,6 +488,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -521,6 +553,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -620,6 +656,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -637,6 +677,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -668,6 +712,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -693,10 +741,10 @@
       "hero": "Annie Christmas",
       "queryOpponentOverall": [
         {
-          "plays": 10,
-          "wins": 8,
+          "plays": 12,
+          "wins": 10,
           "losses": 2,
-          "winpercent": 80
+          "winpercent": 83
         }
       ],
       "repeatMap": [
@@ -726,7 +774,15 @@
         },
         {
           "mapName": "Fayrlund Forest",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Annie Christmas",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Globe Theatre",
@@ -746,6 +802,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -783,6 +843,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
         },
         {
           "mapName": "Navy Pier",
@@ -837,12 +901,24 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
         {
           "mapName": "T. Rex Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Annie Christmas",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "The Bronze",
@@ -934,6 +1010,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -943,6 +1023,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -998,6 +1082,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -1047,8 +1135,8 @@
       "hero": "Bigfoot",
       "queryOpponentOverall": [
         {
-          "plays": 200,
-          "wins": 123,
+          "plays": 201,
+          "wins": 124,
           "losses": 77,
           "winpercent": 62
         }
@@ -1135,14 +1223,18 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
               "opponent": "Bigfoot",
-              "plays": 6,
-              "wins": 5,
+              "plays": 7,
+              "wins": 6,
               "losses": 1,
-              "winpercent": 83
+              "winpercent": 86
             }
           ]
         },
@@ -1169,6 +1261,10 @@
               "winpercent": 60
             }
           ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
         },
         {
           "mapName": "Navy Pier",
@@ -1247,6 +1343,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
@@ -1304,10 +1404,10 @@
       "hero": "Black Panther",
       "queryOpponentOverall": [
         {
-          "plays": 39,
-          "wins": 17,
+          "plays": 40,
+          "wins": 18,
           "losses": 22,
-          "winpercent": 44
+          "winpercent": 45
         }
       ],
       "repeatMap": [
@@ -1368,14 +1468,18 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
               "opponent": "Black Panther",
-              "plays": 14,
-              "wins": 8,
+              "plays": 15,
+              "wins": 9,
               "losses": 6,
-              "winpercent": 57
+              "winpercent": 60
             }
           ]
         },
@@ -1402,6 +1506,10 @@
               "winpercent": 50
             }
           ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
         },
         {
           "mapName": "Navy Pier",
@@ -1462,6 +1570,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -1585,6 +1697,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -1619,6 +1735,10 @@
               "winpercent": 50
             }
           ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
         },
         {
           "mapName": "Navy Pier",
@@ -1687,6 +1807,10 @@
               "winpercent": 47
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -1826,6 +1950,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -1851,6 +1979,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -1920,6 +2052,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -2027,6 +2163,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -2052,6 +2192,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -2121,6 +2265,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -2228,6 +2376,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -2237,6 +2389,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -2265,6 +2421,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -2365,6 +2525,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -2382,6 +2546,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -2427,6 +2595,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -2550,6 +2722,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -2575,6 +2751,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -2630,6 +2810,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
@@ -2676,6 +2860,139 @@
               "winpercent": 67
             }
           ]
+        },
+        {
+          "mapName": "Yukon",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "Ciri",
+      "queryOpponentOverall": [
+        {
+          "plays": 2,
+          "wins": 0,
+          "losses": 2,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Ciri",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": [
+            {
+              "opponent": "Ciri",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
         },
         {
           "mapName": "Yukon",
@@ -2759,6 +3076,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -2784,6 +3105,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -2831,6 +3156,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -2864,10 +3193,10 @@
       "hero": "Daredevil",
       "queryOpponentOverall": [
         {
-          "plays": 133,
-          "wins": 51,
-          "losses": 82,
-          "winpercent": 38
+          "plays": 135,
+          "wins": 52,
+          "losses": 83,
+          "winpercent": 39
         }
       ],
       "repeatMap": [
@@ -2897,7 +3226,15 @@
         },
         {
           "mapName": "Fayrlund Forest",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Daredevil",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Globe Theatre",
@@ -2944,6 +3281,18 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Daredevil",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -2978,6 +3327,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
         },
         {
           "mapName": "Navy Pier",
@@ -3054,6 +3407,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -3161,6 +3518,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -3170,6 +3531,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -3206,6 +3571,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -3298,6 +3667,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -3323,6 +3696,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -3400,6 +3777,10 @@
               "winpercent": 60
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -3539,6 +3920,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -3573,6 +3958,10 @@
               "winpercent": 33
             }
           ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
         },
         {
           "mapName": "Navy Pier",
@@ -3633,6 +4022,10 @@
               "winpercent": 33
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -3764,6 +4157,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -3781,6 +4178,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -3842,6 +4243,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -3957,6 +4362,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -3991,6 +4400,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
         },
         {
           "mapName": "Navy Pier",
@@ -4059,6 +4472,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -4190,6 +4607,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -4224,6 +4645,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
         },
         {
           "mapName": "Navy Pier",
@@ -4268,6 +4693,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -4327,10 +4756,151 @@
       "hero": "Eredin",
       "queryOpponentOverall": [
         {
-          "plays": 1,
+          "plays": 3,
           "wins": 0,
-          "losses": 1,
+          "losses": 3,
           "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": [
+            {
+              "opponent": "Eredin",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Eredin",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": [
+            {
+              "opponent": "Eredin",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        },
+        {
+          "mapName": "Yukon",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "Geralt of Rivia",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 1,
+          "losses": 0,
+          "winpercent": 100
         }
       ],
       "repeatMap": [
@@ -4367,8 +4937,20 @@
           "queryResult": []
         },
         {
-          "mapName": "King Solomon's Mine",
+          "mapName": "Kaer Morhen",
           "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": [
+            {
+              "opponent": "Geralt of Rivia",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Marmoreal",
@@ -4376,6 +4958,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -4407,20 +4993,16 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
         {
           "mapName": "T. Rex Paddock",
-          "queryResult": [
-            {
-              "opponent": "Eredin",
-              "plays": 1,
-              "wins": 0,
-              "losses": 1,
-              "winpercent": 0
-            }
-          ]
+          "queryResult": []
         },
         {
           "mapName": "The Bronze",
@@ -4496,6 +5078,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -4513,6 +5099,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -4584,6 +5174,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -4617,10 +5211,10 @@
       "hero": "Golden Bat",
       "queryOpponentOverall": [
         {
-          "plays": 48,
+          "plays": 49,
           "wins": 12,
-          "losses": 36,
-          "winpercent": 25
+          "losses": 37,
+          "winpercent": 24
         }
       ],
       "repeatMap": [
@@ -4697,6 +5291,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -4731,6 +5329,10 @@
               "winpercent": 20
             }
           ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
         },
         {
           "mapName": "Navy Pier",
@@ -4793,6 +5395,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
@@ -4818,7 +5424,15 @@
         },
         {
           "mapName": "The Bronze",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Golden Bat",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "The Raft",
@@ -4874,6 +5488,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -4891,6 +5509,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -4922,6 +5544,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -4947,9 +5573,9 @@
       "hero": "Houdini",
       "queryOpponentOverall": [
         {
-          "plays": 154,
-          "wins": 79,
-          "losses": 75,
+          "plays": 158,
+          "wins": 81,
+          "losses": 77,
           "winpercent": 51
         }
       ],
@@ -4987,10 +5613,10 @@
           "queryResult": [
             {
               "opponent": "Houdini",
-              "plays": 2,
-              "wins": 1,
+              "plays": 3,
+              "wins": 2,
               "losses": 1,
-              "winpercent": 50
+              "winpercent": 67
             }
           ]
         },
@@ -5035,6 +5661,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -5069,6 +5699,10 @@
               "winpercent": 50
             }
           ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
         },
         {
           "mapName": "Navy Pier",
@@ -5155,14 +5789,26 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": [
+            {
+              "opponent": "Houdini",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
               "opponent": "Houdini",
-              "plays": 6,
+              "plays": 7,
               "wins": 3,
-              "losses": 3,
-              "winpercent": 50
+              "losses": 4,
+              "winpercent": 43
             }
           ]
         },
@@ -5171,10 +5817,10 @@
           "queryResult": [
             {
               "opponent": "Houdini",
-              "plays": 8,
+              "plays": 9,
               "wins": 5,
-              "losses": 3,
-              "winpercent": 63
+              "losses": 4,
+              "winpercent": 56
             }
           ]
         },
@@ -5260,6 +5906,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -5285,6 +5935,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -5346,6 +6000,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -5437,6 +6095,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -5462,6 +6124,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -5523,6 +6189,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -5638,6 +6308,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -5655,6 +6329,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -5691,6 +6369,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -5783,6 +6465,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -5800,6 +6486,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -5844,6 +6534,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -5968,6 +6662,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -6002,6 +6700,10 @@
               "winpercent": 67
             }
           ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
         },
         {
           "mapName": "Navy Pier",
@@ -6080,6 +6782,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
@@ -6137,9 +6843,9 @@
       "hero": "Luke Cage",
       "queryOpponentOverall": [
         {
-          "plays": 135,
-          "wins": 54,
-          "losses": 81,
+          "plays": 137,
+          "wins": 55,
+          "losses": 82,
           "winpercent": 40
         }
       ],
@@ -6225,6 +6931,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -6241,10 +6951,10 @@
           "queryResult": [
             {
               "opponent": "Luke Cage",
-              "plays": 9,
-              "wins": 3,
+              "plays": 10,
+              "wins": 4,
               "losses": 6,
-              "winpercent": 33
+              "winpercent": 40
             }
           ]
         },
@@ -6257,6 +6967,18 @@
               "wins": 2,
               "losses": 1,
               "winpercent": 67
+            }
+          ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": [
+            {
+              "opponent": "Luke Cage",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
             }
           ]
         },
@@ -6345,6 +7067,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
@@ -6410,8 +7136,8 @@
       "hero": "Medusa",
       "queryOpponentOverall": [
         {
-          "plays": 229,
-          "wins": 131,
+          "plays": 230,
+          "wins": 132,
           "losses": 98,
           "winpercent": 57
         }
@@ -6498,6 +7224,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -6532,6 +7262,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
         },
         {
           "mapName": "Navy Pier",
@@ -6618,6 +7352,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
@@ -6634,10 +7372,10 @@
           "queryResult": [
             {
               "opponent": "Medusa",
-              "plays": 12,
-              "wins": 8,
+              "plays": 13,
+              "wins": 9,
               "losses": 4,
-              "winpercent": 67
+              "winpercent": 69
             }
           ]
         },
@@ -6755,6 +7493,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -6780,6 +7522,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -6849,6 +7595,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -6956,6 +7706,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -6990,6 +7744,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
         },
         {
           "mapName": "Navy Pier",
@@ -7033,6 +7791,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -7149,6 +7911,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -7183,6 +7949,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
         },
         {
           "mapName": "Navy Pier",
@@ -7269,6 +8039,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
@@ -7350,6 +8124,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -7359,6 +8137,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -7387,6 +8169,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -7463,6 +8249,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -7472,6 +8262,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -7509,6 +8303,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -7616,6 +8414,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -7641,6 +8443,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -7718,6 +8524,10 @@
               "winpercent": 50
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -7849,6 +8659,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -7874,6 +8688,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -7943,6 +8761,10 @@
               "winpercent": 50
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -8090,6 +8912,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -8124,6 +8950,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
         },
         {
           "mapName": "Navy Pier",
@@ -8208,6 +9038,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -8331,6 +9165,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -8356,6 +9194,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -8419,6 +9261,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -8460,9 +9306,9 @@
       "hero": "Sinbad",
       "queryOpponentOverall": [
         {
-          "plays": 113,
+          "plays": 114,
           "wins": 10,
-          "losses": 103,
+          "losses": 104,
           "winpercent": 9
         }
       ],
@@ -8540,6 +9386,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -8565,6 +9415,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -8612,9 +9466,9 @@
           "queryResult": [
             {
               "opponent": "Sinbad",
-              "plays": 14,
+              "plays": 15,
               "wins": 1,
-              "losses": 13,
+              "losses": 14,
               "winpercent": 7
             }
           ]
@@ -8642,6 +9496,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -8749,6 +9607,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -8758,6 +9620,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -8794,6 +9660,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -8878,6 +9748,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -8887,6 +9761,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -8923,6 +9801,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -8999,6 +9881,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -9024,6 +9910,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -9068,6 +9958,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -9184,6 +10078,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -9218,6 +10116,10 @@
               "winpercent": 63
             }
           ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
         },
         {
           "mapName": "Navy Pier",
@@ -9294,6 +10196,10 @@
               "winpercent": 50
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -9433,6 +10339,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -9458,6 +10368,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -9534,6 +10448,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -9666,6 +10584,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -9691,6 +10613,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -9752,6 +10678,10 @@
               "winpercent": 71
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -9867,6 +10797,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -9876,6 +10810,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -9912,6 +10850,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -9988,6 +10930,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -10005,6 +10951,10 @@
         },
         {
           "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
           "queryResult": []
         },
         {
@@ -10050,6 +11000,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -10149,6 +11103,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -10175,6 +11133,10 @@
               "winpercent": 50
             }
           ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
         },
         {
           "mapName": "Navy Pier",
@@ -10253,6 +11215,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
@@ -10302,10 +11268,10 @@
       "hero": "Winter Soldier",
       "queryOpponentOverall": [
         {
-          "plays": 99,
+          "plays": 100,
           "wins": 59,
-          "losses": 40,
-          "winpercent": 60
+          "losses": 41,
+          "winpercent": 59
         }
       ],
       "repeatMap": [
@@ -10374,6 +11340,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -10408,6 +11378,10 @@
               "winpercent": 33
             }
           ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
         },
         {
           "mapName": "Navy Pier",
@@ -10486,12 +11460,16 @@
           "queryResult": [
             {
               "opponent": "Winter Soldier",
-              "plays": 16,
+              "plays": 17,
               "wins": 8,
-              "losses": 8,
-              "winpercent": 50
+              "losses": 9,
+              "winpercent": 47
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -10538,6 +11516,147 @@
           ]
         }
       ]
+    },
+    {
+      "hero": "Yennefer",
+      "queryOpponentOverall": [
+        {
+          "plays": 4,
+          "wins": 1,
+          "losses": 3,
+          "winpercent": 25
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 2,
+              "wins": 1,
+              "losses": 1,
+              "winpercent": 50
+            }
+          ]
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        },
+        {
+          "mapName": "Yukon",
+          "queryResult": []
+        }
+      ]
     }
   ],
   "repeatMapResults": [
@@ -10564,20 +11683,20 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 1,
-          "wins": 0,
-          "losses": 1,
-          "winpercent": 0
+          "plays": 3,
+          "wins": 1,
+          "losses": 2,
+          "winpercent": 33
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 40,
-          "wins": 11,
-          "losses": 29,
-          "winpercent": 28
+          "plays": 42,
+          "wins": 12,
+          "losses": 30,
+          "winpercent": 29
         }
       ]
     },
@@ -10594,10 +11713,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 14,
+          "plays": 15,
           "wins": 8,
-          "losses": 6,
-          "winpercent": 57
+          "losses": 7,
+          "winpercent": 53
         }
       ]
     },
@@ -10624,18 +11743,28 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 162,
-          "wins": 109,
-          "losses": 53,
-          "winpercent": 67
+          "plays": 3,
+          "wins": 1,
+          "losses": 2,
+          "winpercent": 33
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 235,
-          "wins": 134,
+          "plays": 165,
+          "wins": 112,
+          "losses": 53,
+          "winpercent": 68
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 236,
+          "wins": 135,
           "losses": 101,
           "winpercent": 57
         }
@@ -10648,6 +11777,16 @@
           "wins": 30,
           "losses": 39,
           "winpercent": 43
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
         }
       ]
     },
@@ -10694,19 +11833,19 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 190,
+          "plays": 191,
           "wins": 100,
-          "losses": 90,
-          "winpercent": 53
+          "losses": 91,
+          "winpercent": 52
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 226,
+          "plays": 227,
           "wins": 140,
-          "losses": 86,
+          "losses": 87,
           "winpercent": 62
         }
       ]
@@ -10714,9 +11853,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 198,
+          "plays": 199,
           "wins": 109,
-          "losses": 89,
+          "losses": 90,
           "winpercent": 55
         }
       ]
@@ -10724,9 +11863,29 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 168,
+          "plays": 4,
+          "wins": 2,
+          "losses": 2,
+          "winpercent": 50
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 169,
           "wins": 85,
-          "losses": 83,
+          "losses": 84,
+          "winpercent": 50
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 197,
+          "wins": 100,
+          "losses": 97,
           "winpercent": 51
         }
       ]
@@ -10734,19 +11893,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 194,
-          "wins": 98,
-          "losses": 96,
-          "winpercent": 51
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 120,
+          "plays": 121,
           "wins": 64,
-          "losses": 56,
+          "losses": 57,
           "winpercent": 53
         }
       ]
@@ -10774,9 +11923,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 2988,
-      "wins": 1573,
-      "losses": 1415,
+      "plays": 3013,
+      "wins": 1584,
+      "losses": 1429,
       "winpercent": 53
     }
   ]

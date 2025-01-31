@@ -90,10 +90,10 @@
       "hero": "Achilles",
       "queryOpponentOverall": [
         {
-          "plays": 20,
+          "plays": 21,
           "wins": 5,
-          "losses": 15,
-          "winpercent": 25
+          "losses": 16,
+          "winpercent": 24
         }
       ],
       "repeatMap": [
@@ -175,7 +175,15 @@
         },
         {
           "mapName": "Marmoreal",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Achilles",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "McMinnville, OR",
@@ -2349,10 +2357,10 @@
       "hero": "Hamlet",
       "queryOpponentOverall": [
         {
-          "plays": 2,
+          "plays": 3,
           "wins": 2,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 1,
+          "winpercent": 67
         }
       ],
       "repeatMap": [
@@ -2425,10 +2433,10 @@
           "queryResult": [
             {
               "opponent": "Hamlet",
-              "plays": 1,
+              "plays": 2,
               "wins": 1,
-              "losses": 0,
-              "winpercent": 100
+              "losses": 1,
+              "winpercent": 50
             }
           ]
         },
@@ -5650,10 +5658,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 1,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 1,
+          "winpercent": 50
         }
       ]
     },
@@ -5700,9 +5708,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 63,
+          "plays": 64,
           "wins": 33,
-          "losses": 30,
+          "losses": 31,
           "winpercent": 52
         }
       ]
@@ -5770,10 +5778,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 280,
+      "plays": 282,
       "wins": 133,
-      "losses": 147,
-      "winpercent": 48
+      "losses": 149,
+      "winpercent": 47
     }
   ]
 }

@@ -9,12 +9,20 @@
       "mapName": "Globe Theatre"
     },
     {
+      "mapId": 18,
+      "mapName": "Helicarrier"
+    },
+    {
       "mapId": 24,
       "mapName": "Kaer Morhen"
     },
     {
       "mapId": 16,
       "mapName": "King Solomon's Mine"
+    },
+    {
+      "mapId": 2,
+      "mapName": "Marmoreal"
     },
     {
       "mapId": 21,
@@ -78,6 +86,10 @@
           ]
         },
         {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": [
             {
@@ -100,6 +112,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
         },
         {
           "mapName": "McMinnville, OR",
@@ -155,11 +171,19 @@
           "queryResult": []
         },
         {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
           "queryResult": []
         },
         {
@@ -224,11 +248,19 @@
           "queryResult": []
         },
         {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
           "queryResult": []
         },
         {
@@ -277,10 +309,10 @@
       "hero": "Ciri",
       "queryOpponentOverall": [
         {
-          "plays": 3,
+          "plays": 4,
           "wins": 2,
-          "losses": 1,
-          "winpercent": 67
+          "losses": 2,
+          "winpercent": 50
         }
       ],
       "repeatMap": [
@@ -293,12 +325,16 @@
           "queryResult": [
             {
               "opponent": "Ciri",
-              "plays": 1,
+              "plays": 2,
               "wins": 1,
-              "losses": 0,
-              "winpercent": 100
+              "losses": 1,
+              "winpercent": 50
             }
           ]
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
         },
         {
           "mapName": "Kaer Morhen",
@@ -315,6 +351,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
         },
         {
           "mapName": "McMinnville, OR",
@@ -378,11 +418,19 @@
           "queryResult": []
         },
         {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
           "queryResult": []
         },
         {
@@ -431,10 +479,10 @@
       "hero": "Eredin",
       "queryOpponentOverall": [
         {
-          "plays": 5,
+          "plays": 7,
           "wins": 1,
-          "losses": 4,
-          "winpercent": 20
+          "losses": 6,
+          "winpercent": 14
         }
       ],
       "repeatMap": [
@@ -443,15 +491,19 @@
           "queryResult": [
             {
               "opponent": "Eredin",
-              "plays": 1,
+              "plays": 2,
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "winpercent": 0
             }
           ]
         },
         {
           "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
           "queryResult": []
         },
         {
@@ -463,6 +515,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
           "mapName": "McMinnville, OR",
           "queryResult": []
         },
@@ -471,9 +527,9 @@
           "queryResult": [
             {
               "opponent": "Eredin",
-              "plays": 1,
+              "plays": 2,
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "winpercent": 0
             }
           ]
@@ -529,11 +585,88 @@
       ]
     },
     {
-      "hero": "InGen",
+      "hero": "Houdini",
       "queryOpponentOverall": [
         {
           "plays": 1,
-          "wins": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": [
+            {
+              "opponent": "Houdini",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "InGen",
+      "queryOpponentOverall": [
+        {
+          "plays": 2,
+          "wins": 2,
           "losses": 0,
           "winpercent": 100
         }
@@ -556,12 +689,28 @@
           "queryResult": []
         },
         {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
           "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": [
+            {
+              "opponent": "InGen",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "McMinnville, OR",
@@ -617,11 +766,19 @@
           "queryResult": []
         },
         {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
           "queryResult": []
         },
         {
@@ -686,11 +843,19 @@
           "queryResult": []
         },
         {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
           "queryResult": []
         },
         {
@@ -736,6 +901,168 @@
       ]
     },
     {
+      "hero": "Medusa",
+      "queryOpponentOverall": [
+        {
+          "plays": 2,
+          "wins": 1,
+          "losses": 1,
+          "winpercent": 50
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": [
+            {
+              "opponent": "Medusa",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": [
+            {
+              "opponent": "Medusa",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "Moon Knight",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": [
+            {
+              "opponent": "Moon Knight",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        }
+      ]
+    },
+    {
       "hero": "Oda Nobunaga",
       "queryOpponentOverall": [
         {
@@ -755,11 +1082,19 @@
           "queryResult": []
         },
         {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
           "queryResult": []
         },
         {
@@ -808,10 +1143,10 @@
       "hero": "Philippa",
       "queryOpponentOverall": [
         {
-          "plays": 3,
+          "plays": 5,
           "wins": 3,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 2,
+          "winpercent": 60
         }
       ],
       "repeatMap": [
@@ -832,11 +1167,27 @@
           "queryResult": []
         },
         {
-          "mapName": "Kaer Morhen",
+          "mapName": "Helicarrier",
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Philippa",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
           "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
           "queryResult": []
         },
         {
@@ -864,10 +1215,10 @@
           "queryResult": [
             {
               "opponent": "Philippa",
-              "plays": 1,
+              "plays": 2,
               "wins": 1,
-              "losses": 0,
-              "winpercent": 100
+              "losses": 1,
+              "winpercent": 50
             }
           ]
         },
@@ -909,11 +1260,19 @@
           "queryResult": []
         },
         {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
           "queryResult": []
         },
         {
@@ -978,11 +1337,19 @@
           "queryResult": []
         },
         {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
           "queryResult": []
         },
         {
@@ -1047,11 +1414,19 @@
           "queryResult": []
         },
         {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
           "queryResult": []
         },
         {
@@ -1116,11 +1491,19 @@
           "queryResult": []
         },
         {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
           "queryResult": []
         },
         {
@@ -1166,6 +1549,83 @@
       ]
     },
     {
+      "hero": "Tomoe Gozen",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 1,
+          "losses": 0,
+          "winpercent": 100
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": [
+            {
+              "opponent": "Tomoe Gozen",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
       "hero": "Triss",
       "queryOpponentOverall": [
         {
@@ -1185,11 +1645,19 @@
           "queryResult": []
         },
         {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
           "queryResult": []
         },
         {
@@ -1254,11 +1722,19 @@
           "queryResult": []
         },
         {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
           "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
           "queryResult": []
         },
         {
@@ -1307,15 +1783,31 @@
       "hero": "Yennefer",
       "queryOpponentOverall": [
         {
-          "plays": 3,
-          "wins": 2,
-          "losses": 1,
-          "winpercent": 67
+          "plays": 7,
+          "wins": 5,
+          "losses": 2,
+          "winpercent": 71
         }
       ],
       "repeatMap": [
         {
           "mapName": "Fayrlund Forest",
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 2,
+              "wins": 2,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
           "queryResult": [
             {
               "opponent": "Yennefer",
@@ -1327,15 +1819,23 @@
           ]
         },
         {
-          "mapName": "Globe Theatre",
-          "queryResult": []
-        },
-        {
           "mapName": "Kaer Morhen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
           "queryResult": []
         },
         {
@@ -1384,6 +1884,91 @@
         },
         {
           "mapName": "T. Rex Paddock",
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hero": "Yennenga",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": [
+            {
+              "opponent": "Yennenga",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
           "queryResult": []
         }
       ]
@@ -1393,40 +1978,20 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 4,
-          "wins": 3,
-          "losses": 1,
-          "winpercent": 75
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 2,
-          "wins": 2,
-          "losses": 0,
-          "winpercent": 100
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 1,
-          "wins": 1,
-          "losses": 0,
-          "winpercent": 100
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 2,
-          "wins": 0,
+          "plays": 6,
+          "wins": 4,
           "losses": 2,
-          "winpercent": 0
+          "winpercent": 67
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 3,
+          "wins": 2,
+          "losses": 1,
+          "winpercent": 67
         }
       ]
     },
@@ -1444,9 +2009,49 @@
       "queryHeroMapResults": [
         {
           "plays": 3,
+          "wins": 2,
+          "losses": 1,
+          "winpercent": 67
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 3,
           "wins": 0,
           "losses": 3,
           "winpercent": 0
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 1,
+          "wins": 1,
+          "losses": 0,
+          "winpercent": 100
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 1,
+          "wins": 1,
+          "losses": 0,
+          "winpercent": 100
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 6,
+          "wins": 1,
+          "losses": 5,
+          "winpercent": 17
         }
       ]
     },
@@ -1483,10 +2088,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 2,
+          "plays": 5,
           "wins": 2,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 3,
+          "winpercent": 40
         }
       ]
     },
@@ -1503,20 +2108,20 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 4,
-          "wins": 3,
-          "losses": 1,
-          "winpercent": 75
+          "plays": 6,
+          "wins": 4,
+          "losses": 2,
+          "winpercent": 67
         }
       ]
     }
   ],
   "queryHeroOverall": [
     {
-      "plays": 31,
-      "wins": 18,
-      "losses": 13,
-      "winpercent": 58
+      "plays": 47,
+      "wins": 24,
+      "losses": 23,
+      "winpercent": 51
     }
   ]
 }

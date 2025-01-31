@@ -5201,10 +5201,10 @@
       "hero": "The Genie",
       "queryOpponentOverall": [
         {
-          "plays": 10,
+          "plays": 11,
           "wins": 5,
-          "losses": 5,
-          "winpercent": 50
+          "losses": 6,
+          "winpercent": 45
         }
       ],
       "repeatMap": [
@@ -5262,7 +5262,15 @@
         },
         {
           "mapName": "Marmoreal",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "The Genie",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "McMinnville, OR",
@@ -5997,10 +6005,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 17,
+          "plays": 18,
           "wins": 9,
-          "losses": 8,
-          "winpercent": 53
+          "losses": 9,
+          "winpercent": 50
         }
       ]
     },
@@ -6137,9 +6145,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 552,
+      "plays": 553,
       "wins": 227,
-      "losses": 325,
+      "losses": 326,
       "winpercent": 41
     }
   ]

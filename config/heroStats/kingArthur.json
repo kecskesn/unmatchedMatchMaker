@@ -1906,8 +1906,8 @@
       "hero": "Cloak & Dagger",
       "queryOpponentOverall": [
         {
-          "plays": 1,
-          "wins": 1,
+          "plays": 2,
+          "wins": 2,
           "losses": 0,
           "winpercent": 100
         }
@@ -1971,7 +1971,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Cloak & Dagger",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -6447,16 +6455,24 @@
       "hero": "Titania",
       "queryOpponentOverall": [
         {
-          "plays": 3,
+          "plays": 4,
           "wins": 0,
-          "losses": 3,
+          "losses": 4,
           "winpercent": 0
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Titania",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
@@ -6839,10 +6855,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 6,
+          "plays": 7,
           "wins": 4,
-          "losses": 2,
-          "winpercent": 67
+          "losses": 3,
+          "winpercent": 57
         }
       ]
     },
@@ -6959,8 +6975,8 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 90,
-          "wins": 42,
+          "plays": 91,
+          "wins": 43,
           "losses": 48,
           "winpercent": 47
         }
@@ -7059,9 +7075,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 535,
-      "wins": 190,
-      "losses": 345,
+      "plays": 537,
+      "wins": 191,
+      "losses": 346,
       "winpercent": 36
     }
   ]

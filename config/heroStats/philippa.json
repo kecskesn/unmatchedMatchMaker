@@ -25,6 +25,10 @@
       "mapName": "Kaer Morhen"
     },
     {
+      "mapId": 16,
+      "mapName": "King Solomon's Mine"
+    },
+    {
       "mapId": 26,
       "mapName": "Naglfar"
     },
@@ -41,6 +45,10 @@
       "mapName": "Sanctum Sanctorum"
     },
     {
+      "mapId": 3,
+      "mapName": "Sherwood Forest"
+    },
+    {
       "mapId": 6,
       "mapName": "Soho"
     },
@@ -55,17 +63,118 @@
     {
       "mapId": 15,
       "mapName": "T. Rex Paddock"
+    },
+    {
+      "mapId": 9,
+      "mapName": "The Bronze"
+    },
+    {
+      "mapId": 13,
+      "mapName": "The Raft"
     }
   ],
   "repeatOpponent": [
     {
+      "hero": "Achilles",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 1,
+          "losses": 0,
+          "winpercent": 100
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": [
+            {
+              "opponent": "Achilles",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
       "hero": "Ancient Leshen",
       "queryOpponentOverall": [
         {
-          "plays": 4,
-          "wins": 3,
+          "plays": 6,
+          "wins": 5,
           "losses": 1,
-          "winpercent": 75
+          "winpercent": 83
         }
       ],
       "repeatMap": [
@@ -102,12 +211,16 @@
           "queryResult": [
             {
               "opponent": "Ancient Leshen",
-              "plays": 1,
-              "wins": 1,
+              "plays": 3,
+              "wins": 3,
               "losses": 0,
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
         },
         {
           "mapName": "Naglfar",
@@ -142,6 +255,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -155,6 +272,200 @@
         },
         {
           "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "Annie Christmas",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 1,
+          "losses": 0,
+          "winpercent": 100
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": [
+            {
+              "opponent": "Annie Christmas",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "Bigfoot",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": [
+            {
+              "opponent": "Bigfoot",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
           "queryResult": []
         }
       ]
@@ -203,6 +514,10 @@
           "queryResult": []
         },
         {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
           "mapName": "Naglfar",
           "queryResult": []
         },
@@ -219,6 +534,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -232,6 +551,14 @@
         },
         {
           "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
           "queryResult": []
         }
       ]
@@ -272,6 +599,10 @@
           "queryResult": []
         },
         {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
           "mapName": "Naglfar",
           "queryResult": [
             {
@@ -296,6 +627,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -310,6 +645,14 @@
         {
           "mapName": "T. Rex Paddock",
           "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
         }
       ]
     },
@@ -317,10 +660,10 @@
       "hero": "Ciri",
       "queryOpponentOverall": [
         {
-          "plays": 3,
-          "wins": 1,
-          "losses": 2,
-          "winpercent": 33
+          "plays": 9,
+          "wins": 2,
+          "losses": 7,
+          "winpercent": 22
         }
       ],
       "repeatMap": [
@@ -337,10 +680,10 @@
           "queryResult": [
             {
               "opponent": "Ciri",
-              "plays": 2,
+              "plays": 6,
               "wins": 1,
-              "losses": 1,
-              "winpercent": 50
+              "losses": 5,
+              "winpercent": 17
             }
           ]
         },
@@ -357,8 +700,20 @@
           "queryResult": []
         },
         {
-          "mapName": "Naglfar",
+          "mapName": "King Solomon's Mine",
           "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": [
+            {
+              "opponent": "Ciri",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Point Pleasant",
@@ -381,6 +736,10 @@
           ]
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -394,6 +753,22 @@
         },
         {
           "mapName": "T. Rex Paddock",
+          "queryResult": [
+            {
+              "opponent": "Ciri",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
           "queryResult": []
         }
       ]
@@ -402,10 +777,10 @@
       "hero": "Daredevil",
       "queryOpponentOverall": [
         {
-          "plays": 1,
-          "wins": 0,
+          "plays": 2,
+          "wins": 1,
           "losses": 1,
-          "winpercent": 0
+          "winpercent": 50
         }
       ],
       "repeatMap": [
@@ -442,6 +817,10 @@
           "queryResult": []
         },
         {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
           "mapName": "Naglfar",
           "queryResult": []
         },
@@ -458,12 +837,24 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
         {
           "mapName": "Streets of Novigrad",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Daredevil",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
@@ -471,6 +862,14 @@
         },
         {
           "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
           "queryResult": []
         }
       ]
@@ -519,6 +918,10 @@
           "queryResult": []
         },
         {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
           "mapName": "Naglfar",
           "queryResult": []
         },
@@ -532,6 +935,10 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -549,6 +956,14 @@
         {
           "mapName": "T. Rex Paddock",
           "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
         }
       ]
     },
@@ -556,10 +971,10 @@
       "hero": "Eredin",
       "queryOpponentOverall": [
         {
-          "plays": 3,
+          "plays": 6,
           "wins": 1,
-          "losses": 2,
-          "winpercent": 33
+          "losses": 5,
+          "winpercent": 17
         }
       ],
       "repeatMap": [
@@ -596,8 +1011,20 @@
           "queryResult": []
         },
         {
-          "mapName": "Naglfar",
+          "mapName": "King Solomon's Mine",
           "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": [
+            {
+              "opponent": "Eredin",
+              "plays": 2,
+              "wins": 0,
+              "losses": 2,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Point Pleasant",
@@ -620,12 +1047,24 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
         {
           "mapName": "Streets of Novigrad",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Eredin",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
@@ -642,6 +1081,14 @@
         {
           "mapName": "T. Rex Paddock",
           "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
         }
       ]
     },
@@ -649,10 +1096,10 @@
       "hero": "Geralt of Rivia",
       "queryOpponentOverall": [
         {
-          "plays": 3,
-          "wins": 0,
+          "plays": 5,
+          "wins": 2,
           "losses": 3,
-          "winpercent": 0
+          "winpercent": 40
         }
       ],
       "repeatMap": [
@@ -686,6 +1133,18 @@
         },
         {
           "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Geralt of Rivia",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "King Solomon's Mine",
           "queryResult": []
         },
         {
@@ -705,6 +1164,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -713,10 +1176,10 @@
           "queryResult": [
             {
               "opponent": "Geralt of Rivia",
-              "plays": 1,
-              "wins": 0,
+              "plays": 2,
+              "wins": 1,
               "losses": 1,
-              "winpercent": 0
+              "winpercent": 50
             }
           ]
         },
@@ -735,11 +1198,19 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
         }
       ]
     },
     {
-      "hero": "Little Red Riding Hood",
+      "hero": "Golden Bat",
       "queryOpponentOverall": [
         {
           "plays": 1,
@@ -774,6 +1245,204 @@
           "queryResult": []
         },
         {
+          "mapName": "King Solomon's Mine",
+          "queryResult": [
+            {
+              "opponent": "Golden Bat",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "Houdini",
+      "queryOpponentOverall": [
+        {
+          "plays": 3,
+          "wins": 0,
+          "losses": 3,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Houdini",
+              "plays": 2,
+              "wins": 0,
+              "losses": 2,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": [
+            {
+              "opponent": "Houdini",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "Little Red Riding Hood",
+      "queryOpponentOverall": [
+        {
+          "plays": 2,
+          "wins": 0,
+          "losses": 2,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
           "mapName": "Naglfar",
           "queryResult": [
             {
@@ -791,10 +1460,22 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Little Red Riding Hood",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -811,6 +1492,14 @@
         },
         {
           "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
           "queryResult": []
         }
       ]
@@ -851,6 +1540,10 @@
           "queryResult": []
         },
         {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
           "mapName": "Naglfar",
           "queryResult": []
         },
@@ -864,6 +1557,10 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -889,6 +1586,131 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "Medusa",
+      "queryOpponentOverall": [
+        {
+          "plays": 6,
+          "wins": 1,
+          "losses": 5,
+          "winpercent": 17
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Medusa",
+              "plays": 2,
+              "wins": 0,
+              "losses": 2,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": [
+            {
+              "opponent": "Medusa",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": [
+            {
+              "opponent": "Medusa",
+              "plays": 2,
+              "wins": 1,
+              "losses": 1,
+              "winpercent": 50
+            }
+          ]
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": [
+            {
+              "opponent": "Medusa",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
         }
       ]
     },
@@ -896,10 +1718,10 @@
       "hero": "Moon Knight",
       "queryOpponentOverall": [
         {
-          "plays": 1,
-          "wins": 0,
+          "plays": 2,
+          "wins": 1,
           "losses": 1,
-          "winpercent": 0
+          "winpercent": 50
         }
       ],
       "repeatMap": [
@@ -928,6 +1750,10 @@
           "queryResult": []
         },
         {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
           "mapName": "Naglfar",
           "queryResult": []
         },
@@ -942,6 +1768,18 @@
         {
           "mapName": "Sanctum Sanctorum",
           "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": [
+            {
+              "opponent": "Moon Knight",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Soho",
@@ -965,6 +1803,107 @@
         },
         {
           "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "Ms. Marvel",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 1,
+          "losses": 0,
+          "winpercent": 100
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": [
+            {
+              "opponent": "Ms. Marvel",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
           "queryResult": []
         }
       ]
@@ -1005,6 +1944,10 @@
           "queryResult": []
         },
         {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
           "mapName": "Naglfar",
           "queryResult": []
         },
@@ -1018,6 +1961,10 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -1042,6 +1989,14 @@
         },
         {
           "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
           "queryResult": []
         }
       ]
@@ -1082,6 +2037,10 @@
           "queryResult": []
         },
         {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
           "mapName": "Naglfar",
           "queryResult": []
         },
@@ -1095,6 +2054,10 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -1119,6 +2082,14 @@
         },
         {
           "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
           "queryResult": []
         }
       ]
@@ -1159,6 +2130,10 @@
           "queryResult": []
         },
         {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
           "mapName": "Naglfar",
           "queryResult": []
         },
@@ -1172,6 +2147,10 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -1197,6 +2176,14 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
         }
       ]
     },
@@ -1236,6 +2223,10 @@
           "queryResult": []
         },
         {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
           "mapName": "Naglfar",
           "queryResult": []
         },
@@ -1249,6 +2240,10 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -1274,6 +2269,107 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "The Genie",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 1,
+          "losses": 0,
+          "winpercent": 100
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": [
+            {
+              "opponent": "The Genie",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
         }
       ]
     },
@@ -1313,6 +2409,10 @@
           "queryResult": []
         },
         {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
           "mapName": "Naglfar",
           "queryResult": []
         },
@@ -1326,6 +2426,10 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -1350,6 +2454,14 @@
         },
         {
           "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
           "queryResult": []
         }
       ]
@@ -1390,6 +2502,10 @@
           "queryResult": []
         },
         {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
           "mapName": "Naglfar",
           "queryResult": []
         },
@@ -1414,6 +2530,10 @@
           ]
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -1427,6 +2547,123 @@
         },
         {
           "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "Yennefer",
+      "queryOpponentOverall": [
+        {
+          "plays": 5,
+          "wins": 1,
+          "losses": 4,
+          "winpercent": 20
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 2,
+              "wins": 0,
+              "losses": 2,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 2,
+              "wins": 1,
+              "losses": 1,
+              "winpercent": 50
+            }
+          ]
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
           "queryResult": []
         }
       ]
@@ -1467,6 +2704,10 @@
           "queryResult": []
         },
         {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
           "mapName": "Naglfar",
           "queryResult": []
         },
@@ -1480,6 +2721,10 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -1505,6 +2750,14 @@
         {
           "mapName": "T. Rex Paddock",
           "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
         }
       ]
     }
@@ -1517,6 +2770,76 @@
           "wins": 1,
           "losses": 0,
           "winpercent": 100
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 7,
+          "wins": 1,
+          "losses": 6,
+          "winpercent": 14
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 2,
+          "wins": 1,
+          "losses": 1,
+          "winpercent": 50
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 10,
+          "wins": 4,
+          "losses": 6,
+          "winpercent": 40
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 3,
+          "wins": 1,
+          "losses": 2,
+          "winpercent": 33
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 8,
+          "wins": 2,
+          "losses": 6,
+          "winpercent": 25
         }
       ]
     },
@@ -1554,46 +2877,6 @@
       "queryHeroMapResults": [
         {
           "plays": 1,
-          "wins": 0,
-          "losses": 1,
-          "winpercent": 0
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 1,
-          "wins": 1,
-          "losses": 0,
-          "winpercent": 100
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 3,
-          "wins": 0,
-          "losses": 3,
-          "winpercent": 0
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 1,
-          "wins": 0,
-          "losses": 1,
-          "winpercent": 0
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 1,
           "wins": 1,
           "losses": 0,
           "winpercent": 100
@@ -1613,20 +2896,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 2,
-          "wins": 1,
-          "losses": 1,
-          "winpercent": 50
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 2,
-          "wins": 0,
-          "losses": 2,
-          "winpercent": 0
+          "plays": 8,
+          "wins": 3,
+          "losses": 5,
+          "winpercent": 38
         }
       ]
     },
@@ -1643,20 +2916,40 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 4,
-          "wins": 2,
-          "losses": 2,
-          "winpercent": 50
+          "plays": 8,
+          "wins": 3,
+          "losses": 5,
+          "winpercent": 38
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 1,
+          "wins": 1,
+          "losses": 0,
+          "winpercent": 100
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 1,
+          "wins": 1,
+          "losses": 0,
+          "winpercent": 100
         }
       ]
     }
   ],
   "queryHeroOverall": [
     {
-      "plays": 27,
-      "wins": 12,
-      "losses": 15,
-      "winpercent": 44
+      "plays": 63,
+      "wins": 25,
+      "losses": 38,
+      "winpercent": 40
     }
   ]
 }
