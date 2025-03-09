@@ -81,6 +81,10 @@
       "mapName": "Soho"
     },
     {
+      "mapId": 27,
+      "mapName": "Streets of Novigrad"
+    },
+    {
       "mapId": 8,
       "mapName": "Sunnydale High"
     },
@@ -106,10 +110,10 @@
       "hero": "Achilles",
       "queryOpponentOverall": [
         {
-          "plays": 150,
+          "plays": 152,
           "wins": 81,
-          "losses": 69,
-          "winpercent": 54
+          "losses": 71,
+          "winpercent": 53
         }
       ],
       "repeatMap": [
@@ -274,10 +278,10 @@
           "queryResult": [
             {
               "opponent": "Achilles",
-              "plays": 8,
+              "plays": 9,
               "wins": 4,
-              "losses": 4,
-              "winpercent": 50
+              "losses": 5,
+              "winpercent": 44
             }
           ]
         },
@@ -310,10 +314,10 @@
           "queryResult": [
             {
               "opponent": "Achilles",
-              "plays": 16,
+              "plays": 17,
               "wins": 6,
-              "losses": 10,
-              "winpercent": 38
+              "losses": 11,
+              "winpercent": 35
             }
           ]
         },
@@ -328,6 +332,10 @@
               "winpercent": 20
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -555,6 +563,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -604,10 +616,10 @@
       "hero": "Ancient Leshen",
       "queryOpponentOverall": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 1,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 1,
+          "winpercent": 50
         }
       ],
       "repeatMap": [
@@ -697,6 +709,18 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": [
+            {
+              "opponent": "Ancient Leshen",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -725,10 +749,10 @@
       "hero": "Angel",
       "queryOpponentOverall": [
         {
-          "plays": 5,
-          "wins": 1,
-          "losses": 4,
-          "winpercent": 20
+          "plays": 8,
+          "wins": 3,
+          "losses": 5,
+          "winpercent": 38
         }
       ],
       "repeatMap": [
@@ -754,7 +778,15 @@
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Angel",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -810,7 +842,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Angel",
+              "plays": 2,
+              "wins": 1,
+              "losses": 1,
+              "winpercent": 50
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -826,6 +866,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -862,10 +906,10 @@
       "hero": "Annie Christmas",
       "queryOpponentOverall": [
         {
-          "plays": 18,
+          "plays": 19,
           "wins": 10,
-          "losses": 8,
-          "winpercent": 56
+          "losses": 9,
+          "winpercent": 53
         }
       ],
       "repeatMap": [
@@ -1022,6 +1066,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -1031,7 +1079,15 @@
         },
         {
           "mapName": "The Bronze",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Annie Christmas",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "The Raft",
@@ -1213,6 +1269,10 @@
               "winpercent": 60
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -1406,6 +1466,10 @@
               "winpercent": 75
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -1641,6 +1705,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
@@ -1858,6 +1926,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -2043,6 +2115,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -2169,6 +2245,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -2307,6 +2387,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -2470,6 +2554,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -2511,10 +2599,10 @@
       "hero": "Ciri",
       "queryOpponentOverall": [
         {
-          "plays": 1,
+          "plays": 3,
           "wins": 1,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 2,
+          "winpercent": 33
         }
       ],
       "repeatMap": [
@@ -2532,7 +2620,15 @@
         },
         {
           "mapName": "Globe Theatre",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Ciri",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Hanging Gardens",
@@ -2605,6 +2701,18 @@
         {
           "mapName": "Soho",
           "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": [
+            {
+              "opponent": "Ciri",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
@@ -2744,6 +2852,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -2769,8 +2881,8 @@
       "hero": "Daredevil",
       "queryOpponentOverall": [
         {
-          "plays": 46,
-          "wins": 42,
+          "plays": 47,
+          "wins": 43,
           "losses": 4,
           "winpercent": 91
         }
@@ -2897,8 +3009,8 @@
           "queryResult": [
             {
               "opponent": "Daredevil",
-              "plays": 5,
-              "wins": 5,
+              "plays": 6,
+              "wins": 6,
               "losses": 0,
               "winpercent": 100
             }
@@ -2951,6 +3063,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -3111,6 +3227,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -3305,6 +3425,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -3548,6 +3672,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
@@ -3717,6 +3845,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -3766,10 +3898,10 @@
       "hero": "Dracula",
       "queryOpponentOverall": [
         {
-          "plays": 96,
+          "plays": 97,
           "wins": 46,
-          "losses": 50,
-          "winpercent": 48
+          "losses": 51,
+          "winpercent": 47
         }
       ],
       "repeatMap": [
@@ -3958,13 +4090,17 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
               "opponent": "Dracula",
-              "plays": 1,
+              "plays": 2,
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "winpercent": 0
             }
           ]
@@ -4143,6 +4279,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -4184,10 +4324,10 @@
       "hero": "Eredin",
       "queryOpponentOverall": [
         {
-          "plays": 1,
-          "wins": 0,
-          "losses": 1,
-          "winpercent": 0
+          "plays": 3,
+          "wins": 1,
+          "losses": 2,
+          "winpercent": 33
         }
       ],
       "repeatMap": [
@@ -4197,7 +4337,15 @@
         },
         {
           "mapName": "Baskerville Manor",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Eredin",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Fayrlund Forest",
@@ -4209,7 +4357,15 @@
         },
         {
           "mapName": "Hanging Gardens",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Eredin",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Helicarrier",
@@ -4277,6 +4433,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -4398,6 +4558,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -4578,6 +4742,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
@@ -4619,9 +4787,9 @@
       "hero": "Golden Bat",
       "queryOpponentOverall": [
         {
-          "plays": 265,
+          "plays": 266,
           "wins": 119,
-          "losses": 146,
+          "losses": 147,
           "winpercent": 45
         }
       ],
@@ -4663,9 +4831,9 @@
           "queryResult": [
             {
               "opponent": "Golden Bat",
-              "plays": 5,
+              "plays": 6,
               "wins": 0,
-              "losses": 5,
+              "losses": 6,
               "winpercent": 0
             }
           ]
@@ -4817,6 +4985,10 @@
               "winpercent": 40
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -4985,6 +5157,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -5221,6 +5397,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
@@ -5286,9 +5466,9 @@
       "hero": "InGen",
       "queryOpponentOverall": [
         {
-          "plays": 68,
+          "plays": 69,
           "wins": 28,
-          "losses": 40,
+          "losses": 41,
           "winpercent": 41
         }
       ],
@@ -5458,10 +5638,10 @@
           "queryResult": [
             {
               "opponent": "InGen",
-              "plays": 12,
+              "plays": 13,
               "wins": 2,
-              "losses": 10,
-              "winpercent": 17
+              "losses": 11,
+              "winpercent": 15
             }
           ]
         },
@@ -5476,6 +5656,10 @@
               "winpercent": 40
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -5679,6 +5863,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -5854,6 +6042,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -6041,6 +6233,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -6082,9 +6278,9 @@
       "hero": "Little Red Riding Hood",
       "queryOpponentOverall": [
         {
-          "plays": 118,
-          "wins": 55,
-          "losses": 63,
+          "plays": 120,
+          "wins": 56,
+          "losses": 64,
           "winpercent": 47
         }
       ],
@@ -6238,10 +6434,10 @@
           "queryResult": [
             {
               "opponent": "Little Red Riding Hood",
-              "plays": 3,
-              "wins": 1,
+              "plays": 4,
+              "wins": 2,
               "losses": 2,
-              "winpercent": 33
+              "winpercent": 50
             }
           ]
         },
@@ -6262,10 +6458,10 @@
           "queryResult": [
             {
               "opponent": "Little Red Riding Hood",
-              "plays": 9,
+              "plays": 10,
               "wins": 5,
-              "losses": 4,
-              "winpercent": 56
+              "losses": 5,
+              "winpercent": 50
             }
           ]
         },
@@ -6280,6 +6476,10 @@
               "winpercent": 40
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -6555,6 +6755,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
@@ -6620,9 +6824,9 @@
       "hero": "Medusa",
       "queryOpponentOverall": [
         {
-          "plays": 177,
+          "plays": 178,
           "wins": 59,
-          "losses": 118,
+          "losses": 119,
           "winpercent": 33
         }
       ],
@@ -6796,10 +7000,10 @@
           "queryResult": [
             {
               "opponent": "Medusa",
-              "plays": 23,
+              "plays": 24,
               "wins": 10,
-              "losses": 13,
-              "winpercent": 43
+              "losses": 14,
+              "winpercent": 42
             }
           ]
         },
@@ -6826,6 +7030,10 @@
               "winpercent": 67
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -6885,10 +7093,10 @@
       "hero": "Moon Knight",
       "queryOpponentOverall": [
         {
-          "plays": 95,
-          "wins": 43,
+          "plays": 96,
+          "wins": 44,
           "losses": 52,
-          "winpercent": 45
+          "winpercent": 46
         }
       ],
       "repeatMap": [
@@ -6933,10 +7141,10 @@
           "queryResult": [
             {
               "opponent": "Moon Knight",
-              "plays": 3,
-              "wins": 1,
+              "plays": 4,
+              "wins": 2,
               "losses": 2,
-              "winpercent": 33
+              "winpercent": 50
             }
           ]
         },
@@ -7067,6 +7275,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -7254,6 +7466,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -7287,8 +7503,8 @@
       "hero": "Nikola Tesla",
       "queryOpponentOverall": [
         {
-          "plays": 84,
-          "wins": 57,
+          "plays": 85,
+          "wins": 58,
           "losses": 27,
           "winpercent": 68
         }
@@ -7367,10 +7583,10 @@
           "queryResult": [
             {
               "opponent": "Nikola Tesla",
-              "plays": 2,
-              "wins": 1,
+              "plays": 3,
+              "wins": 2,
               "losses": 1,
-              "winpercent": 50
+              "winpercent": 67
             }
           ]
         },
@@ -7493,6 +7709,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -7656,6 +7876,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -7766,6 +7990,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -7944,6 +8172,10 @@
               "winpercent": 75
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -8195,6 +8427,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
@@ -8356,6 +8592,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -8381,10 +8621,10 @@
       "hero": "She-Hulk",
       "queryOpponentOverall": [
         {
-          "plays": 94,
-          "wins": 49,
+          "plays": 95,
+          "wins": 50,
           "losses": 45,
-          "winpercent": 52
+          "winpercent": 53
         }
       ],
       "repeatMap": [
@@ -8413,8 +8653,8 @@
           "queryResult": [
             {
               "opponent": "She-Hulk",
-              "plays": 2,
-              "wins": 2,
+              "plays": 3,
+              "wins": 3,
               "losses": 0,
               "winpercent": 100
             }
@@ -8573,6 +8813,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
@@ -8630,9 +8874,9 @@
       "hero": "Sherlock Holmes",
       "queryOpponentOverall": [
         {
-          "plays": 39,
+          "plays": 40,
           "wins": 9,
-          "losses": 30,
+          "losses": 31,
           "winpercent": 23
         }
       ],
@@ -8798,6 +9042,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -8834,9 +9082,9 @@
           "queryResult": [
             {
               "opponent": "Sherlock Holmes",
-              "plays": 4,
+              "plays": 5,
               "wins": 0,
-              "losses": 4,
+              "losses": 5,
               "winpercent": 0
             }
           ]
@@ -9023,6 +9271,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -9192,6 +9444,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
@@ -9321,6 +9577,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -9346,10 +9606,10 @@
       "hero": "Squirrel Girl",
       "queryOpponentOverall": [
         {
-          "plays": 2,
+          "plays": 3,
           "wins": 2,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 1,
+          "winpercent": 67
         }
       ],
       "repeatMap": [
@@ -9439,7 +9699,15 @@
         },
         {
           "mapName": "Sarpedon",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Squirrel Girl",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sherwood Forest",
@@ -9447,6 +9715,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -9475,16 +9747,24 @@
       "hero": "Sun Wukong",
       "queryOpponentOverall": [
         {
-          "plays": 89,
+          "plays": 91,
           "wins": 15,
-          "losses": 74,
-          "winpercent": 17
+          "losses": 76,
+          "winpercent": 16
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Sun Wukong",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
@@ -9588,7 +9868,15 @@
         },
         {
           "mapName": "Naglfar",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Sun Wukong",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Navy Pier",
@@ -9667,6 +9955,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
@@ -9732,9 +10024,9 @@
       "hero": "T. Rex",
       "queryOpponentOverall": [
         {
-          "plays": 78,
-          "wins": 47,
-          "losses": 31,
+          "plays": 80,
+          "wins": 48,
+          "losses": 32,
           "winpercent": 60
         }
       ],
@@ -9764,10 +10056,10 @@
           "queryResult": [
             {
               "opponent": "T. Rex",
-              "plays": 2,
+              "plays": 3,
               "wins": 1,
-              "losses": 1,
-              "winpercent": 50
+              "losses": 2,
+              "winpercent": 33
             }
           ]
         },
@@ -9932,6 +10224,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
@@ -9948,10 +10244,10 @@
           "queryResult": [
             {
               "opponent": "T. Rex",
-              "plays": 24,
-              "wins": 17,
+              "plays": 25,
+              "wins": 18,
               "losses": 7,
-              "winpercent": 71
+              "winpercent": 72
             }
           ]
         },
@@ -9989,8 +10285,8 @@
       "hero": "The Genie",
       "queryOpponentOverall": [
         {
-          "plays": 33,
-          "wins": 29,
+          "plays": 34,
+          "wins": 30,
           "losses": 4,
           "winpercent": 88
         }
@@ -10141,12 +10437,16 @@
           "queryResult": [
             {
               "opponent": "The Genie",
-              "plays": 3,
-              "wins": 3,
+              "plays": 4,
+              "wins": 4,
               "losses": 0,
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
         },
         {
           "mapName": "Sunnydale High",
@@ -10334,6 +10634,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -10479,6 +10783,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -10504,10 +10812,10 @@
       "hero": "Tomoe Gozen",
       "queryOpponentOverall": [
         {
-          "plays": 43,
-          "wins": 27,
-          "losses": 16,
-          "winpercent": 63
+          "plays": 47,
+          "wins": 30,
+          "losses": 17,
+          "winpercent": 64
         }
       ],
       "repeatMap": [
@@ -10572,10 +10880,10 @@
           "queryResult": [
             {
               "opponent": "Tomoe Gozen",
-              "plays": 3,
-              "wins": 1,
-              "losses": 2,
-              "winpercent": 33
+              "plays": 5,
+              "wins": 2,
+              "losses": 3,
+              "winpercent": 40
             }
           ]
         },
@@ -10604,10 +10912,10 @@
           "queryResult": [
             {
               "opponent": "Tomoe Gozen",
-              "plays": 1,
-              "wins": 0,
+              "plays": 2,
+              "wins": 1,
               "losses": 1,
-              "winpercent": 0
+              "winpercent": 50
             }
           ]
         },
@@ -10680,12 +10988,24 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
         {
           "mapName": "T. Rex Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Tomoe Gozen",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "The Bronze",
@@ -10798,6 +11118,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -11026,6 +11350,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -11059,10 +11387,10 @@
       "hero": "Yennefer",
       "queryOpponentOverall": [
         {
-          "plays": 1,
-          "wins": 1,
-          "losses": 0,
-          "winpercent": 100
+          "plays": 4,
+          "wins": 2,
+          "losses": 2,
+          "winpercent": 50
         }
       ],
       "repeatMap": [
@@ -11092,7 +11420,15 @@
         },
         {
           "mapName": "Hell's Kitchen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Heorot",
@@ -11104,7 +11440,15 @@
         },
         {
           "mapName": "King Solomon's Mine",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Marmoreal",
@@ -11120,7 +11464,15 @@
         },
         {
           "mapName": "Navy Pier",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Point Pleasant",
@@ -11155,6 +11507,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -11180,10 +11536,10 @@
       "hero": "Yennenga",
       "queryOpponentOverall": [
         {
-          "plays": 201,
-          "wins": 77,
-          "losses": 124,
-          "winpercent": 38
+          "plays": 204,
+          "wins": 79,
+          "losses": 125,
+          "winpercent": 39
         }
       ],
       "repeatMap": [
@@ -11213,7 +11569,15 @@
         },
         {
           "mapName": "Fayrlund Forest",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Yennenga",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Globe Theatre",
@@ -11260,10 +11624,10 @@
           "queryResult": [
             {
               "opponent": "Yennenga",
-              "plays": 5,
-              "wins": 3,
+              "plays": 6,
+              "wins": 4,
               "losses": 2,
-              "winpercent": 60
+              "winpercent": 67
             }
           ]
         },
@@ -11288,10 +11652,10 @@
           "queryResult": [
             {
               "opponent": "Yennenga",
-              "plays": 12,
+              "plays": 13,
               "wins": 2,
-              "losses": 10,
-              "winpercent": 17
+              "losses": 11,
+              "winpercent": 15
             }
           ]
         },
@@ -11388,6 +11752,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
@@ -11446,19 +11814,19 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 23,
+          "plays": 24,
           "wins": 16,
-          "losses": 7,
-          "winpercent": 70
+          "losses": 8,
+          "winpercent": 67
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 249,
+          "plays": 250,
           "wins": 109,
-          "losses": 140,
+          "losses": 141,
           "winpercent": 44
         }
       ]
@@ -11466,40 +11834,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 1,
-          "wins": 0,
+          "plays": 2,
+          "wins": 1,
           "losses": 1,
-          "winpercent": 0
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 29,
-          "wins": 19,
-          "losses": 10,
-          "winpercent": 66
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 145,
-          "wins": 84,
-          "losses": 61,
-          "winpercent": 58
-        }
-      ]
-    },
-    {
-      "queryHeroMapResults": [
-        {
-          "plays": 48,
-          "wins": 22,
-          "losses": 26,
-          "winpercent": 46
+          "winpercent": 50
         }
       ]
     },
@@ -11507,17 +11845,47 @@
       "queryHeroMapResults": [
         {
           "plays": 33,
-          "wins": 15,
-          "losses": 18,
-          "winpercent": 45
+          "wins": 21,
+          "losses": 12,
+          "winpercent": 64
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 111,
-          "wins": 65,
+          "plays": 147,
+          "wins": 85,
+          "losses": 62,
+          "winpercent": 58
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 49,
+          "wins": 23,
+          "losses": 26,
+          "winpercent": 47
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 36,
+          "wins": 17,
+          "losses": 19,
+          "winpercent": 47
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 113,
+          "wins": 67,
           "losses": 46,
           "winpercent": 59
         }
@@ -11536,9 +11904,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 130,
+          "plays": 131,
           "wins": 65,
-          "losses": 65,
+          "losses": 66,
           "winpercent": 50
         }
       ]
@@ -11546,9 +11914,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 115,
-          "wins": 62,
-          "losses": 53,
+          "plays": 117,
+          "wins": 63,
+          "losses": 54,
           "winpercent": 54
         }
       ]
@@ -11566,20 +11934,20 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 1,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 1,
+          "winpercent": 50
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 15,
+          "plays": 16,
           "wins": 7,
-          "losses": 8,
-          "winpercent": 47
+          "losses": 9,
+          "winpercent": 44
         }
       ]
     },
@@ -11596,9 +11964,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 204,
-          "wins": 123,
-          "losses": 81,
+          "plays": 208,
+          "wins": 125,
+          "losses": 83,
           "winpercent": 60
         }
       ]
@@ -11606,8 +11974,8 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 147,
-          "wins": 82,
+          "plays": 148,
+          "wins": 83,
           "losses": 65,
           "winpercent": 56
         }
@@ -11616,19 +11984,19 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 186,
+          "plays": 188,
           "wins": 102,
-          "losses": 84,
-          "winpercent": 55
+          "losses": 86,
+          "winpercent": 54
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 222,
+          "plays": 225,
           "wins": 101,
-          "losses": 121,
+          "losses": 124,
           "winpercent": 45
         }
       ]
@@ -11636,9 +12004,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 161,
-          "wins": 84,
-          "losses": 77,
+          "plays": 163,
+          "wins": 85,
+          "losses": 78,
           "winpercent": 52
         }
       ]
@@ -11646,18 +12014,28 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 101,
-          "wins": 49,
-          "losses": 52,
-          "winpercent": 49
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 168,
-          "wins": 102,
+          "plays": 102,
+          "wins": 49,
+          "losses": 53,
+          "winpercent": 48
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 170,
+          "wins": 104,
           "losses": 66,
           "winpercent": 61
         }
@@ -11666,9 +12044,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 96,
+          "plays": 97,
           "wins": 50,
-          "losses": 46,
+          "losses": 47,
           "winpercent": 52
         }
       ]
@@ -11686,19 +12064,19 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 140,
+          "plays": 141,
           "wins": 74,
-          "losses": 66,
-          "winpercent": 53
+          "losses": 67,
+          "winpercent": 52
         }
       ]
     }
   ],
   "queryHeroOverall": [
     {
-      "plays": 2576,
-      "wins": 1364,
-      "losses": 1212,
+      "plays": 2614,
+      "wins": 1380,
+      "losses": 1234,
       "winpercent": 53
     }
   ]

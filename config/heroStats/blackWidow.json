@@ -5102,16 +5102,24 @@
       "hero": "Ms. Marvel",
       "queryOpponentOverall": [
         {
-          "plays": 8,
+          "plays": 9,
           "wins": 7,
-          "losses": 1,
-          "winpercent": 88
+          "losses": 2,
+          "winpercent": 78
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Ms. Marvel",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
@@ -5601,10 +5609,10 @@
       "hero": "Raptors",
       "queryOpponentOverall": [
         {
-          "plays": 51,
-          "wins": 26,
+          "plays": 52,
+          "wins": 27,
           "losses": 25,
-          "winpercent": 51
+          "winpercent": 52
         }
       ],
       "repeatMap": [
@@ -5713,10 +5721,10 @@
           "queryResult": [
             {
               "opponent": "Raptors",
-              "plays": 3,
-              "wins": 2,
+              "plays": 4,
+              "wins": 3,
               "losses": 1,
-              "winpercent": 67
+              "winpercent": 75
             }
           ]
         },
@@ -6389,10 +6397,10 @@
       "hero": "Sherlock Holmes",
       "queryOpponentOverall": [
         {
-          "plays": 26,
+          "plays": 27,
           "wins": 8,
-          "losses": 18,
-          "winpercent": 31
+          "losses": 19,
+          "winpercent": 30
         }
       ],
       "repeatMap": [
@@ -6470,7 +6478,15 @@
         },
         {
           "mapName": "McMinnville, OR",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Sherlock Holmes",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Navy Pier",
@@ -6904,10 +6920,10 @@
       "hero": "Sun Wukong",
       "queryOpponentOverall": [
         {
-          "plays": 31,
+          "plays": 32,
           "wins": 15,
-          "losses": 16,
-          "winpercent": 48
+          "losses": 17,
+          "winpercent": 47
         }
       ],
       "repeatMap": [
@@ -7013,7 +7029,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Sun Wukong",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -8618,9 +8642,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 57,
+          "plays": 58,
           "wins": 23,
-          "losses": 34,
+          "losses": 35,
           "winpercent": 40
         }
       ]
@@ -8718,10 +8742,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 56,
+          "plays": 57,
           "wins": 19,
-          "losses": 37,
-          "winpercent": 34
+          "losses": 38,
+          "winpercent": 33
         }
       ]
     },
@@ -8748,9 +8772,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 96,
-          "wins": 44,
-          "losses": 52,
+          "plays": 98,
+          "wins": 45,
+          "losses": 53,
           "winpercent": 46
         }
       ]
@@ -8848,9 +8872,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 1377,
-      "wins": 591,
-      "losses": 786,
+      "plays": 1381,
+      "wins": 592,
+      "losses": 789,
       "winpercent": 43
     }
   ]

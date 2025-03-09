@@ -9,6 +9,10 @@
       "mapName": "Baskerville Manor"
     },
     {
+      "mapId": 25,
+      "mapName": "Fayrlund Forest"
+    },
+    {
       "mapId": 23,
       "mapName": "Globe Theatre"
     },
@@ -106,9 +110,9 @@
       "hero": "Achilles",
       "queryOpponentOverall": [
         {
-          "plays": 82,
-          "wins": 69,
-          "losses": 13,
+          "plays": 87,
+          "wins": 73,
+          "losses": 14,
           "winpercent": 84
         }
       ],
@@ -124,6 +128,18 @@
               "opponent": "Achilles",
               "plays": 8,
               "wins": 8,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": [
+            {
+              "opponent": "Achilles",
+              "plays": 1,
+              "wins": 1,
               "losses": 0,
               "winpercent": 100
             }
@@ -167,7 +183,15 @@
         },
         {
           "mapName": "Kaer Morhen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Achilles",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "King Solomon's Mine",
@@ -298,10 +322,10 @@
           "queryResult": [
             {
               "opponent": "Achilles",
-              "plays": 1,
-              "wins": 1,
-              "losses": 0,
-              "winpercent": 100
+              "plays": 4,
+              "wins": 3,
+              "losses": 1,
+              "winpercent": 75
             }
           ]
         },
@@ -360,6 +384,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
           "queryResult": []
         },
         {
@@ -537,6 +565,163 @@
       ]
     },
     {
+      "hero": "Ancient Leshen",
+      "queryOpponentOverall": [
+        {
+          "plays": 10,
+          "wins": 4,
+          "losses": 6,
+          "winpercent": 40
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": [
+            {
+              "opponent": "Ancient Leshen",
+              "plays": 2,
+              "wins": 0,
+              "losses": 2,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Ancient Leshen",
+              "plays": 3,
+              "wins": 1,
+              "losses": 2,
+              "winpercent": 33
+            }
+          ]
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": [
+            {
+              "opponent": "Ancient Leshen",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": [
+            {
+              "opponent": "Ancient Leshen",
+              "plays": 2,
+              "wins": 2,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": [
+            {
+              "opponent": "Ancient Leshen",
+              "plays": 2,
+              "wins": 1,
+              "losses": 1,
+              "winpercent": 50
+            }
+          ]
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        },
+        {
+          "mapName": "Yukon",
+          "queryResult": []
+        }
+      ]
+    },
+    {
       "hero": "Annie Christmas",
       "queryOpponentOverall": [
         {
@@ -553,6 +738,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
           "queryResult": []
         },
         {
@@ -749,6 +938,10 @@
           ]
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": [
             {
@@ -894,8 +1087,8 @@
       "hero": "Bigfoot",
       "queryOpponentOverall": [
         {
-          "plays": 177,
-          "wins": 118,
+          "plays": 178,
+          "wins": 119,
           "losses": 59,
           "winpercent": 67
         }
@@ -924,6 +1117,10 @@
               "winpercent": 88
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -1066,10 +1263,10 @@
           "queryResult": [
             {
               "opponent": "Bigfoot",
-              "plays": 23,
-              "wins": 13,
+              "plays": 24,
+              "wins": 14,
               "losses": 10,
-              "winpercent": 57
+              "winpercent": 58
             }
           ]
         },
@@ -1159,8 +1356,8 @@
       "hero": "Black Panther",
       "queryOpponentOverall": [
         {
-          "plays": 36,
-          "wins": 28,
+          "plays": 37,
+          "wins": 29,
           "losses": 8,
           "winpercent": 78
         }
@@ -1172,6 +1369,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
           "queryResult": []
         },
         {
@@ -1276,7 +1477,15 @@
         },
         {
           "mapName": "Sherwood Forest",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Black Panther",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Soho",
@@ -1382,6 +1591,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -1593,6 +1806,10 @@
           ]
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -1730,10 +1947,10 @@
       "hero": "Bruce Lee",
       "queryOpponentOverall": [
         {
-          "plays": 36,
-          "wins": 24,
+          "plays": 37,
+          "wins": 25,
           "losses": 12,
-          "winpercent": 67
+          "winpercent": 68
         }
       ],
       "repeatMap": [
@@ -1762,12 +1979,24 @@
           ]
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
         {
           "mapName": "Hanging Gardens",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Bruce Lee",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Helicarrier",
@@ -1963,6 +2192,10 @@
           ]
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -2081,6 +2314,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
           "queryResult": []
         },
         {
@@ -2210,6 +2447,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
           "queryResult": []
         },
         {
@@ -2374,10 +2615,10 @@
       "hero": "Ciri",
       "queryOpponentOverall": [
         {
-          "plays": 1,
-          "wins": 1,
-          "losses": 0,
-          "winpercent": 100
+          "plays": 26,
+          "wins": 18,
+          "losses": 8,
+          "winpercent": 69
         }
       ],
       "repeatMap": [
@@ -2388,6 +2629,18 @@
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": [
+            {
+              "opponent": "Ciri",
+              "plays": 2,
+              "wins": 2,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Globe Theatre",
@@ -2414,10 +2667,10 @@
           "queryResult": [
             {
               "opponent": "Ciri",
-              "plays": 1,
-              "wins": 1,
-              "losses": 0,
-              "winpercent": 100
+              "plays": 11,
+              "wins": 7,
+              "losses": 4,
+              "winpercent": 64
             }
           ]
         },
@@ -2427,7 +2680,15 @@
         },
         {
           "mapName": "Marmoreal",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Ciri",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "McMinnville, OR",
@@ -2435,7 +2696,15 @@
         },
         {
           "mapName": "Naglfar",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Ciri",
+              "plays": 5,
+              "wins": 3,
+              "losses": 2,
+              "winpercent": 60
+            }
+          ]
         },
         {
           "mapName": "Navy Pier",
@@ -2467,7 +2736,15 @@
         },
         {
           "mapName": "Streets of Novigrad",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Ciri",
+              "plays": 2,
+              "wins": 1,
+              "losses": 1,
+              "winpercent": 50
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
@@ -2475,7 +2752,15 @@
         },
         {
           "mapName": "T. Rex Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Ciri",
+              "plays": 5,
+              "wins": 4,
+              "losses": 1,
+              "winpercent": 80
+            }
+          ]
         },
         {
           "mapName": "The Bronze",
@@ -2508,6 +2793,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
           "queryResult": []
         },
         {
@@ -2632,10 +2921,10 @@
       "hero": "Daredevil",
       "queryOpponentOverall": [
         {
-          "plays": 53,
-          "wins": 25,
-          "losses": 28,
-          "winpercent": 47
+          "plays": 74,
+          "wins": 36,
+          "losses": 38,
+          "winpercent": 49
         }
       ],
       "repeatMap": [
@@ -2659,6 +2948,18 @@
               "plays": 1,
               "wins": 0,
               "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": [
+            {
+              "opponent": "Daredevil",
+              "plays": 4,
+              "wins": 0,
+              "losses": 4,
               "winpercent": 0
             }
           ]
@@ -2709,7 +3010,15 @@
         },
         {
           "mapName": "Kaer Morhen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Daredevil",
+              "plays": 8,
+              "wins": 5,
+              "losses": 3,
+              "winpercent": 63
+            }
+          ]
         },
         {
           "mapName": "King Solomon's Mine",
@@ -2749,7 +3058,15 @@
         },
         {
           "mapName": "Naglfar",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Daredevil",
+              "plays": 4,
+              "wins": 2,
+              "losses": 2,
+              "winpercent": 50
+            }
+          ]
         },
         {
           "mapName": "Navy Pier",
@@ -2808,10 +3125,10 @@
           "queryResult": [
             {
               "opponent": "Daredevil",
-              "plays": 11,
-              "wins": 7,
+              "plays": 12,
+              "wins": 8,
               "losses": 4,
-              "winpercent": 64
+              "winpercent": 67
             }
           ]
         },
@@ -2848,10 +3165,10 @@
           "queryResult": [
             {
               "opponent": "Daredevil",
-              "plays": 7,
-              "wins": 4,
-              "losses": 3,
-              "winpercent": 57
+              "plays": 11,
+              "wins": 7,
+              "losses": 4,
+              "winpercent": 64
             }
           ]
         },
@@ -2889,10 +3206,10 @@
       "hero": "Doctor Strange",
       "queryOpponentOverall": [
         {
-          "plays": 46,
+          "plays": 47,
           "wins": 21,
-          "losses": 25,
-          "winpercent": 46
+          "losses": 26,
+          "winpercent": 45
         }
       ],
       "repeatMap": [
@@ -2919,6 +3236,10 @@
               "winpercent": 75
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -3041,9 +3362,9 @@
           "queryResult": [
             {
               "opponent": "Doctor Strange",
-              "plays": 2,
+              "plays": 3,
               "wins": 0,
-              "losses": 2,
+              "losses": 3,
               "winpercent": 0
             }
           ]
@@ -3106,9 +3427,9 @@
       "hero": "Dr. Jill Trent",
       "queryOpponentOverall": [
         {
-          "plays": 133,
+          "plays": 135,
           "wins": 71,
-          "losses": 62,
+          "losses": 64,
           "winpercent": 53
         }
       ],
@@ -3136,6 +3457,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -3215,7 +3540,15 @@
         },
         {
           "mapName": "Naglfar",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Dr. Jill Trent",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Navy Pier",
@@ -3262,10 +3595,10 @@
           "queryResult": [
             {
               "opponent": "Dr. Jill Trent",
-              "plays": 20,
+              "plays": 21,
               "wins": 9,
-              "losses": 11,
-              "winpercent": 45
+              "losses": 12,
+              "winpercent": 43
             }
           ]
         },
@@ -3369,6 +3702,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -3522,6 +3859,10 @@
               "winpercent": 75
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -3733,6 +4074,10 @@
           ]
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -3886,10 +4231,10 @@
       "hero": "Eredin",
       "queryOpponentOverall": [
         {
-          "plays": 3,
-          "wins": 3,
-          "losses": 0,
-          "winpercent": 100
+          "plays": 32,
+          "wins": 19,
+          "losses": 13,
+          "winpercent": 59
         }
       ],
       "repeatMap": [
@@ -3908,6 +4253,18 @@
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": [
+            {
+              "opponent": "Eredin",
+              "plays": 4,
+              "wins": 0,
+              "losses": 4,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Globe Theatre",
@@ -3931,7 +4288,15 @@
         },
         {
           "mapName": "Kaer Morhen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Eredin",
+              "plays": 8,
+              "wins": 7,
+              "losses": 1,
+              "winpercent": 88
+            }
+          ]
         },
         {
           "mapName": "King Solomon's Mine",
@@ -3947,7 +4312,15 @@
         },
         {
           "mapName": "Naglfar",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Eredin",
+              "plays": 8,
+              "wins": 3,
+              "losses": 5,
+              "winpercent": 38
+            }
+          ]
         },
         {
           "mapName": "Navy Pier",
@@ -3979,7 +4352,15 @@
         },
         {
           "mapName": "Streets of Novigrad",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Eredin",
+              "plays": 2,
+              "wins": 1,
+              "losses": 1,
+              "winpercent": 50
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
@@ -3990,10 +4371,10 @@
           "queryResult": [
             {
               "opponent": "Eredin",
-              "plays": 2,
-              "wins": 2,
-              "losses": 0,
-              "winpercent": 100
+              "plays": 9,
+              "wins": 7,
+              "losses": 2,
+              "winpercent": 78
             }
           ]
         },
@@ -4015,10 +4396,10 @@
       "hero": "Geralt of Rivia",
       "queryOpponentOverall": [
         {
-          "plays": 2,
-          "wins": 1,
-          "losses": 1,
-          "winpercent": 50
+          "plays": 15,
+          "wins": 11,
+          "losses": 4,
+          "winpercent": 73
         }
       ],
       "repeatMap": [
@@ -4029,6 +4410,18 @@
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": [
+            {
+              "opponent": "Geralt of Rivia",
+              "plays": 3,
+              "wins": 2,
+              "losses": 1,
+              "winpercent": 67
+            }
+          ]
         },
         {
           "mapName": "Globe Theatre",
@@ -4052,7 +4445,15 @@
         },
         {
           "mapName": "Kaer Morhen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Geralt of Rivia",
+              "plays": 2,
+              "wins": 2,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "King Solomon's Mine",
@@ -4064,17 +4465,25 @@
         },
         {
           "mapName": "McMinnville, OR",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Geralt of Rivia",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Naglfar",
           "queryResult": [
             {
               "opponent": "Geralt of Rivia",
-              "plays": 1,
-              "wins": 0,
+              "plays": 4,
+              "wins": 3,
               "losses": 1,
-              "winpercent": 0
+              "winpercent": 75
             }
           ]
         },
@@ -4111,10 +4520,10 @@
           "queryResult": [
             {
               "opponent": "Geralt of Rivia",
-              "plays": 1,
-              "wins": 1,
-              "losses": 0,
-              "winpercent": 100
+              "plays": 5,
+              "wins": 3,
+              "losses": 2,
+              "winpercent": 60
             }
           ]
         },
@@ -4174,6 +4583,10 @@
               "winpercent": 17
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -4385,9 +4798,9 @@
       "hero": "Golden Bat",
       "queryOpponentOverall": [
         {
-          "plays": 150,
+          "plays": 152,
           "wins": 53,
-          "losses": 97,
+          "losses": 99,
           "winpercent": 35
         }
       ],
@@ -4417,13 +4830,25 @@
           ]
         },
         {
-          "mapName": "Globe Theatre",
+          "mapName": "Fayrlund Forest",
           "queryResult": [
             {
               "opponent": "Golden Bat",
               "plays": 1,
               "wins": 0,
               "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": [
+            {
+              "opponent": "Golden Bat",
+              "plays": 2,
+              "wins": 0,
+              "losses": 2,
               "winpercent": 0
             }
           ]
@@ -4658,10 +5083,10 @@
       "hero": "Houdini",
       "queryOpponentOverall": [
         {
-          "plays": 124,
-          "wins": 94,
-          "losses": 30,
-          "winpercent": 76
+          "plays": 132,
+          "wins": 99,
+          "losses": 33,
+          "winpercent": 75
         }
       ],
       "repeatMap": [
@@ -4686,6 +5111,18 @@
               "wins": 1,
               "losses": 0,
               "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": [
+            {
+              "opponent": "Houdini",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
             }
           ]
         },
@@ -4730,10 +5167,10 @@
           "queryResult": [
             {
               "opponent": "Houdini",
-              "plays": 1,
+              "plays": 2,
               "wins": 1,
-              "losses": 0,
-              "winpercent": 100
+              "losses": 1,
+              "winpercent": 50
             }
           ]
         },
@@ -4754,8 +5191,8 @@
           "queryResult": [
             {
               "opponent": "Houdini",
-              "plays": 1,
-              "wins": 1,
+              "plays": 2,
+              "wins": 2,
               "losses": 0,
               "winpercent": 100
             }
@@ -4794,8 +5231,8 @@
           "queryResult": [
             {
               "opponent": "Houdini",
-              "plays": 1,
-              "wins": 1,
+              "plays": 2,
+              "wins": 2,
               "losses": 0,
               "winpercent": 100
             }
@@ -4898,10 +5335,10 @@
           "queryResult": [
             {
               "opponent": "Houdini",
-              "plays": 17,
-              "wins": 11,
-              "losses": 6,
-              "winpercent": 65
+              "plays": 21,
+              "wins": 14,
+              "losses": 7,
+              "winpercent": 67
             }
           ]
         },
@@ -4961,6 +5398,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -5172,6 +5613,10 @@
           ]
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -5341,6 +5786,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -5454,10 +5903,10 @@
       "hero": "King Arthur",
       "queryOpponentOverall": [
         {
-          "plays": 26,
-          "wins": 23,
+          "plays": 27,
+          "wins": 24,
           "losses": 3,
-          "winpercent": 88
+          "winpercent": 89
         }
       ],
       "repeatMap": [
@@ -5467,6 +5916,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
           "queryResult": []
         },
         {
@@ -5510,10 +5963,10 @@
           "queryResult": [
             {
               "opponent": "King Arthur",
-              "plays": 8,
-              "wins": 7,
+              "plays": 9,
+              "wins": 8,
               "losses": 1,
-              "winpercent": 88
+              "winpercent": 89
             }
           ]
         },
@@ -5645,6 +6098,10 @@
               "winpercent": 25
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -5878,6 +6335,10 @@
               "winpercent": 50
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -6129,10 +6590,10 @@
       "hero": "Moon Knight",
       "queryOpponentOverall": [
         {
-          "plays": 35,
-          "wins": 30,
+          "plays": 38,
+          "wins": 33,
           "losses": 5,
-          "winpercent": 86
+          "winpercent": 87
         }
       ],
       "repeatMap": [
@@ -6151,6 +6612,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -6197,8 +6662,8 @@
           "queryResult": [
             {
               "opponent": "Moon Knight",
-              "plays": 2,
-              "wins": 2,
+              "plays": 3,
+              "wins": 3,
               "losses": 0,
               "winpercent": 100
             }
@@ -6238,7 +6703,15 @@
         },
         {
           "mapName": "Naglfar",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Moon Knight",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Navy Pier",
@@ -6329,10 +6802,10 @@
           "queryResult": [
             {
               "opponent": "Moon Knight",
-              "plays": 4,
-              "wins": 3,
+              "plays": 5,
+              "wins": 4,
               "losses": 1,
-              "winpercent": 75
+              "winpercent": 80
             }
           ]
         },
@@ -6383,6 +6856,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
           "queryResult": []
         },
         {
@@ -6491,10 +6968,10 @@
       "hero": "Nikola Tesla",
       "queryOpponentOverall": [
         {
-          "plays": 163,
-          "wins": 76,
+          "plays": 167,
+          "wins": 80,
           "losses": 87,
-          "winpercent": 47
+          "winpercent": 48
         }
       ],
       "repeatMap": [
@@ -6513,6 +6990,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -6543,10 +7024,10 @@
           "queryResult": [
             {
               "opponent": "Nikola Tesla",
-              "plays": 6,
-              "wins": 2,
+              "plays": 7,
+              "wins": 3,
               "losses": 4,
-              "winpercent": 33
+              "winpercent": 43
             }
           ]
         },
@@ -6555,8 +7036,8 @@
           "queryResult": [
             {
               "opponent": "Nikola Tesla",
-              "plays": 1,
-              "wins": 1,
+              "plays": 2,
+              "wins": 2,
               "losses": 0,
               "winpercent": 100
             }
@@ -6595,10 +7076,10 @@
           "queryResult": [
             {
               "opponent": "Nikola Tesla",
-              "plays": 19,
-              "wins": 10,
+              "plays": 20,
+              "wins": 11,
               "losses": 9,
-              "winpercent": 53
+              "winpercent": 55
             }
           ]
         },
@@ -6683,10 +7164,10 @@
           "queryResult": [
             {
               "opponent": "Nikola Tesla",
-              "plays": 33,
-              "wins": 15,
+              "plays": 34,
+              "wins": 16,
               "losses": 18,
-              "winpercent": 45
+              "winpercent": 47
             }
           ]
         },
@@ -6761,6 +7242,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
           "queryResult": []
         },
         {
@@ -6869,10 +7354,10 @@
       "hero": "Philippa",
       "queryOpponentOverall": [
         {
-          "plays": 6,
-          "wins": 5,
-          "losses": 1,
-          "winpercent": 83
+          "plays": 37,
+          "wins": 28,
+          "losses": 9,
+          "winpercent": 76
         }
       ],
       "repeatMap": [
@@ -6883,6 +7368,18 @@
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": [
+            {
+              "opponent": "Philippa",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Globe Theatre",
@@ -6909,10 +7406,10 @@
           "queryResult": [
             {
               "opponent": "Philippa",
-              "plays": 2,
-              "wins": 2,
-              "losses": 0,
-              "winpercent": 100
+              "plays": 18,
+              "wins": 12,
+              "losses": 6,
+              "winpercent": 67
             }
           ]
         },
@@ -6941,10 +7438,10 @@
           "queryResult": [
             {
               "opponent": "Philippa",
-              "plays": 2,
-              "wins": 1,
-              "losses": 1,
-              "winpercent": 50
+              "plays": 6,
+              "wins": 4,
+              "losses": 2,
+              "winpercent": 67
             }
           ]
         },
@@ -6958,7 +7455,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Philippa",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -6978,7 +7483,15 @@
         },
         {
           "mapName": "Streets of Novigrad",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Philippa",
+              "plays": 7,
+              "wins": 6,
+              "losses": 1,
+              "winpercent": 86
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
@@ -6989,8 +7502,8 @@
           "queryResult": [
             {
               "opponent": "Philippa",
-              "plays": 1,
-              "wins": 1,
+              "plays": 3,
+              "wins": 3,
               "losses": 0,
               "winpercent": 100
             }
@@ -7036,6 +7549,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -7213,6 +7730,10 @@
               "winpercent": 71
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -7400,6 +7921,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -7535,6 +8060,10 @@
               "winpercent": 50
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -7754,8 +8283,8 @@
       "hero": "Sherlock Holmes",
       "queryOpponentOverall": [
         {
-          "plays": 60,
-          "wins": 31,
+          "plays": 61,
+          "wins": 32,
           "losses": 29,
           "winpercent": 52
         }
@@ -7776,6 +8305,10 @@
               "winpercent": 33
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -7823,7 +8356,15 @@
         },
         {
           "mapName": "Kaer Morhen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Sherlock Holmes",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "King Solomon's Mine",
@@ -7979,8 +8520,8 @@
       "hero": "Sinbad",
       "queryOpponentOverall": [
         {
-          "plays": 66,
-          "wins": 46,
+          "plays": 67,
+          "wins": 47,
           "losses": 20,
           "winpercent": 70
         }
@@ -8001,6 +8542,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -8048,7 +8593,15 @@
         },
         {
           "mapName": "Kaer Morhen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Sinbad",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "King Solomon's Mine",
@@ -8188,10 +8741,10 @@
       "hero": "Sun Wukong",
       "queryOpponentOverall": [
         {
-          "plays": 74,
-          "wins": 54,
-          "losses": 20,
-          "winpercent": 73
+          "plays": 76,
+          "wins": 55,
+          "losses": 21,
+          "winpercent": 72
         }
       ],
       "repeatMap": [
@@ -8210,6 +8763,10 @@
               "winpercent": 83
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -8300,10 +8857,10 @@
           "queryResult": [
             {
               "opponent": "Sun Wukong",
-              "plays": 4,
+              "plays": 5,
               "wins": 3,
-              "losses": 1,
-              "winpercent": 75
+              "losses": 2,
+              "winpercent": 60
             }
           ]
         },
@@ -8376,10 +8933,10 @@
           "queryResult": [
             {
               "opponent": "Sun Wukong",
-              "plays": 5,
-              "wins": 4,
+              "plays": 6,
+              "wins": 5,
               "losses": 1,
-              "winpercent": 80
+              "winpercent": 83
             }
           ]
         },
@@ -8429,10 +8986,10 @@
       "hero": "T. Rex",
       "queryOpponentOverall": [
         {
-          "plays": 51,
-          "wins": 23,
+          "plays": 52,
+          "wins": 24,
           "losses": 28,
-          "winpercent": 45
+          "winpercent": 46
         }
       ],
       "repeatMap": [
@@ -8450,6 +9007,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
           "queryResult": []
         },
         {
@@ -8621,10 +9182,10 @@
           "queryResult": [
             {
               "opponent": "T. Rex",
-              "plays": 6,
-              "wins": 3,
+              "plays": 7,
+              "wins": 4,
               "losses": 3,
-              "winpercent": 50
+              "winpercent": 57
             }
           ]
         },
@@ -8662,10 +9223,10 @@
       "hero": "The Genie",
       "queryOpponentOverall": [
         {
-          "plays": 29,
-          "wins": 21,
+          "plays": 30,
+          "wins": 22,
           "losses": 8,
-          "winpercent": 72
+          "winpercent": 73
         }
       ],
       "repeatMap": [
@@ -8675,6 +9236,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
           "queryResult": []
         },
         {
@@ -8850,8 +9415,8 @@
           "queryResult": [
             {
               "opponent": "The Genie",
-              "plays": 1,
-              "wins": 1,
+              "plays": 2,
+              "wins": 2,
               "losses": 0,
               "winpercent": 100
             }
@@ -8876,6 +9441,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
           "queryResult": []
         },
         {
@@ -8992,10 +9561,10 @@
       "hero": "Titania",
       "queryOpponentOverall": [
         {
-          "plays": 5,
-          "wins": 4,
+          "plays": 6,
+          "wins": 5,
           "losses": 1,
-          "winpercent": 80
+          "winpercent": 83
         }
       ],
       "repeatMap": [
@@ -9005,6 +9574,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
           "queryResult": []
         },
         {
@@ -9049,7 +9622,15 @@
         },
         {
           "mapName": "King Solomon's Mine",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Titania",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Marmoreal",
@@ -9159,6 +9740,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -9327,12 +9912,169 @@
       ]
     },
     {
+      "hero": "Triss",
+      "queryOpponentOverall": [
+        {
+          "plays": 9,
+          "wins": 3,
+          "losses": 6,
+          "winpercent": 33
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": [
+            {
+              "opponent": "Triss",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Triss",
+              "plays": 4,
+              "wins": 1,
+              "losses": 3,
+              "winpercent": 25
+            }
+          ]
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": [
+            {
+              "opponent": "Triss",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": [
+            {
+              "opponent": "Triss",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": [
+            {
+              "opponent": "Triss",
+              "plays": 2,
+              "wins": 1,
+              "losses": 1,
+              "winpercent": 50
+            }
+          ]
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        },
+        {
+          "mapName": "Yukon",
+          "queryResult": []
+        }
+      ]
+    },
+    {
       "hero": "Winter Soldier",
       "queryOpponentOverall": [
         {
-          "plays": 76,
-          "wins": 36,
-          "losses": 40,
+          "plays": 78,
+          "wins": 37,
+          "losses": 41,
           "winpercent": 47
         }
       ],
@@ -9351,6 +10093,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
           "queryResult": []
         },
         {
@@ -9398,8 +10144,8 @@
           "queryResult": [
             {
               "opponent": "Winter Soldier",
-              "plays": 2,
-              "wins": 2,
+              "plays": 3,
+              "wins": 3,
               "losses": 0,
               "winpercent": 100
             }
@@ -9526,10 +10272,10 @@
           "queryResult": [
             {
               "opponent": "Winter Soldier",
-              "plays": 6,
+              "plays": 7,
               "wins": 3,
-              "losses": 3,
-              "winpercent": 50
+              "losses": 4,
+              "winpercent": 43
             }
           ]
         },
@@ -9579,10 +10325,10 @@
       "hero": "Yennefer",
       "queryOpponentOverall": [
         {
-          "plays": 7,
-          "wins": 3,
-          "losses": 4,
-          "winpercent": 43
+          "plays": 31,
+          "wins": 11,
+          "losses": 20,
+          "winpercent": 35
         }
       ],
       "repeatMap": [
@@ -9600,6 +10346,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
           "queryResult": []
         },
         {
@@ -9635,10 +10385,10 @@
           "queryResult": [
             {
               "opponent": "Yennefer",
-              "plays": 2,
-              "wins": 1,
-              "losses": 1,
-              "winpercent": 50
+              "plays": 7,
+              "wins": 3,
+              "losses": 4,
+              "winpercent": 43
             }
           ]
         },
@@ -9648,7 +10398,15 @@
         },
         {
           "mapName": "Marmoreal",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "McMinnville, OR",
@@ -9656,7 +10414,15 @@
         },
         {
           "mapName": "Naglfar",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 2,
+              "wins": 0,
+              "losses": 2,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Navy Pier",
@@ -9664,11 +10430,27 @@
         },
         {
           "mapName": "Point Pleasant",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 2,
+              "wins": 0,
+              "losses": 2,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -9691,10 +10473,10 @@
           "queryResult": [
             {
               "opponent": "Yennefer",
-              "plays": 2,
+              "plays": 4,
               "wins": 1,
-              "losses": 1,
-              "winpercent": 50
+              "losses": 3,
+              "winpercent": 25
             }
           ]
         },
@@ -9704,7 +10486,15 @@
         },
         {
           "mapName": "T. Rex Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Yennefer",
+              "plays": 11,
+              "wins": 5,
+              "losses": 6,
+              "winpercent": 45
+            }
+          ]
         },
         {
           "mapName": "The Bronze",
@@ -9724,10 +10514,10 @@
       "hero": "Yennenga",
       "queryOpponentOverall": [
         {
-          "plays": 230,
+          "plays": 244,
           "wins": 98,
-          "losses": 132,
-          "winpercent": 43
+          "losses": 146,
+          "winpercent": 40
         }
       ],
       "repeatMap": [
@@ -9746,6 +10536,10 @@
               "winpercent": 45
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -9809,7 +10603,15 @@
         },
         {
           "mapName": "Kaer Morhen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Yennenga",
+              "plays": 5,
+              "wins": 0,
+              "losses": 5,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "King Solomon's Mine",
@@ -9849,7 +10651,15 @@
         },
         {
           "mapName": "Naglfar",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Yennenga",
+              "plays": 3,
+              "wins": 0,
+              "losses": 3,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Navy Pier",
@@ -9937,7 +10747,15 @@
         },
         {
           "mapName": "Streets of Novigrad",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Yennenga",
+              "plays": 4,
+              "wins": 0,
+              "losses": 4,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
@@ -9956,10 +10774,10 @@
           "queryResult": [
             {
               "opponent": "Yennenga",
-              "plays": 13,
+              "plays": 15,
               "wins": 4,
-              "losses": 9,
-              "winpercent": 31
+              "losses": 11,
+              "winpercent": 27
             }
           ]
         },
@@ -10018,39 +10836,49 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 15,
+          "plays": 20,
+          "wins": 6,
+          "losses": 14,
+          "winpercent": 30
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 16,
           "wins": 7,
-          "losses": 8,
-          "winpercent": 47
+          "losses": 9,
+          "winpercent": 44
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 56,
-          "wins": 41,
+          "plays": 57,
+          "wins": 42,
           "losses": 15,
-          "winpercent": 73
+          "winpercent": 74
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 67,
-          "wins": 37,
+          "plays": 68,
+          "wins": 38,
           "losses": 30,
-          "winpercent": 55
+          "winpercent": 56
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 30,
-          "wins": 19,
-          "losses": 11,
+          "plays": 32,
+          "wins": 20,
+          "losses": 12,
           "winpercent": 63
         }
       ]
@@ -10058,48 +10886,48 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 70,
-          "wins": 37,
+          "plays": 71,
+          "wins": 38,
           "losses": 33,
-          "winpercent": 53
+          "winpercent": 54
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 6,
-          "wins": 5,
-          "losses": 1,
-          "winpercent": 83
+          "plays": 71,
+          "wins": 43,
+          "losses": 28,
+          "winpercent": 61
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 60,
-          "wins": 50,
+          "plays": 62,
+          "wins": 52,
           "losses": 10,
-          "winpercent": 83
+          "winpercent": 84
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 231,
-          "wins": 151,
-          "losses": 80,
-          "winpercent": 65
+          "plays": 235,
+          "wins": 154,
+          "losses": 81,
+          "winpercent": 66
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 122,
-          "wins": 56,
+          "plays": 123,
+          "wins": 57,
           "losses": 66,
           "winpercent": 46
         }
@@ -10108,10 +10936,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 4,
-          "wins": 2,
-          "losses": 2,
-          "winpercent": 50
+          "plays": 38,
+          "wins": 18,
+          "losses": 20,
+          "winpercent": 47
         }
       ]
     },
@@ -10128,9 +10956,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 168,
-          "wins": 85,
-          "losses": 83,
+          "plays": 170,
+          "wins": 86,
+          "losses": 84,
           "winpercent": 51
         }
       ]
@@ -10138,10 +10966,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 104,
-          "wins": 54,
-          "losses": 50,
-          "winpercent": 52
+          "plays": 107,
+          "wins": 55,
+          "losses": 52,
+          "winpercent": 51
         }
       ]
     },
@@ -10158,9 +10986,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 277,
-          "wins": 150,
-          "losses": 127,
+          "plays": 279,
+          "wins": 151,
+          "losses": 128,
           "winpercent": 54
         }
       ]
@@ -10168,9 +10996,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 306,
-          "wins": 203,
-          "losses": 103,
+          "plays": 310,
+          "wins": 206,
+          "losses": 104,
           "winpercent": 66
         }
       ]
@@ -10188,19 +11016,19 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 3,
-          "wins": 2,
-          "losses": 1,
-          "winpercent": 67
+          "plays": 27,
+          "wins": 15,
+          "losses": 12,
+          "winpercent": 56
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 112,
-          "wins": 71,
-          "losses": 41,
+          "plays": 114,
+          "wins": 72,
+          "losses": 42,
           "winpercent": 63
         }
       ]
@@ -10208,10 +11036,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 160,
-          "wins": 96,
-          "losses": 64,
-          "winpercent": 60
+          "plays": 204,
+          "wins": 124,
+          "losses": 80,
+          "winpercent": 61
         }
       ]
     },
@@ -10238,8 +11066,8 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 128,
-          "wins": 87,
+          "plays": 129,
+          "wins": 88,
           "losses": 41,
           "winpercent": 68
         }
@@ -10248,9 +11076,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 2372,
-      "wins": 1422,
-      "losses": 950,
+      "plays": 2586,
+      "wins": 1541,
+      "losses": 1045,
       "winpercent": 60
     }
   ]
