@@ -150,6 +150,7 @@
     }
 
     function updateButtonFromSelect(select, button) {
+      if (select.selectedIndex === -1) return;
       const selectedOption = select.options[select.selectedIndex];
       button.textContent = selectedOption.text;
       button.value = selectedOption.value;
@@ -220,15 +221,15 @@
           });
 
           const selectedHero = sessionStorage.getItem("hero");
-          if (selectedHero) {
-            heroSelect1.value = selectedHero;
-            updateButtonFromSelect(heroSelect1, hero1Btn);
+          if (selectedHero && select1.querySelector(`option[value='${selectedHero}']`)) {
+            select1.value = selectedHero;
+            updateButtonFromSelect(select1, hero1Btn);
           }
 
           const selectedHero2 = sessionStorage.getItem("hero2");
-          if (selectedHero2) {
-            heroSelect2.value = selectedHero2;
-            updateButtonFromSelect(heroSelect2, hero2Btn);
+          if (selectedHero2 && select2.querySelector(`option[value='${selectedHero2}']`)) {
+            select2.value = selectedHero2;
+            updateButtonFromSelect(select2, hero2Btn);
           }
 
           enableButtons();
