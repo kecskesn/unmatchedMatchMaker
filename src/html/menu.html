@@ -1,9 +1,62 @@
-<div class="d-flex justify-content-between align-items-center mb-4">
-    <a class="btn btn-primary" id="matchupsBtn" href="matchups"><i class="fas fa-fist-raised"></i></a>
-    <a class="btn btn-primary" id="mapStatBtn" href="mapStat"><i class="fas fa-map"></i></a>
-    <a class="btn btn-primary" id="cardTrackerBtn" href="cardTracker"><i class="fas fa-layer-group"></i></a>
-    <a class="btn btn-primary" id="matchLoggerBtn" href="matchLogger"><i class="fas fa-file-alt"></i></a>
-    <a class="btn btn-primary" id="playerStatsBtn" href="playerStats"><i class="fas fa-users"></i></a>
-    <a class="btn btn-primary" id="heroStatsBtn" href="heroStats"><i class="fas fa-shield-alt"></i></a>
-    <button class="btn btn-primary" id="darkModeToggle"><i class="fas fa-moon"></i></button>
+<style>
+.menu-icon {
+  font-size: 1.8rem;
+  display: block;
+}
+.menu-label {
+  font-size: 0.95rem;
+  margin-top: 0.2rem;
+}
+.menu-btn {
+  min-width: 70px;
+  min-height: 70px;
+  padding: 0.5rem 0.5rem;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 576px) {
+  .menu-label {
+    display: none !important;
+  }
+  .menu-icon {
+    font-size: 2.2rem;
+  }
+  .menu-btn {
+    min-width: 56px;
+    min-height: 56px;
+    padding: 0.5rem 0.5rem;
+  }
+}
+</style>
+<div class="d-flex justify-content-between align-items-center mb-4 flex-nowrap overflow-auto" style="gap: 0.5rem;">
+    <a class="btn btn-primary menu-btn" id="matchupsBtn" href="matchups">
+        <i class="fas fa-fist-raised menu-icon"></i>
+        <span class="menu-label">Matchups</span>
+    </a>
+    <a class="btn btn-primary menu-btn" id="mapStatBtn" href="mapStat">
+        <i class="fas fa-map menu-icon"></i>
+        <span class="menu-label">Map Stats</span>
+    </a>
+    <a class="btn btn-primary menu-btn" id="cardTrackerBtn" href="cardTracker">
+        <i class="fas fa-layer-group menu-icon"></i>
+        <span class="menu-label">Card Tracker</span>
+    </a>
+    <a class="btn btn-primary menu-btn" id="matchLoggerBtn" href="matchLogger">
+        <i class="fas fa-file-alt menu-icon"></i>
+        <span class="menu-label">Match Logger</span>
+    </a>
+    <a class="btn btn-primary menu-btn" id="playerStatsBtn" href="playerStats">
+        <i class="fas fa-users menu-icon"></i>
+        <span class="menu-label">Player Stats</span>
+    </a>
+    <a class="btn btn-primary menu-btn" id="heroStatsBtn" href="heroStats">
+        <i class="fas fa-shield-alt menu-icon"></i>
+        <span class="menu-label">Hero Stats</span>
+    </a>
+    <button class="btn btn-primary menu-btn" id="darkModeToggle">
+        <i class="fas fa-moon menu-icon"></i>
+        <span class="menu-label">Dark</span>
+    </button>
 </div>
