@@ -526,9 +526,9 @@
       "hero": "Beowulf",
       "queryOpponentOverall": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 0,
-          "losses": 1,
+          "losses": 2,
           "winpercent": 0
         }
       ],
@@ -579,7 +579,15 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Beowulf",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sarpedon",
@@ -5109,10 +5117,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 9,
+          "plays": 10,
           "wins": 6,
-          "losses": 3,
-          "winpercent": 67
+          "losses": 4,
+          "winpercent": 60
         }
       ]
     },
@@ -5189,10 +5197,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 195,
+      "plays": 196,
       "wins": 93,
-      "losses": 102,
-      "winpercent": 48
+      "losses": 103,
+      "winpercent": 47
     }
   ]
 }

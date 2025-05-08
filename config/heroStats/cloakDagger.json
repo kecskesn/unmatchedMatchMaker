@@ -590,10 +590,10 @@
       "hero": "Beowulf",
       "queryOpponentOverall": [
         {
-          "plays": 11,
+          "plays": 12,
           "wins": 4,
-          "losses": 7,
-          "winpercent": 36
+          "losses": 8,
+          "winpercent": 33
         }
       ],
       "repeatMap": [
@@ -727,7 +727,15 @@
         },
         {
           "mapName": "Yukon",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Beowulf",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         }
       ]
     },
@@ -1001,10 +1009,10 @@
       "hero": "Black Widow",
       "queryOpponentOverall": [
         {
-          "plays": 7,
-          "wins": 1,
+          "plays": 9,
+          "wins": 3,
           "losses": 6,
-          "winpercent": 14
+          "winpercent": 33
         }
       ],
       "repeatMap": [
@@ -1070,7 +1078,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Black Widow",
+              "plays": 2,
+              "wins": 2,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -2299,10 +2315,10 @@
       "hero": "Dracula",
       "queryOpponentOverall": [
         {
-          "plays": 12,
+          "plays": 13,
           "wins": 5,
-          "losses": 7,
-          "winpercent": 42
+          "losses": 8,
+          "winpercent": 38
         }
       ],
       "repeatMap": [
@@ -2335,10 +2351,10 @@
           "queryResult": [
             {
               "opponent": "Dracula",
-              "plays": 1,
+              "plays": 2,
               "wins": 1,
-              "losses": 0,
-              "winpercent": 100
+              "losses": 1,
+              "winpercent": 50
             }
           ]
         },
@@ -6459,10 +6475,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 15,
+          "plays": 16,
           "wins": 10,
-          "losses": 5,
-          "winpercent": 67
+          "losses": 6,
+          "winpercent": 63
         }
       ]
     },
@@ -6529,10 +6545,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 58,
-          "wins": 27,
+          "plays": 60,
+          "wins": 29,
           "losses": 31,
-          "winpercent": 47
+          "winpercent": 48
         }
       ]
     },
@@ -6619,9 +6635,9 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 4,
+          "plays": 5,
           "wins": 0,
-          "losses": 4,
+          "losses": 5,
           "winpercent": 0
         }
       ]
@@ -6629,9 +6645,9 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 444,
-      "wins": 199,
-      "losses": 245,
+      "plays": 448,
+      "wins": 201,
+      "losses": 247,
       "winpercent": 45
     }
   ]
