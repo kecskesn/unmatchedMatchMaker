@@ -292,10 +292,35 @@ a.btn.btn-primary.active {
   color: #f8eadc;
   background-color: #2c76ac;
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 12px;
   margin-top: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   /* Padding and border-radius are static, not transitioned */
+}
+
+.revealed .list-group-flush {
+  border-radius: inherit;
+}
+
+.revealed .list-group-flush .list-group-item:first-child {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.revealed .list-group-flush .list-group-item:last-child {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-bottom: 0;
+}
+
+.revealed .list-group-item {
+  background-color: inherit;
+  border-color: rgba(255, 255, 255, 0.125);
+}
+
+.revealed h5 {
+  margin-bottom: 1rem;
 }
 
 .card {
@@ -317,7 +342,7 @@ a.btn.btn-primary.active {
 
 .card-subtitle {
   margin-top: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-weight: bold;
 }
 
@@ -371,4 +396,171 @@ a.btn.btn-primary.active {
 
 #matchLogsContainer {
   width: 100%;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: #f8eadc;
+}
+
+.dark-mode .table {
+  color: #f8eadc;
+}
+
+.dark-mode thead tr {
+  border-bottom: 1px solid #444 !important;
+}
+
+.dark-mode tbody tr {
+  border-bottom: 1px solid #444;
+}
+
+.dark-mode .btn-primary {
+  background-color: #215981;
+  border-color: #25303b;
+  color: #f8eadc;
+}
+
+.dark-mode .btn-primary:hover,
+.dark-mode .btn-primary:focus,
+.dark-mode .btn-primary:active,
+.dark-mode .btn-primary.active {
+  background-color: #1a4a6a;
+  border-color: #1a1a1a;
+  color: #f8eadc;
+}
+
+.dark-mode .btn-danger {
+  background-color: #b71c1c;
+  border-color: #b71c1c;
+  color: #f8eadc;
+}
+
+.dark-mode .badge-primary {
+  background-color: #215981;
+  color: #f8eadc;
+}
+
+.dark-mode .badge-danger {
+  background-color: #b71c1c;
+  color: #f8eadc;
+}
+
+.dark-mode .btn-natural {
+  background-color: #333;
+  color: #f8eadc;
+}
+
+.dark-mode .btn-red {
+  color: #f8eadc;
+  background-color: #b71c1c;
+  border-color: #b71c1c;
+}
+
+.dark-mode .btn-blue {
+  color: #f8eadc;
+  background-color: #215981;
+  border-color: #215981;
+}
+
+.dark-mode .btn-purple {
+  color: #f8eadc;
+  background-color: #5c3d7d;
+  border-color: #5c3d7d;
+}
+
+.dark-mode .btn-yellow {
+  color: #f8eadc;
+  background-color: #e0a95c;
+  border-color: #e0a95c;
+}
+
+.dark-mode .value-container {
+  color: #f8eadc;
+}
+
+.dark-mode .card-type-icon {
+  filter: invert(99%) sepia(17%) saturate(1166%) hue-rotate(315deg) brightness(100%) contrast(93%);
+}
+
+.dark-mode .hand-card-button img {
+  filter: invert(99%) sepia(17%) saturate(1166%) hue-rotate(315deg) brightness(100%) contrast(93%);
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  border-color: #444;
+}
+
+.dark-mode .card-title,
+.dark-mode .card-subtitle,
+.dark-mode .card-text {
+  color: #f8eadc;
+}
+
+.dark-mode .list-group-item {
+  background-color: #1e1e1e;
+  border-color: #444;
+  color: #f8eadc;
+}
+
+.dark-mode .list-group-item.blue {
+  background-color: #215981;
+  color: #f8eadc;
+}
+
+.dark-mode .loading-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dark-mode .loading-overlay .spinner-border {
+  color: #f8eadc;
+}
+
+.dark-mode #settings {
+  background-color: #1e1e1e;
+  border-color: #444;
+}
+
+.dark-mode #settings.show {
+  border-color: #444;
+}
+
+.dark-mode .hidden {
+  display: none;
+}
+
+.dark-mode .show {
+  display: block;
+}
+
+.dark-mode .revealed {
+  background-color: #1e1e1e;
+  border-color: #444;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.dark-mode .star-icon,
+.dark-mode .icon {
+  color: #f8eadc;
+}
+
+.dark-mode #matchLogsContainer {
+  background-color: #1e1e1e;
+  border-color: #444;
+}
+
+/* Dark mode styles for select elements */
+.dark-mode select.form-control {
+  background-color: #333;
+  color: #f8eadc;
+  border-color: #444;
+}
+
+.dark-mode select.form-control:focus {
+  background-color: #444;
+  border-color: #555;
+  color: #f8eadc;
 }
