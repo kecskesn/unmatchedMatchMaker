@@ -13,23 +13,25 @@
   <div class="container">
     <div id="menu"></div>
 
-    <div class="d-flex justify-content-between align-items-center">
-      <div class="form-group text-center">
-        <select class="form-control" id="heroSelect1">
-          <option value="" disabled selected>Select a Hero...</option>
-        </select>
+    <div class="d-flex align-items-center justify-content-center">
+      <div class="flex-grow-1 d-flex flex-column">
+        <div class="form-group text-center">
+          <select class="form-control" id="heroSelect1">
+            <option value="" disabled selected>Select a Hero...</option>
+          </select>
+        </div>
       </div>
-
-      <div class="d-flex align-items-center justify-content-center align-self-end">
-        <button class="btn btn-primary mb-0 mt-0 mr-2" id="switchHeroBtn">
+      <div class="mx-3 d-flex align-items-center justify-content-center">
+        <button class="btn btn-primary switch-btn-compact" id="switchHeroBtn">
           <i class="fas fa-exchange-alt"></i>
         </button>
       </div>
-
-      <div class="form-group text-center">
-        <select class="form-control" id="heroSelect2">
-          <option value="" disabled selected>Select a Hero</option>
-        </select>
+      <div class="flex-grow-1 d-flex flex-column">
+        <div class="form-group text-center">
+          <select class="form-control" id="heroSelect2">
+            <option value="" disabled selected>Select a Hero</option>
+          </select>
+        </div>
       </div>
     </div>
 
@@ -37,7 +39,7 @@
       Show Settings <i class="fas fa-angle-down"></i>
     </button>
 
-    <div id="settings">
+    <div id="settings" class="settings-container">
       <div class="form-group mt-2">
         <label for="fairnessThreshold" class="font-weight-bold">Fairness Threshold</label>
         <input type="range" class="form-control-range" id="fairnessThreshold" min="50" max="100" value="60" />
@@ -56,18 +58,20 @@
     </div>
 
     <div class="form-group">
-      <table class="table table-borderless">
-        <thead>
-          <tr>
-            <th>Map</th>
-            <th>Plays</th>
-            <th id="winPercentageHeader">
-              Win Percentage
-            </th>
-          </tr>
-        </thead>
-        <tbody id="results"></tbody>
-      </table>
+      <div class="table-container">
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th>Map</th>
+              <th>Plays</th>
+              <th id="winPercentageHeader">
+                Win Percentage
+              </th>
+            </tr>
+          </thead>
+          <tbody id="results"></tbody>
+        </table>
+      </div>
     </div>
     <div id="loadingOverlay" class="loading-overlay hidden">
       <div class="spinner-border" role="status">
@@ -215,20 +219,6 @@
         if (!settingsDiv.classList.contains("show")) {
           settingsDiv.classList.add("show");
           toggleSettingsButton.innerHTML = "Hide Settings  <i class='fas fa-angle-up'></i>";
-
-          const winPercentCells = document.querySelectorAll(".win-percent-cell");
-          let allWinPercentagesVisible = true;
-
-          winPercentCells.forEach((cell) => {
-            const actualWinPercentDiv = cell.querySelector(".actual-win-percent");
-            if (actualWinPercentDiv && actualWinPercentDiv.classList.contains("hidden")) {
-              allWinPercentagesVisible = false;
-            }
-          });
-
-          toggleWinPercentagesButton.innerHTML = allWinPercentagesVisible
-            ? "Hide Win Percentages <i class='fas fa-eye-slash'></i>"
-            : "Show Win Percentages <i class='fas fa-eye'></i>";
         } else {
           settingsDiv.classList.remove("show");
           toggleSettingsButton.innerHTML = "Show Settings <i class='fas fa-angle-down'>";

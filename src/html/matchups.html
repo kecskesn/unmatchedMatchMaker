@@ -23,7 +23,7 @@
       Show Settings <i class="fas fa-angle-down"></i>
     </button>
 
-    <div id="settings">
+    <div id="settings" class="settings-container">
       <div class="form-group mt-2">
         <label for="modeSelect" class="font-weight-bold">Mode</label>
         <select class="form-control" id="modeSelect">
@@ -70,18 +70,20 @@
       </div>
     </div>
     <div class="form-group">
-      <table class="table table-borderless">
-        <thead>
-          <tr>
-            <th>Hero</th>
-            <th>Plays</th>
-            <th id="winPercentageHeader">
-              Win Percentage
-            </th>
-          </tr>
-        </thead>
-        <tbody id="results"></tbody>
-      </table>
+      <div class="table-container">
+        <table class="table table-borderless">
+          <thead>
+            <tr>
+              <th>Hero</th>
+              <th>Plays</th>
+              <th id="winPercentageHeader">
+                Win Percentage
+              </th>
+            </tr>
+          </thead>
+          <tbody id="results"></tbody>
+        </table>
+      </div>
     </div>
     <div id="loadingOverlay" class="loading-overlay hidden">
       <div class="spinner-border" role="status">
