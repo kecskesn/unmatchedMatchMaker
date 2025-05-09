@@ -58,7 +58,7 @@
           <option value="both" selected>UMLeague + local</option>
         </select>
       </div>
-      <div class="form-group mt-2">
+      <div class="form-group mt-4">
         <div class="button-row d-flex justify-content-between align-items-center">
           <button type="button" id="toggleWinPercentages" class="btn btn-primary">
             Show Win Percentages <i class="fas fa-eye"></i>
@@ -154,6 +154,8 @@
         numberOfPlaysSelect.disabled = modeSelect.value === "excludeUnfair";
         fairnessThresholdInput.value = sessionStorage.getItem('fairnessThreshold') || 60;
         fairnessThresholdValue.textContent = sessionStorage.getItem('fairnessThreshold') || 60;
+        fairnessThresholdInput.dispatchEvent(new Event('change'));
+        fairnessThresholdInput.dispatchEvent(new Event('input'));
         numberOfPlaysSelect.value = sessionStorage.getItem('numberOfPlays') || 0;
         sourceSelect.value = sessionStorage.getItem('source') || 'both';
         fetchHeroes();
@@ -336,6 +338,27 @@
 
         return winPercentContainer;
       }
+    </script>
+    <script>
+    function updateAllRangeProgress() {
+      document.querySelectorAll('input[type="range"]').forEach(function(slider) {
+        function updateProgress() {
+          var min = slider.min ? parseFloat(slider.min) : 0;
+          var max = slider.max ? parseFloat(slider.max) : 100;
+          var value = slider.value ? parseFloat(slider.value) : 0;
+          var percent = ((value - min) / (max - min)) * 100;
+          slider.style.setProperty('--progress', percent + '%');
+        }
+        slider.addEventListener('input', updateProgress);
+        slider.addEventListener('change', updateProgress);
+        updateProgress();
+      });
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', updateAllRangeProgress);
+    } else {
+      updateAllRangeProgress();
+    }
     </script>
 </body>
 

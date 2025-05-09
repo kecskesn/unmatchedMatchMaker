@@ -64,7 +64,7 @@ input[type="submit"] {
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.07);
   transition: background 0.2s, color 0.2s, box-shadow 0.2s, border 0.2s;
   border-width: 1.5px;
-  margin-bottom: 0.7rem;
+  margin-bottom: 1.0rem;
   margin-top: 1.2rem;
 }
 
@@ -73,7 +73,7 @@ input[type="submit"] {
   box-shadow: 0 4px 16px 0 rgba(44, 118, 172, 0.12);
 }
 
-.btn-primary, .btn-primary:active, .btn-primary:focus {
+.btn-primary {
   background-color: #2c76ac !important;
   border-color: #2c76ac !important;
   color: #f8eadc !important;
@@ -82,6 +82,12 @@ input[type="submit"] {
 .btn-primary:hover {
   background-color: #215981 !important;
   border-color: #25303b !important;
+  color: #f8eadc !important;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary.active {
+  background-color: #1a4a6a !important;
+  border-color: #1a1a1a !important;
   color: #f8eadc !important;
 }
 
@@ -106,7 +112,7 @@ input[type="submit"] {
   border-color: #333;
 }
 
-.dark-mode .btn-primary, .dark-mode .btn-primary:active, .dark-mode .btn-primary:focus {
+.dark-mode .btn-primary {
   background-color: #215981 !important;
   border-color: #25303b !important;
   color: #f8eadc !important;
@@ -114,6 +120,12 @@ input[type="submit"] {
 
 .dark-mode .btn-primary:hover {
   background-color: #1a4a6a !important;
+  border-color: #1a1a1a !important;
+  color: #f8eadc !important;
+}
+
+.dark-mode .btn-primary:active, .dark-mode .btn-primary:focus, .dark-mode .btn-primary.active {
+  background-color: #153d5a !important;
   border-color: #1a1a1a !important;
   color: #f8eadc !important;
 }
@@ -616,11 +628,13 @@ input[type="submit"] {
 }
 
 .table-container {
+  margin-left: auto;
+  margin-right: auto;
   background: rgba(255,255,255,0.92);
   border-radius: 16px;
   box-shadow: 0 2px 16px 0 rgba(0,0,0,0.06);
   padding: 2rem 1.5rem;
-  margin: 2rem auto;
+  margin: 1rem auto;
   max-width: 700px;
   transition: background 0.3s;
 }
@@ -632,9 +646,9 @@ html.dark-mode body .table-container {
 }
 
 .no-logs-message {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  font-size: 1.2rem;
-  color: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -798,7 +812,7 @@ html.dark-mode body .settings-container {
   box-shadow: 0 2px 16px 0 rgba(0,0,0,0.18);
 }
 
-/* Fairness Threshold Slider */
+/* Fairness Threshold Slider - Custom Blue Thumb and Track */
 input[type=range] {
   width: 100%;
   height: 4px;
@@ -808,8 +822,11 @@ input[type=range] {
   transition: background 0.2s;
   margin: 0;
   vertical-align: middle;
+  accent-color: #2c76ac; /* For modern browsers */
+  --progress: 50%; /* fallback, will be set dynamically by JS */
 }
 
+/* For Webkit browsers (Chrome, Safari, Edge) */
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -819,27 +836,27 @@ input[type=range]::-webkit-slider-thumb {
   background: #2c76ac;
   cursor: pointer;
   border: 2px solid #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  margin-top: -7px;
+  margin-top: -7px; /* Standard for 18px thumb and 4px track */
   transition: background 0.2s;
 }
 input[type=range]:focus::-webkit-slider-thumb {
   background: #215981;
 }
-input[type=range]::-ms-thumb {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: #2c76ac;
-  cursor: pointer;
-  border: 2px solid #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  margin-top: 0;
-  transition: background 0.2s;
+input[type=range]::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(
+    to right,
+    #2c76ac 0%,
+    #2c76ac var(--progress),
+    #eaeaea var(--progress),
+    #eaeaea 100%
+  );
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
-input[type=range]:focus::-ms-thumb {
-  background: #215981;
-}
+
+/* For Firefox */
 input[type=range]::-moz-range-thumb {
   width: 18px;
   height: 18px;
@@ -847,23 +864,26 @@ input[type=range]::-moz-range-thumb {
   background: #2c76ac;
   cursor: pointer;
   border: 2px solid #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  transition: background 0.2s;
+}
+input[type=range]:focus::-moz-range-thumb {
+  background: #215981;
+}
+input[type=range]::-moz-range-progress {
+  background-color: #2c76ac;
+}
+input[type=range]::-moz-range-track {
+  background-color: #eaeaea;
 }
 
-input[type=range]::-webkit-slider-runnable-track {
-  height: 4px;
-  border-radius: 2px;
-  background: #eaeaea;
+/* For IE/Edge */
+input[type=range]::-ms-fill-lower {
+  background: #2c76ac;
 }
-input[type=range]::-ms-fill-lower,
 input[type=range]::-ms-fill-upper {
   background: #eaeaea;
 }
-input[type=range]::-moz-range-track {
-  height: 4px;
-  border-radius: 2px;
-  background: #eaeaea;
+input[type=range]:focus::-ms-fill-lower {
+  background: #215981;
 }
 
 .dark-mode input[type=range] {
@@ -905,7 +925,7 @@ button#switchHeroBtn,
   width: auto !important;
   min-width: 0 !important;
   max-width: 100%;
-  padding: 0 1.2rem !important;
+  padding: 0.7rem 1.7rem !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -913,8 +933,6 @@ button#switchHeroBtn,
   border-radius: 10px !important;
   box-shadow: none;
   margin: 0 0.5rem;
-  height: 48px;
-  min-height: 0;
 }
 
 #switchHeroBtn i,
@@ -979,4 +997,8 @@ button#switchHeroBtn,
   .switch-btn-compact {
     font-size: 0.95rem;
   }
+}
+
+.card-tracker-switch-row {
+  align-items: baseline !important;
 }

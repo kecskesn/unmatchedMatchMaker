@@ -18,9 +18,9 @@
         <option value="" disabled selected>Select a Hero...</option>
       </select>
     </div>
-    <div class="d-flex justify-content-start align-items-center">
-      <button class="btn btn-danger mt-2 mb-2" id="resetButton">Reset</button>
-      <button class="btn btn-primary ml-2 mt-2 mb-2" id="switchHeroBtn">
+    <div class="d-flex justify-content-start align-items-center" style="align-items: baseline !important;">
+      <button class="btn btn-danger" id="resetButton">Reset</button>
+      <button class="btn btn-primary" id="switchHeroBtn">
         <i class="fas fa-exchange-alt"></i> <span id="switchHeroText"></span>
       </button>
     </div>
@@ -414,6 +414,27 @@
         totalCardCount - discardedCardCount;
       document.getElementById("discardedCardCount").innerText =
         discardedCardCount;
+    }
+  </script>
+  <script>
+    function updateAllRangeProgress() {
+      document.querySelectorAll('input[type="range"]').forEach(function(slider) {
+        function updateProgress() {
+          var min = slider.min ? parseFloat(slider.min) : 0;
+          var max = slider.max ? parseFloat(slider.max) : 100;
+          var value = slider.value ? parseFloat(slider.value) : 0;
+          var percent = ((value - min) / (max - min)) * 100;
+          slider.style.setProperty('--progress', percent + '%');
+        }
+        slider.addEventListener('input', updateProgress);
+        slider.addEventListener('change', updateProgress);
+        updateProgress();
+      });
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', updateAllRangeProgress);
+    } else {
+      updateAllRangeProgress();
     }
   </script>
 </body>

@@ -42,7 +42,7 @@
     </div>
 
     <div class="d-flex flex-column align-items-center mt-4">
-      <h4>Select Winner</h4>
+      <h4 class="text-center">Select Winner</h4>
       <div class="d-flex justify-content-between align-items-center">
         <button class="btn btn-primary" id="hero1Btn" disabled>
           Select a Hero...
@@ -57,7 +57,7 @@
     <hr class="my-4" />
 
     <div class="d-flex flex-column align-items-center mt-4">
-      <h2 class="mb-3">Match History</h2>
+      <h2 class="mb-3 text-center">Match History</h2>
       <div id="winRateTracker" class="mb-4"></div>
       <div class="row mb-3 justify-content-center">
         <div class="col-md-5 mt-2">
@@ -385,6 +385,19 @@
           console.error("Error deleting match log:", error);
         });
     }
+  </script>
+  <script>
+    document.querySelectorAll('input[type="range"]').forEach(function(slider) {
+      function updateProgress() {
+        var min = slider.min ? parseFloat(slider.min) : 0;
+        var max = slider.max ? parseFloat(slider.max) : 100;
+        var value = slider.value ? parseFloat(slider.value) : 0;
+        var percent = ((value - min) / (max - min)) * 100;
+        slider.style.setProperty('--progress', percent + '%');
+      }
+      slider.addEventListener('input', updateProgress);
+      updateProgress();
+    });
   </script>
 </body>
 

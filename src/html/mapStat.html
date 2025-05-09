@@ -40,12 +40,12 @@
     </button>
 
     <div id="settings" class="settings-container">
-      <div class="form-group mt-2">
+      <div class="form-group mt-4">
         <label for="fairnessThreshold" class="font-weight-bold">Fairness Threshold</label>
         <input type="range" class="form-control-range" id="fairnessThreshold" min="50" max="100" value="60" />
         <span id="fairnessThresholdValue">60</span>
       </div>
-      <div class="form-group">
+      <div class="form-group mt-4">
         <div class="button-row d-flex justify-content-between align-items-center">
           <button type="button" id="toggleWinPercentages" class="btn btn-primary">
             Show Win Percentages <i class="fas fa-eye"></i>
@@ -270,6 +270,8 @@
       window.onload = function () {
         fairnessThresholdInput.value = sessionStorage.getItem('fairnessThreshold') || 60;
         fairnessThresholdValue.textContent = sessionStorage.getItem('fairnessThreshold') || 60;
+        fairnessThresholdInput.dispatchEvent(new Event('change'));
+        fairnessThresholdInput.dispatchEvent(new Event('input'));
         loadMenu();
         fetchHeroes();
       };
@@ -306,6 +308,19 @@
             getMapStats();
           });
       }
+
+      document.querySelectorAll('input[type="range"]').forEach(function(slider) {
+        function updateProgress() {
+          var min = slider.min ? parseFloat(slider.min) : 0;
+          var max = slider.max ? parseFloat(slider.max) : 100;
+          var value = slider.value ? parseFloat(slider.value) : 0;
+          var percent = ((value - min) / (max - min)) * 100;
+          slider.style.setProperty('--progress', percent + '%');
+        }
+        slider.addEventListener('input', updateProgress);
+        slider.addEventListener('change', updateProgress);
+        updateProgress();
+      });
     </script>
 </body>
 
