@@ -228,6 +228,8 @@
       resetFiltersToDefaultButton.addEventListener("click", function () {
         fairnessThresholdInput.value = 60;
         fairnessThresholdValue.textContent = 60;
+        fairnessThresholdInput.dispatchEvent(new Event('change'));
+        fairnessThresholdInput.dispatchEvent(new Event('input'));
         toggleWinPercentagesButton.innerHTML = "Show Win Percentages <i class='fas fa-eye'></i>";
 
         sessionStorage.removeItem('fairnessThreshold');

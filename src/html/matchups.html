@@ -210,6 +210,8 @@
         modeSelect.value = "excludeUnfair";
         fairnessThresholdInput.value = 60;
         fairnessThresholdValue.textContent = 60;
+        fairnessThresholdInput.dispatchEvent(new Event('change'));
+        fairnessThresholdInput.dispatchEvent(new Event('input'));
         numberOfPlaysSelect.value = "0";
         numberOfPlaysSelect.disabled = true;
         sourceSelect.value = "both";
@@ -235,7 +237,7 @@
             });
 
             const selectedHero = sessionStorage.getItem('hero');
-            if (selectedHero) {
+            if (selectedHero && heroSelect.querySelector(`option[value='${selectedHero}']`)) {
               heroSelect.value = selectedHero;
             }
 
@@ -246,21 +248,21 @@
 
       function fetchMatches() {
         const hero = heroSelect.value;
-        const heroName = heroSelect.options[heroSelect.selectedIndex].text;
+        if (hero) {
+          sessionStorage.setItem('hero', hero);
+        }
+        const heroName = heroSelect.options[heroSelect.selectedIndex]?.text;
         const mode = modeSelect.value;
         const fairnessThreshold = fairnessThresholdInput.value;
         const numberOfPlays = numberOfPlaysSelect.value;
         const source = sourceSelect.value;
 
-        sessionStorage.setItem('hero', hero);
         sessionStorage.setItem('mode', modeSelect.value);
         sessionStorage.setItem('fairnessThreshold', fairnessThresholdInput.value);
         sessionStorage.setItem('numberOfPlays', numberOfPlaysSelect.value);
         sessionStorage.setItem('source', sourceSelect.value);
 
         if (!hero) return;
-
-        sessionStorage.setItem('hero', hero);
 
         loadingOverlay.classList.remove("hidden");
 
