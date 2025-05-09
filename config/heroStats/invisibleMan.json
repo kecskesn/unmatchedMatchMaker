@@ -29,6 +29,10 @@
       "mapName": "Heorot"
     },
     {
+      "mapId": 24,
+      "mapName": "Kaer Morhen"
+    },
+    {
       "mapId": 16,
       "mapName": "King Solomon's Mine"
     },
@@ -155,6 +159,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -300,6 +308,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -496,6 +508,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -614,6 +630,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -744,6 +764,10 @@
               "winpercent": 50
             }
           ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
@@ -904,6 +928,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -1076,6 +1104,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -1210,6 +1242,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -1363,6 +1399,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -1543,6 +1583,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -1652,10 +1696,10 @@
       "hero": "Buffy Giles",
       "queryOpponentOverall": [
         {
-          "plays": 14,
-          "wins": 7,
-          "losses": 7,
-          "winpercent": 50
+          "plays": 23,
+          "wins": 11,
+          "losses": 12,
+          "winpercent": 48
         }
       ],
       "repeatMap": [
@@ -1697,11 +1741,31 @@
         },
         {
           "mapName": "Hell's Kitchen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Buffy Giles",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Heorot",
           "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Buffy Giles",
+              "plays": 2,
+              "wins": 0,
+              "losses": 2,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "King Solomon's Mine",
@@ -1769,11 +1833,27 @@
         },
         {
           "mapName": "Streets of Novigrad",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Buffy Giles",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Buffy Giles",
+              "plays": 5,
+              "wins": 3,
+              "losses": 2,
+              "winpercent": 60
+            }
+          ]
         },
         {
           "mapName": "T. Rex Paddock",
@@ -1805,10 +1885,10 @@
       "hero": "Buffy Xander",
       "queryOpponentOverall": [
         {
-          "plays": 3,
-          "wins": 1,
+          "plays": 4,
+          "wins": 2,
           "losses": 2,
-          "winpercent": 33
+          "winpercent": 50
         }
       ],
       "repeatMap": [
@@ -1846,6 +1926,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -1905,8 +1989,8 @@
           "queryResult": [
             {
               "opponent": "Buffy Xander",
-              "plays": 1,
-              "wins": 1,
+              "plays": 2,
+              "wins": 2,
               "losses": 0,
               "winpercent": 100
             }
@@ -1975,6 +2059,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -2087,10 +2175,10 @@
       "hero": "Cloak & Dagger",
       "queryOpponentOverall": [
         {
-          "plays": 8,
-          "wins": 5,
-          "losses": 3,
-          "winpercent": 63
+          "plays": 13,
+          "wins": 9,
+          "losses": 4,
+          "winpercent": 69
         }
       ],
       "repeatMap": [
@@ -2139,6 +2227,18 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Cloak & Dagger",
+              "plays": 3,
+              "wins": 3,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -2171,10 +2271,10 @@
           "queryResult": [
             {
               "opponent": "Cloak & Dagger",
-              "plays": 2,
+              "plays": 3,
               "wins": 1,
-              "losses": 1,
-              "winpercent": 50
+              "losses": 2,
+              "winpercent": 33
             }
           ]
         },
@@ -2196,7 +2296,15 @@
         },
         {
           "mapName": "Streets of Novigrad",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Cloak & Dagger",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
@@ -2265,6 +2373,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -2345,10 +2457,10 @@
       "hero": "Deadpool",
       "queryOpponentOverall": [
         {
-          "plays": 21,
-          "wins": 7,
-          "losses": 14,
-          "winpercent": 33
+          "plays": 25,
+          "wins": 8,
+          "losses": 17,
+          "winpercent": 32
         }
       ],
       "repeatMap": [
@@ -2393,15 +2505,27 @@
           "queryResult": [
             {
               "opponent": "Deadpool",
-              "plays": 2,
+              "plays": 4,
               "wins": 1,
-              "losses": 1,
-              "winpercent": 50
+              "losses": 3,
+              "winpercent": 25
             }
           ]
         },
         {
           "mapName": "Heorot",
+          "queryResult": [
+            {
+              "opponent": "Deadpool",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": [
             {
               "opponent": "Deadpool",
@@ -2490,7 +2614,15 @@
         },
         {
           "mapName": "Sunnydale High",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Deadpool",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "T. Rex Paddock",
@@ -2555,6 +2687,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -2684,6 +2820,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -2854,6 +2994,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
@@ -3033,6 +3177,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -3123,6 +3271,123 @@
       ]
     },
     {
+      "hero": "Geralt of Rivia",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Heorot",
+          "queryResult": [
+            {
+              "opponent": "Geralt of Rivia",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        },
+        {
+          "mapName": "Yukon",
+          "queryResult": []
+        }
+      ]
+    },
+    {
       "hero": "Ghost Rider",
       "queryOpponentOverall": [
         {
@@ -3184,6 +3449,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
@@ -3339,6 +3608,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -3437,6 +3710,131 @@
       ]
     },
     {
+      "hero": "Hamlet",
+      "queryOpponentOverall": [
+        {
+          "plays": 2,
+          "wins": 1,
+          "losses": 1,
+          "winpercent": 50
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": [
+            {
+              "opponent": "Hamlet",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": [
+            {
+              "opponent": "Hamlet",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        },
+        {
+          "mapName": "Yukon",
+          "queryResult": []
+        }
+      ]
+    },
+    {
       "hero": "Houdini",
       "queryOpponentOverall": [
         {
@@ -3481,6 +3879,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -3605,6 +4007,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -3714,10 +4120,10 @@
       "hero": "Jekyll & Hyde",
       "queryOpponentOverall": [
         {
-          "plays": 62,
+          "plays": 64,
           "wins": 36,
-          "losses": 26,
-          "winpercent": 58
+          "losses": 28,
+          "winpercent": 56
         }
       ],
       "repeatMap": [
@@ -3790,6 +4196,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -3830,10 +4240,10 @@
           "queryResult": [
             {
               "opponent": "Jekyll & Hyde",
-              "plays": 12,
+              "plays": 13,
               "wins": 4,
-              "losses": 8,
-              "winpercent": 33
+              "losses": 9,
+              "winpercent": 31
             }
           ]
         },
@@ -3894,9 +4304,9 @@
           "queryResult": [
             {
               "opponent": "Jekyll & Hyde",
-              "plays": 1,
+              "plays": 2,
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "winpercent": 0
             }
           ]
@@ -3939,10 +4349,10 @@
       "hero": "King Arthur",
       "queryOpponentOverall": [
         {
-          "plays": 28,
-          "wins": 9,
-          "losses": 19,
-          "winpercent": 32
+          "plays": 34,
+          "wins": 10,
+          "losses": 24,
+          "winpercent": 29
         }
       ],
       "repeatMap": [
@@ -3989,6 +4399,10 @@
               "winpercent": 40
             }
           ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
@@ -4072,11 +4486,27 @@
         },
         {
           "mapName": "Streets of Novigrad",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "King Arthur",
+              "plays": 2,
+              "wins": 0,
+              "losses": 2,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "King Arthur",
+              "plays": 4,
+              "wins": 1,
+              "losses": 3,
+              "winpercent": 25
+            }
+          ]
         },
         {
           "mapName": "T. Rex Paddock",
@@ -4157,6 +4587,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -4326,6 +4760,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -4530,6 +4968,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -4683,6 +5125,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -4760,10 +5206,10 @@
       "hero": "Ms. Marvel",
       "queryOpponentOverall": [
         {
-          "plays": 7,
+          "plays": 13,
           "wins": 1,
-          "losses": 6,
-          "winpercent": 14
+          "losses": 12,
+          "winpercent": 8
         }
       ],
       "repeatMap": [
@@ -4797,10 +5243,22 @@
         },
         {
           "mapName": "Hell's Kitchen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Ms. Marvel",
+              "plays": 2,
+              "wins": 0,
+              "losses": 2,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -4828,9 +5286,9 @@
           "queryResult": [
             {
               "opponent": "Ms. Marvel",
-              "plays": 1,
+              "plays": 4,
               "wins": 0,
-              "losses": 1,
+              "losses": 4,
               "winpercent": 0
             }
           ]
@@ -4853,7 +5311,15 @@
         },
         {
           "mapName": "Streets of Novigrad",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Ms. Marvel",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
@@ -4941,6 +5407,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -5010,10 +5480,10 @@
       "hero": "Oda Nobunaga",
       "queryOpponentOverall": [
         {
-          "plays": 9,
-          "wins": 4,
+          "plays": 11,
+          "wins": 6,
           "losses": 5,
-          "winpercent": 44
+          "winpercent": 55
         }
       ],
       "repeatMap": [
@@ -5070,6 +5540,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -5102,10 +5576,10 @@
           "queryResult": [
             {
               "opponent": "Oda Nobunaga",
-              "plays": 1,
-              "wins": 0,
+              "plays": 2,
+              "wins": 1,
               "losses": 1,
-              "winpercent": 0
+              "winpercent": 50
             }
           ]
         },
@@ -5147,7 +5621,15 @@
         },
         {
           "mapName": "Sunnydale High",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Oda Nobunaga",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "T. Rex Paddock",
@@ -5229,6 +5711,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
@@ -5389,6 +5875,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -5553,6 +6043,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -5680,6 +6174,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
@@ -5811,6 +6309,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -5904,9 +6406,9 @@
       "hero": "Sinbad",
       "queryOpponentOverall": [
         {
-          "plays": 21,
+          "plays": 22,
           "wins": 1,
-          "losses": 20,
+          "losses": 21,
           "winpercent": 5
         }
       ],
@@ -5964,6 +6466,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -5981,7 +6487,15 @@
         },
         {
           "mapName": "McMinnville, OR",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Sinbad",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Navy Pier",
@@ -6105,10 +6619,10 @@
       "hero": "Spider-Man",
       "queryOpponentOverall": [
         {
-          "plays": 15,
-          "wins": 12,
-          "losses": 3,
-          "winpercent": 80
+          "plays": 23,
+          "wins": 16,
+          "losses": 7,
+          "winpercent": 70
         }
       ],
       "repeatMap": [
@@ -6158,7 +6672,15 @@
         },
         {
           "mapName": "Hell's Kitchen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Spider-Man",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Heorot",
@@ -6169,6 +6691,18 @@
               "wins": 1,
               "losses": 0,
               "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Spider-Man",
+              "plays": 2,
+              "wins": 1,
+              "losses": 1,
+              "winpercent": 50
             }
           ]
         },
@@ -6197,10 +6731,10 @@
           "queryResult": [
             {
               "opponent": "Spider-Man",
-              "plays": 5,
-              "wins": 2,
-              "losses": 3,
-              "winpercent": 40
+              "plays": 8,
+              "wins": 4,
+              "losses": 4,
+              "winpercent": 50
             }
           ]
         },
@@ -6234,7 +6768,15 @@
         },
         {
           "mapName": "Sunnydale High",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Spider-Man",
+              "plays": 2,
+              "wins": 1,
+              "losses": 1,
+              "winpercent": 50
+            }
+          ]
         },
         {
           "mapName": "T. Rex Paddock",
@@ -6307,6 +6849,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -6395,10 +6941,10 @@
       "hero": "Squirrel Girl",
       "queryOpponentOverall": [
         {
-          "plays": 12,
-          "wins": 4,
-          "losses": 8,
-          "winpercent": 33
+          "plays": 15,
+          "wins": 6,
+          "losses": 9,
+          "winpercent": 40
         }
       ],
       "repeatMap": [
@@ -6463,6 +7009,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": [
             {
@@ -6492,7 +7042,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Squirrel Girl",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -6520,7 +7078,15 @@
         },
         {
           "mapName": "Streets of Novigrad",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Squirrel Girl",
+              "plays": 2,
+              "wins": 2,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
@@ -6597,6 +7163,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -6693,10 +7263,10 @@
       "hero": "T. Rex",
       "queryOpponentOverall": [
         {
-          "plays": 7,
+          "plays": 8,
           "wins": 2,
-          "losses": 5,
-          "winpercent": 29
+          "losses": 6,
+          "winpercent": 25
         }
       ],
       "repeatMap": [
@@ -6745,6 +7315,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -6778,7 +7352,15 @@
         },
         {
           "mapName": "Sanctum Sanctorum",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "T. Rex",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sarpedon",
@@ -6887,6 +7469,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -7043,6 +7629,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -7117,6 +7707,123 @@
       ]
     },
     {
+      "hero": "Titania",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": [
+            {
+              "opponent": "Titania",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        },
+        {
+          "mapName": "Yukon",
+          "queryResult": []
+        }
+      ]
+    },
+    {
       "hero": "Triss",
       "queryOpponentOverall": [
         {
@@ -7153,6 +7860,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -7233,10 +7944,10 @@
       "hero": "Willow",
       "queryOpponentOverall": [
         {
-          "plays": 3,
-          "wins": 2,
+          "plays": 6,
+          "wins": 5,
           "losses": 1,
-          "winpercent": 67
+          "winpercent": 83
         }
       ],
       "repeatMap": [
@@ -7285,6 +7996,18 @@
           "queryResult": []
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Willow",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -7306,7 +8029,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Willow",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -7326,7 +8057,15 @@
         },
         {
           "mapName": "Streets of Novigrad",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Willow",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
@@ -7395,6 +8134,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -7552,10 +8295,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 3,
+          "plays": 4,
           "wins": 3,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 1,
+          "winpercent": 75
         }
       ]
     },
@@ -7582,20 +8325,30 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 15,
+          "plays": 21,
           "wins": 9,
-          "losses": 6,
-          "winpercent": 60
+          "losses": 12,
+          "winpercent": 43
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 21,
+          "plays": 22,
           "wins": 8,
-          "losses": 13,
-          "winpercent": 38
+          "losses": 14,
+          "winpercent": 36
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 9,
+          "wins": 6,
+          "losses": 3,
+          "winpercent": 67
         }
       ]
     },
@@ -7622,10 +8375,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 4,
+          "plays": 5,
           "wins": 1,
-          "losses": 3,
-          "winpercent": 25
+          "losses": 4,
+          "winpercent": 20
         }
       ]
     },
@@ -7652,19 +8405,19 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 93,
-          "wins": 26,
-          "losses": 67,
-          "winpercent": 28
+          "plays": 105,
+          "wins": 31,
+          "losses": 74,
+          "winpercent": 30
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 24,
+          "plays": 25,
           "wins": 2,
-          "losses": 22,
+          "losses": 23,
           "winpercent": 8
         }
       ]
@@ -7702,20 +8455,20 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 1,
-          "wins": 0,
-          "losses": 1,
-          "winpercent": 0
+          "plays": 9,
+          "wins": 5,
+          "losses": 4,
+          "winpercent": 56
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 13,
-          "wins": 6,
-          "losses": 7,
-          "winpercent": 46
+          "plays": 29,
+          "wins": 13,
+          "losses": 16,
+          "winpercent": 45
         }
       ]
     },
@@ -7762,10 +8515,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 643,
-      "wins": 247,
-      "losses": 396,
-      "winpercent": 38
+      "plays": 698,
+      "wins": 270,
+      "losses": 428,
+      "winpercent": 39
     }
   ]
 }

@@ -65,6 +65,10 @@
       "mapName": "Sarpedon"
     },
     {
+      "mapId": 3,
+      "mapName": "Sherwood Forest"
+    },
+    {
       "mapId": 6,
       "mapName": "Soho"
     },
@@ -98,10 +102,10 @@
       "hero": "Achilles",
       "queryOpponentOverall": [
         {
-          "plays": 8,
-          "wins": 3,
+          "plays": 11,
+          "wins": 6,
           "losses": 5,
-          "winpercent": 38
+          "winpercent": 55
         }
       ],
       "repeatMap": [
@@ -131,7 +135,15 @@
         },
         {
           "mapName": "Hanging Gardens",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Achilles",
+              "plays": 3,
+              "wins": 3,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Helicarrier",
@@ -199,6 +211,10 @@
         },
         {
           "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -339,6 +355,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -441,6 +461,10 @@
         },
         {
           "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -573,6 +597,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -686,6 +714,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -719,10 +751,10 @@
       "hero": "Ciri",
       "queryOpponentOverall": [
         {
-          "plays": 7,
+          "plays": 8,
           "wins": 4,
-          "losses": 3,
-          "winpercent": 57
+          "losses": 4,
+          "winpercent": 50
         }
       ],
       "repeatMap": [
@@ -811,9 +843,9 @@
           "queryResult": [
             {
               "opponent": "Ciri",
-              "plays": 1,
+              "plays": 2,
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "winpercent": 0
             }
           ]
@@ -828,6 +860,10 @@
         },
         {
           "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -952,6 +988,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -1070,6 +1110,10 @@
         },
         {
           "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -1194,6 +1238,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -1304,6 +1352,10 @@
         },
         {
           "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -1420,6 +1472,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -1461,16 +1517,24 @@
       "hero": "Eredin",
       "queryOpponentOverall": [
         {
-          "plays": 23,
+          "plays": 24,
           "wins": 14,
-          "losses": 9,
-          "winpercent": 61
+          "losses": 10,
+          "winpercent": 58
         }
       ],
       "repeatMap": [
         {
           "mapName": "Azuchi Castle",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Eredin",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Baskerville Manor",
@@ -1573,6 +1637,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -1630,10 +1698,10 @@
       "hero": "Geralt of Rivia",
       "queryOpponentOverall": [
         {
-          "plays": 19,
-          "wins": 11,
+          "plays": 20,
+          "wins": 12,
           "losses": 8,
-          "winpercent": 58
+          "winpercent": 60
         }
       ],
       "repeatMap": [
@@ -1719,7 +1787,15 @@
         },
         {
           "mapName": "Marmoreal",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Geralt of Rivia",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "McMinnville, OR",
@@ -1747,6 +1823,10 @@
         },
         {
           "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -1887,6 +1967,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -2005,6 +2089,10 @@
         },
         {
           "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -2137,6 +2225,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -2247,6 +2339,10 @@
         },
         {
           "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -2395,6 +2491,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -2444,10 +2544,10 @@
       "hero": "Medusa",
       "queryOpponentOverall": [
         {
-          "plays": 9,
+          "plays": 10,
           "wins": 6,
-          "losses": 3,
-          "winpercent": 67
+          "losses": 4,
+          "winpercent": 60
         }
       ],
       "repeatMap": [
@@ -2537,6 +2637,18 @@
         },
         {
           "mapName": "Sarpedon",
+          "queryResult": [
+            {
+              "opponent": "Medusa",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -2682,6 +2794,10 @@
         },
         {
           "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -2846,6 +2962,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -2983,6 +3103,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -3104,6 +3228,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -3215,6 +3343,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
         },
         {
           "mapName": "Soho",
@@ -3330,6 +3462,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -3440,6 +3576,10 @@
         },
         {
           "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -3564,6 +3704,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -3597,10 +3741,10 @@
       "hero": "The Wayward Sisters",
       "queryOpponentOverall": [
         {
-          "plays": 3,
+          "plays": 4,
           "wins": 3,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 1,
+          "winpercent": 75
         }
       ],
       "repeatMap": [
@@ -3642,7 +3786,15 @@
         },
         {
           "mapName": "King Solomon's Mine",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "The Wayward Sisters",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Marmoreal",
@@ -3674,6 +3826,10 @@
         },
         {
           "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
           "queryResult": []
         },
         {
@@ -3806,6 +3962,10 @@
           ]
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -3839,8 +3999,8 @@
       "hero": "Tomoe Gozen",
       "queryOpponentOverall": [
         {
-          "plays": 4,
-          "wins": 4,
+          "plays": 5,
+          "wins": 5,
           "losses": 0,
           "winpercent": 100
         }
@@ -3935,8 +4095,20 @@
           "queryResult": []
         },
         {
-          "mapName": "Soho",
+          "mapName": "Sherwood Forest",
           "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": [
+            {
+              "opponent": "Tomoe Gozen",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Streets of Novigrad",
@@ -3961,6 +4133,123 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        },
+        {
+          "mapName": "Yukon",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "Winter Soldier",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Helicarrier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Naglfar",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": [
+            {
+              "opponent": "Winter Soldier",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
         },
         {
           "mapName": "The Raft",
@@ -4064,6 +4353,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Soho",
           "queryResult": []
         },
@@ -4106,10 +4399,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 2,
+          "plays": 3,
           "wins": 2,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 1,
+          "winpercent": 67
         }
       ]
     },
@@ -4146,10 +4439,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 5,
-          "wins": 1,
+          "plays": 8,
+          "wins": 4,
           "losses": 4,
-          "winpercent": 20
+          "winpercent": 50
         }
       ]
     },
@@ -4196,18 +4489,18 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 5,
+          "plays": 6,
           "wins": 4,
-          "losses": 1,
-          "winpercent": 80
+          "losses": 2,
+          "winpercent": 67
         }
       ]
     },
     {
       "queryHeroMapResults": [
         {
-          "plays": 1,
-          "wins": 1,
+          "plays": 2,
+          "wins": 2,
           "losses": 0,
           "winpercent": 100
         }
@@ -4226,10 +4519,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 15,
+          "plays": 16,
           "wins": 7,
-          "losses": 8,
-          "winpercent": 47
+          "losses": 9,
+          "winpercent": 44
         }
       ]
     },
@@ -4256,10 +4549,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 2,
+          "plays": 3,
           "wins": 2,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 1,
+          "winpercent": 67
         }
       ]
     },
@@ -4267,7 +4560,17 @@
       "queryHeroMapResults": [
         {
           "plays": 1,
-          "wins": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 2,
+          "wins": 2,
           "losses": 0,
           "winpercent": 100
         }
@@ -4336,10 +4639,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 154,
-      "wins": 89,
-      "losses": 65,
-      "winpercent": 58
+      "plays": 164,
+      "wins": 94,
+      "losses": 70,
+      "winpercent": 57
     }
   ]
 }

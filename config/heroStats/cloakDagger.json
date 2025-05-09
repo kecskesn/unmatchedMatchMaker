@@ -9,6 +9,10 @@
       "mapName": "Baskerville Manor"
     },
     {
+      "mapId": 25,
+      "mapName": "Fayrlund Forest"
+    },
+    {
       "mapId": 23,
       "mapName": "Globe Theatre"
     },
@@ -23,6 +27,10 @@
     {
       "mapId": 10,
       "mapName": "Heorot"
+    },
+    {
+      "mapId": 24,
+      "mapName": "Kaer Morhen"
     },
     {
       "mapId": 16,
@@ -65,6 +73,10 @@
       "mapName": "Soho"
     },
     {
+      "mapId": 27,
+      "mapName": "Streets of Novigrad"
+    },
+    {
       "mapId": 8,
       "mapName": "Sunnydale High"
     },
@@ -90,9 +102,9 @@
       "hero": "Achilles",
       "queryOpponentOverall": [
         {
-          "plays": 3,
+          "plays": 4,
           "wins": 0,
-          "losses": 3,
+          "losses": 4,
           "winpercent": 0
         }
       ],
@@ -104,6 +116,18 @@
         {
           "mapName": "Baskerville Manor",
           "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": [
+            {
+              "opponent": "Achilles",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Globe Theatre",
@@ -127,6 +151,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -183,6 +211,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -235,6 +267,10 @@
           ]
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -273,6 +309,10 @@
               "winpercent": 50
             }
           ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
@@ -331,6 +371,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -364,10 +408,10 @@
       "hero": "Angel",
       "queryOpponentOverall": [
         {
-          "plays": 1,
+          "plays": 2,
           "wins": 1,
-          "losses": 0,
-          "winpercent": 100
+          "losses": 1,
+          "winpercent": 50
         }
       ],
       "repeatMap": [
@@ -377,6 +421,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
           "queryResult": []
         },
         {
@@ -393,6 +441,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -436,14 +488,18 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": [
             {
               "opponent": "Angel",
-              "plays": 1,
+              "plays": 2,
               "wins": 1,
-              "losses": 0,
-              "winpercent": 100
+              "losses": 1,
+              "winpercent": 50
             }
           ]
         },
@@ -485,6 +541,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -498,6 +558,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -554,6 +618,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -606,6 +674,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": [
             {
@@ -644,6 +716,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
@@ -691,6 +767,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -759,6 +839,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -780,6 +864,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -836,6 +924,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -888,6 +980,10 @@
           ]
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": [
             {
@@ -926,6 +1022,10 @@
               "winpercent": 50
             }
           ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
@@ -973,6 +1073,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -1033,6 +1137,10 @@
           ]
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -1055,6 +1163,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
@@ -1113,6 +1225,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -1162,6 +1278,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -1183,6 +1303,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -1223,6 +1347,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -1283,6 +1411,10 @@
           ]
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": [
             {
@@ -1313,6 +1445,10 @@
               "winpercent": 50
             }
           ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
@@ -1387,6 +1523,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -1420,10 +1560,10 @@
       "hero": "Buffy Giles",
       "queryOpponentOverall": [
         {
-          "plays": 1,
-          "wins": 0,
+          "plays": 3,
+          "wins": 2,
           "losses": 1,
-          "winpercent": 0
+          "winpercent": 67
         }
       ],
       "repeatMap": [
@@ -1436,6 +1576,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -1445,10 +1589,22 @@
         },
         {
           "mapName": "Hell's Kitchen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Buffy Giles",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -1492,8 +1648,20 @@
           "queryResult": []
         },
         {
-          "mapName": "Sunnydale High",
+          "mapName": "Streets of Novigrad",
           "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": [
+            {
+              "opponent": "Buffy Giles",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "T. Rex Paddock",
@@ -1525,10 +1693,10 @@
       "hero": "Buffy Xander",
       "queryOpponentOverall": [
         {
-          "plays": 9,
-          "wins": 2,
-          "losses": 7,
-          "winpercent": 22
+          "plays": 13,
+          "wins": 5,
+          "losses": 8,
+          "winpercent": 38
         }
       ],
       "repeatMap": [
@@ -1547,6 +1715,10 @@
               "winpercent": 50
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -1571,6 +1743,18 @@
         {
           "mapName": "Heorot",
           "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Buffy Xander",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "King Solomon's Mine",
@@ -1602,7 +1786,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Buffy Xander",
+              "plays": 2,
+              "wins": 2,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -1629,8 +1821,20 @@
           "queryResult": []
         },
         {
-          "mapName": "Sunnydale High",
+          "mapName": "Streets of Novigrad",
           "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": [
+            {
+              "opponent": "Buffy Xander",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "T. Rex Paddock",
@@ -1686,6 +1890,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -1716,6 +1924,10 @@
               "winpercent": 50
             }
           ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
@@ -1803,6 +2015,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -1863,6 +2079,10 @@
           ]
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -1876,6 +2096,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -1927,6 +2151,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -1952,10 +2180,10 @@
       "hero": "Deadpool",
       "queryOpponentOverall": [
         {
-          "plays": 1,
-          "wins": 1,
-          "losses": 0,
-          "winpercent": 100
+          "plays": 7,
+          "wins": 6,
+          "losses": 1,
+          "winpercent": 86
         }
       ],
       "repeatMap": [
@@ -1968,6 +2196,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -1977,11 +2209,31 @@
         },
         {
           "mapName": "Hell's Kitchen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Deadpool",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Heorot",
           "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Deadpool",
+              "plays": 2,
+              "wins": 2,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "King Solomon's Mine",
@@ -2013,7 +2265,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Deadpool",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -2032,8 +2292,28 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": [
+            {
+              "opponent": "Deadpool",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
           "mapName": "Sunnydale High",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Deadpool",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "T. Rex Paddock",
@@ -2073,6 +2353,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -2086,6 +2370,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -2137,6 +2425,127 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        },
+        {
+          "mapName": "Yukon",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "Dr. Jill Trent",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": [
+            {
+              "opponent": "Dr. Jill Trent",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -2162,10 +2571,10 @@
       "hero": "Dr. Sattler",
       "queryOpponentOverall": [
         {
-          "plays": 10,
-          "wins": 4,
+          "plays": 11,
+          "wins": 5,
           "losses": 6,
-          "winpercent": 40
+          "winpercent": 45
         }
       ],
       "repeatMap": [
@@ -2192,6 +2601,10 @@
               "winpercent": 50
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -2223,6 +2636,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -2258,8 +2675,8 @@
           "queryResult": [
             {
               "opponent": "Dr. Sattler",
-              "plays": 1,
-              "wins": 1,
+              "plays": 2,
+              "wins": 2,
               "losses": 0,
               "winpercent": 100
             }
@@ -2279,6 +2696,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -2331,6 +2752,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -2369,6 +2794,10 @@
               "winpercent": 25
             }
           ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
@@ -2432,6 +2861,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -2484,6 +2917,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -2497,6 +2934,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -2537,6 +2978,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -2589,6 +3034,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": [
             {
@@ -2610,6 +3059,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -2650,6 +3103,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -2702,6 +3159,10 @@
           ]
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": [
             {
@@ -2731,6 +3192,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -2795,6 +3260,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -2847,6 +3316,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -2860,6 +3333,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -2911,6 +3388,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -2944,10 +3425,10 @@
       "hero": "Hamlet",
       "queryOpponentOverall": [
         {
-          "plays": 8,
-          "wins": 5,
-          "losses": 3,
-          "winpercent": 63
+          "plays": 14,
+          "wins": 10,
+          "losses": 4,
+          "winpercent": 71
         }
       ],
       "repeatMap": [
@@ -2957,6 +3438,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
           "queryResult": []
         },
         {
@@ -3000,6 +3485,10 @@
           ]
         },
         {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
           "mapName": "King Solomon's Mine",
           "queryResult": []
         },
@@ -3021,7 +3510,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Hamlet",
+              "plays": 2,
+              "wins": 2,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -3048,8 +3545,20 @@
           "queryResult": []
         },
         {
-          "mapName": "Sunnydale High",
+          "mapName": "Streets of Novigrad",
           "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": [
+            {
+              "opponent": "Hamlet",
+              "plays": 4,
+              "wins": 3,
+              "losses": 1,
+              "winpercent": 75
+            }
+          ]
         },
         {
           "mapName": "T. Rex Paddock",
@@ -3081,10 +3590,10 @@
       "hero": "Invisible Man",
       "queryOpponentOverall": [
         {
-          "plays": 8,
-          "wins": 3,
-          "losses": 5,
-          "winpercent": 38
+          "plays": 13,
+          "wins": 4,
+          "losses": 9,
+          "winpercent": 31
         }
       ],
       "repeatMap": [
@@ -3103,6 +3612,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -3127,6 +3640,18 @@
         {
           "mapName": "Heorot",
           "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Invisible Man",
+              "plays": 3,
+              "wins": 0,
+              "losses": 3,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "King Solomon's Mine",
@@ -3161,10 +3686,10 @@
           "queryResult": [
             {
               "opponent": "Invisible Man",
-              "plays": 2,
-              "wins": 1,
+              "plays": 3,
+              "wins": 2,
               "losses": 1,
-              "winpercent": 50
+              "winpercent": 67
             }
           ]
         },
@@ -3183,6 +3708,18 @@
         {
           "mapName": "Soho",
           "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": [
+            {
+              "opponent": "Invisible Man",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
@@ -3218,10 +3755,10 @@
       "hero": "Jekyll & Hyde",
       "queryOpponentOverall": [
         {
-          "plays": 10,
-          "wins": 7,
-          "losses": 3,
-          "winpercent": 70
+          "plays": 17,
+          "wins": 11,
+          "losses": 6,
+          "winpercent": 65
         }
       ],
       "repeatMap": [
@@ -3242,6 +3779,10 @@
           ]
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -3256,6 +3797,18 @@
         {
           "mapName": "Heorot",
           "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Jekyll & Hyde",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "King Solomon's Mine",
@@ -3306,10 +3859,10 @@
           "queryResult": [
             {
               "opponent": "Jekyll & Hyde",
-              "plays": 2,
-              "wins": 1,
-              "losses": 1,
-              "winpercent": 50
+              "plays": 6,
+              "wins": 4,
+              "losses": 2,
+              "winpercent": 67
             }
           ]
         },
@@ -3330,8 +3883,28 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": [
+            {
+              "opponent": "Jekyll & Hyde",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
           "mapName": "Sunnydale High",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Jekyll & Hyde",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "T. Rex Paddock",
@@ -3355,10 +3928,10 @@
       "hero": "King Arthur",
       "queryOpponentOverall": [
         {
-          "plays": 2,
-          "wins": 0,
+          "plays": 8,
+          "wins": 6,
           "losses": 2,
-          "winpercent": 0
+          "winpercent": 75
         }
       ],
       "repeatMap": [
@@ -3371,6 +3944,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -3380,10 +3957,22 @@
         },
         {
           "mapName": "Hell's Kitchen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "King Arthur",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -3419,10 +4008,10 @@
           "queryResult": [
             {
               "opponent": "King Arthur",
-              "plays": 1,
-              "wins": 0,
+              "plays": 5,
+              "wins": 4,
               "losses": 1,
-              "winpercent": 0
+              "winpercent": 80
             }
           ]
         },
@@ -3443,8 +4032,20 @@
           "queryResult": []
         },
         {
-          "mapName": "Sunnydale High",
+          "mapName": "Streets of Novigrad",
           "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": [
+            {
+              "opponent": "King Arthur",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "T. Rex Paddock",
@@ -3492,6 +4093,10 @@
           ]
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -3522,6 +4127,10 @@
               "winpercent": 50
             }
           ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
@@ -3596,6 +4205,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -3653,6 +4266,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -3675,6 +4292,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
@@ -3722,6 +4343,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -3774,6 +4399,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -3787,6 +4416,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -3851,6 +4484,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -3879,10 +4516,10 @@
       "hero": "Ms. Marvel",
       "queryOpponentOverall": [
         {
-          "plays": 26,
-          "wins": 17,
-          "losses": 9,
-          "winpercent": 65
+          "plays": 36,
+          "wins": 21,
+          "losses": 15,
+          "winpercent": 58
         }
       ],
       "repeatMap": [
@@ -3901,6 +4538,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
         },
         {
           "mapName": "Globe Theatre",
@@ -3923,10 +4564,10 @@
           "queryResult": [
             {
               "opponent": "Ms. Marvel",
-              "plays": 2,
+              "plays": 4,
               "wins": 2,
-              "losses": 0,
-              "winpercent": 100
+              "losses": 2,
+              "winpercent": 50
             }
           ]
         },
@@ -3939,6 +4580,18 @@
               "wins": 2,
               "losses": 1,
               "winpercent": 67
+            }
+          ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Ms. Marvel",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
             }
           ]
         },
@@ -3967,10 +4620,10 @@
           "queryResult": [
             {
               "opponent": "Ms. Marvel",
-              "plays": 6,
+              "plays": 7,
               "wins": 4,
-              "losses": 2,
-              "winpercent": 67
+              "losses": 3,
+              "winpercent": 57
             }
           ]
         },
@@ -3983,9 +4636,9 @@
           "queryResult": [
             {
               "opponent": "Ms. Marvel",
-              "plays": 2,
-              "wins": 1,
-              "losses": 1,
+              "plays": 4,
+              "wins": 2,
+              "losses": 2,
               "winpercent": 50
             }
           ]
@@ -4005,6 +4658,18 @@
         {
           "mapName": "Soho",
           "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": [
+            {
+              "opponent": "Ms. Marvel",
+              "plays": 4,
+              "wins": 2,
+              "losses": 2,
+              "winpercent": 50
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
@@ -4080,6 +4745,10 @@
           ]
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -4110,6 +4779,10 @@
               "winpercent": 60
             }
           ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
@@ -4168,6 +4841,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -4206,6 +4883,240 @@
       ]
     },
     {
+      "hero": "Oda Nobunaga",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 1,
+          "losses": 0,
+          "winpercent": 100
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": []
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": [
+            {
+              "opponent": "Oda Nobunaga",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        },
+        {
+          "mapName": "Yukon",
+          "queryResult": []
+        }
+      ]
+    },
+    {
+      "hero": "Philippa",
+      "queryOpponentOverall": [
+        {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ],
+      "repeatMap": [
+        {
+          "mapName": "Azuchi Castle",
+          "queryResult": []
+        },
+        {
+          "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Globe Theatre",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hanging Gardens",
+          "queryResult": []
+        },
+        {
+          "mapName": "Hell's Kitchen",
+          "queryResult": []
+        },
+        {
+          "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
+        },
+        {
+          "mapName": "King Solomon's Mine",
+          "queryResult": []
+        },
+        {
+          "mapName": "Marmoreal",
+          "queryResult": []
+        },
+        {
+          "mapName": "McMinnville, OR",
+          "queryResult": []
+        },
+        {
+          "mapName": "Navy Pier",
+          "queryResult": [
+            {
+              "opponent": "Philippa",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
+        },
+        {
+          "mapName": "Point Pleasant",
+          "queryResult": []
+        },
+        {
+          "mapName": "Raptor Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sanctum Sanctorum",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sarpedon",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sherwood Forest",
+          "queryResult": []
+        },
+        {
+          "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
+          "mapName": "Sunnydale High",
+          "queryResult": []
+        },
+        {
+          "mapName": "T. Rex Paddock",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Bronze",
+          "queryResult": []
+        },
+        {
+          "mapName": "The Raft",
+          "queryResult": []
+        },
+        {
+          "mapName": "Yukon",
+          "queryResult": []
+        }
+      ]
+    },
+    {
       "hero": "Raptors",
       "queryOpponentOverall": [
         {
@@ -4233,6 +5144,10 @@
           ]
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -4255,6 +5170,10 @@
               "winpercent": 0
             }
           ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
@@ -4337,6 +5256,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -4402,6 +5325,10 @@
           ]
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -4415,6 +5342,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -4514,6 +5445,10 @@
           ]
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -4563,6 +5498,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -4593,6 +5532,10 @@
               "winpercent": 50
             }
           ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
@@ -4656,6 +5599,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -4708,6 +5655,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -4721,6 +5672,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -4769,6 +5724,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -4829,6 +5788,10 @@
           ]
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -4850,6 +5813,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -4917,6 +5884,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -4950,10 +5921,10 @@
       "hero": "Spider-Man",
       "queryOpponentOverall": [
         {
-          "plays": 3,
-          "wins": 2,
-          "losses": 1,
-          "winpercent": 67
+          "plays": 8,
+          "wins": 5,
+          "losses": 3,
+          "winpercent": 63
         }
       ],
       "repeatMap": [
@@ -4963,6 +5934,10 @@
         },
         {
           "mapName": "Baskerville Manor",
+          "queryResult": []
+        },
+        {
+          "mapName": "Fayrlund Forest",
           "queryResult": []
         },
         {
@@ -4983,11 +5958,31 @@
         },
         {
           "mapName": "Hell's Kitchen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Spider-Man",
+              "plays": 1,
+              "wins": 1,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Heorot",
           "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": [
+            {
+              "opponent": "Spider-Man",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "King Solomon's Mine",
@@ -5011,7 +6006,15 @@
         },
         {
           "mapName": "Raptor Paddock",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Spider-Man",
+              "plays": 2,
+              "wins": 2,
+              "losses": 0,
+              "winpercent": 100
+            }
+          ]
         },
         {
           "mapName": "Sanctum Sanctorum",
@@ -5036,6 +6039,18 @@
         {
           "mapName": "Soho",
           "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
+          "queryResult": [
+            {
+              "opponent": "Spider-Man",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Sunnydale High",
@@ -5079,6 +6094,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -5092,6 +6111,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -5143,6 +6166,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -5168,10 +6195,10 @@
       "hero": "Squirrel Girl",
       "queryOpponentOverall": [
         {
-          "plays": 11,
-          "wins": 7,
-          "losses": 4,
-          "winpercent": 64
+          "plays": 13,
+          "wins": 8,
+          "losses": 5,
+          "winpercent": 62
         }
       ],
       "repeatMap": [
@@ -5184,6 +6211,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -5193,10 +6224,22 @@
         },
         {
           "mapName": "Hell's Kitchen",
-          "queryResult": []
+          "queryResult": [
+            {
+              "opponent": "Squirrel Girl",
+              "plays": 1,
+              "wins": 0,
+              "losses": 1,
+              "winpercent": 0
+            }
+          ]
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -5240,10 +6283,10 @@
           "queryResult": [
             {
               "opponent": "Squirrel Girl",
-              "plays": 2,
-              "wins": 1,
+              "plays": 3,
+              "wins": 2,
               "losses": 1,
-              "winpercent": 50
+              "winpercent": 67
             }
           ]
         },
@@ -5261,6 +6304,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -5313,6 +6360,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -5326,6 +6377,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -5390,6 +6445,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -5442,6 +6501,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -5455,6 +6518,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -5503,6 +6570,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -5555,6 +6626,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -5584,6 +6659,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -5659,6 +6738,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -5708,6 +6791,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": [
             {
@@ -5729,6 +6816,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -5769,6 +6860,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -5813,6 +6908,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -5826,6 +6925,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -5866,6 +6969,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -5918,6 +7025,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -5940,6 +7051,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
@@ -5987,6 +7102,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -6039,6 +7158,10 @@
           ]
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -6069,6 +7192,10 @@
               "winpercent": 50
             }
           ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
@@ -6116,6 +7243,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -6176,6 +7307,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": []
         },
@@ -6189,6 +7324,10 @@
         },
         {
           "mapName": "Heorot",
+          "queryResult": []
+        },
+        {
+          "mapName": "Kaer Morhen",
           "queryResult": []
         },
         {
@@ -6237,6 +7376,10 @@
         },
         {
           "mapName": "Soho",
+          "queryResult": []
+        },
+        {
+          "mapName": "Streets of Novigrad",
           "queryResult": []
         },
         {
@@ -6289,6 +7432,10 @@
           ]
         },
         {
+          "mapName": "Fayrlund Forest",
+          "queryResult": []
+        },
+        {
           "mapName": "Globe Theatre",
           "queryResult": [
             {
@@ -6327,6 +7474,10 @@
               "winpercent": 100
             }
           ]
+        },
+        {
+          "mapName": "Kaer Morhen",
+          "queryResult": []
         },
         {
           "mapName": "King Solomon's Mine",
@@ -6401,6 +7552,10 @@
           "queryResult": []
         },
         {
+          "mapName": "Streets of Novigrad",
+          "queryResult": []
+        },
+        {
           "mapName": "Sunnydale High",
           "queryResult": []
         },
@@ -6455,6 +7610,16 @@
     {
       "queryHeroMapResults": [
         {
+          "plays": 1,
+          "wins": 0,
+          "losses": 1,
+          "winpercent": 0
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
           "plays": 9,
           "wins": 6,
           "losses": 3,
@@ -6475,10 +7640,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 16,
-          "wins": 10,
-          "losses": 6,
-          "winpercent": 63
+          "plays": 23,
+          "wins": 14,
+          "losses": 9,
+          "winpercent": 61
         }
       ]
     },
@@ -6489,6 +7654,16 @@
           "wins": 20,
           "losses": 18,
           "winpercent": 53
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 9,
+          "wins": 3,
+          "losses": 6,
+          "winpercent": 33
         }
       ]
     },
@@ -6525,10 +7700,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 38,
+          "plays": 41,
           "wins": 19,
-          "losses": 19,
-          "winpercent": 50
+          "losses": 22,
+          "winpercent": 46
         }
       ]
     },
@@ -6545,10 +7720,10 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 60,
-          "wins": 29,
-          "losses": 31,
-          "winpercent": 48
+          "plays": 81,
+          "wins": 47,
+          "losses": 34,
+          "winpercent": 58
         }
       ]
     },
@@ -6595,10 +7770,20 @@
     {
       "queryHeroMapResults": [
         {
-          "plays": 4,
-          "wins": 2,
-          "losses": 2,
-          "winpercent": 50
+          "plays": 8,
+          "wins": 3,
+          "losses": 5,
+          "winpercent": 38
+        }
+      ]
+    },
+    {
+      "queryHeroMapResults": [
+        {
+          "plays": 14,
+          "wins": 10,
+          "losses": 4,
+          "winpercent": 71
         }
       ]
     },
@@ -6645,10 +7830,10 @@
   ],
   "queryHeroOverall": [
     {
-      "plays": 448,
-      "wins": 201,
-      "losses": 247,
-      "winpercent": 45
+      "plays": 507,
+      "wins": 237,
+      "losses": 270,
+      "winpercent": 47
     }
   ]
 }
