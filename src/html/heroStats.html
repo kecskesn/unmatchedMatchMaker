@@ -2,11 +2,30 @@
 <html>
 
 <head>
+  <style>html{visibility:hidden;}</style>
+  <script>
+  (function() {
+    try {
+      var userPref = localStorage.getItem('darkMode');
+      var isDark = userPref === 'true' ||
+        (userPref === null && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      if (isDark) {
+        document.documentElement.classList.add('dark-mode');
+        document.body.classList.add('dark-mode');
+      }
+    } catch(e){}
+    document.documentElement.style.visibility = 'visible';
+  })();
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link rel="stylesheet" href="src/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <style>
+    #menu { opacity: 0; transition: opacity 0.2s; }
+    #menu.menu-loaded { opacity: 1; }
+  </style>
 </head>
 
 <body>
@@ -80,6 +99,11 @@
 
       umLeagueCheckbox.addEventListener("change", fetchOverallHeroStats);
       localCheckbox.addEventListener("change", fetchOverallHeroStats);
+
+      // After loading the menu, fade it in
+      if (document.getElementById('menu')) {
+        document.getElementById('menu').classList.add('menu-loaded');
+      }
     </script>
 </body>
 

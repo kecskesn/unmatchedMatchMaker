@@ -21,10 +21,12 @@ async function loadMenu() {
                 // If no manual preference, check system preference
                 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
                 document.body.classList.toggle('dark-mode', prefersDark);
+                document.documentElement.classList.toggle('dark-mode', prefersDark);
                 localStorage.setItem('darkMode', prefersDark);
             } else {
                 // Apply saved user preference
                 document.body.classList.toggle('dark-mode', userPreference === 'true');
+                document.documentElement.classList.toggle('dark-mode', userPreference === 'true');
             }
 
             // Listen for system preference changes
@@ -32,6 +34,7 @@ async function loadMenu() {
                 // Only auto-switch if user hasn't set a manual preference
                 if (localStorage.getItem('darkMode') === null) {
                     document.body.classList.toggle('dark-mode', e.matches);
+                    document.documentElement.classList.toggle('dark-mode', e.matches);
                     localStorage.setItem('darkMode', e.matches);
                 }
             });
@@ -39,6 +42,7 @@ async function loadMenu() {
             // Manual toggle
             darkModeToggle.addEventListener('click', function() {
                 document.body.classList.toggle('dark-mode');
+                document.documentElement.classList.toggle('dark-mode');
                 const isDarkMode = document.body.classList.contains('dark-mode');
                 localStorage.setItem('darkMode', isDarkMode);
             });
